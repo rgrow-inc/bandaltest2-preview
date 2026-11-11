@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">制作と配送</title>
+  <desc id="desc">ゲーミングPCを梱包して配送するイメージ</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#17130f"/><stop offset="1" stop-color="#251006"/></linearGradient><linearGradient id="box" x1="0" x2="1"><stop stop-color="#ff7d40"/><stop offset="1" stop-color="#ff4f1f"/></linearGradient></defs>
+  <rect width="640" height="420" rx="28" fill="url(#bg)"/>
+  <text x="64" y="74" fill="#fff" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="3">BUILD &amp; DELIVERY</text>
+  <path d="M85 172 214 112l128 60-128 65Z" fill="url(#box)"/><path d="m85 172 129 65v122L85 294Z" fill="#d84419"/><path d="m214 237 128-65v122l-128 65Z" fill="#ff642d"/>
+  <path d="M214 112v125M150 143l128 62" fill="none" stroke="#ffd1bf" stroke-width="8" opacity=".85"/>
+  <path d="M376 220h103l44 51h41v58H376Z" fill="#202733" stroke="#6d7889" stroke-width="4"/><path d="M479 220v51h44" fill="none" stroke="#ff642d" stroke-width="8"/>
+  <circle cx="425" cy="335" r="26" fill="#0d1015" stroke="#fff" stroke-width="7"/><circle cx="526" cy="335" r="26" fill="#0d1015" stroke="#fff" stroke-width="7"/>
+  <path d="M387 177h136M410 144h84" stroke="#ff642d" stroke-width="11" stroke-linecap="round"/>
+  <text x="64" y="394" fill="#b89a8d" font-family="Arial, sans-serif" font-size="19">STANDARD / PRIORITY BUILD</text>
+</svg>

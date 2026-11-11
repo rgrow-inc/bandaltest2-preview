@@ -1,0 +1,8 @@
+
+#bd-three-question{box-sizing:border-box;width:min(100% - 32px,840px);margin:30px auto 48px;padding:clamp(18px,4vw,36px);color:#f7f6fb;background:#1b1c23;border:1px solid #383944;border-radius:16px;scroll-margin-top:82px}
+#bd-three-question[hidden]{display:none}#bd-three-question h2{font-size:clamp(21px,4vw,30px);margin:8px 0 20px;color:#fff}#bd-three-question .ux-progress{color:#cbb5ff;font-size:14px}
+.ux-answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#bd-three-question button,.ux-result a{font:inherit;line-height:1.5;color:#fff;background:#282933;border:1px solid #50505e;border-radius:8px;padding:12px;cursor:pointer;text-align:left}
+#bd-three-question :is(button,a):hover,#bd-three-question [aria-pressed=true]{border-color:#b294ff;background:#352747}
+.ux-result a{display:block;margin:8px 0}.ux-result p{color:#dddce8;margin:12px 0}#bd-three-question .ux-back{margin-top:18px;background:none}#bd-three-question [hidden]{display:none!important}
+@media(max-width:520px){.ux-answers{gap:8px}#bd-three-question button{font-size:14px}.ux-result a{font-size:14px}}

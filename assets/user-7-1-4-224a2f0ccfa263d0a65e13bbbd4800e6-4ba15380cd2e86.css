@@ -1,0 +1,1469 @@
+@charset "UTF-8";
+@import url("storefront-common.css");
+
+.product-caption-wrap {
+    text-align: center;
+}
+
+/* =========================================================
+   BANDAL GAMING renewal / category
+   Existing category, sorter, pager and diagnosis tags remain intact.
+========================================================= */
+
+body.bdl-renewal-category {
+    --bdl-renewal-canvas: #1a1b20;
+    --bdl-renewal-chrome: #141519;
+    --bdl-renewal-surface-1: #1f2026;
+    --bdl-renewal-surface-2: #272930;
+    --bdl-renewal-surface-3: #30333d;
+    --bdl-renewal-border: #3a3d46;
+    --bdl-renewal-border-strong: #4a4e59;
+    --bdl-renewal-text: #f4f5f8;
+    --bdl-renewal-text-secondary: #c9cbd4;
+    --bdl-renewal-muted: #9a9fad;
+    --bdl-renewal-brand: #a78bfa;
+    --bdl-renewal-action: #7c3aed;
+    --bdl-renewal-focus: #c4b5fd;
+    --bdl-renewal-danger: #ff746c;
+    --bdl-renewal-radius: 12px;
+    --bdl-renewal-container: 1280px;
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-canvas);
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+body.bdl-renewal-category :where(a, button, input, select, textarea):focus-visible {
+    outline: 3px solid var(--bdl-renewal-focus);
+    outline-offset: 3px;
+}
+
+body.bdl-renewal-category .wrapper,
+body.bdl-renewal-category .main,
+body.bdl-renewal-category .contents-section {
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-canvas);
+}
+
+body.bdl-renewal-category .top-bar {
+    color: var(--bdl-renewal-text);
+    background: rgba(20, 21, 25, .98);
+    border-bottom: 1px solid var(--bdl-renewal-border);
+    box-shadow: none;
+    backdrop-filter: blur(14px);
+}
+
+body.bdl-renewal-category .header-inner:first-child {
+    border-bottom-color: var(--bdl-renewal-border);
+}
+
+body.bdl-renewal-category .shop-logo img,
+body.bdl-renewal-category .second-nav img,
+body.bdl-renewal-category .sp-second-nav-wrap img,
+body.bdl-renewal-category .search-icon img {
+    filter: grayscale(1) invert(1) brightness(1.8);
+}
+
+body.bdl-renewal-category .nav-item a,
+body.bdl-renewal-category .second-nav li a,
+body.bdl-renewal-category .search-icon span,
+body.bdl-renewal-category .shop-logo span {
+    color: var(--bdl-renewal-text);
+}
+
+body.bdl-renewal-category .nav-item a:hover,
+body.bdl-renewal-category .second-nav li a:hover,
+body.bdl-renewal-category .header-info a:hover {
+    color: var(--bdl-renewal-brand);
+}
+
+body.bdl-renewal-category .article-title-pc::after {
+    border-color: var(--bdl-renewal-text);
+}
+
+body.bdl-renewal-category .navigation .drop-nv-wrap ul,
+body.bdl-renewal-category .sp-nav-wrap {
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-surface-1);
+}
+
+body.bdl-renewal-category .navigation .drop-nv-wrap ul a,
+body.bdl-renewal-category .sp-nav-wrap a,
+body.bdl-renewal-category .article-title {
+    color: var(--bdl-renewal-text-secondary);
+}
+
+body.bdl-renewal-category .search-box,
+body.bdl-renewal-category a.btn-go {
+    background: var(--bdl-renewal-chrome);
+}
+
+body.bdl-renewal-category .search-box input,
+body.bdl-renewal-category .search1 input {
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-surface-2);
+    border-color: var(--bdl-renewal-border-strong);
+}
+
+body.bdl-renewal-category .header-info {
+    background: #08090b;
+    border-top: 1px solid rgba(139, 92, 246, .3);
+}
+
+body.bdl-renewal-category span.cart-badge {
+    color: #fff;
+    background: var(--bdl-renewal-action);
+}
+
+body.bdl-renewal-category .bdl-renewal-category__hero {
+    position: relative;
+    width: min(calc(100% - 48px), var(--bdl-renewal-container));
+    min-height: 260px;
+    margin: 156px auto 0;
+    overflow: hidden;
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: 16px;
+}
+
+body.bdl-renewal-category .bdl-renewal-category__hero::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(90deg, rgba(10, 10, 13, .9), rgba(10, 10, 13, .22));
+}
+
+body.bdl-renewal-category .bdl-renewal-category__hero > img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+
+body.bdl-renewal-category .category-title-wrap {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--bdl-renewal-text);
+}
+
+body.bdl-renewal-category .bdl-renewal-category__hero .category-title-wrap {
+    position: absolute;
+    inset: 0;
+    padding: clamp(28px, 5vw, 64px);
+}
+
+body.bdl-renewal-category .category-title-wrap-only {
+    width: min(calc(100% - 48px), var(--bdl-renewal-container));
+    margin: 164px auto 0;
+    padding: 40px 0 24px;
+}
+
+body.bdl-renewal-category .bdl-renewal-eyebrow {
+    margin: 0 0 10px;
+    color: var(--bdl-renewal-brand);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+body.bdl-renewal-category .category-title,
+body.bdl-renewal-category .category-title.category-title-only {
+    position: static;
+    margin: 0;
+    padding: 0;
+    color: var(--bdl-renewal-text);
+    background: transparent;
+    font-size: clamp(30px, 4vw, 52px);
+    font-weight: 800;
+    line-height: 1.22;
+    text-align: left;
+    transform: none;
+}
+
+body.bdl-renewal-category .bdl-renewal-category__contents {
+    width: min(calc(100% - 48px), var(--bdl-renewal-container));
+    margin: 0 auto;
+    padding: 28px 0 96px;
+}
+
+body.bdl-renewal-category .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 28px;
+    color: var(--bdl-renewal-muted);
+    font-size: 12px;
+}
+
+body.bdl-renewal-category .breadcrumb-item {
+    margin: 0;
+}
+
+body.bdl-renewal-category .breadcrumb-item a {
+    color: var(--bdl-renewal-muted);
+}
+
+body.bdl-renewal-category .breadcrumb-item a:hover {
+    color: var(--bdl-renewal-brand);
+    text-decoration: none;
+    opacity: 1;
+}
+
+body.bdl-renewal-category .child-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 28px;
+    padding: 0;
+    list-style: none;
+}
+
+body.bdl-renewal-category .child-category-item {
+    margin: 0;
+}
+
+body.bdl-renewal-category .child-category-name a {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    color: var(--bdl-renewal-text-secondary);
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: 999px;
+}
+
+body.bdl-renewal-category .child-category-name a:hover {
+    color: var(--bdl-renewal-text);
+    border-color: var(--bdl-renewal-brand);
+    text-decoration: none;
+}
+
+body.bdl-renewal-category .child-category-count {
+    color: var(--bdl-renewal-muted);
+}
+
+body.bdl-renewal-category .product-container {
+    display: grid;
+    grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
+    gap: clamp(28px, 4vw, 52px);
+    align-items: start;
+}
+
+body.bdl-renewal-category .side,
+body.bdl-renewal-category .side-menu,
+body.bdl-renewal-category .side-category {
+    color: var(--bdl-renewal-text-secondary);
+}
+
+body.bdl-renewal-category .product-contents-wrap,
+body.bdl-renewal-category .product-wrap {
+    width: auto;
+    min-width: 0;
+    margin: 0;
+}
+
+body.bdl-renewal-category .list-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 22px;
+    padding: 16px 18px;
+    color: var(--bdl-renewal-text-secondary);
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: var(--bdl-renewal-radius);
+}
+
+body.bdl-renewal-category .list-head-count {
+    margin: 0;
+    color: var(--bdl-renewal-text);
+    font-weight: 700;
+}
+
+body.bdl-renewal-category .list-head-sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 0;
+}
+
+body.bdl-renewal-category .list-head-sort dt,
+body.bdl-renewal-category .list-head-sort dd {
+    margin: 0;
+}
+
+body.bdl-renewal-category .list-head-sort a {
+    color: var(--bdl-renewal-text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+body.bdl-renewal-category .list-head-sort a:hover {
+    color: var(--bdl-renewal-brand);
+}
+
+body.bdl-renewal-category .bdl-renewal-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body.bdl-renewal-category .bdl-renewal-product-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: var(--bdl-renewal-radius);
+    transition: border-color .18s ease, transform .18s ease;
+}
+
+body.bdl-renewal-category .bdl-renewal-product-card:hover {
+    border-color: var(--bdl-renewal-border-strong);
+    transform: translateY(-2px);
+}
+
+body.bdl-renewal-category .product-image-link,
+body.bdl-renewal-category .product-image-wrap {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+body.bdl-renewal-category .product-image-wrap img {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    object-fit: contain;
+    transition: transform .2s ease;
+}
+
+body.bdl-renewal-category .bdl-renewal-product-card:hover .product-image-wrap img {
+    transform: scale(1.025);
+}
+
+body.bdl-renewal-category .product-name-link {
+    display: flex;
+    flex: 1;
+    padding: 18px;
+    color: var(--bdl-renewal-text);
+}
+
+body.bdl-renewal-category .product-name-link:hover {
+    color: var(--bdl-renewal-brand);
+    text-decoration: none;
+}
+
+body.bdl-renewal-category .product-caption-wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    text-align: left;
+}
+
+body.bdl-renewal-category .product-caption {
+    color: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.65;
+}
+
+body.bdl-renewal-category .product-price,
+body.bdl-renewal-category .product-sale-price {
+    display: block;
+    margin-top: auto;
+    padding-top: 16px;
+    color: var(--bdl-renewal-text);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+body.bdl-renewal-category .sold-out {
+    display: inline-flex;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    color: var(--bdl-renewal-danger);
+    background: rgba(255, 116, 108, .1);
+    border: 1px solid rgba(255, 116, 108, .35);
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+body.bdl-renewal-category .item-list-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+}
+
+body.bdl-renewal-category .item-list-icon img {
+    max-height: 24px;
+}
+
+body.bdl-renewal-category .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 36px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+body.bdl-renewal-category .pagination li {
+    margin: 0;
+}
+
+body.bdl-renewal-category .pagination a {
+    display: grid;
+    place-items: center;
+    min-width: 42px;
+    height: 42px;
+    padding: 0 10px;
+    color: var(--bdl-renewal-text-secondary);
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: 8px;
+}
+
+body.bdl-renewal-category .pagination a:hover,
+body.bdl-renewal-category .pagination a.active {
+    color: #fff;
+    background: var(--bdl-renewal-action);
+    border-color: var(--bdl-renewal-action);
+    text-decoration: none;
+}
+
+body.bdl-renewal-category .empty {
+    padding: 64px 24px;
+    color: var(--bdl-renewal-text-secondary);
+    background: var(--bdl-renewal-surface-1);
+    border: 1px solid var(--bdl-renewal-border);
+    border-radius: var(--bdl-renewal-radius);
+    text-align: center;
+}
+
+/* Existing ct83 diagnosis is retained and brought into the renewal palette. */
+body.bdl-renewal-category .bd-game-pc-hero,
+body.bdl-renewal-category .bd-game-pc-result-head {
+    background: linear-gradient(135deg, #101116 0%, #272930 58%, #4c1d95 100%);
+}
+
+body.bdl-renewal-category .bd-game-pc-detail-link,
+body.bdl-renewal-category .bd-game-pc-question,
+body.bdl-renewal-category .bd-game-pc-product-card {
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-surface-1);
+    border-color: var(--bdl-renewal-border);
+}
+
+body.bdl-renewal-category .bd-game-pc-detail-text h2,
+body.bdl-renewal-category .bd-game-pc-question h2,
+body.bdl-renewal-category .bd-game-pc-product-body h3 {
+    color: var(--bdl-renewal-text);
+}
+
+body.bdl-renewal-category .bd-game-pc-detail-text p,
+body.bdl-renewal-category .bd-game-pc-product-desc {
+    color: var(--bdl-renewal-text-secondary);
+}
+
+body.bdl-renewal-category .bd-game-pc-options button {
+    color: var(--bdl-renewal-text);
+    background: var(--bdl-renewal-surface-2);
+    border-color: var(--bdl-renewal-border);
+}
+
+body.bdl-renewal-category .bd-game-pc-options button:hover,
+body.bdl-renewal-category .bd-game-pc-options button.is-active {
+    color: #fff;
+    background: var(--bdl-renewal-action);
+    border-color: var(--bdl-renewal-brand);
+}
+
+@media screen and (max-width: 1080px) {
+    body.bdl-renewal-category .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    body.bdl-renewal-category .bdl-renewal-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body.bdl-renewal-category .bdl-renewal-category__hero {
+        width: min(calc(100% - 32px), var(--bdl-renewal-container));
+        min-height: 220px;
+        margin-top: 118px;
+    }
+
+    body.bdl-renewal-category .bdl-renewal-category__hero > img {
+        min-height: 220px;
+    }
+
+    body.bdl-renewal-category .category-title-wrap-only {
+        width: min(calc(100% - 32px), var(--bdl-renewal-container));
+        margin-top: 118px;
+    }
+
+    body.bdl-renewal-category .bdl-renewal-category__contents {
+        width: min(calc(100% - 32px), var(--bdl-renewal-container));
+    }
+
+    body.bdl-renewal-category .bdl-renewal-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    body.bdl-renewal-category .bd-game-pc-options,
+    body.bdl-renewal-category .bd-game-pc-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 520px) {
+    body.bdl-renewal-category .bdl-renewal-category__hero,
+    body.bdl-renewal-category .category-title-wrap-only,
+    body.bdl-renewal-category .bdl-renewal-category__contents {
+        width: min(calc(100% - 28px), var(--bdl-renewal-container));
+    }
+
+    body.bdl-renewal-category .bdl-renewal-category__hero .category-title-wrap {
+        padding: 24px;
+    }
+
+    body.bdl-renewal-category .category-title,
+    body.bdl-renewal-category .category-title.category-title-only {
+        font-size: 30px;
+    }
+
+    body.bdl-renewal-category .list-head {
+        align-items: flex-start;
+    }
+
+    body.bdl-renewal-category .list-head-sort {
+        width: 100%;
+    }
+
+    body.bdl-renewal-category .bdl-renewal-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    body.bdl-renewal-category .product-image-link,
+    body.bdl-renewal-category .product-image-wrap {
+        aspect-ratio: 4 / 3;
+    }
+
+    body.bdl-renewal-category .product-name-link {
+        padding: 12px;
+    }
+
+    body.bdl-renewal-category .product-caption {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    body.bdl-renewal-category .product-price,
+    body.bdl-renewal-category .product-sale-price {
+        padding-top: 12px;
+        font-size: 16px;
+    }
+
+    body.bdl-renewal-category .bd-game-pc-options,
+    body.bdl-renewal-category .bd-game-pc-product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.bdl-renewal-category *,
+    body.bdl-renewal-category *::before,
+    body.bdl-renewal-category *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+.bd-game-pc-diagnosis {
+    width: 100%;
+    margin: 0 0 42px;
+    color: #111;
+    font-family: inherit;
+}
+
+.bd-game-pc-diagnosis * {
+    box-sizing: border-box;
+}
+
+.bd-game-pc-hero {
+    padding: 46px 28px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #101010 0%, #202020 55%, #1f3475 100%);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bd-game-pc-badge {
+    display: inline-block;
+    margin: 0 0 14px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.16);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.bd-game-pc-hero :is(h1, h2) {
+    margin: 0;
+    color: #fff;
+    font-size: 38px;
+    line-height: 1.35;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+.bd-game-pc-lead {
+    margin: 18px auto 0;
+    max-width: 720px;
+    color: rgba(255,255,255,0.92);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.bd-game-pc-hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.bd-game-pc-main-btn,
+.bd-game-pc-sub-btn,
+.bd-game-pc-detail-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 13px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.4;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.bd-game-pc-main-btn {
+    background: #1f3475;
+    color: #fff;
+}
+
+.bd-game-pc-sub-btn {
+    background: #fff;
+    color: #111;
+}
+
+.bd-game-pc-detail-btn {
+    flex: 0 0 auto;
+    background: #111;
+    color: #fff;
+}
+
+.bd-game-pc-main-btn:hover,
+.bd-game-pc-sub-btn:hover,
+.bd-game-pc-detail-btn:hover {
+    opacity: 0.86;
+    transform: translateY(-1px);
+}
+
+.bd-game-pc-detail-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-top: 22px;
+    padding: 22px 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.bd-game-pc-detail-text h2 {
+    margin: 0 0 6px;
+    color: #111;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.bd-game-pc-detail-text p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.bd-game-pc-questions {
+    margin-top: 30px;
+}
+
+.bd-game-pc-question {
+    margin-top: 24px;
+    padding: 26px;
+    border-radius: 20px;
+    background: #f6f7fb;
+}
+
+.bd-game-pc-question h2 {
+    margin: 0 0 18px;
+    color: #111;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.bd-game-pc-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.bd-game-pc-options button {
+    width: 100%;
+    min-height: 54px;
+    padding: 12px 14px;
+    border: 2px solid #e2e5ee;
+    border-radius: 14px;
+    background: #fff;
+    color: #111;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.5;
+    cursor: pointer;
+    appearance: none;
+    transition: border-color 0.18s, background 0.18s, color 0.18s, transform 0.18s;
+}
+
+.bd-game-pc-options button:hover {
+    border-color: #1f3475;
+    transform: translateY(-1px);
+}
+
+.bd-game-pc-options button.is-active {
+    border-color: #1f3475;
+    background: #eef2ff;
+    color: #1f3475;
+}
+
+.bd-game-pc-result {
+    margin-top: 30px;
+}
+
+.bd-game-pc-result-head {
+    padding: 26px;
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+}
+
+.bd-game-pc-result-label {
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(31,52,117,0.35);
+    color: #cbd7ff;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.bd-game-pc-result-head h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.45;
+}
+
+.bd-game-pc-result-head p {
+    margin: 12px 0 0;
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.bd-game-pc-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.bd-game-pc-product-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.bd-game-pc-product-rank {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 54px;
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #1f3475;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+
+.bd-game-pc-product-card:nth-child(1) .bd-game-pc-product-rank {
+    background: #f2b400;
+}
+
+.bd-game-pc-product-card:nth-child(2) .bd-game-pc-product-rank {
+    background: #9aa3af;
+}
+
+.bd-game-pc-product-card:nth-child(3) .bd-game-pc-product-rank {
+    background: #c78346;
+}
+
+.bd-game-pc-product-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.bd-game-pc-product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 18px;
+}
+
+.bd-game-pc-product-body {
+    padding: 18px;
+}
+
+.bd-game-pc-product-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #1f3475;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.bd-game-pc-product-body h3 {
+    margin: 0;
+    color: #111;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.bd-game-pc-product-price {
+    margin: 10px 0 0;
+    color: #e60012;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.bd-game-pc-product-desc {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.bd-game-pc-product-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 16px;
+    border-radius: 999px;
+    background: #1f3475;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.bd-game-pc-product-link:hover {
+    opacity: 0.86;
+}
+
+.bd-game-pc-bottom-cta {
+    margin-top: 26px;
+    padding: 28px;
+    border-radius: 20px;
+    background: #f6f7fb;
+    text-align: center;
+}
+
+.bd-game-pc-bottom-cta h2 {
+    margin: 0;
+    color: #111;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.bd-game-pc-bottom-cta p {
+    margin: 12px auto 18px;
+    max-width: 620px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 900px) {
+    .bd-game-pc-options,
+    .bd-game-pc-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bd-game-pc-hero :is(h1, h2) {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bd-game-pc-diagnosis {
+        margin-bottom: 32px;
+    }
+
+    .bd-game-pc-hero {
+        padding: 36px 18px;
+        border-radius: 20px;
+    }
+
+    .bd-game-pc-hero :is(h1, h2) {
+        font-size: 28px;
+    }
+
+    .bd-game-pc-lead {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .bd-game-pc-hero-actions {
+        display: block;
+    }
+
+    .bd-game-pc-main-btn,
+    .bd-game-pc-sub-btn,
+    .bd-game-pc-detail-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .bd-game-pc-detail-link {
+        display: block;
+        padding: 20px;
+    }
+
+    .bd-game-pc-detail-btn {
+        margin-top: 14px;
+    }
+
+    .bd-game-pc-question {
+        padding: 20px;
+    }
+
+    .bd-game-pc-question h2 {
+        font-size: 19px;
+    }
+
+    .bd-game-pc-options,
+    .bd-game-pc-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bd-game-pc-options button {
+        min-height: 52px;
+        font-size: 14px;
+    }
+
+    .bd-game-pc-result-head {
+        padding: 22px;
+    }
+
+    .bd-game-pc-result-head h2 {
+        font-size: 23px;
+    }
+
+    .bd-game-pc-product-image {
+        aspect-ratio: 5 / 3.8;
+    }
+}
+/* ================================================================
+   BANDAL GAMING - supplied renewal comp / category
+   ================================================================ */
+body.bdl-renewal-category { color: var(--bdlw-text); background: var(--bdlw-bg); }
+body.bdl-renewal-category *,
+body.bdl-renewal-category *::before,
+body.bdl-renewal-category *::after { box-sizing: border-box; }
+body.bdl-renewal-category .bdl-wire-category-hero { padding: 70px 0 52px; background: #090b0e; border-bottom: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .bdl-wire-category-hero p { margin: 0 0 15px; color: var(--bdlw-orange); font: 900 10px/1 Arial, sans-serif; letter-spacing: .18em; }
+body.bdl-renewal-category .bdl-wire-category-hero h1 { margin: 0; color: #fff; font-size: clamp(45px, 5vw, 72px); font-weight: 950; line-height: 1; letter-spacing: -.055em; }
+body.bdl-renewal-category .bdl-wire-category-hero span { display: block; margin-top: 18px; color: var(--bdlw-muted); font-size: 12px; }
+body.bdl-renewal-category .bdl-renewal-category__main { width: 100%; max-width: none; margin: 0; padding: 0; background: var(--bdlw-bg); }
+body.bdl-renewal-category .bdl-renewal-category__contents { width: min(calc(100% - 48px), var(--bdlw-max)); margin: 0 auto; padding: 24px 0 120px; }
+body.bdl-renewal-category .breadcrumb { margin: 0 0 22px; color: #767e88; font-size: 10px; }
+body.bdl-renewal-category .breadcrumb-item a { color: #8c939c; }
+body.bdl-renewal-category .breadcrumb-item + .breadcrumb-item::before { content: "/"; margin-right: 8px; color: #4f5660; }
+body.bdl-renewal-category .child-category-list { gap: 1px; margin: 0 0 16px; background: var(--bdlw-line); border: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .child-category-name a { min-height: 40px; padding: 8px 14px; color: #d9dde1; background: var(--bdlw-surface); border: 0; border-radius: 0; font-size: 10px; }
+body.bdl-renewal-category .child-category-name a:hover { color: #fff; background: var(--bdlw-surface-2); }
+
+body.bdl-renewal-category .bdl-wire-quick-filter { display: flex; align-items: center; gap: 8px; margin-bottom: 22px; padding: 14px; background: var(--bdlw-surface); border: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .bdl-wire-quick-filter p { margin: 0 10px 0 0; color: #fff; font-size: 10px; font-weight: 900; }
+body.bdl-renewal-category .bdl-wire-quick-filter a { min-width: 100px; padding: 10px 12px; color: #d9dde1; background: #0a0c0f; border: 1px solid var(--bdlw-line); font-size: 9px; font-weight: 800; text-align: center; }
+body.bdl-renewal-category .bdl-wire-quick-filter a:hover { color: #fff; border-color: var(--bdlw-orange); }
+
+body.bdl-renewal-category .product-container { grid-template-columns: 224px minmax(0, 1fr); gap: 20px; }
+body.bdl-renewal-category .side-bar { position: sticky; top: 18px; width: 100%; margin: 0; color: var(--bdlw-text); background: var(--bdlw-surface); border: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .side-bar::before { content: "FILTER / CATEGORIES"; display: block; padding: 17px; color: #fff; border-bottom: 1px solid var(--bdlw-line); font: 900 10px/1.3 Arial, "Noto Sans JP", sans-serif; letter-spacing: .06em; }
+body.bdl-renewal-category .left-nav { margin: 0; padding: 0; list-style: none; }
+body.bdl-renewal-category .left-nav-category { margin: 0; padding: 0; border-bottom: 1px solid var(--bdlw-line-soft); }
+body.bdl-renewal-category .left-nav-title,
+body.bdl-renewal-category .left-nav-item { margin: 0; }
+body.bdl-renewal-category .left-nav-title a { display: block; padding: 15px 14px; color: #fff; font-size: 11px; font-weight: 800; }
+body.bdl-renewal-category .left-nav-item a { display: block; padding: 9px 14px 9px 25px; color: var(--bdlw-muted); font-size: 9px; }
+body.bdl-renewal-category .left-nav-title a:hover,
+body.bdl-renewal-category .left-nav-item a:hover { color: var(--bdlw-orange); background: #0c0f13; }
+body.bdl-renewal-category .left-nav-help { display: none; }
+
+body.bdl-renewal-category .list-head { margin: 0 0 12px; padding: 13px 14px; color: var(--bdlw-muted); background: var(--bdlw-surface); border: 1px solid var(--bdlw-line); border-radius: 0; font-size: 10px; }
+body.bdl-renewal-category .list-head-count { color: #fff; font-size: 11px; }
+body.bdl-renewal-category .list-head-sort { gap: 5px 10px; }
+body.bdl-renewal-category .list-head-sort a { color: var(--bdlw-muted); text-decoration: none; }
+body.bdl-renewal-category .list-head-sort a:hover { color: var(--bdlw-orange); }
+
+body.bdl-renewal-category .bdl-renewal-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+body.bdl-renewal-category .bdl-renewal-product-card { display: flex; flex-direction: column; overflow: hidden; color: var(--bdlw-text); background: var(--bdlw-surface); border: 1px solid var(--bdlw-line); border-radius: 0; transform: none; transition: border-color .18s ease; }
+body.bdl-renewal-category .bdl-renewal-product-card:hover { border-color: #6b737d; transform: none; }
+body.bdl-renewal-category .product-image-link,
+body.bdl-renewal-category .product-image-wrap { width: 100%; margin: 0; }
+body.bdl-renewal-category .product-image-wrap { position: relative; display: grid; place-items: center; aspect-ratio: 1.16; overflow: hidden; background: #f5f5f5; border-bottom: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .product-image-wrap > img { width: 86%; height: 86%; object-fit: contain; transition: transform .2s ease; }
+body.bdl-renewal-category .product-image-link:hover img { transform: scale(1.02); }
+body.bdl-renewal-category .bdl-wire-product-badge { position: absolute; z-index: 2; top: 10px; left: 10px; padding: 5px 7px; color: #0a0b0c; background: #fff; border: 1px solid #c7ccd1; font: 900 7px/1 Arial, "Noto Sans JP", sans-serif; letter-spacing: .08em; }
+body.bdl-renewal-category .bdl-wire-product-body { display: flex; flex: 1 1 auto; flex-direction: column; padding: 14px; }
+body.bdl-renewal-category .bdl-wire-compare-check { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; margin-bottom: 10px; color: #858d96; font-size: 8px; cursor: pointer; }
+body.bdl-renewal-category .bdl-wire-compare-check input { width: 12px; height: 12px; margin: 0; accent-color: var(--bdlw-orange); }
+body.bdl-renewal-category .product-name-link { display: block; color: #fff; }
+body.bdl-renewal-category .product-caption-wrap { display: block; min-height: 42px; padding: 0; }
+body.bdl-renewal-category .product-caption { display: block; color: #fff; font: 900 14px/1.45 Arial, "Noto Sans JP", sans-serif; letter-spacing: -.01em; }
+body.bdl-renewal-category .item-list-icon { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 7px; padding: 0; list-style: none; }
+body.bdl-renewal-category .item-list-icon img { max-height: 17px; width: auto; }
+body.bdl-renewal-category .bdl-wire-product-summary { min-height: 31px; margin: 9px 0 0; color: var(--bdlw-muted); font-size: 8px; line-height: 1.65; }
+body.bdl-renewal-category .bdl-wire-card-score { display: grid; grid-template-columns: 1fr auto; gap: 5px; margin-top: 13px; }
+body.bdl-renewal-category .bdl-wire-card-score span { color: #777f89; font-size: 8px; }
+body.bdl-renewal-category .bdl-wire-card-score b { color: #fff; font: 900 9px/1 Arial, sans-serif; }
+body.bdl-renewal-category .bdl-wire-card-score i { grid-column: 1 / -1; height: 3px; background: #2d333a; }
+body.bdl-renewal-category .bdl-wire-card-score em { display: block; height: 100%; background: var(--bdlw-orange); }
+body.bdl-renewal-category .bdl-wire-card-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin: 13px 0 0; background: var(--bdlw-line); border: 1px solid var(--bdlw-line); }
+body.bdl-renewal-category .bdl-wire-card-specs div { min-width: 0; padding: 8px; background: #0a0d10; }
+body.bdl-renewal-category .bdl-wire-card-specs dt { color: #69717b; font: 800 6px/1 Arial, sans-serif; }
+body.bdl-renewal-category .bdl-wire-card-specs dd { margin: 5px 0 0; overflow: hidden; color: #fff; font-size: 8px; font-weight: 800; text-overflow: ellipsis; white-space: nowrap; }
+body.bdl-renewal-category .bdl-wire-product-price { margin-top: auto; padding-top: 16px; text-align: right; }
+body.bdl-renewal-category .bdl-wire-product-price .product-price { color: var(--bdlw-muted); font-size: 7px; }
+body.bdl-renewal-category .bdl-wire-product-price strong { margin-left: 5px; color: #fff; font: 900 19px/1 Arial, sans-serif; letter-spacing: -.04em; }
+body.bdl-renewal-category .bdl-wire-product-price small { display: block; margin-top: 6px; color: #7f8790; font-size: 7px; }
+body.bdl-renewal-category .bdl-wire-card-delivery { margin: 8px 0 10px; color: var(--bdlw-green); font-size: 8px; font-weight: 800; text-align: right; }
+body.bdl-renewal-category .bdl-wire-card-cta { display: grid; place-items: center; min-height: 42px; color: #fff; background: var(--bdlw-orange); font-size: 9px; font-weight: 900; }
+body.bdl-renewal-category .bdl-wire-card-cta:hover { color: #fff; background: var(--bdlw-orange-hover); }
+
+body.bdl-renewal-category .pager { margin-top: 38px; }
+body.bdl-renewal-category .pagination { display: flex; justify-content: center; gap: 4px; margin: 0; padding: 0; list-style: none; }
+body.bdl-renewal-category .pagination a { display: grid; place-items: center; width: 38px; height: 38px; color: #d6dade; background: var(--bdlw-surface); border: 1px solid var(--bdlw-line); font-size: 10px; }
+body.bdl-renewal-category .pagination a.active { color: #050607; background: #fff; border-color: #fff; }
+
+body.bdl-renewal-category .bdl-wire-compare-bar { position: fixed; z-index: 900; right: 0; bottom: 0; left: 0; color: #fff; background: rgba(13,16,20,.97); border-top: 1px solid var(--bdlw-line); backdrop-filter: blur(12px); }
+body.bdl-renewal-category .bdl-wire-compare-bar .bdl-wire-container { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px; min-height: 66px; }
+body.bdl-renewal-category .bdl-wire-compare-bar p { margin: 0; font-size: 11px; font-weight: 800; }
+body.bdl-renewal-category .bdl-wire-compare-bar p b { color: var(--bdlw-orange); font: 900 20px/1 Arial, sans-serif; }
+body.bdl-renewal-category .bdl-wire-compare-bar span { color: var(--bdlw-muted); font-size: 9px; }
+body.bdl-renewal-category .bdl-wire-compare-bar button { min-width: 170px; height: 44px; color: #fff; background: var(--bdlw-orange); border: 0; border-radius: 0; font-size: 10px; font-weight: 900; }
+
+@media (max-width: 1000px) {
+  body.bdl-renewal-category .product-container { grid-template-columns: 190px minmax(0, 1fr); gap: 14px; }
+  body.bdl-renewal-category .bdl-renewal-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  body.bdl-renewal-category .bdl-wire-category-hero { padding: 48px 0 36px; }
+  body.bdl-renewal-category .bdl-wire-category-hero h1 { font-size: 40px; line-height: 1.05; }
+  body.bdl-renewal-category .bdl-wire-category-hero span { font-size: 10px; line-height: 1.7; }
+  body.bdl-renewal-category .bdl-renewal-category__contents { width: calc(100% - 20px); padding: 18px 0 90px; }
+  body.bdl-renewal-category .breadcrumb { font-size: 8px; }
+  body.bdl-renewal-category .child-category-list { flex-wrap: nowrap; overflow-x: auto; }
+  body.bdl-renewal-category .child-category-item { flex: 0 0 auto; }
+  body.bdl-renewal-category .bdl-wire-quick-filter { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; padding: 10px; }
+  body.bdl-renewal-category .bdl-wire-quick-filter p { grid-column: 1 / -1; margin: 0 0 3px; }
+  body.bdl-renewal-category .bdl-wire-quick-filter a { min-width: 0; padding: 9px 4px; font-size: 7px; }
+  body.bdl-renewal-category .product-container { display: block; }
+  body.bdl-renewal-category .side-bar { display: none; }
+  body.bdl-renewal-category .list-head { display: grid; grid-template-columns: auto 1fr; padding: 10px; }
+  body.bdl-renewal-category .list-head-sort { justify-content: end; }
+  body.bdl-renewal-category .list-head-sort dt { display: none; }
+  body.bdl-renewal-category .list-head-sort dd:nth-of-type(n+3) { display: none; }
+  body.bdl-renewal-category .bdl-renewal-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  body.bdl-renewal-category .product-image-wrap { aspect-ratio: 1; }
+  body.bdl-renewal-category .bdl-wire-product-body { padding: 10px; }
+  body.bdl-renewal-category .product-caption-wrap { min-height: 49px; }
+  body.bdl-renewal-category .product-caption { font-size: 11px; line-height: 1.45; }
+  body.bdl-renewal-category .bdl-wire-product-summary { font-size: 7px; }
+  body.bdl-renewal-category .bdl-wire-card-specs { grid-template-columns: 1fr; }
+  body.bdl-renewal-category .bdl-wire-card-specs div:nth-child(n+3) { display: none; }
+  body.bdl-renewal-category .bdl-wire-card-specs dd { font-size: 7px; }
+  body.bdl-renewal-category .bdl-wire-product-price strong { display: block; margin-top: 4px; font-size: 17px; }
+  body.bdl-renewal-category .bdl-wire-card-cta { min-height: 38px; padding: 4px; font-size: 8px; text-align: center; }
+  body.bdl-renewal-category .bdl-wire-compare-bar { bottom: 58px; }
+  body.bdl-renewal-category .bdl-wire-compare-bar .bdl-wire-container { grid-template-columns: 1fr auto; gap: 8px; min-height: 54px; }
+  body.bdl-renewal-category .bdl-wire-compare-bar span { display: none; }
+  body.bdl-renewal-category .bdl-wire-compare-bar button { min-width: 125px; height: 38px; }
+}
+
+/* Reference design refinement */
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero { padding: 52px 0 42px; background: var(--bdlr-bg); border-bottom-color: rgba(255,255,255,.065); }
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero h1 { font-size: clamp(30px, 3.2vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: .01em; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero p { color: var(--bdlr-purple-hover); font-weight: 600; }
+body.bdl-renewal-category.bdlr-page .bdl-renewal-category__contents { width: min(calc(100% - 48px), 1240px); }
+body.bdl-renewal-category.bdlr-page :is(.side-bar, .list-head, .bdl-wire-quick-filter) { background: var(--bdlr-surface); border-color: transparent; border-radius: 10px; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-quick-filter a { color: var(--bdlr-text-2); background: var(--bdlr-surface-2); border: 0; border-radius: 999px; }
+body.bdl-renewal-category.bdlr-page .bdl-renewal-product-grid { gap: 16px; }
+body.bdl-renewal-category.bdlr-page .bdl-renewal-product-card { background: var(--bdlr-surface-2); border-color: transparent; border-radius: 12px; }
+body.bdl-renewal-category.bdlr-page .bdl-renewal-product-card:hover { border-color: transparent; box-shadow: 0 0 0 1px rgba(196,181,253,.32); }
+body.bdl-renewal-category.bdlr-page .product-image-wrap { background: #f5f5f5; border: 0; border-radius: 12px 12px 0 0; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-product-body { padding: 18px; }
+body.bdl-renewal-category.bdlr-page .product-caption { font-family: var(--bdlr-font); font-size: 15px; font-weight: 600; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-card-specs { gap: 12px 20px; background: transparent; border: 0; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-card-specs div { padding: 0; background: transparent; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-product-price strong { font-family: "Inter Tight", sans-serif; font-size: 22px; font-weight: 600; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-card-cta { min-height: 48px; margin: 4px -18px -18px; background: var(--bdlr-purple-action); border-radius: 0 0 12px 12px; font-size: 11px; font-weight: 600; }
+body.bdl-renewal-category.bdlr-page .bdl-wire-compare-bar button { background: var(--bdlr-purple-action); border-radius: 8px; font-weight: 600; }
+@media (max-width:700px) {
+  body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero { padding: 38px 0 30px; }
+  body.bdl-renewal-category.bdlr-page .bdl-renewal-category__contents { width: calc(100% - 24px); }
+  body.bdl-renewal-category.bdlr-page .bdl-renewal-product-grid { gap: 10px; }
+  body.bdl-renewal-category.bdlr-page .bdl-wire-product-body { padding: 12px; }
+  body.bdl-renewal-category.bdlr-page .bdl-wire-card-cta { margin: 4px -12px -12px; }
+}
+
+/* Supplied index.html v1.4 visual reconciliation */
+body.bdl-renewal-category.bdlr-page {
+  background: var(--bdlr-bg);
+  color: var(--bdlr-text);
+  font-family: "Inter Tight", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-intro h1 {
+  font-size: clamp(32px, 4.1vw, 52px);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -.025em;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-primary a,
+body.bdl-renewal-category.bdlr-page .bdlr-child-categories a {
+  color: var(--bdlr-text-2);
+  background: var(--bdlr-surface-3);
+  border: 0;
+  border-radius: 999px;
+  font-weight: 500;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-primary a:hover,
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-primary a[aria-current="page"],
+body.bdl-renewal-category.bdlr-page .bdlr-child-categories a:hover {
+  color: #fff;
+  background: var(--bdlr-purple-soft);
+  border-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--bdlr-purple);
+}
+body.bdl-renewal-category.bdlr-page .bdlr-filter-panel {
+  background: var(--bdlr-surface-2);
+  border: 0;
+  border-radius: var(--bdlr-radius-card);
+  box-shadow: none;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-filter-panel > header,
+body.bdl-renewal-category.bdlr-page .bdlr-filter-panel details { border-color: var(--bdlr-divider); }
+body.bdl-renewal-category.bdlr-page .bdlr-filter-search input,
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-toolbar select {
+  color: var(--bdlr-text);
+  background: var(--bdlr-surface-3);
+  border-color: var(--bdlr-line-strong);
+  border-radius: var(--bdlr-radius-control);
+  box-shadow: none;
+  font-size: 14px;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-card {
+  background: var(--bdlr-surface-2);
+  border: 0;
+  border-radius: var(--bdlr-radius-card);
+  box-shadow: none;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-card:hover { background: var(--bdlr-surface-3); box-shadow: none; transform: none; }
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-image figure {
+  background: var(--bdlr-surface);
+  border: 0;
+  border-radius: var(--bdlr-radius-control);
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-name h2 { font-size: 16px; font-weight: 600; line-height: 1.45; }
+body.bdl-renewal-category.bdlr-page .bdlr-card-specs { gap: 8px 24px; }
+body.bdl-renewal-category.bdlr-page .bdlr-card-specs :is(dt, dd),
+body.bdl-renewal-category.bdlr-page :is(.bdlr-product-use, .bdlr-card-delivery, .bdlr-compare-check) {
+  color: var(--bdlr-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-product-price strong { font-size: 24px; font-weight: 600; }
+body.bdl-renewal-category.bdlr-page .bdlr-card-cta {
+  min-height: 48px;
+  margin: 14px 0 0;
+  background: var(--bdlr-purple-action);
+  border-radius: var(--bdlr-radius-control);
+  font-size: 13px;
+  font-weight: 600;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-pagination a,
+body.bdl-renewal-category.bdlr-page .bdlr-compare-bar button {
+  border-radius: var(--bdlr-radius-control);
+  font-weight: 500;
+}
+@media (max-width: 760px) {
+  body.bdl-renewal-category.bdlr-page .bdlr-filter-search input,
+  body.bdl-renewal-category.bdlr-page .bdlr-catalog-toolbar select { font-size: 16px; }
+  body.bdl-renewal-category.bdlr-page .bdlr-card-cta { margin-top: 12px; font-size: 12px; }
+}
+
+/* Original HTML typography reconciliation */
+/* Do not display estimated performance as measured data. */
+body.bdl-renewal-category.bdlr-page .bdlr-card-score--pending b {
+  font-size: 14px;
+  line-height: 1.5;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-filter-search input.search-keyword {
+  min-width: 0;
+  min-height: 48px;
+  font-size: 16px;
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-intro h1,
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero h1 {
+  font-size: var(--bdlr-type-h1, clamp(30px, 1.5rem + 1.2vw, 40px));
+}
+body.bdl-renewal-category.bdlr-page :is(.bdlr-catalog-primary, .bdlr-child-categories) a,
+body.bdl-renewal-category.bdlr-page .bdlr-filter-panel summary,
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-toolbar,
+body.bdl-renewal-category.bdlr-page .bdlr-card-cta,
+body.bdl-renewal-category.bdlr-page .bdlr-compare-bar button {
+  font-size: var(--bdlr-type-ui, 14px);
+}
+body.bdl-renewal-category.bdlr-page .bdlr-filter-panel :is(label, a),
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-toolbar :is(span, label),
+body.bdl-renewal-category.bdlr-page .bdlr-compare-check {
+  font-size: var(--bdlr-type-meta, 13px);
+}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-name h2,
+body.bdl-renewal-category.bdlr-page .product-caption { font-size: var(--bdlr-type-product, 16px); }
+body.bdl-renewal-category.bdlr-page .bdlr-product-use { font-size: var(--bdlr-type-body-sm, 14px); line-height: 1.65; }
+body.bdl-renewal-category.bdlr-page .bdlr-card-specs dt { font-size: var(--bdlr-type-label, 12px); }
+body.bdl-renewal-category.bdlr-page .bdlr-card-specs dd { font-size: var(--bdlr-type-meta, 13px); }
+body.bdl-renewal-category.bdlr-page .bdlr-card-delivery { font-size: var(--bdlr-type-meta, 13px); }
+body.bdl-renewal-category.bdlr-page .bdlr-product-price strong,
+body.bdl-renewal-category.bdlr-page .bdl-wire-product-price strong {
+  font-size: var(--bdlr-type-price-card, clamp(20px, 1.1rem + .45vw, 24px));
+}
+
+@media (max-width: 760px) {
+  body.bdl-renewal-category.bdlr-page .bdlr-card-cta { font-size: var(--bdlr-type-ui, 14px); }
+}
+
+/* Product comparison dialog: mirrors the reference HTML interaction. */
+body.bdl-renewal-category.bdlr-page .bdlr-compare-bar button:disabled {
+  cursor: not-allowed;
+  opacity: .46;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog {
+  width: min(1040px, calc(100vw - 40px));
+  max-width: none;
+  max-height: min(760px, calc(100dvh - 40px));
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  color: var(--bdlr-text);
+  background: var(--bdlr-surface);
+  border: 1px solid var(--bdlr-line);
+  border-radius: var(--bdlr-radius-card, 12px);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, .7);
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog::backdrop {
+  background: rgba(0, 0, 0, .76);
+  backdrop-filter: blur(5px);
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__shell {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  max-height: inherit;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--bdlr-line);
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head span {
+  color: var(--bdlr-purple-hover);
+  font-size: var(--bdlr-type-label, 12px);
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head h2 {
+  margin: 5px 0 0;
+  font-size: var(--bdlr-type-h2, clamp(24px, 1.25rem + .8vw, 32px));
+  font-weight: 600;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head p {
+  margin: 7px 0 0;
+  color: var(--bdlr-muted);
+  font-size: var(--bdlr-type-body-sm, 14px);
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head button {
+  display: grid;
+  flex: 0 0 44px;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #fff;
+  background: var(--bdlr-surface-3);
+  border: 1px solid var(--bdlr-line);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__body {
+  max-height: 600px;
+  padding: 22px 28px 30px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table :is(th, td) {
+  padding: 14px 16px;
+  border: 1px solid var(--bdlr-line);
+  font-size: var(--bdlr-type-meta, 13px);
+  line-height: 1.55;
+  text-align: left;
+  vertical-align: top;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table th {
+  color: var(--bdlr-muted);
+  background: var(--bdlr-surface-2);
+  font-weight: 600;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table thead th {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  color: #fff;
+  background: var(--bdlr-surface-3);
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table :is(th, td):first-child {
+  position: sticky;
+  z-index: 1;
+  left: 0;
+  width: 132px;
+  min-width: 132px;
+}
+
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table thead th:first-child { z-index: 3; }
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table a { color: #fff; text-decoration: none; }
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table a:hover { color: var(--bdlr-purple-hover); }
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table .is-price { color: var(--bdlr-purple-hover); font-size: 16px; font-weight: 700; }
+
+@media (max-width: 760px) {
+  body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog {
+    width: calc(100vw - 18px);
+    max-height: calc(100dvh - 18px);
+  }
+  body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head { padding: 17px 16px; }
+  body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head h2 { font-size: 22px; }
+  body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__body { padding: 14px 14px 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog * { scroll-behavior: auto !important; }
+}

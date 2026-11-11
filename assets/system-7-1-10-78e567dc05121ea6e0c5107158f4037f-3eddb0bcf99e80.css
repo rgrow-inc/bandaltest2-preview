@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* remodal makeshop */
+.makeshop-modal {
+    z-index: 999999;
+}
+
+.makeshop-modal.remodal-overlay {
+    background: rgba(0,0,0,0.75);
+}
+
+.makeshop-modal-window {
+    max-width: 500px;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.makeshop-modal-window .remodal-confirm {
+    margin-top: 16px;
+    background: #999;
+    padding: 6px 0;
+    min-width: 100px;
+}
+
+.makeshop-modal-window .remodal-confirm:hover {
+    background: #777;
+}
+
+.makeshop-modal-window .remodal-close {
+    left: auto;
+    right: 0;
+}
+
+.makeshop-modal-window .error-text{
+    font-size: 14px;
+}

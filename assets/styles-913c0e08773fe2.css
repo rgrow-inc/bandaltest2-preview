@@ -1,0 +1,62 @@
+/* ========== Global Styles ========== */
+/* Form wrapper */
+.thumbsup { text-align:left; position:relative; margin:0 auto !important;background: initial !important; border:0; cursor:default;display: block;line-height: 1;padding: 0 0 10px 0!important;}
+.thumbsup.left { margin-left:0; }
+.thumbsup.right { margin-right:0; }
+
+/* Use pointer cursor for all input */
+.thumbsup input, .thumbsup button, .thumbsup label { cursor:pointer; }
+.thumbsup.disabled input, .thumbsup.disabled button, .thumbsup.disabled label { cursor:default; }
+
+.thumbsup .errorThumb {
+    color: #000;
+}
+
+/* Remove dotted outlines on buttons in FF: http://bit.ly/cTp1kC */
+.thumbsup input::-moz-focus-inner { border:0; }
+
+/* Align spinner images */
+.thumbsup .spinner { vertical-align:middle; }
+
+/* ========== Buttons Template ========== */
+.thumbsup.buttons.disabled button, .thumbsup.buttons.disabled .question { display:none; }
+
+
+/* ========== Mini Thumbs Template ========== */
+.thumbsup.mini_thumbs .result1 { display:inline-block; margin:0; height:16px; font-size:12px; line-height:16px; color: #676767;text-align:left;vertical-align: middle;}
+.thumbsup.mini_thumbs button{
+    vertical-align: middle;
+    font-size: 12px;
+    background: #e3e3e3;
+    border: 0;
+    color: #212426;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+/*.thumbsup.mini_thumbs button:hover{
+    background: #c4c4c4;
+}*/
+
+.thumbsup.mini_thumbs button:disabled,
+.thumbsup.mini_thumbs button:disabled:hover{
+    opacity: 0.5;
+    background: #e3e3e3;
+}
+
+.thumbsup.disabled button{
+    opacity: 0.5;
+    background: #e3e3e3;
+    pointer-events: none;
+}
+
+.thumbsup.mini_thumbs input.up:hover, .thumbsup.mini_thumbs input.up:focus {background-color: #3167c5;}
+.thumbsup.mini_thumbs input.down:hover, .thumbsup.mini_thumbs input.down:focus {background-color: #f52c2c;}
+
+.thumbsup.mini_thumbs.right .result1 { margin:0 38px 0 0; text-align:right; }
+
+.thumbsup.mini_thumbs .thumup_thumdown_wrap{ display: inline-block;margin-right: 10px; }
+
+/* ========== Fixes for IE ========== */
+/* For IE6 and 7: text-indent does not work to hide text on submit buttons */
+.thumbsup.mini_thumbs input, .thumbsup.thumbs_up input, .thumbsup.thumbs_up_down input, .thumbsup.up_down input { font-size:0; line-height:999px; }

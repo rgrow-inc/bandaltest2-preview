@@ -1,0 +1,898 @@
+[
+  {
+    "name": "トップページ",
+    "path": "/",
+    "type": "トップ",
+    "pc": "pc/top.html",
+    "sp": "sp/top.html"
+  },
+  {
+    "name": "Ryzen 5 5500 RTX3050 | BD4",
+    "path": "/view/item/000000000001",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000001.html",
+    "sp": "sp/item-000000000001.html"
+  },
+  {
+    "name": "Ryzen 5 5500 RTX5050 | BD4",
+    "path": "/view/item/000000000002",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000002.html",
+    "sp": "sp/item-000000000002.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RTX5050 | BD4",
+    "path": "/view/item/000000000003",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000003.html",
+    "sp": "sp/item-000000000003.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RTX5060 | BD4",
+    "path": "/view/item/000000000004",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000004.html",
+    "sp": "sp/item-000000000004.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RTX5060Ti 8GB | BD4",
+    "path": "/view/item/000000000005",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000005.html",
+    "sp": "sp/item-000000000005.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RTX5070 | BDG3 Black",
+    "path": "/view/item/000000000006",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000006.html",
+    "sp": "sp/item-000000000006.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RX7600 | BD4",
+    "path": "/view/item/000000000007",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000007.html",
+    "sp": "sp/item-000000000007.html"
+  },
+  {
+    "name": "Ryzen 7 5700X RX9060XT 16GB | BD2 Black",
+    "path": "/view/item/000000000008",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000008.html",
+    "sp": "sp/item-000000000008.html"
+  },
+  {
+    "name": "Ryzen 7 7700 RTX5060 | BD4",
+    "path": "/view/item/000000000009",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000009.html",
+    "sp": "sp/item-000000000009.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RTX5060 | BD2 Black",
+    "path": "/view/item/000000000010",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000010.html",
+    "sp": "sp/item-000000000010.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RTX5060Ti | BD2 Black",
+    "path": "/view/item/000000000011",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000011.html",
+    "sp": "sp/item-000000000011.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RTX5070 | BDG3 Black",
+    "path": "/view/item/000000000012",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000012.html",
+    "sp": "sp/item-000000000012.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RTX5070ti | BDG3 Black",
+    "path": "/view/item/000000000013",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000013.html",
+    "sp": "sp/item-000000000013.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RTX5080 | BDG3 Black",
+    "path": "/view/item/000000000014",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000014.html",
+    "sp": "sp/item-000000000014.html"
+  },
+  {
+    "name": "Ryzen 7 7800X3D RX9060XT 16GB | BD2 Black",
+    "path": "/view/item/000000000015",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000015.html",
+    "sp": "sp/item-000000000015.html"
+  },
+  {
+    "name": "Ryzen 7 9800X3D RTX5060Ti | BD2 Black",
+    "path": "/view/item/000000000016",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000016.html",
+    "sp": "sp/item-000000000016.html"
+  },
+  {
+    "name": "Ryzen 7 9800X3D RTX5070 | BDG3 Black",
+    "path": "/view/item/000000000017",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000017.html",
+    "sp": "sp/item-000000000017.html"
+  },
+  {
+    "name": "Ryzen 7 9800X3D RTX5070ti | BDG3 Black",
+    "path": "/view/item/000000000018",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000018.html",
+    "sp": "sp/item-000000000018.html"
+  },
+  {
+    "name": "Ryzen 7 9800X3D RTX5080 | BDG3 Black",
+    "path": "/view/item/000000000019",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000019.html",
+    "sp": "sp/item-000000000019.html"
+  },
+  {
+    "name": "Ryzen 9 9950X3D RTX5080 | BDG3 Black",
+    "path": "/view/item/000000000020",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000020.html",
+    "sp": "sp/item-000000000020.html"
+  },
+  {
+    "name": "キーボード FGG MAD 60 HE RGB ブラック | PCパーツ",
+    "path": "/view/item/000000000022",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000022.html",
+    "sp": "sp/item-000000000022.html"
+  },
+  {
+    "name": "キーボード FGG MAD 60 HE RGB ホワイト | PCパーツ",
+    "path": "/view/item/000000000023",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000023.html",
+    "sp": "sp/item-000000000023.html"
+  },
+  {
+    "name": "マウス ATK A9 ホワイト | PCパーツ",
+    "path": "/view/item/000000000024",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000024.html",
+    "sp": "sp/item-000000000024.html"
+  },
+  {
+    "name": "けんきコラボ Pro（BKM-B1）Ryzen 9 9950X3D / RTX 5080 | コラボモデル",
+    "path": "/view/item/000000000026",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000026.html",
+    "sp": "sp/item-000000000026.html"
+  },
+  {
+    "name": "CPU別,Core i3-14100F",
+    "path": "/view/category/Corei3_14100F",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Corei3_14100F.html",
+    "sp": "sp/category-Corei3_14100F.html"
+  },
+  {
+    "name": "CPU別,Core i7-14700F",
+    "path": "/view/category/Corei7_14700F",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Corei7_14700F.html",
+    "sp": "sp/category-Corei7_14700F.html"
+  },
+  {
+    "name": "価格別,50万円以上モデル",
+    "path": "/view/category/High_price50",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-High_price50.html",
+    "sp": "sp/category-High_price50.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 3050",
+    "path": "/view/category/RTX3050",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX3050.html",
+    "sp": "sp/category-RTX3050.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5050",
+    "path": "/view/category/RTX5050",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5050.html",
+    "sp": "sp/category-RTX5050.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5060",
+    "path": "/view/category/RTX5060",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5060.html",
+    "sp": "sp/category-RTX5060.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5060 Ti",
+    "path": "/view/category/RTX5060Ti",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5060Ti.html",
+    "sp": "sp/category-RTX5060Ti.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5070",
+    "path": "/view/category/RTX5070",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5070.html",
+    "sp": "sp/category-RTX5070.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5070 Ti",
+    "path": "/view/category/RTX5070Ti",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5070Ti.html",
+    "sp": "sp/category-RTX5070Ti.html"
+  },
+  {
+    "name": "GPU別,GeForce RTX 5080",
+    "path": "/view/category/RTX5080",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RTX5080.html",
+    "sp": "sp/category-RTX5080.html"
+  },
+  {
+    "name": "GPU別,Radeon RX 7600",
+    "path": "/view/category/RX7600",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RX7600.html",
+    "sp": "sp/category-RX7600.html"
+  },
+  {
+    "name": "GPU別,Radeon RX 7800 XT",
+    "path": "/view/category/RX7800XT",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RX7800XT.html",
+    "sp": "sp/category-RX7800XT.html"
+  },
+  {
+    "name": "GPU別,Radeon RX 7900 XT",
+    "path": "/view/category/RX7900XT",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RX7900XT.html",
+    "sp": "sp/category-RX7900XT.html"
+  },
+  {
+    "name": "GPU別,Radeon RX 9060 XT",
+    "path": "/view/category/RX9060XT",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RX9060XT.html",
+    "sp": "sp/category-RX9060XT.html"
+  },
+  {
+    "name": "GPU別,Radeon RX 9070 XT",
+    "path": "/view/category/RX9070XT",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-RX9070XT.html",
+    "sp": "sp/category-RX9070XT.html"
+  },
+  {
+    "name": "CPU別,Ryzen 5 5500",
+    "path": "/view/category/Ryzen5_5500",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen5_5500.html",
+    "sp": "sp/category-Ryzen5_5500.html"
+  },
+  {
+    "name": "CPU別,Ryzen 7 5700X",
+    "path": "/view/category/Ryzen7_5700X",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen7_5700X.html",
+    "sp": "sp/category-Ryzen7_5700X.html"
+  },
+  {
+    "name": "CPU別,Ryzen 7 7700",
+    "path": "/view/category/Ryzen7_7700",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen7_7700.html",
+    "sp": "sp/category-Ryzen7_7700.html"
+  },
+  {
+    "name": "CPU別,Ryzen 7 7800X3D",
+    "path": "/view/category/Ryzen7_7800X3D",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen7_7800X3D.html",
+    "sp": "sp/category-Ryzen7_7800X3D.html"
+  },
+  {
+    "name": "CPU別,Ryzen 7 9800X3D",
+    "path": "/view/category/Ryzen7_9800X3D",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen7_9800X3D.html",
+    "sp": "sp/category-Ryzen7_9800X3D.html"
+  },
+  {
+    "name": "CPU別,Ryzen 9 9950X3D",
+    "path": "/view/category/Ryzen9_9950X3D",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-Ryzen9_9950X3D.html",
+    "sp": "sp/category-Ryzen9_9950X3D.html"
+  },
+  {
+    "name": "すべての商品",
+    "path": "/view/category/all_items",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-all_items.html",
+    "sp": "sp/category-all_items.html"
+  },
+  {
+    "name": "Black Model,BD2 Black",
+    "path": "/view/category/bd2_b",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-bd2_b.html",
+    "sp": "sp/category-bd2_b.html"
+  },
+  {
+    "name": "White Model,BD2 White",
+    "path": "/view/category/bd2_w",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-bd2_w.html",
+    "sp": "sp/category-bd2_w.html"
+  },
+  {
+    "name": "Black Model,BD4",
+    "path": "/view/category/bd4",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-bd4.html",
+    "sp": "sp/category-bd4.html"
+  },
+  {
+    "name": "特集・おすすめ,はじめてのゲーミングPC",
+    "path": "/view/category/beginner",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-beginner.html",
+    "sp": "sp/category-beginner.html"
+  },
+  {
+    "name": "Black Model",
+    "path": "/view/category/black_model",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-black_model.html",
+    "sp": "sp/category-black_model.html"
+  },
+  {
+    "name": "特集・おすすめ,コラボモデル",
+    "path": "/view/category/collaboration",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-collaboration.html",
+    "sp": "sp/category-collaboration.html"
+  },
+  {
+    "name": "特集・おすすめ,コスパ重視モデル",
+    "path": "/view/category/costperformance",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-costperformance.html",
+    "sp": "sp/category-costperformance.html"
+  },
+  {
+    "name": "CPU別",
+    "path": "/view/category/cpu_select",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-cpu_select.html",
+    "sp": "sp/category-cpu_select.html"
+  },
+  {
+    "name": "特集・おすすめ",
+    "path": "/view/category/ct29",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct29.html",
+    "sp": "sp/category-ct29.html"
+  },
+  {
+    "name": "GPU別",
+    "path": "/view/category/ct41",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct41.html",
+    "sp": "sp/category-ct41.html"
+  },
+  {
+    "name": "White Model,BDG3 White",
+    "path": "/view/category/ct68",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct68.html",
+    "sp": "sp/category-ct68.html"
+  },
+  {
+    "name": "Black Model,BDG3 Black",
+    "path": "/view/category/ct70",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct70.html",
+    "sp": "sp/category-ct70.html"
+  },
+  {
+    "name": "ゲーム別かんたん診断",
+    "path": "/view/category/ct83",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct83.html",
+    "sp": "sp/category-ct83.html"
+  },
+  {
+    "name": "特集・おすすめ,在庫処分モデル",
+    "path": "/view/category/ct84",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct84.html",
+    "sp": "sp/category-ct84.html"
+  },
+  {
+    "name": "特集・おすすめ,キャンペーン",
+    "path": "/view/category/ct85",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct85.html",
+    "sp": "sp/category-ct85.html"
+  },
+  {
+    "name": "ゲームから選ぶ,APEX LEGENDS",
+    "path": "/view/category/ct86",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-ct86.html",
+    "sp": "sp/category-ct86.html"
+  },
+  {
+    "name": "ゲームから選ぶ,FORTNITE",
+    "path": "/view/category/game_fortnite",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_fortnite.html",
+    "sp": "sp/category-game_fortnite.html"
+  },
+  {
+    "name": "ゲームから選ぶ,原神",
+    "path": "/view/category/game_genshin",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_genshin.html",
+    "sp": "sp/category-game_genshin.html"
+  },
+  {
+    "name": "ゲームから選ぶ,GTA V",
+    "path": "/view/category/game_gta5",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_gta5.html",
+    "sp": "sp/category-game_gta5.html"
+  },
+  {
+    "name": "ゲームから選ぶ,モンスターハンターワイルズ",
+    "path": "/view/category/game_mhwilds",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_mhwilds.html",
+    "sp": "sp/category-game_mhwilds.html"
+  },
+  {
+    "name": "ゲームから選ぶ,Minecraft",
+    "path": "/view/category/game_minecraft",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_minecraft.html",
+    "sp": "sp/category-game_minecraft.html"
+  },
+  {
+    "name": "ゲームから選ぶ",
+    "path": "/view/category/game_select",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_select.html",
+    "sp": "sp/category-game_select.html"
+  },
+  {
+    "name": "ゲームから選ぶ,ストリートファイター6",
+    "path": "/view/category/game_sf6",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_sf6.html",
+    "sp": "sp/category-game_sf6.html"
+  },
+  {
+    "name": "ゲームから選ぶ,Escape from Tarkov",
+    "path": "/view/category/game_tarkov",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_tarkov.html",
+    "sp": "sp/category-game_tarkov.html"
+  },
+  {
+    "name": "ゲームから選ぶ,VALORANT",
+    "path": "/view/category/game_valorant",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_valorant.html",
+    "sp": "sp/category-game_valorant.html"
+  },
+  {
+    "name": "ゲームから選ぶ,鳴潮",
+    "path": "/view/category/game_wuthering",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-game_wuthering.html",
+    "sp": "sp/category-game_wuthering.html"
+  },
+  {
+    "name": "特集・おすすめ,数量限定モデル",
+    "path": "/view/category/limited_quantity",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-limited_quantity.html",
+    "sp": "sp/category-limited_quantity.html"
+  },
+  {
+    "name": "価格別,10万円台モデル",
+    "path": "/view/category/low_price10",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-low_price10.html",
+    "sp": "sp/category-low_price10.html"
+  },
+  {
+    "name": "価格別,20万円台モデル",
+    "path": "/view/category/low_price20",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-low_price20.html",
+    "sp": "sp/category-low_price20.html"
+  },
+  {
+    "name": "価格別,10万円以下モデル",
+    "path": "/view/category/low_price_under10",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-low_price_under10.html",
+    "sp": "sp/category-low_price_under10.html"
+  },
+  {
+    "name": "価格別,30万円台モデル",
+    "path": "/view/category/middle_price30",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-middle_price30.html",
+    "sp": "sp/category-middle_price30.html"
+  },
+  {
+    "name": "価格別,40万円台モデル",
+    "path": "/view/category/middle_price40",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-middle_price40.html",
+    "sp": "sp/category-middle_price40.html"
+  },
+  {
+    "name": "PCパーツ",
+    "path": "/view/category/pcparts",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-pcparts.html",
+    "sp": "sp/category-pcparts.html"
+  },
+  {
+    "name": "価格別",
+    "path": "/view/category/price",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-price.html",
+    "sp": "sp/category-price.html"
+  },
+  {
+    "name": "用途から選ぶ",
+    "path": "/view/category/purpose",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-purpose.html",
+    "sp": "sp/category-purpose.html"
+  },
+  {
+    "name": "用途から選ぶ,競技FPS・高FPS",
+    "path": "/view/category/purpose_competitive",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-purpose_competitive.html",
+    "sp": "sp/category-purpose_competitive.html"
+  },
+  {
+    "name": "用途から選ぶ,高画質・4Kゲーム",
+    "path": "/view/category/purpose_premium",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-purpose_premium.html",
+    "sp": "sp/category-purpose_premium.html"
+  },
+  {
+    "name": "用途から選ぶ,配信・動画編集",
+    "path": "/view/category/purpose_streaming",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-purpose_streaming.html",
+    "sp": "sp/category-purpose_streaming.html"
+  },
+  {
+    "name": "特集・おすすめ,おすすめモデル",
+    "path": "/view/category/sale",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-sale.html",
+    "sp": "sp/category-sale.html"
+  },
+  {
+    "name": "特集・おすすめ,翌日出荷モデル",
+    "path": "/view/category/value",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-value.html",
+    "sp": "sp/category-value.html"
+  },
+  {
+    "name": "White Model",
+    "path": "/view/category/white_model",
+    "type": "商品カテゴリ",
+    "pc": "pc/category-white_model.html",
+    "sp": "sp/category-white_model.html"
+  },
+  {
+    "name": "商品検索",
+    "path": "/view/search",
+    "type": "検索",
+    "pc": "pc/search.html",
+    "sp": "sp/search.html"
+  },
+  {
+    "name": "予算別商品検索・15万円未満",
+    "path": "/view/search?search_keyword=Ryzen&search_price_low=0&search_price_high=149999",
+    "type": "検索",
+    "pc": "pc/search-search_keyword-Ryzen-search_price_low-0-search_price_high-149999.html",
+    "sp": "sp/search-search_keyword-Ryzen-search_price_low-0-search_price_high-149999.html"
+  },
+  {
+    "name": "予算別商品検索・15〜20万円",
+    "path": "/view/search?search_keyword=Ryzen&search_price_low=150000&search_price_high=199999",
+    "type": "検索",
+    "pc": "pc/search-search_keyword-Ryzen-search_price_low-150000-search_price_high-199999.html",
+    "sp": "sp/search-search_keyword-Ryzen-search_price_low-150000-search_price_high-199999.html"
+  },
+  {
+    "name": "予算別商品検索・20〜30万円",
+    "path": "/view/search?search_keyword=Ryzen&search_price_low=200000&search_price_high=299999",
+    "type": "検索",
+    "pc": "pc/search-search_keyword-Ryzen-search_price_low-200000-search_price_high-299999.html",
+    "sp": "sp/search-search_keyword-Ryzen-search_price_low-200000-search_price_high-299999.html"
+  },
+  {
+    "name": "予算別商品検索・30万円以上",
+    "path": "/view/search?search_keyword=Ryzen&search_price_low=300000&search_price_high=",
+    "type": "検索",
+    "pc": "pc/search-search_keyword-Ryzen-search_price_low-300000-search_price_high.html",
+    "sp": "sp/search-search_keyword-Ryzen-search_price_low-300000-search_price_high.html"
+  },
+  {
+    "name": "ご購入後アンケート",
+    "path": "/view/page/bandal-survey",
+    "type": "コンテンツ",
+    "pc": "pc/page-bandal-survey.html",
+    "sp": "sp/page-bandal-survey.html"
+  },
+  {
+    "name": "BANDAL診断",
+    "path": "/view/page/bandal_diagnosis_new",
+    "type": "コンテンツ",
+    "pc": "pc/page-bandal_diagnosis_new.html",
+    "sp": "sp/page-bandal_diagnosis_new.html"
+  },
+  {
+    "name": "お問い合わせ",
+    "path": "/view/page/contact",
+    "type": "コンテンツ",
+    "pc": "pc/page-contact.html",
+    "sp": "sp/page-contact.html"
+  },
+  {
+    "name": "coupon",
+    "path": "/view/page/coupon",
+    "type": "コンテンツ",
+    "pc": "pc/page-coupon.html",
+    "sp": "sp/page-coupon.html"
+  },
+  {
+    "name": "よくある質問",
+    "path": "/view/page/faq",
+    "type": "コンテンツ",
+    "pc": "pc/page-faq.html",
+    "sp": "sp/page-faq.html"
+  },
+  {
+    "name": "けんき × BANDAL コラボPC",
+    "path": "/view/page/kenki-collaboration",
+    "type": "コンテンツ",
+    "pc": "pc/page-kenki-collaboration.html",
+    "sp": "sp/page-kenki-collaboration.html"
+  },
+  {
+    "name": "【受賞】「香川ビジネスチャレンジコンペ2025」にて株式会社BANDALが優秀賞を受賞",
+    "path": "/view/page/news-award-20250919",
+    "type": "コンテンツ",
+    "pc": "pc/page-news-award-20250919.html",
+    "sp": "sp/page-news-award-20250919.html"
+  },
+  {
+    "name": "新興ゲーミングPCブランドの「BANDAL」が5,000万円の資金調達を実施",
+    "path": "/view/page/news-funding-20250313",
+    "type": "コンテンツ",
+    "pc": "pc/page-news-funding-20250313.html",
+    "sp": "sp/page-news-funding-20250313.html"
+  },
+  {
+    "name": "ゲーミングPCの常識を破壊する。バンダルゲーミングが挑む新しい世界",
+    "path": "/view/page/news-interview-20250428",
+    "type": "コンテンツ",
+    "pc": "pc/page-news-interview-20250428.html",
+    "sp": "sp/page-news-interview-20250428.html"
+  },
+  {
+    "name": "リサイクルのご案内",
+    "path": "/view/page/recycle",
+    "type": "コンテンツ",
+    "pc": "pc/page-recycle.html",
+    "sp": "sp/page-recycle.html"
+  },
+  {
+    "name": "レビューキャンペーン",
+    "path": "/view/page/review-campaign",
+    "type": "コンテンツ",
+    "pc": "pc/page-review-campaign.html",
+    "sp": "sp/page-review-campaign.html"
+  },
+  {
+    "name": "お客様の声",
+    "path": "/view/page/review-list",
+    "type": "コンテンツ",
+    "pc": "pc/page-review-list.html",
+    "sp": "sp/page-review-list.html"
+  },
+  {
+    "name": "利用規約",
+    "path": "/view/page/terms_of_use",
+    "type": "コンテンツ",
+    "pc": "pc/page-terms_of_use.html",
+    "sp": "sp/page-terms_of_use.html"
+  },
+  {
+    "name": "【サンプル】お知らせ",
+    "path": "/view/news/20260917175620",
+    "type": "お知らせ",
+    "pc": "pc/news-20260917175620.html",
+    "sp": "sp/news-20260917175620.html"
+  },
+  {
+    "name": "お知らせ一覧",
+    "path": "/view/news/list",
+    "type": "お知らせ",
+    "pc": "pc/news-list.html",
+    "sp": "sp/news-list.html"
+  },
+  {
+    "name": "買い物カゴ",
+    "path": "/view/cart",
+    "type": "ショップ案内",
+    "pc": "pc/cart.html",
+    "sp": "sp/cart.html"
+  },
+  {
+    "name": "会社概要",
+    "path": "/view/company",
+    "type": "ショップ案内",
+    "pc": "pc/company.html",
+    "sp": "sp/company.html"
+  },
+  {
+    "name": "特定商取引法に基づく表記",
+    "path": "/view/contract",
+    "type": "ショップ案内",
+    "pc": "pc/contract.html",
+    "sp": "sp/contract.html"
+  },
+  {
+    "name": "ご利用案内",
+    "path": "/view/guide",
+    "type": "ショップ案内",
+    "pc": "pc/guide.html",
+    "sp": "sp/guide.html"
+  },
+  {
+    "name": "プライバシーポリシー",
+    "path": "/view/policy",
+    "type": "ショップ案内",
+    "pc": "pc/policy.html",
+    "sp": "sp/policy.html"
+  },
+  {
+    "name": "ゲーミングPC一覧",
+    "path": "/view/category/all_items?pc=1",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-all-up.html",
+    "sp": "sp/catalog-pc-all-up.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（0円以上、100,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=0&max=100000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-0-100000.html",
+    "sp": "sp/catalog-pc-0-100000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（0円以上、100,001円未満）",
+    "path": "/view/category/all_items?pc=1&min=0&max=100001",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-0-100001.html",
+    "sp": "sp/catalog-pc-0-100001.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（100,000円以上、200,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=100000&max=200000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-100000-200000.html",
+    "sp": "sp/catalog-pc-100000-200000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（100,001円以上、150,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=100001&max=150000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-100001-150000.html",
+    "sp": "sp/catalog-pc-100001-150000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（150,000円以上、200,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=150000&max=200000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-150000-200000.html",
+    "sp": "sp/catalog-pc-150000-200000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（200,000円以上、300,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=200000&max=300000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-200000-300000.html",
+    "sp": "sp/catalog-pc-200000-300000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（300,000円以上）",
+    "path": "/view/category/all_items?pc=1&min=300000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-300000-up.html",
+    "sp": "sp/catalog-pc-300000-up.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（300,000円以上、400,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=300000&max=400000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-300000-400000.html",
+    "sp": "sp/catalog-pc-300000-400000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（400,000円以上、500,000円未満）",
+    "path": "/view/category/all_items?pc=1&min=400000&max=500000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-400000-500000.html",
+    "sp": "sp/catalog-pc-400000-500000.html"
+  },
+  {
+    "name": "ゲーミングPC一覧（500,000円以上）",
+    "path": "/view/category/all_items?pc=1&min=500000",
+    "type": "絞り込み状態",
+    "pc": "pc/catalog-pc-500000-up.html",
+    "sp": "sp/catalog-pc-500000-up.html"
+  },
+  {
+    "name": "検索・ホワイト",
+    "path": "/view/search?search_keyword=%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88",
+    "type": "絞り込み状態",
+    "pc": "pc/search-white.html",
+    "sp": "sp/search-white.html"
+  },
+  {
+    "name": "検索・配信",
+    "path": "/view/search?search_keyword=%E9%85%8D%E4%BF%A1",
+    "type": "絞り込み状態",
+    "pc": "pc/search-streaming.html",
+    "sp": "sp/search-streaming.html"
+  },
+  {
+    "name": "検索・Apex Legends",
+    "path": "/view/search?search_keyword=Apex%20Legends",
+    "type": "絞り込み状態",
+    "pc": "pc/search-apex.html",
+    "sp": "sp/search-apex.html"
+  },
+  {
+    "name": "検索・VALORANT",
+    "path": "/view/search?search_keyword=VALORANT",
+    "type": "絞り込み状態",
+    "pc": "pc/search-valorant.html",
+    "sp": "sp/search-valorant.html"
+  }
+]

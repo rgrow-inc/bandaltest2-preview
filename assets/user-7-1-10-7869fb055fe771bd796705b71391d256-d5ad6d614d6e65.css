@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url("storefront-common.css");
+
+.info-detail-section { width: 100%; max-width: 900px; margin: 0 auto; padding: 28px; color: var(--bdl-text-secondary); background: var(--bdl-bg-surface-1); border: 1px solid var(--bdl-divider); border-radius: var(--bdl-radius-card); }
+.info-detail-section div { width: 100%; max-width: 100%; margin: 0; overflow: visible; }
+.info-detail-section img { display: block; width: auto; max-width: 100%; height: auto; margin: 24px auto; border-radius: var(--bdl-radius-control); }
+.info-detail-section :is(p, li) { color: var(--bdl-text-secondary); line-height: 1.85; overflow-wrap: anywhere; }
+.info-detail-section a { color: var(--bdl-brand-hover); text-decoration: underline; text-underline-offset: 3px; }
+.section-title-info { margin: 0; padding: 0; color: var(--bdl-text-primary); font-size: clamp(28px, 2.6vw, 40px); font-weight: 600; line-height: 1.45; }
+.contents-wrap p { line-height: 1.85; }
+
+@media (max-width: 600px) {
+  .info-detail-section { padding: 20px 16px; }
+  .info-detail-section div,
+  .info-detail-section img { width: 100%; max-width: 100%; }
+}

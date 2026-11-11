@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'ukmcustomfont';
+  src:  url("eot-6476e41448130d.eot");
+  src:  url("eot-6476e41448130d.eot") format('embedded-opentype'),
+    url("ttf-49610f349e39bb.ttf") format('truetype'),
+    url("woff-018c9c8897516e.woff") format('woff'),
+    url("svg-16d9368c54b16e.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ukmcustomfont-"], [class*=" ukmcustomfont-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ukmcustomfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 10px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ukmcustomfont-ukm-play:before {
+  content: "\e924";
+}
+
+/* dont remove loading spinner animation */
+.ukmcustomfont-ukm-loading{
+  transform-origin:center;
+  animation:ukmspinner .75s infinite linear;
+  display: inline-block;
+}
+@keyframes ukmspinner{100%{transform:rotate(360deg)}}
+/* dont remove loading spinner animation */
+.ukmcustomfont-ukm-loading:before {
+  content: "\e923";
+}
+.ukmcustomfont-ukm-youtube-shorts:before {
+  content: "\e922";
+}
+
+.ukmcustomfont-ukm-youtube-shorts:before {
+  content: "\e922";
+}
+
+.ukmcustomfont-ukm-youtube:before {
+  content: "\e921";
+}
+.ukmcustomfont-ukm-threads:before {
+  content: "\e91d";
+}
+.ukmcustomfont-ukm-x:before {
+  content: "\e91c";
+}
+
+.ukmcustomfont-ukm-video:before {
+  content: "\e913";
+}
+
+.ukmcustomfont-ukm-close:before {
+content: "\e912";
+}
+
+.ukmcustomfont-ukm-edit:before {
+content: "\e911";
+}
+
+.ukmcustomfont-ukm-dots:before {
+content: "\e90c";
+}
+.ukmcustomfont-ukm-double-back:before {
+content: "\e90d";
+}
+.ukmcustomfont-ukm-double-next:before {
+content: "\e90e";
+}
+.ukmcustomfont-ukm-down:before {
+content: "\e90f";
+}
+.ukmcustomfont-ukm-up:before {
+content: "\e910";
+}
+.ukmcustomfont-ukm-question:before {
+content: "\e90a";
+}
+.ukmcustomfont-ukm-search:before {
+content: "\e90b";
+}
+.ukmcustomfont-ukm-next:before {
+content: "\e908";
+}
+.ukmcustomfont-ukm-back:before {
+content: "\e909";
+}
+.ukmcustomfont-ukm-profile:before {
+content: "\e903";
+}
+.ukmcustomfont-ukm-like:before {
+content: "\e904";
+}
+.ukmcustomfont-ukm-dislike:before {
+content: "\e905";
+}
+.ukmcustomfont-ukm-instagram:before {
+content: "\e906";
+}
+.ukmcustomfont-ukm-flag:before {
+content: "\e907";
+}
+.ukmcustomfont-ukm-half-star:before {
+content: "\e901";
+}
+.ukmcustomfont-ukm-blank-star:before {
+content: "\e900";
+}
+.ukmcustomfont-ukm-full-star:before {
+content: "\e902";
+}
+
+.ukmcustomfont-ukm-tiktok:before {
+  content: "\e914";
+}
+.ukmcustomfont-ukm-tiktok-color .path1:before {
+  content: "\e915";
+  color: rgb(240, 0, 68);
+}
+.ukmcustomfont-ukm-tiktok-color .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(240, 0, 68);
+}
+.ukmcustomfont-ukm-tiktok-color .path3:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(240, 0, 68);
+}
+.ukmcustomfont-ukm-tiktok-color .path4:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(8, 255, 249);
+}
+.ukmcustomfont-ukm-tiktok-color .path5:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(8, 255, 249);
+}
+.ukmcustomfont-ukm-tiktok-color .path6:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(8, 255, 249);
+}
+.ukmcustomfont-ukm-tiktok-color .path7:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
