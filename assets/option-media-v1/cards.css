@@ -1,0 +1,40 @@
+/* Sizes belong to the option thumbnail, independently of the product gallery. */
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size="220"] { --opt-thumb:220px; }
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size="160"] { --opt-thumb:160px; }
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size="40"] { --opt-thumb:40px; }
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .nov-device-pair {display:grid!important;grid-template-columns:minmax(0,1fr)!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size] .bdlr-option-card-grid {
+  display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,calc(var(--opt-thumb) + 32px)),1fr))!important;
+  gap:12px!important;align-items:stretch!important;overflow:visible!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size="40"] .bdlr-option-card-grid {grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size] :is(.bdlr-option-card,.bdlr-memory-choice) {
+  display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;
+  gap:10px!important;width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;max-height:none!important;
+  padding:10px!important;box-sizing:border-box!important;text-align:left!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size] .bdlr-option-card__copy {display:flex!important;flex-direction:column!important;gap:5px!important;min-width:0!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size] :is(.bdlr-option-card__media,.opt-memory-media) {
+  display:grid!important;place-items:center!important;position:relative!important;box-sizing:border-box!important;flex:none!important;
+  inline-size:var(--opt-thumb)!important;block-size:var(--opt-thumb)!important;width:var(--opt-thumb)!important;height:var(--opt-thumb)!important;
+  min-width:0!important;min-height:0!important;max-width:100%!important;max-height:none!important;padding:0!important;
+  margin:0 auto!important;aspect-ratio:1!important;border-radius:8px!important;overflow:hidden!important;background:#111219!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size] :is(.bdlr-option-card__media,.opt-memory-media)>img {
+  display:block!important;position:static!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  min-height:0!important;margin:0!important;padding:0!important;object-fit:contain!important;transform:none!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size="40"] .bdlr-option-card__media {margin:0!important;background:#211b33!important;color:#c9b6fd}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size="40"] .bdlr-option-card__media svg {width:40px;height:40px;padding:5px;box-sizing:border-box}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .opt-color-card {border-radius:10px!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-group--color .opt-color-card>* {visibility:visible!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .opt-image-caption {font-size:14px;font-weight:600;color:#d2d4df;}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .opt-thermal {position:absolute;bottom:8px;left:50%;transform:translateX(-50%);border-radius:5px;white-space:nowrap;padding:4px 8px;color:white;background:#14121ee8;font-size:13px;font-weight:700}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size] .nov-choice-wrap {position:relative;min-width:0}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size] .nov-zoom {inset:auto!important;position:absolute!important;top:calc(var(--opt-thumb) - 28px)!important;left:calc(50% + var(--opt-thumb) / 2 - 38px)!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size="40"] .nov-zoom {top:8px!important;right:8px!important;left:auto!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-media-size] .bdlr-memory-card {min-width:0!important}
+.nov-dialog .opt-hone-title {font:700 18px/1.4 system-ui;color:#d2d4df}
+@media(max-width:600px){
+  #bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-media-size="220"] .bdlr-option-card-grid {grid-template-columns:minmax(0,1fr)!important}
+}
