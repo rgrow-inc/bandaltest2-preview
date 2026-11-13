@@ -1,0 +1,43 @@
+/* The same memory photo and capacity card on BD and collaboration models. */
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .bdlr-option-group--memory .bdlr-memory-card {
+  box-sizing:border-box!important; padding:10px!important; min-width:0!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .bdlr-option-group--memory .bdlr-memory-choice {
+  padding:0!important; align-items:stretch!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .bdlr-option-group--memory .opt-memory-media {
+  width:min(100%,220px)!important; inline-size:min(100%,220px)!important;
+  height:auto!important; block-size:auto!important; aspect-ratio:1!important;
+}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .bdlr-option-group--memory .opt-memory-media img {
+  display:block!important; width:100%!important; height:100%!important; object-fit:contain!important;
+}
+#bdlr-options-panel .bdlr-option-group--memory .opt-memory-ref {
+  position:absolute; bottom:4px; left:4px; padding:2px 5px; border-radius:4px; color:white; background:#171720e8; font:500 11px/1.4 sans-serif;
+}
+#bdlr-options-panel .bdlr-memory-choice .memory-caption {display:grid!important;gap:4px}
+#bdlr-options-panel .bdlr-memory-card .bdlr-memory-light[hidden] {display:none!important}
+.bdlr-share-config {position:relative; min-width:0; margin-top:6px}
+html body.bdlr-page .bdlr-share-config > button {
+  display:block; width:100%; padding:8px 6px; min-height:36px; border:1px solid #78659c; border-radius:8px; background:#20202c;
+  color:#f4efff; font-family:inherit; font-size:14px; font-weight:600; line-height:1.35; cursor:pointer;
+}
+.bdlr-share-config > button:hover,.bdlr-share-config > button:focus-visible {background:#352d47!important}
+.bdlr-share-result {margin:8px 0; color:#edeaf3; font-size:14px; line-height:1.55; text-align:left}
+.bdlr-share-result[hidden] {display:none!important}
+.bdlr-share-result p {margin:0 0 6px}
+.bdlr-share-result input {width:100%; min-width:0; box-sizing:border-box; border:1px solid #736d85; border-radius:5px; padding:6px 8px; color:#faf7ff; background:#14151b; font:inherit; user-select:all}
+#bandal-floating-summary .bdlr-share-result {position:absolute; right:0; bottom:calc(100% + 7px); z-index:3; width:min(285px,85vw); box-sizing:border-box; padding:10px; border:1px solid #726487; border-radius:8px; background:#20202b; box-shadow:0 4px 20px #0007}
+html body .bdlr-order-summary .bdlr-changed-parts {display:block!important; margin-top:12px; overflow-wrap:anywhere}
+html body .bdlr-order-summary .bdlr-changed-parts h4 {display:block!important; margin:0 0 8px; font-size:14px; color:#f3f0f8}
+html body .bdlr-order-summary .bdlr-changed-parts [data-bdlr-configuration-list] {display:block!important}
+@media(max-width:900px){
+  html body.bdl-renewal-item.bdlr-page #bandal-floating-summary:has(.bdlr-share-config) .bandal-floating-summary__content {grid-template-rows:auto auto auto!important; height:auto!important;}
+  html body.bdl-renewal-item.bdlr-page #bandal-floating-summary:has(.bdlr-share-config) .bandal-floating-summary__cta {align-self:center!important;grid-area:1/2/4/3!important}
+  html body.bdl-renewal-item.bdlr-page #bandal-floating-summary:has(.bdlr-share-config) .bdlr-dock-delivery {grid-area:3/1!important}
+  html body #bandal-floating-summary .bdlr-share-config > button {min-height:36px; font-size:12px; padding:5px 3px}
+}
+
+#bandal-floating-summary .bdlr-share-config,
+#bandal-floating-summary .bandal-floating-summary__cta:has(.bdlr-share-config) {position:static!important}
+#bandal-floating-summary .bdlr-share-result {right:8px}
