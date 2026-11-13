@@ -1,0 +1,22 @@
+.bdlr-review-archive{color:#fff;background:#111115;font-family:"Geist","Noto Sans JP","Noto Sans JP","Yu Gothic",sans-serif}
+.bdlr-review-breadcrumb{color:rgba(255,255,255,0.5)}
+.bdlr-review-breadcrumb a{color:rgba(255,255,255,0.7)}
+.bdlr-review-breadcrumb a:hover{color:#a78bfa}
+.bdlr-review-hero{background:radial-gradient(circle at 90% 12%,rgba(124,58,237,.3),transparent 34%),#151519;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.bdlr-review-kicker{color:#a78bfa}
+.bdlr-review-hero h1{font-weight:700}
+.bdlr-review-hero > h1 + p{color:rgba(255,255,255,0.7)}
+.bdlr-review-nav a{color:rgba(255,255,255,0.7)!important;background:#1b1b1f;border-color:rgba(255,255,255,0.08)}
+.bdlr-review-nav a:hover{background:#252528}
+.bdlr-review-group h2{font-weight:700}
+.bdlr-review-card{background:#1b1b1f;border-color:rgba(255,255,255,0.08)}
+.bdlr-review-card figure{background:#111115}
+.bdlr-review-card figure span{border-color:rgba(255,255,255,0.08)}
+.bdlr-review-date{color:#a78bfa}
+.bdlr-review-body blockquote{color:rgba(255,255,255,0.7)}
+.bdlr-review-price{border-top-color:transparent;border-bottom-color:transparent;color:rgba(255,255,255,0.5)}
+.bdlr-review-specs dt{color:rgba(255,255,255,0.5)}
+.bdlr-review-specs dd{color:#fff}
+.bdlr-review-contact{background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.bdlr-review-contact p{color:rgba(255,255,255,0.7)}
+.bdlr-review-button:hover{background:#7c3aed}

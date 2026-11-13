@@ -1,0 +1,212 @@
+.bandal-bottom-banner__game-button{border-radius:8px}
+.bandal-bottom-banner__game-button:hover{background-color:rgba(255,255,255,0.08)}
+@media screen and (max-width:480px){.bandal-bottom-banner__game-button{border-radius:8px}}
+body{font-family:"Geist","Noto Sans JP",sans-serif}
+.modal{font-family:-apple-system,BlinkMacSystemFont,"avenir next",avenir,""Geist","Noto Sans JP"",helvetica,ubuntu,roboto,noto,"segoe ui",arial,sans-serif}
+.modal__title{color:rgba(255,255,255,0.7);font-weight:500}
+.modal__btn-primary{background-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top{--bdl-renewal-chrome:#07070b;--bdl-renewal-surface-1:#07070b;--bdl-renewal-surface-2:#111115;--bdl-renewal-surface-3:#111115;--bdl-renewal-border:rgba(255,255,255,0.14);--bdl-renewal-border-strong:rgba(255,255,255,0.14);--bdl-renewal-text:#fff;--bdl-renewal-text-secondary:rgba(255,255,255,0.7);--bdl-renewal-muted:rgba(255,255,255,0.5);--bdl-renewal-action:#a78bfa;--bdl-renewal-action-hover:#a78bfa;--bdl-renewal-focus:#a78bfa;--bdl-renewal-success:#5fd9a0;--bdl-renewal-danger:#ff6b6b;font-family:"Geist","Noto Sans JP","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+body.bdl-renewal-top .top-bar{background:#111115;border-bottom-color:transparent}
+body.bdl-renewal-top .article-title-pc::after{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .header-info{background:#07070b;border-top:1px solid #a78bfa}
+body.bdl-renewal-top .bdl-renewal-top__visual{border-color:rgba(255,255,255,0.08);border-radius:12px}
+body.bdl-renewal-top .bdl-renewal-top__visual .bx-pager.bx-default-pager a{background:rgba(255,255,255,0.5)!important}
+body.bdl-renewal-top .custom-banner-grid-item{border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-top .bdl-renewal-top__finder{border-color:rgba(255,255,255,0.08);border-radius:12px}
+body.bdl-renewal-top .bdl-renewal-eyebrow{font-weight:700}
+body.bdl-renewal-top .bdl-renewal-top__finder h1{font-weight:700}
+body.bdl-renewal-top .bdl-renewal-top__finder-actions a{border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-top .bdl-renewal-top__finder-actions a:last-child{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .bdl-renewal-top__finder-actions a:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .left-nav{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .left-bulk-title,body.bdl-renewal-top .left-nav-help,body.bdl-renewal-top .left-nav-title,body.bdl-renewal-top .left-nav:first-child{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .bdl-renewal-top__product-content>.checked-item>h2,body.bdl-renewal-top .bdl-renewal-top__product-content>.checked-item>h3,body.bdl-renewal-top .bdl-renewal-top__product-content>.product-wrap>h2,body.bdl-renewal-top .bdl-renewal-top__product-content>h2{font-weight:700}
+body.bdl-renewal-top .bdl-renewal-top__product-content .item-list .product-list-item{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .bdl-renewal-top__product-content .item-list .product-list-item:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .bdl-renewal-top__product-content .product-price,body.bdl-renewal-top .bdl-renewal-top__product-content .product-sale-price{font-weight:700}
+body.bdl-renewal-top .bdl-renewal-top__product-content .sold-out{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-top .index-review-list .review-list-unit{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .bandal-bottom-banner{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top .footer,body.bdl-renewal-top .footer-bottom,body.bdl-renewal-top .footer-info{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-top{--bdl-home-accent-hover:#a78bfa;--bdl-home-line:rgba(255,255,255,0.14);--bdl-home-line-strong:rgba(255,255,255,0.14);--bdl-home-text:#fff;--bdl-home-muted:rgba(255,255,255,0.5)}
+body.bdl-renewal-top .bdl-header-notice{background:#07070b}
+.bdl-home-heading>div>p,.bdl-home-kicker{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-hero__stage{background:#07070b;border-color:rgba(255,255,255,0.08)}
+.bdl-home-hero__arrow{border-color:rgba(255,255,255,0.08)}
+.bdl-home-hero__arrow:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home-hero__dots button{background:#252528}
+.bdl-home-campaigns a{border-color:rgba(255,255,255,0.08)}
+.bdl-home-campaigns a:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home-routes__grid{border-top-color:transparent;border-left-color:transparent}
+.bdl-home-routes__grid a{border-right-color:transparent;border-bottom-color:transparent}
+.bdl-home-routes__grid span{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-diagnosis{border-top-color:transparent}
+.bdl-home-diagnosis__panel{border-color:rgba(255,255,255,0.08)}
+.bdl-home-diagnosis__panel ol{border-right-color:transparent}
+.bdl-home-diagnosis__panel li{border-bottom-color:transparent}
+.bdl-home-diagnosis__panel li b{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-diagnosis__chips span{color:rgba(255,255,255,0.7);background:#111115;border-color:rgba(255,255,255,0.08)}
+.bdl-home-products{border-top-color:transparent}
+.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .product-list-item{border-color:rgba(255,255,255,0.08)}
+.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .product-list-item:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .product-image-wrap{background:#111115}
+.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .product-price,.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .product-sale-price{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home :is(.bdl-home-products__modules,.bdl-home-more-products) .sold-out{color:#ff6b6b}
+.bdl-home-discovery{border-top-color:transparent}
+.bdl-home-purpose-grid a{border-color:rgba(255,255,255,0.08)}
+.bdl-home-purpose-grid b{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-purpose-grid small{color:rgba(255,255,255,0.7)}
+.bdl-home-purpose-grid a:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home-games__grid a{border-color:rgba(255,255,255,0.08)}
+.bdl-home-games__grid span{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-games__grid a:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home-performance{background:#111115}
+.bdl-home-performance__table>div:first-child{background:#111115}
+.bdl-home-performance__table i::before{background:#1b1b1f}
+.bdl-home-feature{border-bottom-color:transparent}
+.bdl-home-feature__grid a{border-color:rgba(255,255,255,0.08)}
+.bdl-home-feature__grid a:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-home-voices article{border-color:rgba(255,255,255,0.08)}
+.bdl-home-voices article p{font-family:"Geist","Noto Sans JP",sans-serif}
+.bdl-home-support{background:#111115;border-top-color:transparent;border-bottom-color:transparent}
+.bdl-home-support__inner>div a{border-color:rgba(255,255,255,0.08)}
+.bdl-home-support__inner>div a:last-child{border-color:rgba(255,255,255,0.08)}
+.bdl-home-support__inner ol{border-color:rgba(255,255,255,0.08)}
+.bdl-home-support__inner li{border-bottom-color:transparent}
+.bdl-home-faq details{border-top-color:transparent}
+.bdl-home-faq details:last-child{border-bottom-color:transparent}
+.bdl-home-more-products{border-top-color:transparent}
+.bdl-home-ms-reviews{border-top-color:transparent}
+@media (max-width:980px){.bdl-home-diagnosis__panel ol{border-bottom-color:transparent}}
+.bdl-wire-eyebrow,.bdl-wire-heading>div>p{font:700 11px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-heading h2{font-weight:700}
+.bdl-wire-heading>a{color:rgba(255,255,255,0.7);border-bottom-color:transparent;font-weight:700}
+.bdl-wire-hero{background:#07070b;border-bottom-color:transparent}
+.bdl-wire-hero::before{background:linear-gradient(135deg,#111115,#07070b 68%)}
+.bdl-wire-hero-copy>p:not(.bdl-wire-eyebrow){color:rgba(255,255,255,0.7)}
+.bdl-wire-hero-copy li{color:#fff;font-weight:700}
+.bdl-wire-hero-visual{background:radial-gradient(circle at 60% 48%,#28314b 0,#111115 34%,#07070b 72%);border-inline-color:transparent}
+.bdl-wire-hero-visual::before{background-image:linear-gradient(rgba(255,255,255,0.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.12) 1px,transparent 1px)}
+.bdl-wire-hero-visual::after{background:linear-gradient(transparent,#07070b)}
+.bdl-wire-hero-visual>span{font:700 11px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-hero-visual>small{font:700 10px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-campaigns span{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-entry{border-top-color:transparent}
+.bdl-wire-entry-grid{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-entry-grid b{color:rgba(255,255,255,0.36);font:700 42px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-entry-grid span{font:700 9px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-entry-grid strong{font-weight:700}
+.bdl-wire-benefits{background:#07070b;border-block-color:transparent}
+.bdl-wire-benefits article{border-left-color:transparent}
+.bdl-wire-benefits article:last-child{border-right-color:transparent}
+.bdl-wire-benefits b{font:700 22px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-benefits strong{font-weight:700}
+.bdl-wire-finder-panel{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-finder-panel ol{border-right-color:transparent}
+.bdl-wire-finder-panel li{color:rgba(255,255,255,0.36);border-bottom-color:transparent}
+.bdl-wire-finder-panel li b{font:700 12px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-finder-panel li span{font-weight:700}
+.bdl-wire-finder-body>p{font-weight:700}
+.bdl-wire-finder-options button{color:rgba(255,255,255,0.7);background:#07070b;border-color:rgba(255,255,255,0.08);font-weight:700}
+.bdl-wire-finder-options button.is-selected,.bdl-wire-finder-options button:hover{background:rgba(255,255,255,0.12)}
+.bdl-wire-models{background:#07070b;border-block-color:transparent}
+.bdl-wire-model-card{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-model-image>span{border-color:rgba(255,255,255,0.08);font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-model-body h3{font:700 20px/1.35 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-score b{font:700 11px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-score i{background:#1b1b1f}
+.bdl-wire-model-body dl{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-model-body dl div{background:#07070b}
+.bdl-wire-model-body dt{color:rgba(255,255,255,0.36);font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-model-body dd{font-weight:700}
+.bdl-wire-price strong{font:700 28px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-delivery{font-weight:700}
+.bdl-wire-choose-grid{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-choose-grid article>span{font:700 9px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-choose-grid a{color:rgba(255,255,255,0.7);background:#07070b;border-color:rgba(255,255,255,0.08);font-weight:700}
+.bdl-wire-choose-grid a:hover{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-performance{background:#07070b}
+.bdl-wire-performance-controls label{font-weight:700}
+.bdl-wire-performance-controls select{background:#07070b}
+.bdl-wire-performance-controls button{background:#111115;font-weight:700}
+.bdl-wire-performance-table .is-head{background:#07070b}
+.bdl-wire-performance-table strong,.bdl-wire-performance-table>a b{font-weight:700}
+.bdl-wire-performance-table i{background:#1b1b1f}
+.bdl-wire-games-grid{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-games-grid span{font:700 11px/1.2 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-collab{background:#07070b;border-block-color:transparent}
+.bdl-wire-collab-grid{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-collab-grid small{font:700 9px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-collab-grid i{color:rgba(255,255,255,0.7);font:normal 800 9px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-setup article{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-setup article>img{background:#07070b}
+.bdl-wire-setup article>p{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-setup dl{border-top-color:transparent}
+.bdl-wire-setup dt{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-setup dd{font-weight:700}
+.bdl-wire-support{background:#111115;border-block-color:transparent}
+.bdl-wire-support h2{font-weight:700}
+.bdl-wire-support ol{border-color:rgba(255,255,255,0.08)}
+.bdl-wire-support li{background:#07070b;border-bottom-color:transparent}
+.bdl-wire-support li b{font:700 20px/1 "Geist","Noto Sans JP",sans-serif}
+.bdl-wire-faq details{border-top-color:transparent}
+.bdl-wire-faq details:last-child{border-bottom-color:transparent}
+.bdl-wire-faq summary{font-weight:700}
+.bdl-wire-faq summary::after{font:400 24px/1 "Geist","Noto Sans JP",sans-serif}
+@media (max-width:900px){.bdl-wire-benefits article:nth-child(2){border-right-color:transparent}}
+@media (max-width:900px){.bdl-wire-benefits article:nth-child(n+3){border-top-color:transparent}}
+@media (max-width:700px){.bdl-wire-hero-visual{border-bottom-color:transparent}}
+@media (max-width:700px){.bdl-wire-finder-panel ol{border-bottom-color:transparent}}
+@media (max-width:700px){.bdl-wire-finder-panel li{border-right-color:transparent}}
+.bdlr-carousel{background:#07070b}
+.bdlr-carousel-control{border-color:rgba(255,255,255,0.08)}
+.bdlr-carousel-dots button{background:rgba(255,255,255,0.36);border-radius:999px}
+.bdlr-campaign-banners a{border-radius:8px}
+.bdlr-section-heading h2{font-weight:700}
+.bdlr-section-heading>a{border-bottom-color:transparent}
+.bdlr-purpose-card b{font-weight:500}
+.bdlr-purpose-card strong{font-weight:700}
+.bdlr-games-toggle{border-color:rgba(255,255,255,0.08)}
+.bdlr-games-toggle:focus-visible{outline:3px solid #a78bfa}
+.bdlr-all-link{font-weight:500}
+.bdlr-product-card h3{font-weight:700}
+.bdlr-price{font-family:"Geist","Noto Sans JP",sans-serif;font-weight:700}
+.bdlr-card-link{font-weight:500}
+.bdlr-card-link:hover{background:#7c3aed}
+.bdlr-product-card__meta .is-instock{color:#5fd9a0}
+.bdlr-product-card__meta .is-soldout{color:#a78bfa}
+.bdlr-product-card__stock{color:#5fd9a0;font-weight:500}
+.bdlr-review-scroller figure span{font-weight:500}
+.bdlr-review-scroller h3{font-weight:500}
+.home-cta-card{background:linear-gradient(145deg,rgba(124,58,237,.2),#111115 52%),var(--bdlr-surface-2);border-color:rgba(255,255,255,0.08)}
+.home-cta-card--consultation{background:linear-gradient(145deg,rgba(79,70,229,.18),#111115 52%),var(--bdlr-surface-2)}
+.home-cta-card__link{font-weight:500}
+.home-cta-card__link:hover{background:#7c3aed}
+.home-cta-card__link:focus-visible{outline:3px solid #a78bfa}
+@media (max-width:700px){.bdlr-carousel{border-radius:8px}}
+body.bdlr-top-page .bdlr-section-heading h2{font-weight:500}
+body.bdlr-top-page .bdlr-purpose-card::before{background:#111115}
+body.bdlr-top-page .bdlr-purpose-card strong{font-weight:700}
+body.bdlr-top-page .bdlr-product-card h3{font-weight:500}
+body.bdlr-top-page .bdlr-card-link{font-weight:500}
+body.bdlr-top-page .bdlr-product-image{border-radius:8px}
+body.bdlr-top-page .bdlr-review-tabs button:focus-visible{outline:3px solid #a78bfa}
+body.bdlr-top-page .bdlr-game-grid .bdlr-games-toggle{background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:8px;color:#a78bfa}
+body.bdlr-top-page .home-cta-card{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdlr-top-page .home-cta-card__copy{color:rgba(255,255,255,0.5)}
+body.bdlr-top-page .home-cta-card__link{border-radius:8px}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip{border-color:rgba(255,255,255,0.08);background:linear-gradient(120deg,#111115,#111115 58%,#111115);color:#fff}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__icon{color:rgba(255,255,255,0.7)}
+body.bdlr-top-page .bdlr-service-strip__label{color:rgba(255,255,255,0.5)}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip strong{color:#fff}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip li.bdlr-service-strip__contact{border-left-color:transparent}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{border-color:rgba(255,255,255,0.08);border-radius:8px;background:rgba(255,255,255,0.08)}
+body.bdlr-top-page .bdlr-service-strip__line:hover{background:rgba(255,255,255,0.08)!important}
+body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip small.bdlr-service-strip__hours{color:rgba(255,255,255,0.7)}
+@media(max-width:1100px){body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip li.bdlr-service-strip__contact{border-top-color:transparent}}
+@media(max-width:600px){body.bdlr-top-page .bdlr-home-trust.bdlr-service-strip{border-radius:8px}}
+html body.bdlr-top-page .bdlr-carousel{background:#07070b}
+html body.bdlr-top-page #bdlr-game-list>a{border-color:rgba(255,255,255,0.08);border-radius:8px;background:#151519}
+html body.bdlr-top-page #bdlr-game-list>a img{border-radius:4px}
+html body.bdlr-top-page #bdlr-game-list .bdlr-game-name{color:rgba(255,255,255,0.7);font-weight:500}
+html body.bdlr-top-page .bdlr-games-toggle:not([hidden]){border-color:rgba(255,255,255,0.08);color:#a78bfa;background:#151519}

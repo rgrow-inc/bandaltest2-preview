@@ -1,0 +1,10 @@
+body.bdl-renewal-search{--bdl-renewal-chrome:#111115;--bdl-renewal-surface-1:#151519;--bdl-renewal-surface-2:#1b1b1f;--bdl-renewal-border:rgba(255,255,255,0.14);--bdl-renewal-border-strong:rgba(255,255,255,0.14);--bdl-renewal-text:#fff;--bdl-renewal-text-secondary:rgba(255,255,255,0.7);--bdl-renewal-muted:rgba(255,255,255,0.5);--bdl-renewal-action:#a78bfa;--bdl-renewal-focus:#a78bfa;--bdl-renewal-danger:#ff6b6b;font-family:"Geist","Noto Sans JP",var(--bdlr-font)}
+body.bdl-renewal-search .top-bar{background:#111115}
+body.bdl-renewal-search .header-info{background:#07070b;border-top:1px solid #a78bfa}
+body.bdl-renewal-search .bdl-renewal-eyebrow{font-weight:700}
+body.bdl-renewal-search .item-title{font-weight:700}
+body.bdl-renewal-search .product-price,
+body.bdl-renewal-search .product-sale-price{font-weight:700}
+body.bdl-renewal-search .sold-out{background:rgba(255,255,255,0.08);border:1px solid #ff6b6b;font-weight:700}
+body.bdl-renewal-search.bdlr-page .item-title{font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:700}
+body.bdl-renewal-search.bdlr-page .product-caption{font-weight:500}

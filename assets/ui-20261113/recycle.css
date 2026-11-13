@@ -1,0 +1,22 @@
+.bdlr-recycle-main{color:#fff;background:#111115;font-family:"Geist","Noto Sans JP","Noto Sans JP","Yu Gothic",sans-serif}
+.bdlr-recycle-breadcrumb{color:rgba(255,255,255,0.5)}
+.bdlr-recycle-breadcrumb a{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-breadcrumb a:hover{color:#a78bfa}
+.bdlr-recycle-hero{background:radial-gradient(circle at 88% 10%,rgba(124,58,237,.28),transparent 34%),#151519;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.bdlr-recycle-kicker{color:#a78bfa}
+.bdlr-recycle-hero h1{font-weight:700}
+.bdlr-recycle-lead{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-section h2{font-weight:700}
+.bdlr-recycle-card{background:#1b1b1f;border-color:rgba(255,255,255,0.08)}
+.bdlr-recycle-card p{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-note{color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08);border-radius:8px}
+.bdlr-recycle-step{background:#1b1b1f;border:1px solid rgba(255,255,255,0.14)}
+.bdlr-recycle-step p{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-data article{background:#151519;border-color:rgba(255,255,255,0.08)}
+.bdlr-recycle-data p{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-list li{color:rgba(255,255,255,0.7);background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:8px}
+.bdlr-recycle-list li:before{background:#8b52f5}
+.bdlr-recycle-cta{background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.bdlr-recycle-cta p{color:rgba(255,255,255,0.7)}
+.bdlr-recycle-button:hover{background:#7c3aed}
+.bdlr-recycle-button:focus-visible{outline:3px solid #a78bfa}

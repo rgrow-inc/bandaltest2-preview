@@ -1,0 +1,480 @@
+.subscription-add-btn{background:rgba(255,255,255,0.08)}
+.subscription-add-btn:hover{background:rgba(255,255,255,0.08)}
+.favorite a{color:#ff6b6b}
+.sku th{border-bottom-color:transparent}
+.sku td{border-bottom-color:transparent}
+.sku-add-btn{border-radius:4px;background:rgba(255,255,255,0.08)}
+.sku-add-btn a:hover{border-radius:4px;background:rgba(255,255,255,0.08)}
+.sku-outstock-btn{border-radius:4px}
+.subscription-sku-btn{background:rgba(255,255,255,0.08)}
+.subscription-sku-btn a:hover{background:rgba(255,255,255,0.08)}
+.item-reserve-release-date{color:#ff6b6b}
+.subscription-title{color:rgba(255,255,255,0.7)}
+.sale-priod{background:rgba(255,255,255,0.08)}
+.nameprint-title span{color:#ff6b6b}
+.nameprint-area input{border:1px solid rgba(255,255,255,0.14);border-radius:4px}
+.nameprint-area textarea{border-radius:4px}
+body div.detail-description td,body th{border-color:rgba(255,255,255,0.08)}
+table.constitution-table th{background:rgba(255,255,255,0.08)}
+table.constitution-table tr:nth-child(odd){background:rgba(255,255,255,0.08)}
+@media screen and (max-width:1184px){.makeshop-option-select-wrap{border:1px solid rgba(255,255,255,0.14)}}
+@media screen and (max-width:1184px){.makeshop-option-select-wrap::before{border-top:6px solid rgba(255,255,255,0.14)}}
+.bandal-floating-summary__content{border-color:rgba(255,255,255,0.08);border-radius:20px}
+.bandal-floating-summary__label{color:rgba(255,255,255,0.5)}
+.bandal-floating-summary__price-row strong{font-weight:700}
+.bandal-floating-summary__price-row span{color:rgba(255,255,255,0.5)}
+.bandal-floating-summary__installment{border-right-color:transparent;border-left-color:transparent}
+.bandal-paidy-logo{border-radius:8px;background:#7c3aed;font-family:"Geist","Noto Sans JP","Geist",sans-serif}
+.bandal-floating-summary__free{font-weight:700}
+.bandal-installment-btn{border-color:rgba(255,255,255,0.08);color:rgba(255,255,255,0.36);font-weight:700}
+.bandal-installment-btn:hover{border-color:rgba(255,255,255,0.08);color:#a78bfa}
+.bandal-installment-btn.is-active{border-color:#7c3aed;background:rgba(255,255,255,0.12)}
+.bandal-floating-summary__monthly span{color:rgba(255,255,255,0.36)}
+.bandal-floating-summary__monthly strong{color:#a78bfa;font-weight:700}
+.bandal-floating-summary__button{background:rgba(255,255,255,0.08);font-weight:700}
+.bandal-floating-summary__button:hover{background:rgba(255,255,255,0.08)}
+@media screen and (max-width:1120px){.bandal-floating-summary__installment{border-left-color:transparent}}
+@media screen and (max-width:720px){.bandal-floating-summary__content{border-color:rgba(255,255,255,0.08);border-radius:12px;background:rgba(255,255,255,0.7)}}
+@media screen and (max-width:720px){.bandal-floating-summary__button{border-radius:8px}}
+@media screen and (max-width:720px){.bandal-floating-summary__installment{border-top-color:transparent}}
+@media screen and (max-width:720px){.bandal-paidy-logo{border-radius:4px}}
+@media screen and (max-width:390px){.bandal-floating-summary__content{border-radius:12px}}
+.bandal-option-recommendation{border-color:rgba(255,255,255,0.08)}
+.bandal-option-recommendation:focus,.bandal-option-recommendation:hover{border-color:#ff6b6b}
+.bandal-option-recommendation.is-selected{border-color:#ff6b6b;background:rgba(255,255,255,0.08)}
+.bandal-option-recommendation__badge{border-radius:4px;background:rgba(255,255,255,0.08);font-weight:700}
+.bandal-option-recommendation__title{font-weight:700}
+.bandal-option-recommendation__description{color:rgba(255,255,255,0.36)}
+.bandal-option-recommendation__action{color:#ff6b6b;font-weight:700}
+.bandal-floating-summary__installment{border-color:rgba(255,255,255,0.08)}
+.bandal-installment-btn:hover{border-color:rgba(255,255,255,0.08);color:#ff6b6b}
+.bandal-installment-btn.is-active{border-color:#ff6b6b;background:rgba(255,255,255,0.08)}
+.bandal-floating-summary__monthly strong{color:#ff6b6b}
+@media screen and (max-width:720px){.bandal-floating-summary__installment{border-top-color:transparent}}
+@media screen and (max-width:720px){.bandal-installment-btn{border-color:rgba(255,255,255,0.08);font-weight:700}}
+@media screen and (max-width:720px){.bandal-floating-summary__monthly{border-color:rgba(255,255,255,0.08);border-radius:8px}}
+@media screen and (max-width:720px){.bandal-floating-summary__monthly span{color:rgba(255,255,255,0.36);font-weight:700}}
+@media screen and (max-width:720px){.bandal-floating-summary__monthly strong{color:#ff6b6b}}
+body.bdl-renewal-item{--bdl-renewal-chrome:#111115;--bdl-renewal-surface-1:#151519;--bdl-renewal-surface-2:#1b1b1f;--bdl-renewal-surface-3:#252528;--bdl-renewal-border:rgba(255,255,255,0.14);--bdl-renewal-border-strong:rgba(255,255,255,0.14);--bdl-renewal-text:#fff;--bdl-renewal-text-secondary:rgba(255,255,255,0.7);--bdl-renewal-muted:rgba(255,255,255,0.5);--bdl-renewal-action:#a78bfa;--bdl-renewal-action-hover:#a78bfa;--bdl-renewal-focus:#a78bfa;--bdl-renewal-success:#5fd9a0;--bdl-renewal-danger:#ff6b6b;--bdl-renewal-warning:#f5b544;font-family:"Geist","Noto Sans JP","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+body.bdl-renewal-item .top-bar{background:#111115;border-bottom-color:transparent}
+body.bdl-renewal-item .article-title-pc::after{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .header-info{background:#07070b;border-top:1px solid #a78bfa}
+body.bdl-renewal-item .item-image-small .add-image-list,body.bdl-renewal-item .item-image-small .item-image-list{border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item .product-name2{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .product-name{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .detail-product-sale-price,body.bdl-renewal-item .product-price-block,body.bdl-renewal-item .product-sale-price{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .detail-product-sale-price small,body.bdl-renewal-item .product-price-block small{font-family:"Geist","Noto Sans JP","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .productnum-wrap{border-bottom-color:transparent}
+body.bdl-renewal-item input.productnum{border-radius:8px}
+body.bdl-renewal-item input.spinner-down,body.bdl-renewal-item input.spinner-up{border-radius:8px}
+body.bdl-renewal-item .bdl-renewal-eyebrow{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .makeshop-option-wrap{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .makeshop-option-select{border-radius:8px}
+body.bdl-renewal-item .bandal-option-recommendation{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item .favorite a{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .outstock-btn,body.bdl-renewal-item .sell-period-btn{background:rgba(255,255,255,0.08)!important;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bg-section{border-top-color:transparent}
+body.bdl-renewal-item .btn{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .btn:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bandal-floating-summary{background:#111115;border-top-color:transparent}
+body.bdl-renewal-item .bandal-floating-summary__monthly strong,body.bdl-renewal-item .bandal-floating-summary__price-row strong{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bandal-floating-summary__installment{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bandal-installment-btn{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bandal-floating-summary__monthly{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-dummy-banner{color:#f5b544;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08);border-left-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-dummy-banner strong{background:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-validation-videos>article{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-validation-videos>article>span{color:#f5b544}
+body.bdl-renewal-item.bdlr-page .bdlr-validation-videos [data-bdlr-video-url]{background:#1b1b1f;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-referral-card{background:linear-gradient(135deg,rgba(124,58,237,.18),#111115);border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-wire-item-sidebar{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-wire-item-sidebar p{border-bottom-color:transparent;font:700 9px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bdl-wire-item-sidebar a{color:rgba(255,255,255,0.7);border-bottom-color:transparent}
+body.bdl-renewal-item .bdl-wire-item-sidebar a:hover{background:#07070b}
+body.bdl-renewal-item .bdl-wire-item-sidebar a.is-support{background:#111115}
+body.bdl-renewal-item .breadcrumb{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-item .breadcrumb-item a{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item .breadcrumb-item+.breadcrumb-item::before{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-item .item-image-large{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .item-image-small li{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-renewal-item__purchase-panel{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-wire-item-flags span{background:#1b1b1f;border-left-color:transparent;font-weight:700}
+body.bdl-renewal-item .product-name2{font:700 9px/1.4 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .detail-product-sale-price,body.bdl-renewal-item .product-price-block,body.bdl-renewal-item .product-sale-price{font:700 32px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .detail-product-discount{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-item .bdl-wire-item-specs{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-wire-item-specs div{background:#07070b}
+body.bdl-renewal-item .bdl-wire-item-specs span{color:rgba(255,255,255,0.36);font:700 7px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bdl-wire-item-performance b{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bdl-wire-item-performance i{background:#1b1b1f}
+body.bdl-renewal-item .bulk,body.bdl-renewal-item .item-reserve,body.bdl-renewal-item .item-sell-text,body.bdl-renewal-item .nameprint-area{background:#07070b;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-renewal-item__description{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item .productnum{background:#07070b;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bdl-renewal-config-head{background:#07070b;border-color:rgba(255,255,255,0.08);border-left-color:transparent}
+body.bdl-renewal-item .bdl-renewal-config-head .bdl-renewal-eyebrow{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .custom-select-group,body.bdl-renewal-item .custom-select-wrap,body.bdl-renewal-item .option-wrap{background:#07070b}
+body.bdl-renewal-item .custom-select-wrap select,body.bdl-renewal-item .option-select select,body.bdl-renewal-item select{background:#111115;border:1px solid rgba(255,255,255,0.14)}
+body.bdl-renewal-item .custom-select-name,body.bdl-renewal-item .custom-select-wrap label,body.bdl-renewal-item .option-name,body.bdl-renewal-item .option-wrap label{font-weight:700}
+body.bdl-renewal-item .item-stock{font-weight:700}
+body.bdl-renewal-item .add-btn .cart-btn,body.bdl-renewal-item .cart-btn:not(.favorite-btn),body.bdl-renewal-item .outstock{font-weight:700}
+body.bdl-renewal-item .favorite{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .item-share{border-top-color:transparent}
+body.bdl-renewal-item .bdl-renewal-item__delivery-info{color:rgba(255,255,255,0.5);background:#07070b;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bg-section{background:#07070b;border-top-color:transparent}
+body.bdl-renewal-item .review-section{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bandal-floating-summary{border-top-color:transparent}
+body.bdl-renewal-item .bandal-floating-summary__price-row strong{font:700 23px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bandal-floating-summary__installment{border-inline-color:transparent}
+body.bdl-renewal-item .bandal-floating-summary__free{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item .bandal-installment-btn{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item .bandal-floating-summary__monthly strong{font:700 16px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item .bandal-floating-summary__button{font-weight:700}
+@media (max-width:700px){body.bdl-renewal-item .item-image-small{background:#07070b}}
+body.bdl-renewal-item.bdlr-page .product-name{font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:500}
+body.bdl-renewal-item.bdlr-page :is(.bdl-wire-item-specs,.nameprint-area,.bdl-renewal-config-head,.bdl-renewal-item__delivery-info,.review-section){border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page :is(.cart-btn:not(.favorite-btn),.outstock,.bandal-floating-summary__button){font-weight:500}
+body.bdl-renewal-item.bdlr-page .bandal-installment-btn{border-radius:4px}
+body.bdl-renewal-item.bdlr-page .bdlr-official-image-label{background:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-flags span{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-flags span:first-child{color:#5fd9a0}
+body.bdl-renewal-item.bdlr-page .product-name{font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:700}
+body.bdl-renewal-item.bdlr-page :is(.product-price-block,.item-price,.product-sale-price){font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:700}
+body.bdl-renewal-item.bdlr-page :is(.product-price-block,.item-price,.product-sale-price) small{font-family:"Geist","Noto Sans JP",var(--bdlr-font)}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs{background:#151519;border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs div{border-left-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-performance{background:#151519}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-performance b{color:#5fd9a0;font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-performance i{background:#252528;border-radius:8px}
+body.bdl-renewal-item.bdlr-page .productnum{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdl-renewal-config-head h2{font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdl-renewal-eyebrow{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button,body.bdl-renewal-item.bdlr-page .cart-add-btn :is(.cart-btn:not(.favorite-btn),.outstock){font-weight:500}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary{border-top-color:transparent}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__installment{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .section-title{font-weight:500}
+@media (max-width:700px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs div:nth-child(n+3){border-top-color:transparent}}
+body.bdl-renewal-item.bdlr-page{--bdlr-detail-bg:#07070b;--bdlr-detail-surface:#07070b;--bdlr-detail-surface-2:#111115;--bdlr-detail-line:rgba(255,255,255,0.14);--bdlr-detail-text:#fff;--bdlr-detail-muted:rgba(255,255,255,0.5);--bdlr-detail-orange:#a78bfa;--bdlr-detail-orange-hover:#a78bfa;--bdlr-detail-green:#5fd9a0}
+body.bdl-renewal-item.bdlr-page .product-name{font-family:"Geist","Noto Sans JP",sans-serif;font-weight:700}
+body.bdl-renewal-item.bdlr-page .product-name2{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page :is(.product-price-block,.item-price,.product-sale-price){font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-flags span{color:rgba(255,255,255,0.7);background:#111115;border-color:rgba(255,255,255,0.08);border-left-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-flags span:first-child{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs div{background:#07070b}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs span{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-rating-line span{color:#fff}
+body.bdl-renewal-item.bdlr-page .bdlr-rating-line a{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-button{border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-button--secondary{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-button--secondary:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-trust li{background:#07070b}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-anchor{border-block-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-anchor a{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-section{border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary>span,body.bdl-renewal-item.bdlr-page .bdlr-preset-card>span,body.bdl-renewal-item.bdlr-page .bdlr-section-heading>div>span,body.bdl-renewal-item.bdlr-page :is(.bdlr-performance-grid,.bdlr-warranty-grid,.bdlr-overview-grid) article>span{font:700 10px/1.2 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-section-heading h2{font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-preset-card{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-preset-card.is-recommended{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap button,body.bdl-renewal-item.bdlr-page .bdlr-preset-card button{background:#151519;border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap button:hover,body.bdl-renewal-item.bdlr-page .bdlr-preset-card button:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-builder__notice{color:rgba(255,255,255,0.7);background:#7c3aed;border-left-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group summary>span:first-child{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group summary>span:last-child{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card.is-selected{background:#7c3aed}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card.is-selected::after{background:#07070b}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card>span{font:700 9px/1.2 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary{background:#07070b;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__media[data-bdlr-case-theme=black]{background:radial-gradient(circle at 50% 45%,#1b1b1f,#07070b 72%)}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__media[data-bdlr-cooling-theme=liquid]{border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__preview-label{font:700 8px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary dl{border-top-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary dl div{border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary dt{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__total strong{font:700 31px/1.1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary .bdlr-button{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__status{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__stock{color:#5fd9a0}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary__stock.is-unavailable{color:#ff6b6b}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-actions button{color:rgba(255,255,255,0.7);background:#111115;border-color:rgba(255,255,255,0.08);border-radius:4px}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-feedback{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-review-configuration{color:#a78bfa;background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-video-match-note{color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.08);border-left-color:transparent}
+.bdlr-video-dialog{background:#07070b;border-color:rgba(255,255,255,0.08)}
+.bdlr-video-dialog__frame{background:#07070b}
+.bdlr-video-dialog>button{background:#151519;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap :is(th,td){color:rgba(255,255,255,0.7);background:#07070b;border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap thead th{color:rgba(255,255,255,0.5);background:#111115}
+body.bdl-renewal-item.bdlr-page .bdlr-performance-grid i{background:#252528}
+body.bdl-renewal-item.bdlr-page .bdlr-performance-note{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-specification-grid{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-specification-grid div{background:#07070b;border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-specification-grid div:nth-child(odd){border-right-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-specification-grid span{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-rich-description{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-warranty-grid article strong{font:700 28px/1.1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-warranty-grid article a{font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-consultation-grid a{background:#07070b;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-consultation-grid a:hover{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-consultation-grid span{font:700 10px/1 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .review-section{color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary{border-top-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-peripheral-specs>div{border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-peripheral-specs dt{color:var(--bdlr-text-2,rgba(255,255,255,0.7));font-weight:500}
+@media (min-width:1101px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-sidebar{background:#07070b;border-color:rgba(255,255,255,0.08)}}
+@media (min-width:1101px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-sidebar p{background:#111115}}
+@media (min-width:1101px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-sidebar a{color:rgba(255,255,255,0.7);background:#07070b;border-color:rgba(255,255,255,0.08)}}
+@media (min-width:1101px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-sidebar a:hover{background:#111115}}
+body.bdl-renewal-item.bdlr-page{--bdlr-detail-bg:#111115;--bdlr-detail-surface:#1b1b1f;--bdlr-detail-surface-2:#252528;--bdlr-detail-line:rgba(255,255,255,0.14);--bdlr-detail-text:#fff;--bdlr-detail-muted:rgba(255,255,255,0.5);--bdlr-detail-orange-hover:#a78bfa;--bdlr-detail-green:#5fd9a0}
+body.bdl-renewal-item.bdlr-page .product-name{font-family:"Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button,body.bdl-renewal-item.bdlr-page .bdlr-button--primary,body.bdl-renewal-item.bdlr-page .bdlr-configuration-table-wrap button:hover,body.bdl-renewal-item.bdlr-page .bdlr-preset-card button:hover,body.bdl-renewal-item.bdlr-page .cart-add-btn .cart-btn:not(.favorite-btn){border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button:hover,body.bdl-renewal-item.bdlr-page .bdlr-button--primary:hover,body.bdl-renewal-item.bdlr-page .cart-add-btn .cart-btn:not(.favorite-btn):hover{background:#7c3aed!important}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-anchor{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-flow{background:#151519}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-section{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary{background:#111115!important;border-top-color:transparent}
+body.bdl-renewal-item.bdlr-page{font-family:"Geist","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+body.bdl-renewal-item.bdlr-page .item-image-small li{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .product-name{font-weight:700}
+body.bdl-renewal-item.bdlr-page :is(.product-price-block,.item-price){font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-anchor{border-bottom-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-section{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary{border-top-color:transparent!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary{border-top-color:transparent!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__label,body.bdl-renewal-item.bdlr-page .bandal-floating-summary__product small{color:rgba(255,255,255,0.5)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__product>span{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__quantity{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__quantity select{background:#111115;border:1px solid rgba(255,255,255,0.14)}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button,body.bdl-renewal-item.bdlr-page .bandal-floating-summary__secondary{border-radius:8px!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__secondary{background:#151519!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__secondary:hover{background:#1b1b1f!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button{border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button:hover{background:#7c3aed!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-compare :is(th,td){border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-compare thead th{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-video-metadata{border-top-color:transparent}
+.bdlr-configuration-dialog{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.bdlr-configuration-dialog__shell>p{color:rgba(255,255,255,0.5)}
+.bdlr-configuration-dialog__list>div{border-bottom-color:transparent}
+.bdlr-configuration-dialog__list dt{color:rgba(255,255,255,0.5)}
+.bdlr-configuration-dialog__totals{background:#07070b;border-radius:8px}
+.bdlr-configuration-dialog__totals span{color:rgba(255,255,255,0.5)}
+.bdlr-configuration-dialog__actions button{background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:8px}
+.bdlr-configuration-dialog__actions button.is-primary{border-color:rgba(255,255,255,0.08)}
+@media (max-width:700px){body.bdl-renewal-item.bdlr-page .bandal-floating-summary__product>span{color:rgba(255,255,255,0.7)}}
+body.bdl-renewal-item.bdlr-page .cart-add-btn .outstock,body.bdl-renewal-item.bdlr-page .cart-add-btn .sell-period-btn .cart-btn{color:#a78bfa;background:#151519;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page [data-bdlr-purchase-action][aria-disabled=true]{color:rgba(255,255,255,0.7)!important;background:#252528!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button:disabled,body.bdl-renewal-item.bdlr-page .bandal-floating-summary__button[aria-disabled=true]{color:rgba(255,255,255,0.7)!important;background:#252528!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:not(:disabled):hover{background:#111115;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:focus-visible{outline:3px solid #a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__media{background:radial-gradient(circle at 50% 42%,rgba(124,58,237,.22),transparent 58%),#07070b;border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__media.is-missing::before{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__media-label{border-color:rgba(255,255,255,0.08);font:700 10px/1 "Geist","Noto Sans JP",sans-serif!important}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__eyebrow{font:700 11px/1.2 "Geist","Noto Sans JP",sans-serif!important}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__copy strong{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__copy small{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card__price{font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card.is-selected .bdlr-option-card__media{border-color:#a78bfa}
+body.bdl-renewal-item.bdlr-page{font-family:"Geist","Noto Sans JP",var(--bdlr-font-ja, "Noto Sans JP", sans-serif)}
+body.bdl-renewal-item.bdlr-page .item-image-small li{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-flags span{color:var(--bdlr-detail-green,#5fd9a0)}
+body.bdl-renewal-item.bdlr-page .product-name{font-family:"Geist","Noto Sans JP",sans-serif;font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel>:is(.product-price-block,.item-price){font-family:"Geist","Noto Sans JP",sans-serif;font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-hero-installment{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-hero-installment strong b{font-family:"Geist","Noto Sans JP",sans-serif;font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-hero-shipping span{color:var(--bdlr-detail-green,#5fd9a0)}
+body.bdl-renewal-item.bdlr-page .bdlr-hero-shipping strong{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs div{border-left-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs span{font:400 11px/1.4 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdlr-summary-actions .bdlr-button{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-summary-actions .bdlr-button--secondary{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-trust strong{font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-section{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-section-heading h2{font-family:"Geist","Noto Sans JP",var(--bdlr-font-ja, "Noto Sans JP", sans-serif);font-weight:700}
+@media (max-width:700px){body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs div{border-top-color:transparent}}
+body.bdl-renewal-item.bdlr-page .bdlr-confirmed-product-policy{border-color:rgba(255,255,255,0.08);border-left-color:transparent;background:linear-gradient(135deg,rgba(124,58,237,.13),#111115)}
+body.bdl-renewal-item.bdlr-page .bdlr-confirmed-product-policy strong{font-weight:700}
+body.bdl-renewal-item.bdlr-page .bdlr-confirmed-product-policy p,body.bdl-renewal-item.bdlr-page .bdlr-confirmed-product-policy small{color:var(--bdlr-muted,rgba(255,255,255,0.7))}
+body.bdl-renewal-item.bdlr-page .bdlr-validation-placeholder__body{border-color:rgba(255,255,255,0.08);background:rgba(255,255,255,0.025)}
+body.bdl-renewal-item.bdlr-page .bdlr-validation-placeholder__body p{color:var(--bdlr-muted,rgba(255,255,255,0.7))}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:disabled,body.bdl-renewal-item.bdlr-page .bdlr-option-card:disabled:hover{background:#1b1b1f;border-color:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:disabled .bdlr-option-card__media{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-card:disabled :is(strong,small,b){color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-config-tabs button{border:1px solid rgba(255,255,255,0.14);background:#111115}
+body.bdl-renewal-item.bdlr-page .bdlr-config-tabs button[aria-selected=true]{background:rgba(255,255,255,0.12);border-color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-config-tabs button:focus-visible{outline:3px solid #a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-selected-specs>div{border-bottom:1px solid rgba(255,255,255,0.14)}
+body.bdl-renewal-item.bdlr-page .bdlr-pending-option{color:rgba(255,255,255,0.7);background:#151519;border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-terms-link{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-line-hours{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-fps-table :is(th,td){border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-performance-section :is(.bdlr-fps-conditions,.bdlr-fps-reference,.bdlr-fps-caution,.bdlr-fps-disclaimer,.bdlr-fps-source){color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-performance-section .bdlr-fps-caution{border-left:3px solid #a78bfa;background:#151519}
+body.bdl-renewal-item.bdlr-page .bdlr-performance-section .bdlr-table-scroll:focus-visible{outline:2px solid #a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-fps-table caption{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-fps-table thead th{background:#1b1b1f;color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-fps-table tbody tr:nth-child(2n){background:#151519}
+body.bdl-renewal-item.bdlr-page .bdlr-fps-source a{color:#a78bfa}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-floating-support .bdlr-line-hours{background:#111115}}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bandal-floating-summary__label{color:rgba(255,255,255,0.7)!important}}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-dock-delivery strong{font-weight:500}}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-dock-delivery small{color:rgba(255,255,255,0.7)}}
+body.bdl-renewal-item.bdlr-page .item-image-small .item-image-list img:focus-visible{outline:3px solid var(--bdlr-purple-light,#a78bfa)}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-gallery-scroll-hint{color:var(--bdlr-muted,rgba(255,255,255,0.7))}}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-option-next:not([hidden]){border-color:rgba(255,255,255,0.08);background:var(--bdlr-surface-3,#151519);font-weight:500}}
+@media (max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-option-next:focus-visible{outline:3px solid var(--bdlr-purple-light,#a78bfa)}}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-dialog__header{border-bottom:1px solid var(--bdlr-divider,rgba(255,255,255,0.14));background:var(--bdlr-surface,#111115)}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-dialog__close{border-color:rgba(255,255,255,0.08);background:var(--bdlr-surface-3,#151519);font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-configuration-dialog__close:focus-visible{outline:3px solid var(--bdlr-purple-light,#a78bfa)}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-card{border-color:rgba(255,255,255,0.08);background:#151519;color:#fff}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-card.is-selected{border-color:#a78bfa;background:rgba(255,255,255,0.12)}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-choice img{background:#111115}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-choice small{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-price{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-light button{border-color:rgba(255,255,255,0.08);border-radius:4px;background:#111115;color:#fff}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-light button.is-selected{background:rgba(255,255,255,0.12);border-color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-memory-reason{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-storage-guide{border-radius:4px;background:#1b1b1f;color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-video-coming-soon{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-item.bdlr-page .bdlr-video-coming-soon p{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page .bdlr-detail-terms-bottom a{color:#a78bfa}
+body.bdl-renewal-item.bdlr-page :is(.bdlr-memory-choice,.bdlr-memory-light button):focus-visible{outline:3px solid #a78bfa}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs>div{background:#151519;border-color:rgba(255,255,255,0.08);border-radius:4px}
+body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery]>small{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-section-title{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group{border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group>summary [data-bdlr-option-summary]{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-options-bundle{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdlr-color-swatch{background:#07070b;border-color:rgba(255,255,255,0.08)}
+.bdlr-fps-games button,.bdlr-fps-resolutions button{background:#1b1b1f;border-color:rgba(255,255,255,0.08);border-radius:4px}
+.bdlr-fps-games button[aria-pressed=true],.bdlr-fps-resolutions button[aria-pressed=true]{background:rgba(255,255,255,0.12)}
+[data-bdl-renewal-gallery] .item-image-small button{background:#07070b}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group--color .bdlr-color-swatch{background:#07070b!important;border-color:rgba(255,255,255,0.08)!important}
+body.bdl-renewal-item.bdlr-page :is(.product-name,.bdlr-mobile-product-heading){font-family:"Geist","Noto Sans JP",sans-serif!important}
+body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs :is(strong,b){font-weight:500}
+body.bdl-renewal-item.bdlr-page .bdlr-order-summary{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-item.bdlr-page .bdlr-summary-tools{border-top-color:transparent}
+body.bdl-renewal-item.bdlr-page .bdlr-summary-tools>summary{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-option-group--compact .bdlr-option-card__media{border-radius:4px}
+@media(max-width:900px){body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-small button[aria-pressed=true]::before{background:rgba(255,255,255,0.12)}}
+@media(max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-gallery-counter{border-radius:4px;color:rgba(255,255,255,0.7)}}
+@media(max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-detail-trust li{border-color:rgba(255,255,255,0.08);border-radius:4px;background:#111115}}
+@media(max-width:900px){body.bdl-renewal-item.bdlr-page .bdlr-trust-line a{color:#a78bfa}}
+body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel>.detail-sold-out{background:#1b1b1f;border-color:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);font:500 10px/1.4 "Geist","Noto Sans JP",sans-serif}
+body.bdl-renewal-item.bdlr-page .bdl-renewal-item__main{background:#07070b}
+html body.bdl-renewal-item.bdlr-page{--bdlr-detail-surface:#111115;--bdlr-detail-border:rgba(255,255,255,0.14);--bdlr-detail-secondary:rgba(255,255,255,0.7)}
+html body.bdl-renewal-item.bdlr-page .bdl-renewal-item__main{background:#07070b}
+
+html body.bdl-renewal-item.bdlr-page .bdlr-hero-evidence .bdlr-review-score::after{color:#a78bfa}
+html body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs > div{border-color:rgba(255,255,255,0.08);border-radius:4px;background:#151519}
+html body.bdl-renewal-item.bdlr-page .bdlr-hero-installment strong{color:#fff}
+html body.bdl-renewal-item.bdlr-page .bdlr-summary-actions .bdlr-button--secondary{border-color:rgba(255,255,255,0.08);color:#fff}
+html body.bdl-renewal-item.bdlr-page .bdlr-config-tabs button{border-radius:4px}
+html body.bdl-renewal-item.bdlr-page .bdlr-option-group{border-color:rgba(255,255,255,0.08);border-radius:8px}
+html body.bdl-renewal-item.bdlr-page .bdlr-order-summary{border-color:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page .bdlr-review-histogram meter::-webkit-meter-bar{border-radius:4px;background:#1b1b1f}
+html body.bdl-renewal-item.bdlr-page .bdlr-review-histogram meter::-webkit-meter-optimum-value{border-radius:4px;background:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page .bdlr-review-histogram meter::-moz-meter-bar{border-radius:4px;background:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page .bdlr-config-reviews__list article{border-radius:8px;border-color:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page .bdlr-config-reviews__list .bdlr-legacy-review-rating > span:first-child{color:#fff!important}
+html body.bdl-renewal-item.bdlr-page .bdlr-reviews-expand{border-color:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page :is(.bdlr-summary-actions a, .bdlr-hero-evidence a, .bdlr-option-group > summary, .bdlr-options-bundle > summary, .bdlr-reviews-expand):focus-visible{outline:3px solid #a78bfa}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .item-image-large{background:#07070b}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdlr-detail-trust li:not(.bdlr-trust-line)::before{color:rgba(255,255,255,0.7)}}
+html body.bdl-renewal-item.bdlr-page:not(:has([data-bdlr-availability="period"], .cart-add-btn .sell-period-btn)):is(:has(.cart-add-btn .outstock.on), :has([data-bdlr-availability="soldout"]):not(:has(.cart-add-btn .instock.on a.cart-btn)), :has(.cart-add-btn .outstock-btn .outstock):not(:has(.cart-add-btn .instock.on a.cart-btn))) [data-bdl-renewal-gallery] .item-image-large::after{font-family:"Geist","Noto Sans JP", sans-serif;font-weight:700}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__heading{color:#fff}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__intro{color:rgba(255,255,255,0.5)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-average{color:rgba(255,255,255,0.5)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-average strong{color:#fff;font-weight:700}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-distribution__row{color:rgba(255,255,255,0.5)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-distribution__row meter::-webkit-meter-bar{background:#151519}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-distribution__row meter::-webkit-meter-optimum-value{background:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-distribution__row meter::-moz-meter-bar{background:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__list article{border-color:rgba(255,255,255,0.08);border-radius:8px;background:#111115}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__list article .bdlr-legacy-review-rating > span:first-child{color:#fff!important}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__list article blockquote{color:rgba(255,255,255,0.7)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-config-reviews__list article .bdlr-config-review-date{color:rgba(255,255,255,0.5)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-reviews-expand,
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews .bdlr-review-archive-link{border-color:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews :is(.bdlr-reviews-expand,.bdlr-review-archive-link):hover{background:#111115;border-color:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item.bdlr-page #bdlr-reviews :is(.bdlr-reviews-expand,.bdlr-review-archive-link):focus-visible{outline:3px solid #a78bfa}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs > div{border-radius:8px}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel > .product-price-block:not(.detail-product-discount):not(.product-price-subscription){font-family:"Geist","Noto Sans JP",sans-serif}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel > .product-price-block > .bdlr-hero-tax-note{color:rgba(255,255,255,0.5)}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdlr-hero-installment > strong{color:#fff}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdlr-hero-installment > small{color:rgba(255,255,255,0.7)}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page .bdlr-detail-trust strong{color:rgba(255,255,255,0.5)}}
+@media (max-width:900px){html body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel:has(> .product-price-block:not(.detail-product-discount):not(.product-price-subscription)):not(:has(> .product-price-subscription)) > .product-price-block > .bdlr-hero-tax-note{color:rgba(255,255,255,0.5)}}
+body.bdl-renewal-item.bdlr-page .bdlr-peripheral-product-links p{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-item.bdlr-page .bdlr-peripheral-product-links a{border-color:rgba(255,255,255,0.08);color:#a78bfa;background:#111115}
+body.bdl-renewal-item.bdlr-page .bdlr-peripheral-product-links a:hover{background:#151519;border-color:rgba(255,255,255,0.08)}
+html body.bdl-renewal-item .bdlr-peripheral-product-links .bdlr-device-details-trigger{border-color:rgba(255,255,255,0.08);background:#151519;color:#a78bfa}
+html body.bdl-renewal-item .bdlr-device-panel{border-left-color:transparent;background:#111115;color:#fff}
+html body.bdl-renewal-item .bdlr-device-panel header{border-bottom:1px solid rgba(255,255,255,0.14)}
+html body.bdl-renewal-item .bdlr-device-panel__close{border-color:rgba(255,255,255,0.08);background:#151519}
+html body.bdl-renewal-item .bdlr-device-panel__gallery img{background:#07070b}
+html body.bdl-renewal-item .bdlr-device-panel__specs>div{border-bottom-color:transparent}
+html body.bdl-renewal-item .bdlr-device-panel__specs dt{color:rgba(255,255,255,0.7)}
+html body.bdl-renewal-item .bdlr-device-panel__note{color:rgba(255,255,255,0.7)}
+html body.bdl-renewal-item .bdlr-device-panel__content>a{color:#a78bfa}
+html body.bdl-renewal-item #bdlr-warranty .bdlr-warranty-grid article{border-color:rgba(255,255,255,0.08);border-radius:8px;background:#111115}
+html body.bdl-renewal-item #bdlr-warranty article p{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel .bdlr-option-group[data-bdlr-guide][open]{border-color:rgba(255,255,255,0.08);background:#111115}
+#bdlr-options-panel .bdlr-choice-tips,#bdlr-options-panel .bdlr-choice-benefits{border-color:rgba(255,255,255,0.08);border-radius:8px;background:#151519;color:#a78bfa}
+#bdlr-options-panel .bdlr-choice-tag,#bdlr-options-panel .bdlr-choice-recommended{background:rgba(255,255,255,0.12)}
+#bdlr-options-panel .bdlr-choice-tips strong,#bdlr-options-panel .bdlr-choice-benefits strong{color:#a78bfa}
+#bdlr-options-panel .bdlr-choice-tips p,#bdlr-options-panel .bdlr-choice-benefits p{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel .bdlr-choice-axes{color:rgba(255,255,255,0.5)}
+#bdlr-options-panel .bdlr-choice-axes span::before{border-radius:4px;background:#8b52f5}
+#bdlr-options-panel .bdlr-choice-benefits{background:linear-gradient(115deg,#261c39,#111115)}
+#bdlr-options-panel .bdlr-choice-benefit-main>strong{color:#a78bfa}
+#bdlr-options-panel .bdlr-choice-benefits li{color:#a78bfa}
+#bdlr-options-panel .bdlr-choice-benefits li::before{color:#a78bfa}
+#bdlr-options-panel .bdlr-choice-audience{border-left-color:transparent}
+#bdlr-options-panel .bdlr-choice-audience small{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel .bdlr-compare-meter{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel .bdlr-meter-ticks i{background:#252528}
+#bdlr-options-panel .bdlr-meter-ticks i.is-on{background:#8b52f5}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card{border-radius:8px;border-color:rgba(255,255,255,0.08);background:#111115;color:#a78bfa}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card.is-selected{border-color:#a78bfa;background:#151519}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card:disabled{color:rgba(255,255,255,0.5);background:#151519;border-color:rgba(255,255,255,0.08)}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card__media{border-radius:4px;background:#111115}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card__price{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel .bdlr-ssd-estimate{color:rgba(255,255,255,0.7)}
+#bdlr-options-panel [data-bdlr-guide='SSD'] .bdlr-storage-guide{color:rgba(255,255,255,0.5)}
+#bdlr-options-panel .bdlr-pending-option strong{color:#a78bfa}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card{border-color:rgba(255,255,255,0.08);background:#111115}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card::after{border-color:rgba(255,255,255,0.08)}
+#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .bdlr-option-card.is-selected::after{border-color:#a78bfa;background:rgba(255,255,255,0.12)}
+#bdlr-options-panel [data-bdlr-guide='SSD'] .bdlr-ssd-estimate{color:#a78bfa}
+@media(max-width:760px){#bdlr-options-panel [data-bdlr-guide='SSD'] .bdlr-option-card:has(.bdlr-choice-recommended) .bdlr-option-card__copy strong::after{border-radius:999px;background:#7c3aed}}
+@media(max-width:760px){#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .is-selected:has(+ .bdlr-choice-benefits:not([hidden])){border-radius:8px 8px 0 0}}
+@media(max-width:760px){#bdlr-options-panel :is([data-bdlr-guide='SSD'],[data-bdlr-guide='CPUクーラー']) .is-selected + .bdlr-choice-benefits:not([hidden]){border-color:#a78bfa;border-radius:0 0 8px 8px}}
+@media (min-width: 901px){html body.bdl-renewal-item.bdlr-page #bandal-floating-summary.is-visible{background:#111115;border-top-color:transparent}}
+html body.bdl-renewal-item .detail-right .bdlr-hero-shipping :is(strong,small){color:rgba(255,255,255,0.7)!important}
+html body.bdl-renewal-item [data-bdlr-primary-cta][aria-disabled=true]{background:#252528!important;color:rgba(255,255,255,0.7)!important;border-color:rgba(255,255,255,0.08)!important}
+html body.bdl-renewal-item .detail-right .ux-item-fact{border-color:rgba(255,255,255,0.08);border-radius:8px;background:#111115;color:#fff}
+.ux-item-fact h2,.ux-item-fact summary{font:500 16px/1.5 inherit}
+.ux-item-fact p,.ux-item-fact small{color:rgba(255,255,255,0.7)}
+.ux-item-fact dl>div{border-bottom-color:transparent}
+[data-ux-preset-status]{color:#a78bfa}
+html.bandal-audited body.bdl-renewal-item .bdl-renewal-item__delivery-info :is(li,small,span),html.bandal-audited body .bdlr-hero-shipping small{color:rgba(255,255,255,0.7)!important}
+html.bandal-audited .audit-wifi-note{background:#1b1b1f}
+
+.bandal-diagnosis-badge{border-color:rgba(255,255,255,0.08);border-radius:999px;font-family:"Geist","Noto Sans JP",-apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans",
+      "Yu Gothic",
+      Meiryo,
+      sans-serif}
+.bandal-diagnosis-badge__icon{background:rgba(255,255,255,0.08)}
+.bandal-diagnosis-badge__sub{color:rgba(255,255,255,0.36)}
+.bandal-diagnosis-badge__title{font-weight:700}
+.bandal-diagnosis-badge__close{color:rgba(255,255,255,0.36)}
+@media screen and (max-width: 767px){.bandal-diagnosis-badge{border-radius:999px}}

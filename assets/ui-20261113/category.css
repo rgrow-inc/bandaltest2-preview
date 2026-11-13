@@ -1,0 +1,115 @@
+body.bdl-renewal-category{--bdl-renewal-chrome:#111115;--bdl-renewal-surface-1:#151519;--bdl-renewal-surface-2:#1b1b1f;--bdl-renewal-surface-3:#252528;--bdl-renewal-border:rgba(255,255,255,0.14);--bdl-renewal-border-strong:rgba(255,255,255,0.14);--bdl-renewal-text:#fff;--bdl-renewal-text-secondary:rgba(255,255,255,0.7);--bdl-renewal-muted:rgba(255,255,255,0.5);--bdl-renewal-action:#a78bfa;--bdl-renewal-focus:#a78bfa;--bdl-renewal-danger:#ff6b6b;font-family:"Geist","Noto Sans JP","Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif}
+body.bdl-renewal-category .top-bar{background:#111115;border-bottom-color:transparent}
+body.bdl-renewal-category .article-title-pc::after{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .header-info{background:#07070b;border-top:1px solid #a78bfa}
+body.bdl-renewal-category .bdl-renewal-category__hero{border-color:rgba(255,255,255,0.08);border-radius:12px}
+body.bdl-renewal-category .bdl-renewal-eyebrow{font-weight:700}
+body.bdl-renewal-category .category-title,
+body.bdl-renewal-category .category-title.category-title-only{font-weight:700}
+body.bdl-renewal-category .child-category-name a{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .child-category-name a:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .list-head{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-renewal-product-card{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-renewal-product-card:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .product-price,
+body.bdl-renewal-category .product-sale-price{font-weight:700}
+body.bdl-renewal-category .sold-out{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-category .pagination a{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .empty{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bd-game-pc-hero,
+body.bdl-renewal-category .bd-game-pc-result-head{background:linear-gradient(135deg, #07070b 0%, #1b1b1f 58%, #4c1d95 100%)}
+body.bdl-renewal-category .bd-game-pc-detail-link,
+body.bdl-renewal-category .bd-game-pc-question,
+body.bdl-renewal-category .bd-game-pc-product-card{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bd-game-pc-options button{border-color:rgba(255,255,255,0.08)}
+.bd-game-pc-hero{border-radius:20px;background:linear-gradient(135deg, #07070b 0%, #151519 55%, #1f3475 100%)}
+.bd-game-pc-badge{background:rgba(255,255,255,0.14)}
+.bd-game-pc-hero :is(h1, h2){font-weight:700}
+.bd-game-pc-main-btn,
+.bd-game-pc-sub-btn,
+.bd-game-pc-detail-btn{font-weight:700}
+.bd-game-pc-main-btn{background:rgba(255,255,255,0.08)}
+.bd-game-pc-detail-btn{background:#07070b}
+.bd-game-pc-detail-link{border-color:rgba(255,255,255,0.08);border-radius:20px}
+.bd-game-pc-detail-text h2{font-weight:700}
+.bd-game-pc-detail-text p{color:rgba(255,255,255,0.36)}
+.bd-game-pc-question h2{font-weight:700}
+.bd-game-pc-options button{border-color:rgba(255,255,255,0.08);border-radius:12px;font-weight:700}
+.bd-game-pc-options button:hover{border-color:rgba(255,255,255,0.08)}
+.bd-game-pc-options button.is-active{border-color:#a78bfa;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7)}
+.bd-game-pc-result-head{background:#07070b}
+.bd-game-pc-result-label{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);font-weight:700}
+.bd-game-pc-result-head h2{font-weight:700}
+.bd-game-pc-result-head p{color:rgba(255,255,255,0.7)}
+.bd-game-pc-product-card{border-color:rgba(255,255,255,0.08);border-radius:20px}
+.bd-game-pc-product-rank{background:rgba(255,255,255,0.08);font-weight:700}
+.bd-game-pc-product-card:nth-child(1) .bd-game-pc-product-rank{background:rgba(255,255,255,0.08)}
+.bd-game-pc-product-card:nth-child(3) .bd-game-pc-product-rank{background:#7c3aed}
+.bd-game-pc-product-tag{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);font-weight:700}
+.bd-game-pc-product-body h3{font-weight:700}
+.bd-game-pc-product-price{color:#ff6b6b;font-weight:700}
+.bd-game-pc-product-desc{color:rgba(255,255,255,0.36)}
+.bd-game-pc-product-link{background:rgba(255,255,255,0.08);font-weight:700}
+.bd-game-pc-bottom-cta h2{font-weight:700}
+.bd-game-pc-bottom-cta p{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-category .bdl-wire-category-hero{background:#07070b;border-bottom-color:transparent}
+body.bdl-renewal-category .bdl-wire-category-hero p{font:700 10px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .breadcrumb{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-category .breadcrumb-item a{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-category .breadcrumb-item + .breadcrumb-item::before{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-category .child-category-list{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .child-category-name a{color:rgba(255,255,255,0.7)}
+body.bdl-renewal-category .bdl-wire-quick-filter{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-wire-quick-filter p{font-weight:700}
+body.bdl-renewal-category .bdl-wire-quick-filter a{color:rgba(255,255,255,0.7);background:#07070b;border-color:rgba(255,255,255,0.08);font-weight:700}
+body.bdl-renewal-category .bdl-wire-quick-filter a:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .side-bar{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .side-bar::before{border-bottom-color:transparent;font:700 10px/1.3 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .left-nav-category{border-bottom-color:transparent}
+body.bdl-renewal-category .left-nav-title a{font-weight:700}
+body.bdl-renewal-category .left-nav-title a:hover,
+body.bdl-renewal-category .left-nav-item a:hover{background:#07070b}
+body.bdl-renewal-category .list-head{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-renewal-product-card{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-renewal-product-card:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .product-image-wrap{border-bottom-color:transparent}
+body.bdl-renewal-category .bdl-wire-product-badge{border-color:rgba(255,255,255,0.08);font:700 7px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-compare-check{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-category .product-caption{font:700 14px/1.45 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-card-score span{color:rgba(255,255,255,0.36)}
+body.bdl-renewal-category .bdl-wire-card-score b{font:700 9px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-card-score i{background:#1b1b1f}
+body.bdl-renewal-category .bdl-wire-card-specs{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-wire-card-specs div{background:#07070b}
+body.bdl-renewal-category .bdl-wire-card-specs dt{color:rgba(255,255,255,0.36);font:700 6px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-card-specs dd{font-weight:700}
+body.bdl-renewal-category .bdl-wire-product-price strong{font:700 19px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-product-price small{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-category .bdl-wire-card-delivery{font-weight:700}
+body.bdl-renewal-category .bdl-wire-card-cta{font-weight:700}
+body.bdl-renewal-category .pagination a{color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category .bdl-wire-compare-bar{background:#07070b;border-top-color:transparent}
+body.bdl-renewal-category .bdl-wire-compare-bar p{font-weight:700}
+body.bdl-renewal-category .bdl-wire-compare-bar p b{font:700 20px/1 "Geist","Noto Sans JP", sans-serif}
+body.bdl-renewal-category .bdl-wire-compare-bar button{font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero{border-bottom-color:transparent}
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero h1{font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdl-wire-category-hero p{font-weight:500}
+body.bdl-renewal-category.bdlr-page :is(.side-bar, .list-head, .bdl-wire-quick-filter){border-color:rgba(255,255,255,0.08);border-radius:8px}
+body.bdl-renewal-category.bdlr-page .bdl-renewal-product-card{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category.bdlr-page .bdl-renewal-product-card:hover{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category.bdlr-page .product-caption{font-family:"Geist","Noto Sans JP",var(--bdlr-font);font-weight:500}
+body.bdl-renewal-category.bdlr-page .bdl-wire-product-price strong{font-family:"Geist","Noto Sans JP", sans-serif;font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdl-wire-card-cta{font-weight:500}
+body.bdl-renewal-category.bdlr-page .bdl-wire-compare-bar button{font-weight:500}
+body.bdl-renewal-category.bdlr-page{font-family:"Geist","Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-intro h1{font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdlr-catalog-name h2{font-weight:500}
+body.bdl-renewal-category.bdlr-page .bdlr-product-price strong{font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdlr-card-cta{font-weight:500}
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head{border-bottom-color:transparent}
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head h2{font-weight:700}
+body.bdl-renewal-category.bdlr-page .bdlr-compare-dialog__head button{border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table :is(th, td){border-color:rgba(255,255,255,0.08)}
+body.bdl-renewal-category.bdlr-page .bdlr-comparison-table th{font-weight:500}

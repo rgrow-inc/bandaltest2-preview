@@ -1,0 +1,30 @@
+.bdlr-migrated{background:#07070b;color:#fff;font-family:"Geist","Noto Sans JP","Noto Sans JP","Yu Gothic",sans-serif}
+.bdlr-migrated .mig-breadcrumb{color:rgba(255,255,255,0.5)}
+.bdlr-migrated a{color:#a78bfa}
+.bdlr-migrated a:focus-visible,.bdlr-migrated summary:focus-visible{outline:3px solid #a78bfa}
+.bdlr-migrated h1,.bdlr-migrated h2,.bdlr-migrated h3,.bdlr-migrated h4{color:#fff}
+.bdlr-migrated .mig-kicker{color:#a78bfa}
+.bdlr-migrated .mig-lead{color:rgba(255,255,255,0.7)}
+.bdlr-migrated .mig-hero{border-bottom-color:transparent}
+.bdlr-migrated .mig-hero-image{border-color:rgba(255,255,255,0.08);border-radius:12px;background:radial-gradient(ellipse at 80% 40%,#33204f55,transparent 70%),#111115}
+.bdlr-migrated .mig-hero-image img{border-radius:8px}
+.bdlr-migrated .mig-button{border-color:rgba(255,255,255,0.08);color:#fff}
+.bdlr-migrated .mig-button:hover{background:#7c3aed}
+.bdlr-migrated .mig-button-secondary{border-color:rgba(255,255,255,0.08);color:#fff}
+.bdlr-migrated .mig-button-secondary:hover{background:#151519}
+.bdlr-migrated .mig-card{border-color:rgba(255,255,255,0.08);background:#111115}
+.bdlr-migrated .mig-card p{color:rgba(255,255,255,0.7)}
+.bdlr-migrated .mig-price small{color:rgba(255,255,255,0.7)}
+.bdlr-migrated .mig-tags span{border-radius:4px;background:#1b1b1f;color:rgba(255,255,255,0.7)}
+.bdlr-migrated .mig-note{color:rgba(255,255,255,0.5)}
+.bdlr-migrated .mig-quote{border-left-color:transparent;background:#111115}
+.bdlr-migrated .mig-table-wrap{border-color:rgba(255,255,255,0.08);border-radius:8px}
+.bdlr-migrated th,.bdlr-migrated td{border-bottom-color:transparent}
+.bdlr-migrated th{color:rgba(255,255,255,0.7);background:#151519}
+.bdlr-migrated td{color:rgba(255,255,255,0.7);background:#111115}
+.bdlr-migrated .mig-faq{border-color:rgba(255,255,255,0.08);background:#111115;border-radius:8px}
+.bdlr-migrated .mig-faq p{color:rgba(255,255,255,0.7)}
+.bdlr-migrated .mig-article h2,.bdlr-migrated .mig-article h3{border-top-color:transparent}
+.bdlr-migrated .mig-article img{border-radius:8px}
+.bdlr-migrated .mig-article hr{border-top-color:transparent}
+.bdlr-migrated .mig-return{border-top-color:transparent}
