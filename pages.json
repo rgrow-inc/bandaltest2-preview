@@ -7,140 +7,140 @@
     "sp": "sp/top.html"
   },
   {
-    "name": "Ryzen 5 5500 RTX3050 | BD4",
+    "name": "Ryzen 5 5500／RTX 3050 | BD4",
     "path": "/view/item/000000000001",
     "type": "商品詳細",
     "pc": "pc/item-000000000001.html",
     "sp": "sp/item-000000000001.html"
   },
   {
-    "name": "Ryzen 5 5500 RTX5050 | BD4",
+    "name": "Ryzen 5 5500／RTX 5050 8GB | BD4",
     "path": "/view/item/000000000002",
     "type": "商品詳細",
     "pc": "pc/item-000000000002.html",
     "sp": "sp/item-000000000002.html"
   },
   {
-    "name": "Ryzen 7 5700X RTX5050 | BD4",
+    "name": "Ryzen 7 5700X／RTX 5050 8GB | BD4",
     "path": "/view/item/000000000003",
     "type": "商品詳細",
     "pc": "pc/item-000000000003.html",
     "sp": "sp/item-000000000003.html"
   },
   {
-    "name": "Ryzen 7 5700X RTX5060 | BD4",
+    "name": "Ryzen 7 5700X／RTX 5060 8GB | BD4",
     "path": "/view/item/000000000004",
     "type": "商品詳細",
     "pc": "pc/item-000000000004.html",
     "sp": "sp/item-000000000004.html"
   },
   {
-    "name": "Ryzen 7 5700X RTX5060Ti 8GB | BD4",
+    "name": "Ryzen 7 5700X／RTX 5060 Ti 8GB | BD4",
     "path": "/view/item/000000000005",
     "type": "商品詳細",
     "pc": "pc/item-000000000005.html",
     "sp": "sp/item-000000000005.html"
   },
   {
-    "name": "Ryzen 7 5700X RTX5070 | BDG3 Black",
+    "name": "Ryzen 7 5700X／RTX 5070 12GB | BDG3 Black",
     "path": "/view/item/000000000006",
     "type": "商品詳細",
     "pc": "pc/item-000000000006.html",
     "sp": "sp/item-000000000006.html"
   },
   {
-    "name": "Ryzen 7 5700X RX7600 | BD4",
+    "name": "Ryzen 7 5700X／RX 7600 8GB | BD4",
     "path": "/view/item/000000000007",
     "type": "商品詳細",
     "pc": "pc/item-000000000007.html",
     "sp": "sp/item-000000000007.html"
   },
   {
-    "name": "Ryzen 7 5700X RX9060XT 16GB | BD2 Black",
+    "name": "Ryzen 7 5700X／RX 9060 XT 16GB | BD2 Black",
     "path": "/view/item/000000000008",
     "type": "商品詳細",
     "pc": "pc/item-000000000008.html",
     "sp": "sp/item-000000000008.html"
   },
   {
-    "name": "Ryzen 7 7700 RTX5060 | BD4",
+    "name": "Ryzen 7 7700／RTX 5060 8GB | BD4",
     "path": "/view/item/000000000009",
     "type": "商品詳細",
     "pc": "pc/item-000000000009.html",
     "sp": "sp/item-000000000009.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RTX5060 | BD2 Black",
+    "name": "Ryzen 7 7800X3D／RTX 5060 8GB | BD2 Black",
     "path": "/view/item/000000000010",
     "type": "商品詳細",
     "pc": "pc/item-000000000010.html",
     "sp": "sp/item-000000000010.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RTX5060Ti | BD2 Black",
+    "name": "Ryzen 7 7800X3D／RTX 5060 Ti 8GB | BD2 Black",
     "path": "/view/item/000000000011",
     "type": "商品詳細",
     "pc": "pc/item-000000000011.html",
     "sp": "sp/item-000000000011.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RTX5070 | BDG3 Black",
+    "name": "Ryzen 7 7800X3D／RTX 5070 12GB | BDG3 Black",
     "path": "/view/item/000000000012",
     "type": "商品詳細",
     "pc": "pc/item-000000000012.html",
     "sp": "sp/item-000000000012.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RTX5070ti | BDG3 Black",
+    "name": "Ryzen 7 7800X3D／RTX 5070 Ti 16GB | BDG3 Black",
     "path": "/view/item/000000000013",
     "type": "商品詳細",
     "pc": "pc/item-000000000013.html",
     "sp": "sp/item-000000000013.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RTX5080 | BDG3 Black",
+    "name": "Ryzen 7 7800X3D／RTX 5080 16GB | BDG3 Black",
     "path": "/view/item/000000000014",
     "type": "商品詳細",
     "pc": "pc/item-000000000014.html",
     "sp": "sp/item-000000000014.html"
   },
   {
-    "name": "Ryzen 7 7800X3D RX9060XT 16GB | BD2 Black",
+    "name": "Ryzen 7 7800X3D／RX 9060 XT 16GB | BD2 Black",
     "path": "/view/item/000000000015",
     "type": "商品詳細",
     "pc": "pc/item-000000000015.html",
     "sp": "sp/item-000000000015.html"
   },
   {
-    "name": "Ryzen 7 9800X3D RTX5060Ti | BD2 Black",
+    "name": "Ryzen 7 9800X3D／RTX 5060 Ti 8GB | BD2 Black",
     "path": "/view/item/000000000016",
     "type": "商品詳細",
     "pc": "pc/item-000000000016.html",
     "sp": "sp/item-000000000016.html"
   },
   {
-    "name": "Ryzen 7 9800X3D RTX5070 | BDG3 Black",
+    "name": "Ryzen 7 9800X3D／RTX 5070 12GB | BDG3 Black",
     "path": "/view/item/000000000017",
     "type": "商品詳細",
     "pc": "pc/item-000000000017.html",
     "sp": "sp/item-000000000017.html"
   },
   {
-    "name": "Ryzen 7 9800X3D RTX5070ti | BDG3 Black",
+    "name": "Ryzen 7 9800X3D／RTX 5070 Ti 16GB | BDG3 Black",
     "path": "/view/item/000000000018",
     "type": "商品詳細",
     "pc": "pc/item-000000000018.html",
     "sp": "sp/item-000000000018.html"
   },
   {
-    "name": "Ryzen 7 9800X3D RTX5080 | BDG3 Black",
+    "name": "Ryzen 7 9800X3D／RTX 5080 16GB | BDG3 Black",
     "path": "/view/item/000000000019",
     "type": "商品詳細",
     "pc": "pc/item-000000000019.html",
     "sp": "sp/item-000000000019.html"
   },
   {
-    "name": "Ryzen 9 9950X3D RTX5080 | BDG3 Black",
+    "name": "Ryzen 9 9950X3D／RTX 5080 16GB | BDG3 Black",
     "path": "/view/item/000000000020",
     "type": "商品詳細",
     "pc": "pc/item-000000000020.html",
@@ -168,7 +168,7 @@
     "sp": "sp/item-000000000024.html"
   },
   {
-    "name": "けんきコラボ Pro（BKM-B1）Ryzen 9 9950X3D / RTX 5080 | コラボモデル",
+    "name": "けんきコラボ Pro（BKM-B1）Ryzen 9 9950X3D／RTX 5080 16GB | コラボモデル",
     "path": "/view/item/000000000026",
     "type": "商品詳細",
     "pc": "pc/item-000000000026.html",
@@ -203,77 +203,77 @@
     "sp": "sp/category-RTX3050.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5050",
+    "name": "GPU別,GeForce RTX 5050 8GB",
     "path": "/view/category/RTX5050",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5050.html",
     "sp": "sp/category-RTX5050.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5060",
+    "name": "GPU別,GeForce RTX 5060 8GB",
     "path": "/view/category/RTX5060",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5060.html",
     "sp": "sp/category-RTX5060.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5060 Ti",
+    "name": "GPU別,GeForce RTX 5060 Ti 8GB",
     "path": "/view/category/RTX5060Ti",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5060Ti.html",
     "sp": "sp/category-RTX5060Ti.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5070",
+    "name": "GPU別,GeForce RTX 5070 12GB",
     "path": "/view/category/RTX5070",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5070.html",
     "sp": "sp/category-RTX5070.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5070 Ti",
+    "name": "GPU別,GeForce RTX 5070 Ti 16GB",
     "path": "/view/category/RTX5070Ti",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5070Ti.html",
     "sp": "sp/category-RTX5070Ti.html"
   },
   {
-    "name": "GPU別,GeForce RTX 5080",
+    "name": "GPU別,GeForce RTX 5080 16GB",
     "path": "/view/category/RTX5080",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX5080.html",
     "sp": "sp/category-RTX5080.html"
   },
   {
-    "name": "GPU別,Radeon RX 7600",
+    "name": "GPU別,Radeon RX 7600 8GB",
     "path": "/view/category/RX7600",
     "type": "商品カテゴリ",
     "pc": "pc/category-RX7600.html",
     "sp": "sp/category-RX7600.html"
   },
   {
-    "name": "GPU別,Radeon RX 7800 XT",
+    "name": "GPU別,Radeon RX 7800 XT 16GB",
     "path": "/view/category/RX7800XT",
     "type": "商品カテゴリ",
     "pc": "pc/category-RX7800XT.html",
     "sp": "sp/category-RX7800XT.html"
   },
   {
-    "name": "GPU別,Radeon RX 7900 XT",
+    "name": "GPU別,Radeon RX 7900 XT 20GB",
     "path": "/view/category/RX7900XT",
     "type": "商品カテゴリ",
     "pc": "pc/category-RX7900XT.html",
     "sp": "sp/category-RX7900XT.html"
   },
   {
-    "name": "GPU別,Radeon RX 9060 XT",
+    "name": "GPU別,Radeon RX 9060 XT 16GB",
     "path": "/view/category/RX9060XT",
     "type": "商品カテゴリ",
     "pc": "pc/category-RX9060XT.html",
     "sp": "sp/category-RX9060XT.html"
   },
   {
-    "name": "GPU別,Radeon RX 9070 XT",
+    "name": "GPU別,Radeon RX 9070 XT 16GB",
     "path": "/view/category/RX9070XT",
     "type": "商品カテゴリ",
     "pc": "pc/category-RX9070XT.html",
