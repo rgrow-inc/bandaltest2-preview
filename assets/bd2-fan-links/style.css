@@ -1,0 +1,31 @@
+
+/* BD2 mounting bays, registered against the black and white 480px square photographs. */
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-bd2-fan-diagram] .bdlr-option-card__media {
+  display:block!important;position:relative!important;width:min(100%,220px)!important;height:auto!important;inline-size:min(100%,220px)!important;block-size:auto!important;aspect-ratio:1!important;container-type:inline-size;isolation:isolate;
+  --bay-x:20%;--bay-w:59%;--top-y:12.4%;--top-h:9.5%;--bottom-y:60.4%;--bottom-h:13.6%;
+}
+#bdlr-options-panel [data-bd2-fan-diagram] [data-photo^="bd2-white"] {--bay-x:21.8%!important;--bay-w:55%!important;--top-y:12.2%!important;--top-h:8.8%!important;--bottom-y:53.7%!important;--bottom-h:14.2%!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-bd2-fan-diagram] .bdlr-option-card__media > img {position:absolute!important;inset:0!important;filter:brightness(.67)!important}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-bd2-fan-diagram] :is(.nov-fan-highlight,.nov-location) {display:none!important}
+#bdlr-options-panel [data-bd2-fan-diagram] .bd2-fan-bay {
+  position:absolute;box-sizing:border-box;left:var(--bay-x);width:var(--bay-w);display:flex;align-items:center;justify-content:center;z-index:1;pointer-events:none;border-radius:4px;
+  color:#eff1f6;font-weight:700;font-size:clamp(9px,5cqw,11px);font-family:inherit;line-height:1;letter-spacing:0;white-space:nowrap;
+}
+.bd2-fan-bay[data-side="top"] {top:var(--top-y);height:var(--top-h)}
+.bd2-fan-bay[data-side="bottom"] {top:var(--bottom-y);height:var(--bottom-h)}
+.bd2-fan-bay[data-state="empty"] {border:1.5px dashed #bec0cd;background:#14151d}
+#bdlr-options-panel .bd2-fan-bay[data-state="added"] {
+  border:2px solid #b797ff;box-shadow:0 0 6px #a97bff,inset 0 0 4px #af81ff80;justify-content:flex-end;padding-inline-end:3px;
+}
+.bd2-fan-bay[data-state="added"] .bd2-fan-status {background:#532aa2;color:#fff;padding:2px 4px;border-radius:3px}
+.bd2-fan-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#bdlr-options-panel .bd2-fan-legend {display:block;width:fit-content;max-width:100%;margin:6px auto 2px;padding:3px 9px;color:#e0dcef;background:#23212c;border-radius:10px;font:600 12px/1.35 system-ui,sans-serif}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="device"] .nov-choice-wrap:has(> .bdlr-device-page-link) {display:grid!important;grid-template-rows:1fr auto;align-items:stretch;min-width:0;row-gap:2px}
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-device-page-link {display:inline-flex!important;align-items:center;justify-content:center;gap:4px;justify-self:center;position:relative;min-height:44px;padding:0 10px;max-width:100%;box-sizing:border-box;color:#d4bfff;font:600 14px/1.4 system-ui,sans-serif;text-underline-offset:3px;text-decoration:underline}
+#bdlr-options-panel .bdlr-device-page-link:hover {color:white}
+#bdlr-options-panel .bdlr-device-page-link:focus-visible {outline:2px solid #c2a5ff;outline-offset:-2px;border-radius:5px}
+/* The magnifier uses a single tap target at the lower right of the thumbnail, never the adjacent card's link. */
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="device"] .nov-choice-wrap:has(>.bdlr-device-page-link) > .nov-zoom {
+  width:44px!important;height:44px!important;min-width:0!important;max-width:44px!important;max-height:44px!important;aspect-ratio:1!important;padding:4px!important;box-sizing:border-box!important;
+  left:min(calc(100% - 50px),calc(50% + var(--opt-thumb) / 2 - 44px))!important;
+}
