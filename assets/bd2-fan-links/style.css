@@ -29,3 +29,5 @@
   width:44px!important;height:44px!important;min-width:0!important;max-width:44px!important;max-height:44px!important;aspect-ratio:1!important;padding:4px!important;box-sizing:border-box!important;
   left:min(calc(100% - 50px),calc(50% + var(--opt-thumb) / 2 - 44px))!important;
 }
+/* Under BD2 the three BDG3-only native options are unavailable and must not occupy card slots. */
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom .nov-options:has([data-bd2-fan-diagram]) .bdlr-option-card.nov-other-case {display:none!important}
