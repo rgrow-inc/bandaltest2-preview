@@ -55,3 +55,6 @@ html body .bdlr-fv__arrow{display:none!important}
 html body.bdlr-top-page .bdlr-main{overflow:visible!important}
 
 html body .bdlr-fv .bdlr-fv__slide{min-width:0;max-width:none;margin:0;padding:0}.bdlr-fv__viewport{overflow:hidden}.bdlr-fv__track{width:100%}.bdlr-fv__slide img{max-width:none}.bdlr-account__menu{box-sizing:border-box}.bdlr-account__menu[hidden]{display:none!important}
+
+/* Keep the full-bleed row within the shop canvas on systems with classic scrollbars. */
+html body .bdlr-wrapper:has(.bdlr-fv){overflow-x:clip!important}
