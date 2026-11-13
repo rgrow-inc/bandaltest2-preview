@@ -368,7 +368,7 @@ body.bdl-renewal-item.bdlr-page .bdl-renewal-item__purchase-panel>.detail-sold-o
 body.bdl-renewal-item.bdlr-page .bdl-renewal-item__main{background:#07070b}
 html body.bdl-renewal-item.bdlr-page{--bdlr-detail-surface:#111115;--bdlr-detail-border:rgba(255,255,255,0.14);--bdlr-detail-secondary:rgba(255,255,255,0.7)}
 html body.bdl-renewal-item.bdlr-page .bdl-renewal-item__main{background:#07070b}
-
+html body.bdl-renewal-item.bdlr-page .bdlr-hero-evidence .bdlr-review-score > span{color:#fff!important}
 html body.bdl-renewal-item.bdlr-page .bdlr-hero-evidence .bdlr-review-score::after{color:#a78bfa}
 html body.bdl-renewal-item.bdlr-page .bdl-wire-item-specs > div{border-color:rgba(255,255,255,0.08);border-radius:4px;background:#151519}
 html body.bdl-renewal-item.bdlr-page .bdlr-hero-installment strong{color:#fff}
@@ -478,14 +478,3 @@ html.bandal-audited .audit-wifi-note{background:#1b1b1f}
 .bandal-diagnosis-badge__title{font-weight:700}
 .bandal-diagnosis-badge__close{color:rgba(255,255,255,0.36)}
 @media screen and (max-width: 767px){.bandal-diagnosis-badge{border-radius:999px}}
-
-/* Keep the product section links legible as option photographs scroll underneath. */
-@media (max-width: 767px) {
-  html body.bdl-renewal-item.bdlr-page nav.bdlr-detail-anchor {
-    background: #111115 !important;
-    column-gap: 16px;
-  }
-  html body.bdl-renewal-item.bdlr-page nav.bdlr-detail-anchor > a {
-    flex: 0 0 auto;
-  }
-}

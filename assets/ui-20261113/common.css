@@ -1,4 +1,4 @@
-/* BANDAL design 51fae2d, integrated with the active storefront. */
+/* BANDAL UI System v0.1 — 一旦反映レイヤー（生成）。消せば元に戻ります。 */
 @font-face{font-family:"Geist";src:url("fonts/geist/Geist-Regular.woff2") format("woff2");font-weight:100 450;font-display:swap}
 @font-face{font-family:"Geist";src:url("fonts/geist/Geist-Medium.woff2") format("woff2");font-weight:451 650;font-display:swap}
 @font-face{font-family:"Geist";src:url("fonts/geist/Geist-Bold.woff2") format("woff2");font-weight:651 1000;font-display:swap}
@@ -83,6 +83,7 @@ input[type=text]{border-bottom:1px solid rgba(255,255,255,0.14)}
 .information-label{font-weight:400}
 .news-link:after{border-top:solid 2px rgba(255,255,255,0.36);border-right:solid 2px rgba(255,255,255,0.36)}
 .product-wrap{border-bottom-color:transparent}
+.product-sale-price{color:#ff6b6b}
 .sold-out{border-radius:4px;font-family:"Geist","Noto Sans JP",sans-serif}
 .footer-guide{border-top-color:transparent}
 .footer-guide h4{border-bottom-color:transparent}
@@ -101,6 +102,9 @@ input[type=text]{border-bottom:1px solid rgba(255,255,255,0.14)}
 .pager .pagination li a.active,.pager .pagination li a:hover{background:#07070b}
 input.productnum{color:rgba(255,255,255,0.36)}
 .detail-sold-out{font-family:"Geist","Noto Sans JP",sans-serif;border-radius:4px}
+.detail-product-sale-price{color:#ff6b6b}
+.reviewRateStar{color:#fff}
+.reviewRateStar::before{font-weight:700}
 .review-post-btn{border-color:rgba(255,255,255,0.08)}
 .review-form-content input,.review-form-content textarea{border-radius:4px}
 .review-list-unit{border-bottom-color:transparent}
@@ -375,6 +379,8 @@ body.bdlr-catalog-page .bdlr-compare-bar__actions [data-bdl-compare-clear]{borde
 body.bdlr-review-archive-page .bdlr-legacy-review-summary{color:var(--bdlr-text,#fff);font-weight:700}
 body.bdlr-review-archive-page .bdlr-legacy-review-intro{color:var(--bdlr-text-2,rgba(255,255,255,0.7))}
 body.bdl-renewal-item .bdlr-config-reviews__list [data-bdlr-review-kind=legacy] blockquote,body.bdlr-review-archive-page .bdlr-legacy-review-card blockquote{color:var(--bdlr-text,#fff)}
+body.bdl-renewal-item .bdlr-config-reviews__list [data-bdlr-review-kind=legacy] :is(.bdlr-legacy-reviewer,.bdlr-legacy-review-rating,.bdlr-legacy-review-verification),body.bdlr-review-archive-page .bdlr-legacy-review-card :is(.bdlr-legacy-reviewer,.bdlr-legacy-review-rating,.bdlr-legacy-review-verification){color:var(--bdlr-text-2,rgba(255,255,255,0.7))}
+body.bdl-renewal-item .bdlr-config-reviews__list [data-bdlr-review-kind=legacy] .bdlr-legacy-review-rating>span:first-child,body.bdlr-review-archive-page .bdlr-legacy-review-rating>span:first-child{color:var(--bdlr-purple,#a78bfa)}
 body.bdl-renewal-item .bdlr-config-reviews__list [data-bdlr-review-kind=legacy] .bdlr-legacy-review-source,body.bdlr-review-archive-page .bdlr-legacy-review-source{color:var(--bdlr-text-2,rgba(255,255,255,0.7))}
 body.bdl-renewal-item .bdlr-config-reviews__list [data-bdlr-review-kind=legacy] .bdlr-legacy-review-source:focus-visible,body.bdlr-review-archive-page .bdlr-legacy-review-source:focus-visible{outline:3px solid #a78bfa}
 body.bdlr-top-page [data-bdlr-pickup-status]:not([hidden]){color:rgba(255,255,255,0.7)}
@@ -387,6 +393,9 @@ body.bdlr-top-page .bdlr-home-trust{border-block-color:transparent;background:#1
 body.bdlr-top-page .bdlr-home-trust li+li{border-left-color:transparent}
 body.bdlr-top-page .bdlr-home-trust small{color:rgba(255,255,255,0.7)}
 body.bdlr-top-page .bdlr-home-trust:focus-visible{outline:2px solid #a78bfa}
+body.bdlr-top-page .bdlr-feature-banners a{--feature-accent:#a78bfa;border-color:rgba(255,255,255,0.08);border-bottom-color:transparent;border-radius:8px;background:#07070b}
+body.bdlr-top-page .bdlr-feature-banners a.is-nextday{--feature-accent:rgba(255,255,255,0.7)}
+body.bdlr-top-page .bdlr-feature-banners a.is-streaming{--feature-accent:#ff6b6b}
 body.bdlr-top-page .bdlr-feature-banners small{color:#fff}
 body.bdlr-top-page .bdlr-feature-banners span{color:rgba(255,255,255,0.7)}
 body.bdlr-top-page .bdlr-section.bdlr-discovery-combined{border-color:rgba(255,255,255,0.08);border-radius:12px;background:#111115}
@@ -394,8 +403,11 @@ body.bdlr-top-page .bdlr-discovery-buttons a{border-color:rgba(255,255,255,0.08)
 body.bdlr-top-page .bdlr-price-matrix td,body.bdlr-top-page .bdlr-price-matrix th{border-color:rgba(255,255,255,0.08);background:#111115}
 body.bdlr-top-page .bdlr-price-matrix th{background:#151519}
 body.bdlr-top-page .bdlr-price-matrix tr>th:first-child{background:#151519}
+body.bdlr-top-page .bdlr-price-matrix td.is-pickup{background:#1b1b1f}
 body.bdlr-top-page .bdlr-price-matrix td small{color:rgba(255,255,255,0.7)}
+body.bdlr-top-page .bdlr-price-matrix td.is-pickup>small:first-child{background:rgba(255,255,255,0.08)}
 body.bdlr-page .bdlr-review-score{color:rgba(255,255,255,0.7)}
+body.bdlr-page .bdlr-review-score>span{color:#fff}
 body.bdlr-catalog-page .bdlr-review-score:focus-visible{outline:2px solid #a78bfa}
 body.bdlr-page .bdlr-reference-summary a{color:rgba(255,255,255,0.7)}
 body.bdlr-page .bdlr-reference-summary small{color:rgba(255,255,255,0.7)}
@@ -416,6 +428,7 @@ html body.bdlr-page .bdlr-support-menu__panel .is-line{background:#1b1b1f}
 html body.bdlr-page :is(.bdlr-support-menu button,.bdlr-pickup-games button):focus-visible{outline:3px solid #a78bfa}
 .bdlr-home-reviews article{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
 .bdlr-home-reviews small{color:rgba(255,255,255,0.5)}
+.bdlr-home-review-stars{color:#fff}
 .bdlr-config-reviews__list article{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:8px}
 .bdlr-config-reviews__list article>p{color:rgba(255,255,255,0.5)}
 body.bdlr-top-page .bdlr-pickup-card{border-color:rgba(255,255,255,0.08)}
@@ -433,16 +446,20 @@ body:is(.bdlr-top-page,.bdl-renewal-item) .bdlr-pickup-price{color:#fff}
 body:is(.bdlr-top-page,.bdl-renewal-item) .bdlr-pickup-monthly{color:rgba(255,255,255,0.7)}
 body:is(.bdlr-top-page,.bdl-renewal-item) .bdlr-pickup-card .bdlr-card-leadtime{color:rgba(255,255,255,0.5)}
 body:is(.bdlr-top-page,.bdl-renewal-item) .bdlr-pickup-card>small{color:rgba(255,255,255,0.5)}
+body.bdl-renewal-item.bdlr-page .bdlr-legacy-review-rating>span:first-child{color:#fff!important}
 body.bdl-renewal-item.bdlr-page .bdlr-legacy-review-rating>span:not(:first-child){color:rgba(255,255,255,0.7)}
 body.bdl-renewal-item .bdlr-review-histogram>strong{font:700 30px/1.3 "Geist","Noto Sans JP",sans-serif;color:#fff}
 body.bdl-renewal-item .bdlr-reviews-expand{border-color:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7)}
 body.bdl-renewal-item.bdlr-page :is(.wrapper,.contents-section,.bdl-renewal-item__section,.bdlr-detail-flow,.bdlr-detail-section){background:#07070b!important}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium].bdlr-premium-card[data-bdlr-premium]{background:linear-gradient(135deg,#101722,#111115 70%);color:#fff;border-color:rgba(255,255,255,0.08);border-radius:12px;font-family:"Geist","Noto Sans JP",sans-serif}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium].bdlr-premium-card[data-bdlr-premium]:hover{background:linear-gradient(135deg,#101722,#111115 70%);border-color:rgba(255,255,255,0.08)}
+body.bdlr-page .bdlr-premium-card[data-bdlr-premium] :is(.bdlr-pickup-label,[data-bdlr-listing-label]){border-radius:4px;background:rgba(255,255,255,0.08);font:700 13px/1.3 "Geist","Noto Sans JP",sans-serif}
+body.bdlr-page .bdlr-premium-card[data-bdlr-premium] :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay){border-color:rgba(255,255,255,0.08);border-radius:12px;color:rgba(255,255,255,0.7);font:500 12px/1 "Geist","Noto Sans JP",sans-serif!important}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-premium-title{color:#fff;font:700 26px/1.25 "Geist","Noto Sans JP",sans-serif}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-premium-gpu{color:#fff;font:700 28px/1.2 "Geist","Noto Sans JP",sans-serif}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-premium-cpu{color:rgba(255,255,255,0.7);font:400 17px/1.45 "Geist","Noto Sans JP",sans-serif}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-review-score{color:rgba(255,255,255,0.7)}
+body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-review-score > span{color:#fff}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-premium-price{border-top-color:transparent;color:#fff;font:700 34px/1.2 "Geist","Noto Sans JP",sans-serif}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-product-price > span{color:rgba(255,255,255,0.7)}
 body.bdlr-page .bdlr-premium-card[data-bdlr-premium] .bdlr-product-price strong{color:#fff;font:700 31px/1.2 "Geist","Noto Sans JP",sans-serif}
@@ -499,13 +516,17 @@ html body .bdlr-products-menu__links a:hover{background:#151519}
 html body .bdlr-products-menu__mobile a{background:#111115}
 @media(max-width:760px){html body.bdlr-page.bdlr-top-page [data-bdlr-pickup] .bdlr-premium-card[data-bdlr-premium] .bdlr-premium-media{border-radius:4px}}
 html body.bdlr-page .checked-item .bdlr-premium-card[data-bdlr-premium] > .product-name-link .product-price{border-top:1px solid rgba(255,255,255,0.14)}
+html body.bdlr-page :is(#nov-specificity,.bdlr-premium-card,.bdlr-product-card,[data-bdl-product-card],.product-list-item,.bdlr-pickup-card) :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay),html body.bdl-renewal-item.bdlr-page:not(:has([data-bdlr-availability="period"],.cart-add-btn .sell-period-btn)):is(:has(.cart-add-btn .outstock.on),:has([data-bdlr-availability="soldout"]):not(:has(.cart-add-btn .instock.on a.cart-btn)),:has(.cart-add-btn .outstock-btn .outstock):not(:has(.cart-add-btn .instock.on a.cart-btn))) [data-bdl-renewal-gallery] .item-image-large::after{border-block:1px solid #a78bfa!important;color:#fff!important}
 html body.bdlr-top-page :is(.nov-home-picks,.nov-collab,.nov-limited,.nov-discover){color:#fff}
 .nov-section-head h2,.nov-limited h2,.nov-discover h2{color:#fff}
 .nov-section-head p,.nov-discover>p{color:rgba(255,255,255,0.5)}
 .nov-model{background:#111115;border-color:rgba(255,255,255,0.08);border-radius:12px}
+.nov-model.nov-featured{border-color:rgba(255,255,255,0.08)}
 html body.bdlr-top-page .nov-model-slot .bdlr-pickup-image{background:#07070b}
 .nov-model-slot .bdlr-card-leadtime{color:rgba(255,255,255,0.5)}
 .nov-tier,.nov-units{font:700 12px/1.3 "Geist","Noto Sans JP",sans-serif;border-radius:4px}
+.nov-tier{background:rgba(255,255,255,0.08);color:#fff}
+.nov-featured .nov-tier{background:rgba(255,255,255,0.12)}
 .nov-units{background:#111115;color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.08)}
 .nov-cpus button,.nov-model-detail{background:#151519;color:#a78bfa;border-color:rgba(255,255,255,0.08)}
 .nov-cpus button[aria-pressed=true]{border-color:#a78bfa}
@@ -587,6 +608,8 @@ html.bandal-audited :is(.audit-filters,.audit-results,.audit-campaign,.audit-exa
 .audit-examples a{border-color:rgba(255,255,255,0.08)}
 .audit-examples img{border-radius:4px}
 .audit-grades th,.audit-grades td{border-color:rgba(255,255,255,0.08)}
+html.bandal-audited .bdlr-legacy-review-rating span:first-child,html.bandal-audited .bdlr-review-stars{color:#fff!important}
+html.bandal-audited .bdlr-service-strip__line{background:rgba(255,255,255,0.08)!important;color:#fff!important}
 html.bandal-audited .bdlr-faq-nav a{background:#151519;border-color:rgba(255,255,255,0.08)}
 @media(max-width:767px){html.bandal-audited .bdlr-slide .audit-mobile-caption{background:#07070b}}
 @media(max-width:767px){html.bandal-audited #bd-three-question:not([hidden]) .ux-progress{background:#111115}}
@@ -620,6 +643,7 @@ html.bandal-audited .bdlr-catalog-primary [aria-current=page]{background:#252528
 @media(max-width:767px){html.bandal-audited body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-small button{border-color:rgba(255,255,255,0.08)!important;background:#07070b!important}}
 @media(max-width:767px){html.bandal-audited body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-small button[aria-pressed=true]{border:2px solid #a78bfa!important}}
 @media(max-width:767px){html.bandal-audited .audit-kenki .mig-hero-image>img{background:#111115}}
+/* ---- 手動調整（キャンバスのルール） ---- */
 /* アイコンは箱に入れない */
 .nov-find-row nav a>i{background:transparent!important;border:0!important;box-shadow:none!important;color:rgba(255,255,255,.5)!important}
 .nov-find-row nav a:hover>i{color:#fff!important}
@@ -633,22 +657,45 @@ html.bandal-audited .bdlr-catalog-primary [aria-current=page]{background:#252528
 .bdlr-card-cta:hover{background:rgba(255,255,255,.12)!important}
 .bdlr-button--secondary{background:rgba(255,255,255,.08)!important;border-color:transparent!important;color:#fff!important}
 .bdlr-button--secondary:hover{background:rgba(255,255,255,.12)!important}
+/* 評価の星は白 */
+body.bdlr-page .bdlr-review-score>span{color:#fff!important}
+
 /* 押せる面：白4%の面＋白8%の枠＋上辺の光。hoverで面と枠を一段明るく */
 .nov-find-row nav a,.nov-find-row summary{background:#111115!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;transition:background .15s,border-color .15s}
 .nov-find-row nav a:hover,.nov-find-row summary:hover{background:#18181c!important;border-color:rgba(255,255,255,.16)!important}
 
+/* ===== 全体ブラッシュアップ 1（2026-11-13） ===== */
+/* SOLD OUT：斜めリボン/全面オーバーレイをやめ、画像右上の小さなバッジに */
+html body.bdlr-page :is(#nov-ribbon,.bdlr-premium-card,.bdlr-product-card,[data-bdl-product-card],.product-list-item,.bdlr-pickup-card) :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay),html body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-large::after{position:absolute!important;inset:12px 12px auto auto!important;top:12px!important;right:12px!important;width:auto!important;height:auto!important;min-width:0!important;transform:none!important;display:inline-flex!important;align-items:center!important;padding:4px 8px!important;margin:0!important;background:rgba(7,7,11,.72)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;box-shadow:none!important;clip-path:none!important;font:500 11px/1.2 "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.06em!important;color:#fff!important;backdrop-filter:blur(6px);z-index:3!important;text-align:left!important;justify-content:flex-start!important}
 /* GO リンク：下線なし・紫文字・→ */
 .bdlr-price-matrix>a,.bdlr-price-matrix>p>a,.nov-collab-price span{text-decoration:none!important;color:#a78bfa!important;font-weight:500!important}
 .bdlr-price-matrix>a:hover,.nov-collab:hover .nov-collab-price span{text-decoration:underline!important;text-underline-offset:3px}
 /* 価格表：価格は下線なし、hoverで面が明るくなる */
 .bdlr-price-matrix table a,.bdlr-price-matrix dd a{text-decoration:none!important;font-weight:500!important}
 .bdlr-price-matrix table td:has(a):hover{background:rgba(255,255,255,.05)!important}
+/* ヘッダー：検索ボタンは置かない（Enterのヒントだけ） */
+.bdlr-header .bdlr-search-form .search-url{background:transparent!important;border:1px solid rgba(255,255,255,.14)!important;color:rgba(255,255,255,.5)!important;font:500 11px/1 "Geist",sans-serif!important;height:22px!important;min-height:0!important;padding:0 7px!important;border-radius:4px!important;align-self:center!important;margin-right:10px!important;box-shadow:none!important}
+.bdlr-header .bdlr-search-form .search-url::before{content:"Enter";}
+.bdlr-header .bdlr-search-form .search-url{font-size:0!important}.bdlr-header .bdlr-search-form .search-url::before{font-size:11px}
 /* ヘッダー：PC診断は SPECIAL ピル */
 .bdlr-header .bdlr-diagnosis{border-radius:999px!important;border:1px solid transparent!important;background:linear-gradient(180deg,#14121c,#0b0a11) padding-box,linear-gradient(115deg,#a78bfa,rgba(167,139,250,.35) 45%,#7c3aed) border-box!important;color:#fff!important;padding:0 14px 0 12px!important;box-shadow:0 0 14px rgba(124,58,237,.22)!important}
 .bdlr-header .bdlr-diagnosis svg{color:#a78bfa!important}
 
+/* 価格表：行・列の罫線なし、見出しの下だけ線。ピックアップは白12%＋紫の線 */
+.bdlr-price-matrix table :is(th,td){border-color:transparent!important}
+.bdlr-price-matrix table{border-color:transparent!important;border-collapse:separate!important;border-spacing:0!important}
+.bdlr-price-matrix table thead th{border-bottom:1px solid rgba(255,255,255,.14)!important;background:transparent!important;color:rgba(255,255,255,.5)!important;font-weight:500!important}
+.bdlr-price-matrix table tbody :is(th,td){background:transparent!important}
+.bdlr-price-matrix table tbody tr:nth-child(even) :is(th,td){background:rgba(255,255,255,.02)!important}
+.bdlr-price-matrix table tbody th{background:transparent!important;text-align:left!important}
+.bdlr-price-matrix table td.nov-picked-cell{background:rgba(255,255,255,.12)!important;box-shadow:inset 0 0 0 1px #7c3aed!important}
 /* 余白：ヒーローと最初のセクションの間を詰める */
 .bdlr-top-page .nov-home-picks{padding-top:40px!important;margin-top:0!important}
+
+/* SOLD OUT：元の高詳細度セレクタをそのまま上書き */
+html body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-large::after{position:absolute!important;inset:12px 12px auto auto!important;width:auto!important;max-width:none!important;height:auto!important;min-height:0!important;min-width:0!important;transform:none!important;display:inline-flex!important;align-items:center!important;padding:4px 8px!important;margin:0!important;background:rgba(7,7,11,.72)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;box-shadow:none!important;text-shadow:none!important;clip-path:none!important;font:500 11px/1.2 "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.06em!important;color:#fff!important;z-index:5!important}
+html body.bdlr-page :is(#nov-ribbon,.bdlr-premium-card,.bdlr-product-card,[data-bdl-product-card],.product-list-item,.bdlr-pickup-card) :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay),html body.bdl-renewal-item.bdlr-page [data-bdl-renewal-gallery] .item-image-large::after{position:absolute!important;inset:12px 12px auto auto!important;width:auto!important;max-width:none!important;height:auto!important;min-height:0!important;min-width:0!important;transform:none!important;display:inline-flex!important;align-items:center!important;padding:4px 8px!important;margin:0!important;background:rgba(7,7,11,.72)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;box-shadow:none!important;text-shadow:none!important;clip-path:none!important;font:500 11px/1.2 "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.06em!important;color:#fff!important;z-index:5!important}
+html body.bdlr-page :is(#nov-specificity,.bdlr-premium-card,.bdlr-product-card,[data-bdl-product-card],.product-list-item,.bdlr-pickup-card) :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay),html body.bdl-renewal-item.bdlr-page:not(:has([data-bdlr-availability="period"],.cart-add-btn .sell-period-btn)):is(:has(.cart-add-btn .outstock.on),:has([data-bdlr-availability="soldout"]):not(:has(.cart-add-btn .instock.on a.cart-btn)),:has(.cart-add-btn .outstock-btn .outstock):not(:has(.cart-add-btn .instock.on a.cart-btn))) [data-bdl-renewal-gallery] .item-image-large::after{position:absolute!important;inset:12px 12px auto auto!important;width:auto!important;max-width:none!important;height:auto!important;min-height:0!important;min-width:0!important;transform:none!important;display:inline-flex!important;align-items:center!important;padding:4px 8px!important;margin:0!important;background:rgba(7,7,11,.72)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;box-shadow:none!important;text-shadow:none!important;clip-path:none!important;font:500 11px/1.2 "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.06em!important;color:#fff!important;z-index:5!important}
 
 /* SP下部ナビ：CSS手描きアイコンをPhosphor（Light、現在地はFill）に置換 */
 html body .bdlr-mobile-bottom i{width:22px!important;height:22px!important;border:0!important;margin:0 auto!important;background:currentColor!important;-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat;transform:none!important}
@@ -663,6 +710,9 @@ html body.bdlr-top-page .bdlr-mobile-bottom i.is-home{--ic:url("data:image/svg+x
 html body .bdlr-mobile-bottom :is(a,button){color:rgba(255,255,255,.7)!important}
 html body.bdlr-top-page .bdlr-mobile-bottom a:is([href='top.html'],[href='/']){color:#fff!important}
 /* ===== 監査で見つかった外れ値の修正（2026-11-13） ===== */
+/* ボタンは高さ40の1サイズ（文字ボタン・アイコンボタン共通） */
+html body :is(.home-cta-card__link,.mig-button,.bdlr-button,.bdlr-content-button,.bdlr-recycle-button,.bdlr-review-button,.bandal-submit-button,.bd-btn-main,.bd-game-pc-detail-btn,.bd-game-pc-sub-btn,.bandal-floating-summary__button,.bandal-option-recommendation,.audit-more,.audit-read-full,.bdlr-card-cta,.bdlr-filter-toggle,.bdlr-configuration-actions>button,.audit-quotes>button,.audit-search>button,.bdlr-catalog-density>button,.bdlr-mobile-search-entry){min-height:40px!important;height:auto!important;padding-top:0!important;padding-bottom:0!important;box-sizing:border-box!important;line-height:1.3!important}
+html body .bdlr-icon-button{width:40px!important;height:40px!important;min-height:40px!important;min-width:40px!important}
 /* 監査用トークン（--audit-*, --bf-*）をルールの値に */
 html.bandal-audited{--audit-edge:rgba(255,255,255,.14)!important;--bf-edge:rgba(255,255,255,.08)!important;--bf-base:#111115!important;--bf-accent:#7c3aed!important;--bf-button:8px!important;--bf-card:12px!important;--bf-panel:20px!important;--bf-tag:4px!important;--audit-focus:#7c3aed!important}
 html.bandal-audited :is(.audit-search,.audit-quotes,.bdlr-review-group,.bdlr-recycle-main,.audit-rewards)>:is(button,a,div){border-color:rgba(255,255,255,.08)!important;border-radius:8px!important}
@@ -680,6 +730,9 @@ html body.bdlr-page .bdlr-catalog-card-body>a.bdlr-card-cta,html.bandal-audited 
 /* 診断ページの開始ボタン＝SPECIAL（黄色グラデ廃止） */
 html body .bd-btn-main{height:auto!important;width:auto!important;padding:0 24px!important;font-size:15px!important;font-weight:500!important;border-radius:999px!important;color:#fff!important;border:1px solid transparent!important;background:linear-gradient(180deg,#14121c,#0b0a11) padding-box,linear-gradient(115deg,#a78bfa,rgba(167,139,250,.35) 45%,#7c3aed) border-box!important;box-shadow:0 0 18px rgba(124,58,237,.28)!important}
 html body .bd-btn-main em{font-size:15px!important}
+/* Phosphorアイコン：塗りで描く（元の線画用 stroke 指定を無効化） */
+html body svg.ic{fill:currentColor!important;stroke:none!important}
+html body svg.ic *{fill:currentColor!important;stroke:none!important}
 /* アイコンを四角い箱に入れない（サポート欄・選び方） */
 html body :is(.nov-support-cell svg,.nov-find-row i){background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;color:rgba(255,255,255,.5)!important}
 html body .nov-support-cell svg{width:24px!important;height:24px!important}
@@ -689,14 +742,20 @@ html body .bd-wrap>a.bd-shop-back:hover{color:#fff!important}
 html body .bd-hero-content .bd-btn-main{margin-bottom:16px!important}
 /* 入力欄は高さ44 */
 html body :is(input[type=text],input[type=search],input[type=email],input[type=tel],input[type=number],input:not([type]),select):not([type=checkbox]):not([type=radio]){height:44px!important;min-height:44px!important;box-sizing:border-box!important}
+/* 一覧の絞り込みキーワード欄も検索ボタンなし（Enterの目印に） */
+html body .bdlr-filter-search>div{position:relative!important}
+html body .bdlr-filter-search .search-url{position:absolute!important;right:10px!important;top:50%!important;transform:translateY(-50%)!important;background:transparent!important;border:1px solid rgba(255,255,255,.14)!important;color:rgba(255,255,255,.5)!important;font-size:0!important;height:22px!important;min-height:0!important;width:auto!important;padding:0 7px!important;border-radius:4px!important;box-shadow:none!important;display:inline-flex!important;align-items:center!important}
+html body .bdlr-filter-search .search-url::before{content:"Enter";font:500 11px/1 "Geist",sans-serif}
+html body .bdlr-filter-search input{width:100%!important;padding-right:64px!important;border-radius:8px!important}
 /* 文中のGOリンクは下線なし */
 html body a:is([href="#reviews"],[href*="review"]):not([class*=button]):not([class*=btn]){text-decoration:none!important}
 
+/* 2026-11-13 TOP feature cards: full-bleed photo + per-card color glow (refs: Skullcandy / Raycast) */
 html body.bdlr-top-page .bdlr-feature-banners{gap:16px}
-html body.bdlr-top-page .bdlr-feature-banners>a,html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{--glow:#a78bfa;position:relative;isolation:isolate;overflow:hidden;aspect-ratio:1.8!important;justify-content:flex-end!important;gap:6px!important;padding:24px!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;background:#07070b!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .25s ease}
-html body.bdlr-top-page .bdlr-feature-banners>a.is-collab{--glow:#8b5cf6}
+html body.bdlr-top-page .bdlr-feature-banners>a,html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{--glow:#a78bfa;position:relative;isolation:isolate;overflow:hidden;aspect-ratio:1.5!important;justify-content:flex-end!important;gap:6px!important;padding:24px!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;background:#07070b!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .25s ease}
+html body.bdlr-top-page .bdlr-feature-banners>a.is-collab{--glow:#60a5fa}
 html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{--glow:#a78bfa}
-html body.bdlr-top-page .bdlr-feature-banners>a.is-streaming{--glow:#eb355c}
+html body.bdlr-top-page .bdlr-feature-banners>a.is-streaming{--glow:#f5a524}
 html body.bdlr-top-page .bdlr-feature-banners>a>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;z-index:-3;transition:transform .5s ease}
 html body.bdlr-top-page .bdlr-feature-banners>a.is-collab>img{object-position:78% 40%}
 html body.bdlr-top-page .bdlr-feature-banners>a::before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(to top,rgba(7,7,11,.94) 0%,rgba(7,7,11,.62) 34%,rgba(7,7,11,.08) 68%,rgba(7,7,11,0) 100%)}
@@ -708,10 +767,53 @@ html body.bdlr-top-page .bdlr-feature-banners>a>span{font-size:13px;color:rgba(2
 @media (hover:hover){html body.bdlr-top-page .bdlr-feature-banners>a:hover{border-color:color-mix(in srgb,var(--glow) 45%,transparent)!important}
 html body.bdlr-top-page .bdlr-feature-banners>a:hover>img{transform:scale(1.04)}
 html body.bdlr-top-page .bdlr-feature-banners>a:hover::after{opacity:1}}
-@media (max-width:760px){html body.bdlr-top-page .bdlr-feature-banners>a,html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.8!important;padding:18px!important}
+@media (max-width:760px){html body.bdlr-top-page .bdlr-feature-banners>a,html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.9!important;padding:18px!important}
 html body.bdlr-top-page .bdlr-feature-banners>a>strong{font-size:19px}}
-@layer bandalReferenceCorrections{html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.8!important}
-@media (max-width:760px){html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.8!important}}}
+@layer bandalReferenceCorrections{html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.5!important}
+@media (max-width:760px){html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{aspect-ratio:1.9!important}}}
+
+/* 2026-11-13 TOP service strip: numbers in 4 boxes + one button below (ref: Brick) */
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;padding:0!important;border:0!important;background:none!important;min-height:0!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__item{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:0!important;padding:28px 16px 24px!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px;background:#111115;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);text-align:center}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__icon{display:none!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__copy{align-items:center;gap:8px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip strong.bdlr-service-strip__value{font-family:Geist,"Noto Sans JP",sans-serif;font-size:40px!important;font-weight:700;line-height:1.1!important;letter-spacing:-.01em;color:#fff;font-feature-settings:"tnum"}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip strong.bdlr-service-strip__value small{margin-left:2px;font-family:"Noto Sans JP",sans-serif;font-size:20px;font-weight:700;color:#fff}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__label{font-size:13px!important;color:rgba(255,255,255,.7)!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__contact{grid-column:1/-1!important;display:flex!important;flex-direction:row;align-items:center;justify-content:center;gap:16px!important;padding:8px 0 0!important;border:0!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{width:300px;min-height:48px;border-radius:999px!important}
+@media (max-width:760px){html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__item{padding:20px 10px 18px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip strong.bdlr-service-strip__value{font-size:30px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip strong.bdlr-service-strip__value small{font-size:16px}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__contact{flex-direction:column;gap:8px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{width:100%}}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__item:first-child strong.bdlr-service-strip__value{font-size:32px!important;line-height:1.375!important}
+@media (max-width:760px){html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__item:first-child strong.bdlr-service-strip__value{font-size:24px!important;line-height:1.375!important}}
+/* service strip: centered heading + button below (Brick layout) */
+html body.bdlr-top-page .bdlr-service-head{max-width:1232px;margin:56px auto 24px;padding:0 16px;text-align:center}
+html body.bdlr-top-page .bdlr-service-head__eyebrow{margin:0 0 8px;font-family:"Geist Mono",ui-monospace,monospace;font-size:12px;font-weight:500;letter-spacing:.14em;color:#a78bfa}
+html body.bdlr-top-page .bdlr-service-head h2{margin:0;font-size:28px;font-weight:700;line-height:1.4;color:#fff}
+html body.bdlr-top-page .bdlr-service-head__lead{margin:8px 0 0;font-size:14px;line-height:1.7;color:rgba(255,255,255,.7)}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip{margin-top:0!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__contact{flex-direction:column!important;gap:8px!important;padding:16px 0 0!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{box-sizing:border-box;width:280px!important;min-height:40px!important;height:40px;padding:0 14px!important;gap:10px;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;background:rgba(255,255,255,.05)!important;font-size:14px!important;font-weight:500!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line:hover{background:rgba(255,255,255,.08)!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__line-icon{flex:0 0 22px!important;width:22px!important;height:22px!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__line span{flex:0 1 auto!important;text-align:center}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__arrow{width:16px!important;height:16px!important;flex:0 0 16px!important;margin-left:auto}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__line-icon{margin-right:auto}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip small.bdlr-service-strip__hours{font-size:12px!important;color:rgba(255,255,255,.5)!important}
+@media (max-width:760px){html body.bdlr-top-page .bdlr-service-head{margin:40px auto 16px}
+html body.bdlr-top-page .bdlr-service-head h2{font-size:22px}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{width:100%!important}}
+html body.bdlr-top-page .bdlr-service-head h2,html body.bdlr-top-page .bdlr-service-head__lead{text-wrap:balance}
+/* LINE consult = LINE green (mao 2026-11-13) */
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line{border-color:#06c755!important;background:#06c755!important;color:#fff!important;font-weight:700!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip a.bdlr-service-strip__line:hover{border-color:#05b04b!important;background:#05b04b!important}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__line-icon>rect:first-child{fill:transparent}
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip .bdlr-service-strip__line-icon{width:26px!important;height:26px!important;flex-basis:26px!important}
+
 /* 2026-11-13 TOP price matrix: centered compare-table layout, no vertical rules (ref: VisionAI pricing) */
 html body.bdlr-top-page section.bdlr-price-matrix{text-align:center}
 html body.bdlr-top-page section.bdlr-price-matrix .bdlr-section-heading{display:flex!important;flex-direction:column;align-items:center;text-align:center!important;margin:0 auto 8px!important}
@@ -721,13 +823,24 @@ html body.bdlr-top-page section.bdlr-price-matrix .audit-desktop-hint{margin:4px
 html body.bdlr-top-page section.bdlr-price-matrix .bdlr-table-scroll{max-width:1232px;margin:0 auto!important;border:0!important;background:none!important;box-shadow:none!important}
 html body.bdlr-top-page section.bdlr-price-matrix table{width:100%!important;border-collapse:collapse!important;border:0!important;background:none!important}
 html body.bdlr-top-page section.bdlr-price-matrix caption{caption-side:bottom;padding:16px 0 0!important;font-size:12px!important;color:rgba(255,255,255,.5)!important;text-align:center!important}
+html body.bdlr-top-page section.bdlr-price-matrix :is(th,td){border:0!important;background:none!important;box-shadow:none!important;text-align:center!important;vertical-align:middle!important}
 html body.bdlr-top-page section.bdlr-price-matrix thead th{padding:0 8px 16px!important;border-bottom:1px solid rgba(255,255,255,.14)!important;font-size:13px!important;font-weight:500!important;color:rgba(255,255,255,.7)!important;white-space:nowrap}
 html body.bdlr-top-page section.bdlr-price-matrix thead th:first-child{text-align:left!important;color:rgba(255,255,255,.36)!important}
+html body.bdlr-top-page section.bdlr-price-matrix tbody :is(th,td){height:60px;padding:10px 8px!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+html body.bdlr-top-page section.bdlr-price-matrix tbody tr:last-child :is(th,td){border-bottom:0!important}
 html body.bdlr-top-page section.bdlr-price-matrix tbody th{text-align:left!important;font-size:14px!important;font-weight:500!important;color:#fff!important;white-space:nowrap}
 html body.bdlr-top-page section.bdlr-price-matrix tbody td{font-size:15px!important;color:rgba(255,255,255,.36)!important}
 html body.bdlr-top-page section.bdlr-price-matrix tbody td a{display:inline-block;padding:2px 0;border:0!important;background:none!important;color:#fff!important;font-family:Geist,"Noto Sans JP",sans-serif;font-size:15px!important;font-weight:500!important;font-variant-numeric:tabular-nums;text-decoration:none!important;line-height:1.6;white-space:nowrap}
 html body.bdlr-top-page section.bdlr-price-matrix tbody td a:hover{color:#a78bfa!important;text-decoration:underline!important;text-underline-offset:4px}
+html body.bdlr-top-page section.bdlr-price-matrix tbody td.nov-picked-cell{outline:0!important}
+html body.bdlr-top-page section.bdlr-price-matrix tbody td.nov-picked-cell a{color:#a78bfa!important;font-weight:700!important}
+html body.bdlr-top-page section.bdlr-price-matrix tbody td a+a{display:block;margin:0 auto}
+html body.bdlr-top-page section.bdlr-price-matrix>a:is([href="category-all_items.html"],[href="/view/category/all_items"]){display:inline-block;margin-top:24px!important;font-size:14px;font-weight:500;color:#a78bfa!important}
+html body.bdlr-top-page section.bdlr-price-matrix>a:is([href="category-all_items.html"],[href="/view/category/all_items"])::after{content:" →"}
 @media (max-width:760px){html body.bdlr-top-page section.bdlr-price-matrix .bdlr-section-heading h2{font-size:24px!important}}
+html body.bdlr-top-page section.bdlr-price-matrix tbody td.nov-picked-cell{background:transparent!important;box-shadow:none!important}
+@layer bandalReferenceCorrections{html body.bdlr-top-page section.bdlr-price-matrix tbody td.nov-picked-cell{background:transparent!important;box-shadow:none!important}}
+html body.bdlr-top-page section.bdlr-price-matrix tbody td a{min-height:0!important;vertical-align:middle}
 html body.bdlr-top-page section.bdlr-price-matrix .audit-quotes{justify-content:center!important;margin:0 auto 20px!important}
 @media (min-width:761px){html body.bdlr-top-page section.bdlr-price-matrix{display:flex!important;flex-direction:column;align-items:center}
 html body.bdlr-top-page section.bdlr-price-matrix>*{order:5}
@@ -737,15 +850,21 @@ html body.bdlr-top-page section.bdlr-price-matrix>.audit-quotes{order:3;margin:0
 html body.bdlr-top-page section.bdlr-price-matrix>.bdlr-table-scroll{order:4;width:100%}
 html body.bdlr-top-page section.bdlr-price-matrix>a:is([href="category-all_items.html"],[href="/view/category/all_items"]){order:6}}
 @media (max-width:760px){html body.bdlr-top-page section.bdlr-price-matrix .ux-mobile-matrix{text-align:left}}
+
 /* 2026-11-13 spacing system (UI System「余白」): section 64/48, head→content 32/24 */
 :root{--sp-section:64px;--sp-head:32px;--sp-grid:16px;--sp-card:24px}
 @media (max-width:760px){:root{--sp-section:48px;--sp-head:24px;--sp-grid:12px;--sp-card:16px}}
 html body.bdlr-top-page main>:is(.nov-home-picks,.nov-collab,.bdlr-service-head,.bdlr-feature-banners,.bdlr-price-matrix,.bdlr-games,.home-cta){margin-top:var(--sp-section)!important;margin-bottom:0!important}
 html body.bdlr-top-page main>.nov-home-picks{padding-top:0!important;padding-bottom:0!important}
 html body.bdlr-top-page main>.bdlr-hero+*{margin-top:var(--sp-head)!important}
+html body.bdlr-top-page main>.bdlr-service-strip{margin-top:var(--sp-head)!important;margin-bottom:0!important}
+html body.bdlr-top-page main>.bdlr-service-head{margin-bottom:0!important}
+html body.bdlr-top-page main>.home-cta{margin-bottom:96px!important}
 html body.bdlr-top-page .nov-home-picks>.nov-section-head{margin-bottom:var(--sp-head)!important}
 html body.bdlr-top-page .bdlr-games>p{margin-bottom:var(--sp-head)!important}
 html body.bdlr-top-page .bdlr-games>h2+p{margin-top:8px!important}
+html body.bdlr-top-page .bdlr-feature-banners,html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip{gap:var(--sp-grid)!important}
+html body.bdlr-top-page main>ul.bdlr-home-trust.bdlr-service-strip{margin-top:var(--sp-head)!important}
 html body.bdlr-top-page main>.nov-home-picks+.nov-collab{margin-top:var(--sp-grid)!important}
 
 /* 2026-11-13 spacing: inner paddings and gaps on TOP (card 24/16, small card 16/12, same group 8, other group 16/12) */
@@ -760,6 +879,8 @@ html body.bdlr-top-page .nov-home-picks .nov-cpus>button{padding:12px!important;
 html body.bdlr-top-page .nov-home-picks a.nov-model-detail{padding:var(--sp-stack) var(--sp-card) var(--sp-card)!important;margin-bottom:0!important}
 /* コラボのカード */
 html body.bdlr-top-page main>a.nov-collab,html body.bdlr-top-page .nov-collab>a.nov-collab,html body.bdlr-top-page a.nov-collab{padding:var(--sp-card-s) var(--sp-card)!important;gap:var(--sp-stack-2)!important}
+/* 安心ポイント */
+html body.bdlr-top-page ul.bdlr-home-trust.bdlr-service-strip>li.bdlr-service-strip__item{padding:var(--sp-card)!important}
 /* 特集バナー */
 html body.bdlr-top-page .bdlr-feature-banners>a,html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis{padding:var(--sp-card)!important;gap:var(--sp-stack)!important}
 /* ゲーム・用途・予算 */
@@ -777,6 +898,44 @@ html body.bdlr-top-page .nov-home-picks .nov-cpus>button{padding:12px!important;
 @media (max-width:760px){:root{--grid-gutter:12px;--grid-margin:16px}}
 @media (min-width:761px){html body.bdlr-top-page .nov-find-row{grid-template-columns:calc((100% - 11*var(--grid-gutter))/12*2 + var(--grid-gutter)) 1fr!important;column-gap:var(--grid-gutter)!important}}
 
+/* === Section spacing v2 (mao 2026-11-13: セクション間が詰まりすぎ) : PC 96 / SP 64 === */
+:root{--sp-section:96px}
+@media (max-width:760px){:root{--sp-section:64px}}
+html body.bdlr-top-page main>.home-cta{margin-bottom:128px!important}
+html body.bdlr-top-page main>.bdlr-hero+*{margin-top:48px!important}
+@media (max-width:760px){html body.bdlr-top-page main>.bdlr-hero+*{margin-top:32px!important}}
+
+/* === Section spacing v3 (mao 2026-11-13: Linearの余白感) : section PC 160 / SP 96, head→content PC 64 / SP 32 === */
+:root{--sp-section:160px;--sp-head:64px}
+@media (max-width:760px){:root{--sp-section:96px;--sp-head:32px}}
+html body.bdlr-top-page main>.bdlr-hero+*{margin-top:64px!important}
+@media (max-width:760px){html body.bdlr-top-page main>.bdlr-hero+*{margin-top:48px!important}}
+html body.bdlr-top-page main>.home-cta{margin-bottom:160px!important}
+
+/* === Header nav v2 (mao 2026-11-13: カテゴリ分け・1階層目) : ゲーミングPC / コラボ・特集 / 周辺機器 / サポート === */
+html body .bdlr-global-nav{gap:8px}
+html body a.bdlr-nav-trigger.bdlr-nav-link{text-decoration:none}
+html body .bdlr-nav-trigger{font-size:13px!important;font-weight:500!important}
+html body .bdlr-products-menu.bdlr-nav-pc,html body .bdlr-products-menu.bdlr-nav-feature{max-width:1232px;margin:0 auto;padding:32px 0 24px}
+html body .bdlr-nav-pc .bdlr-products-menu__grid{grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,2fr) minmax(0,1fr);gap:16px}
+html body .bdlr-nav-feature .bdlr-products-menu__grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+html body :is(.bdlr-nav-pc,.bdlr-nav-feature) .bdlr-products-menu__group h2{margin:0 0 8px;padding:0 8px;font:500 12px/1.5 "Geist Mono","Noto Sans JP",monospace;letter-spacing:.04em;color:rgba(255,255,255,.5);border:0}
+html body .bdlr-nav-pc .is-gpu .bdlr-products-menu__links{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:repeat(7,auto);column-gap:16px}
+html body :is(.bdlr-nav-pc,.bdlr-nav-feature) .bdlr-products-menu__links{gap:0}
+html body :is(.bdlr-nav-pc,.bdlr-nav-feature) .bdlr-products-menu__links a{min-height:36px;padding:0 8px;font-size:14px;font-weight:400;color:rgba(255,255,255,.7)}
+html body :is(.bdlr-nav-pc,.bdlr-nav-feature) .bdlr-products-menu__links a:hover{color:#fff}
+html body .bdlr-nav-foot{display:flex;gap:32px;margin-top:24px;padding:16px 8px 0;border-top:1px solid rgba(255,255,255,.08)}
+html body .bdlr-nav-foot a{font-size:13px;font-weight:500;color:#a78bfa}
+html body .bdlr-nav-foot a:hover{color:#fff}
+html body a.bdlr-nav-trigger.bdlr-nav-link:not(:hover){color:var(--bdlr-text-2,rgba(255,255,255,.7))}
+html body .bdlr-nav-promo{position:relative;display:block;aspect-ratio:1.9;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+html body .bdlr-nav-promo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+html body .bdlr-nav-promo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,7,11,.9),rgba(7,7,11,0) 60%)}
+html body .bdlr-nav-promo span{position:absolute;left:16px;bottom:16px;z-index:1;display:flex;flex-direction:column;gap:4px}
+html body .bdlr-nav-promo small{font:500 11px "Geist Mono",monospace;letter-spacing:.12em;color:#93c5fd}
+html body .bdlr-nav-promo b{font-size:16px;font-weight:700;color:#fff}
+html body .bdlr-nav-promo:hover img{transform:scale(1.04)}
+
 /* === Option cards v2 (mao 2026-11-13: ケース選択が見づらい) : selected = surface + purple line + check; meters readable in both states === */
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-option-card{background:#111115!important;border-color:rgba(255,255,255,.08)!important;box-shadow:none!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card{border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;padding:16px!important;gap:16px!important;text-align:left}
@@ -786,6 +945,7 @@ html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-option-card.is-se
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-option-card.is-selected::after{background:#7c3aed!important;border-color:#7c3aed!important;box-shadow:inset 0 0 0 4px #7c3aed,inset 0 0 0 7px #fff!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy{display:grid!important;grid-template-columns:1fr auto;align-items:baseline;gap:4px 8px!important;min-height:0!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy strong{font-size:16px!important;font-weight:700!important;color:#fff!important}
+html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy small[data-bdlr-original-note="標準構成"],html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy small:empty{display:none!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy small{grid-column:1/-1;font-size:12px!important;color:rgba(255,255,255,.5)!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__price{grid-column:2;grid-row:1;margin:0!important;font:700 15px/1.4 Geist,"Noto Sans JP",sans-serif!important;font-variant-numeric:tabular-nums;color:#fff!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-compare-meters{display:grid!important;gap:8px!important;margin:0!important;padding-top:16px!important;border-top:1px solid rgba(255,255,255,.08)!important}
@@ -794,22 +954,47 @@ html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-meter-ticks{displ
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-meter-ticks i{height:6px!important;border-radius:2px!important;background:rgba(255,255,255,.12)!important;opacity:1!important}
 html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-meter-ticks i.is-on{background:#a78bfa!important}
 
-html body.bdlr-top-page .bdlr-feature-banners>a {border-bottom:3px solid var(--glow)!important}
-html body.bdlr-top-page .bdlr-feature-banners>a.is-nextday {--glow:#23cddd}
-html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis::before {
-  background:linear-gradient(90deg,rgba(7,7,11,.92),rgba(7,7,11,.16)),url("feature-diagnosis-2611.jpg") 70% center/cover;
-}
+/* === Header nav v3 (mao 2026-11-13: Polar型 = 見出し付きの列＋右に縦長カード) === */
+html body .bdlr-mm{max-width:1232px;margin:0 auto;padding:32px 0 40px}
+html body .bdlr-mm__inner{display:grid;grid-template-columns:1fr 296px;gap:32px;align-items:start}
+html body .bdlr-mm__cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px}
+html body .bdlr-mm__col{min-width:0}
+html body .bdlr-mm__col h2{margin:0 0 12px;font-size:15px;font-weight:700;line-height:1.4;color:#fff;border:0;padding:0}
+html body .bdlr-mm__quick{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+html body .bdlr-mm__quick a{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;line-height:1.6}
+html body .bdlr-mm__quick a::before{content:"→";color:#a78bfa;font-family:Geist,sans-serif}
+html body .bdlr-mm__quick a:hover{color:#a78bfa}
+html body .bdlr-mm__col h3{margin:16px 0 4px;font:500 11px/1.5 "Geist Mono","Noto Sans JP",monospace;letter-spacing:.04em;color:rgba(255,255,255,.36)}
+html body .bdlr-mm__col h3:first-of-type{margin-top:0}
+html body .bdlr-mm__col ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+html body .bdlr-mm__col li a{display:block;padding:4px 0;font-size:13px;line-height:1.5;color:rgba(255,255,255,.7);text-decoration:none}
+html body .bdlr-mm__col li a:hover{color:#fff}
+html body .bdlr-mm__col li a[aria-disabled=true]{cursor:default}
+html body .bdlr-mm__card{position:relative;display:flex;flex-direction:column;min-height:400px;border-radius:12px;overflow:hidden;background:#0b0b10;border:1px solid rgba(255,255,255,.08);color:#fff;text-decoration:none}
+html body .bdlr-mm__card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;transition:transform .4s ease}
+html body .bdlr-mm__card:has(.is-collab) img{top:96px;height:calc(100% - 96px);object-position:74% center}
+html body .bdlr-mm__card:has(.is-collab) .bdlr-mm__card-copy small{color:#93c5fd}
+html body .bdlr-mm__card::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(7,7,11,.92) 0%,rgba(7,7,11,.6) 38%,rgba(7,7,11,0) 62%)}
+html body a.bdlr-mm__card:hover img{transform:scale(1.04)}
+html body a.bdlr-mm__card:hover{border-color:rgba(255,255,255,.24)}
+html body .bdlr-mm__card-copy{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:24px}
+html body .bdlr-mm__card-copy small{font:500 11px "Geist Mono",monospace;letter-spacing:.12em;color:#a78bfa}
+html body .bdlr-mm__card-copy b{font-size:20px;font-weight:700;line-height:1.3}
+html body .bdlr-mm__card-copy>span{font-size:13px;line-height:1.6;color:rgba(255,255,255,.7)}
+html body .bdlr-mm__btn{display:inline-flex;align-items:center;height:40px;margin-top:8px;padding:0 16px;border-radius:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);font-size:13px;font-weight:500;color:#fff;text-decoration:none}
+html body a.bdlr-mm__card:hover .bdlr-mm__btn{background:rgba(255,255,255,.12)}
+html body .bdlr-mm__btn.is-line{background:#06c755;border-color:#06c755;font-weight:700}
+
+/* Store integration: retain disabled states and device-specific controls. */
+html body.bdlr-page .bdlr-mm [hidden], html body.bdlr-page .bdlr-feature-banners>[hidden] {display:none!important}
+html body.bdlr-page .bdlr-mm__col li:has(>a[hidden]) {display:none}
 html body.bdlr-top-page .bdlr-feature-banners>a.is-streaming>img {content:url("feature-streaming-2611.jpg")}
-html body.bdlr-top-page .bdlr-feature-banners>a::before {background-image:linear-gradient(90deg,rgba(7,7,11,.9),rgba(7,7,11,.05) 85%)}
-html body.bdlr-top-page .bdlr-feature-banners>a[hidden] {display:none!important}
-html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-option-card:is(:disabled,[aria-disabled=true],.is-disabled) {
-  filter:grayscale(1);background:#18181c!important;color:#a8a8ad!important;border-color:#44444a!important;box-shadow:none!important;
-}
-@media(max-width:767px){
-  html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card {padding:10px!important;gap:8px!important}
-  html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy {grid-template-columns:minmax(0,1fr)}
-  html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__price {grid-column:1;grid-row:auto}
-}
+html body.bdlr-top-page .bdlr-feature-banners>a.nov-diagnosis::before {background:linear-gradient(to top,rgba(7,7,11,.94),rgba(7,7,11,.62) 34%,rgba(7,7,11,.08) 68%,transparent),url("feature-diagnosis-2611.jpg") 70% center/cover}
+html body .bdlr-mega-panel.bdlr-mm{box-sizing:border-box;width:min(1232px,calc(100% - 48px))}
+html body.bdl-renewal-item.bdlr-page #bdlr-options-panel .bdlr-option-card:is(:disabled,[aria-disabled=true],.is-disabled){filter:grayscale(1);background:#18181c!important;color:#a8a8ad!important;border-color:#44444a!important;box-shadow:none!important}
+@media(max-width:767px){html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card {padding:10px!important;gap:8px!important}
+html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__copy {grid-template-columns:minmax(0,1fr)}
+html body.bdl-renewal-item.bdlr-page #bdlr-options-panel [data-bdlr-guide="ケース"] .bdlr-option-card__price {grid-column:1;grid-row:auto}}
 html body .bdlr-drawer-button svg{--bandal-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M222%2C128a6%2C6%2C0%2C0%2C1-6%2C6H40a6%2C6%2C0%2C0%2C1%2C0-12H216A6%2C6%2C0%2C0%2C1%2C222%2C128ZM40%2C70H216a6%2C6%2C0%2C0%2C0%2C0-12H40a6%2C6%2C0%2C0%2C0%2C0%2C12ZM216%2C186H40a6%2C6%2C0%2C0%2C0%2C0%2C12H216a6%2C6%2C0%2C0%2C0%2C0-12Z%22%2F%3E%3C%2Fsvg%3E");mask:var(--bandal-icon) center/contain no-repeat;-webkit-mask:var(--bandal-icon) center/contain no-repeat;background-color:currentColor!important}
 html body .bdlr-diagnosis svg{--bandal-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M232%2C122H221.8A94.13%2C94.13%2C0%2C0%2C0%2C134%2C34.2V24a6%2C6%2C0%2C0%2C0-12%2C0V34.2A94.13%2C94.13%2C0%2C0%2C0%2C34.2%2C122H24a6%2C6%2C0%2C0%2C0%2C0%2C12H34.2A94.13%2C94.13%2C0%2C0%2C0%2C122%2C221.8V232a6%2C6%2C0%2C0%2C0%2C12%2C0V221.8A94.13%2C94.13%2C0%2C0%2C0%2C221.8%2C134H232a6%2C6%2C0%2C0%2C0%2C0-12Zm-98%2C87.76V200a6%2C6%2C0%2C0%2C0-12%2C0v9.76A82.09%2C82.09%2C0%2C0%2C1%2C46.24%2C134H56a6%2C6%2C0%2C0%2C0%2C0-12H46.24A82.09%2C82.09%2C0%2C0%2C1%2C122%2C46.24V56a6%2C6%2C0%2C0%2C0%2C12%2C0V46.24A82.09%2C82.09%2C0%2C0%2C1%2C209.76%2C122H200a6%2C6%2C0%2C0%2C0%2C0%2C12h9.76A82.09%2C82.09%2C0%2C0%2C1%2C134%2C209.76ZM128%2C90a38%2C38%2C0%2C1%2C0%2C38%2C38A38%2C38%2C0%2C0%2C0%2C128%2C90Zm0%2C64a26%2C26%2C0%2C1%2C1%2C26-26A26%2C26%2C0%2C0%2C1%2C128%2C154Z%22%2F%3E%3C%2Fsvg%3E");mask:var(--bandal-icon) center/contain no-repeat;-webkit-mask:var(--bandal-icon) center/contain no-repeat;background-color:currentColor!important}
 html body .bdlr-search-button svg{--bandal-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M228.24%2C219.76l-51.38-51.38a86.15%2C86.15%2C0%2C1%2C0-8.48%2C8.48l51.38%2C51.38a6%2C6%2C0%2C0%2C0%2C8.48-8.48ZM38%2C112a74%2C74%2C0%2C1%2C1%2C74%2C74A74.09%2C74.09%2C0%2C0%2C1%2C38%2C112Z%22%2F%3E%3C%2Fsvg%3E");mask:var(--bandal-icon) center/contain no-repeat;-webkit-mask:var(--bandal-icon) center/contain no-repeat;background-color:currentColor!important}

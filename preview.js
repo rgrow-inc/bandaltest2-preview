@@ -23,7 +23,7 @@
   function menus(active, trigger) {
     if (trigger) returnFocus = trigger;
     const isDrawer = active === 'drawer';
-    const isMega = active === 'products' || active === 'support';
+    const isMega = ['products','feature','parts','support'].includes(active);
     drawer?.classList.toggle('is-open', isDrawer);
     drawer?.setAttribute('aria-hidden', String(!isDrawer));
     drawerToggle?.setAttribute('aria-expanded', String(isDrawer));
