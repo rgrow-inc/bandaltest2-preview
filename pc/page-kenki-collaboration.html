@@ -9,7 +9,31 @@
 <link href="../assets/remodal-default-theme-55681c3b26695c.css" rel="stylesheet"/>
 <link href="../assets/system-7-1-10-78e567dc05121ea6e0c5107158f4037f-3eddb0bcf99e80.css" rel="stylesheet"/>
 <link href="../assets/css-39d3c6b1ecefcf.css" media="all" rel="stylesheet"/>
-<script defer="" src="../preview.js"></script></head><body class="bdlr-page bdlr-content-page">
+<script defer="" src="../preview.js"></script><style>
+#kenki-standard-fan {scroll-margin-top:110px}
+.bdlr-migrated #kenki-standard-fan .kenki-fan-cell {padding:12px;min-width:0}
+.kenki-fan-picker {border:0;padding:0;margin:0;min-inline-size:0;color:#f1f5f9}
+.kenki-fan-heading {display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin-bottom:10px}
+.kenki-fan-heading strong {font-size:15px}
+.kenki-fan-status {margin-left:auto;text-align:right;font-size:12px;line-height:1.55;color:#c5d5df}
+.kenki-fan-picker .kenki-fan-extra,
+.kenki-fan-picker:has(input[value="bottom-three"]:checked) .kenki-fan-standard {display:none}
+.kenki-fan-picker:has(input[value="bottom-three"]:checked) .kenki-fan-extra {display:inline}
+.kenki-fan-options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.kenki-fan-card {display:flex;flex-direction:column;position:relative;gap:3px;padding:7px;min-width:0;border:1px solid #3d4c5b;border-radius:9px;background:#111820;cursor:pointer;line-height:1.5}
+.kenki-fan-card:has(input:checked) {border-color:#61dcf6;box-shadow:inset 0 0 0 1px #61dcf6;background:#102329}
+.kenki-fan-card:has(input:focus-visible) {outline:2px solid #e2faff;outline-offset:3px}
+.kenki-fan-card input {position:absolute;z-index:1;top:10px;right:10px;width:17px;height:17px;margin:0;accent-color:#5ed9f4}
+.kenki-fan-photo {position:relative;display:block;overflow:hidden;width:min(220px,100%);aspect-ratio:1;margin:0 auto 4px;background:#070d15;border-radius:5px}
+.bdlr-migrated .kenki-fan-photo img {display:block;width:100%;height:100%;margin:0;object-fit:contain;border-radius:0}
+.kenki-fan-photo.has-fans img:first-child {filter:grayscale(1) brightness(.66)}
+.kenki-fan-photo img.kenki-fan-lit {position:absolute;inset:0;clip-path:polygon(16% 66%,78% 66%,84% 77%,13% 77%)}
+.kenki-fan-bay {position:absolute;left:13%;width:71%;top:67%;height:10%;border:2px dashed #81e4f5;border-radius:4px;pointer-events:none}
+.kenki-fan-bay.is-filled {border-style:solid;border-color:#5edcf7;box-shadow:0 0 6px #39cfee}
+.kenki-fan-name {font-weight:700;font-size:14px;color:#eef6fa}
+.kenki-fan-price {margin-top:auto;font-size:13px;color:#9be7f6;font-weight:600}
+@media(max-width:400px){.kenki-fan-heading {gap:2px 6px}.kenki-fan-name{font-size:13px}}
+</style></head><body class="bdlr-page bdlr-content-page">
 <div class="wrapper bdlr-wrapper"><a class="bdlr-skip-link" href="#bdl-main-content">本文へ移動</a>
 <header class="bdlr-header" data-bdlr-header="" data-bdlr-ux9-bound="true" data-bdlr-ux9-header="">
 <button aria-controls="bdlr-mobile-drawer" aria-expanded="false" aria-label="メニューを開く" class="bdlr-icon-button bdlr-drawer-button" data-bdlr-drawer-open="" type="button">
@@ -240,9 +264,25 @@
 <tr><td colspan="2" rowspan="1">
 <p>ケース</p></td><td colspan="1" rowspan="1">
 <p>コラボケース</p></td></tr>
-<tr><td colspan="2" rowspan="1">
-<p>ケースファン</p></td><td colspan="1" rowspan="1">
-<p>なし</p></td></tr>
+<tr id="kenki-standard-fan"><td colspan="3" class="kenki-fan-cell">
+<fieldset class="kenki-fan-picker" aria-labelledby="kenki-fan-heading">
+  <div class="kenki-fan-heading">
+    <strong id="kenki-fan-heading">ケースファン</strong>
+    <span class="kenki-fan-status" aria-live="polite"><span class="kenki-fan-standard">追加なし（標準では底面ファンなし）</span><span class="kenki-fan-extra">底面に3個（Black）+¥4,500</span></span>
+  </div>
+  <div class="kenki-fan-options">
+    <label class="kenki-fan-card">
+      <input type="radio" name="kenki-standard-fan" value="none" checked>
+      <span class="kenki-fan-photo"><img src="../assets/option-media-v1/kenki-empty-floor.webp" alt="ケースの底面が空いており、ファンが付いていない状態" width="480" height="480" loading="lazy"><span class="kenki-fan-bay is-empty" aria-hidden="true"></span></span>
+      <span class="kenki-fan-name">追加なし</span><span class="kenki-fan-price">標準</span>
+    </label>
+    <label class="kenki-fan-card">
+      <input type="radio" name="kenki-standard-fan" value="bottom-three">
+      <span class="kenki-fan-photo has-fans"><img src="../assets/option-media-v1/kenki-front.webp" alt="底面に並ぶ黒いファン3個を水色で強調した状態" width="480" height="480" loading="lazy"><img class="kenki-fan-lit" src="../assets/option-media-v1/kenki-front.webp" alt="" aria-hidden="true" width="480" height="480" loading="lazy"><span class="kenki-fan-bay is-filled" aria-hidden="true"></span></span>
+      <span class="kenki-fan-name">底面に3個（Black）</span><span class="kenki-fan-price">+¥4,500</span>
+    </label>
+  </div>
+</fieldset></td></tr>
 <tr><td colspan="2" rowspan="1">
 <p>CPUクーラー</p></td><td colspan="1" rowspan="1">
 <p>簡易水冷クーラー</p></td></tr>
