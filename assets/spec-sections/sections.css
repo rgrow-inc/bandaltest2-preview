@@ -1,0 +1,15 @@
+/* Product detail: shared option/specification headings and changed selections. */
+#bdlr-specs-panel [data-bdlr-selected-specs] {display:grid;gap:24px;min-width:0}
+#bdlr-specs-panel [data-bdlr-selected-specs] > section {min-width:0}
+#bdlr-specs-panel .bdlr-spec-heading {font-size:17px;line-height:1.5;color:#f1eef8;margin:0 0 8px}
+#bdlr-specs-panel .bdlr-selected-specs {margin:0;padding:0;border:1px solid #353540;border-radius:9px;overflow:hidden}
+#bdlr-specs-panel .bdlr-selected-specs > div {grid-template-columns:minmax(100px,32%) minmax(0,1fr);align-items:baseline}
+#bdlr-specs-panel .bdlr-selected-specs > div:last-child {border-bottom:0}
+#bdlr-options-panel [data-bdlr-option-summary][data-spec-changed]::after {content:'変更'}
+#bdlr-options-panel [data-bdlr-option-summary][data-spec-changed]::after,.bdlr-spec-changed {display:inline-block;vertical-align:baseline;white-space:nowrap;line-height:1.5;font-size:12px;font-weight:700;padding:1px 7px;margin-inline-start:4px;border:1px solid #8263b0;border-radius:5px;background:#312042;color:#f0dfff}
+#bdlr-options-panel .bdlr-fixed-case-line {display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:12px 14px;color:#e7e5ee;background:#191a23;border:1px solid #343542;border-radius:8px}
+@media(max-width:600px){
+  #bdlr-specs-panel [data-bdlr-selected-specs] {gap:18px}
+  #bdlr-specs-panel .bdlr-selected-specs > div {grid-template-columns:minmax(0,36%) minmax(0,1fr);gap:8px;padding:10px}
+  #bdlr-specs-panel .bdlr-selected-specs dt,#bdlr-specs-panel .bdlr-selected-specs dd {min-width:0;overflow-wrap:anywhere}
+}
