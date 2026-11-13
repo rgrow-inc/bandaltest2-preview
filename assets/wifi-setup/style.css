@@ -1,0 +1,20 @@
+/* Customer-facing setup details belong to the corresponding option card. */
+#bdlr-options-panel .bdlr-option-card:not(:disabled) .bdlr-setup-original-note { display:none!important; }
+#bdlr-options-panel .bdlr-setup-description,
+#bdlr-options-panel .bdlr-setup-task,
+#bdlr-options-panel .bdlr-setup-qualifier {
+  display:block; font-size:14px; line-height:1.65; text-align:left;
+  white-space:normal; overflow-wrap:anywhere; letter-spacing:normal;
+}
+#bdlr-options-panel .bdlr-setup-description { margin-top:4px; color:#e4e3eb; }
+#bdlr-options-panel .bdlr-setup-checks {
+  display:grid; gap:6px; margin-top:5px; border-top:1px solid #42404d; padding-top:9px;
+}
+#bdlr-options-panel .bdlr-setup-task { position:relative; padding-left:1.45em; color:#ebebf0; }
+#bdlr-options-panel .bdlr-setup-task::before {
+  content:'\2713'; position:absolute; left:0; color:#bfa5fc; font-weight:700;
+}
+#bdlr-options-panel .bdlr-setup-qualifier { color:#c5c2d1; font-size:13px; }
+#bdlr-options-panel#bdlr-options-panel#bdlr-options-panel .bdlr-option-showroom [data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card-grid {
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))!important;
+}
