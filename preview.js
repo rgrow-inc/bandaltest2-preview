@@ -158,3 +158,6 @@
   style.onload=()=>{if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();};
   document.head.append(style);
 })();
+
+/* November card layout */
+(function(){var s=document.createElement("script");s.src=new URL("assets/release-7b5d68f/card-layout-80595201cdc6.js",document.currentScript.src).href;document.head.appendChild(s);}());

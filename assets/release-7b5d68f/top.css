@@ -860,3 +860,29 @@
 /* LINE logo size: cropped to the bubble, 24px everywhere (mao: アイコン小さい) */
 @layer bandalReferenceCorrections{:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) svg.bdlr-service-strip__line-icon{width:28px!important;height:28px!important;flex:none!important}}
 @layer bandalReferenceCorrections{html body:not(#a):not(#b):not(#c):not(#d):not(#e) .bdlr-floating-support a.is-line svg.bdlr-line-logo{width:28px!important;height:28px!important;flex:0 0 28px!important}}
+
+/* Match the Git card rhythm while retaining real CPU presets, stock notices and links. */
+@layer bandalReferenceCorrections {
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .nov-model .bdlr-pickup-image {
+    margin:8px 8px 0!important; width:calc(100% - 16px)!important; height:auto!important; aspect-ratio:1!important;
+  }
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .bdlr-service-strip__item .bdlr-service-strip__tag {
+    position:static!important;display:inline-block!important; flex:none!important; padding-inline:4px!important;
+    font:500 12px/18px Geist,sans-serif!important;letter-spacing:.04em!important;color:#b0acbf!important;
+  }
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .bd a .bgc-ch {
+    display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:4px!important;margin:4px 0!important;max-width:100%!important;
+  }
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .bd a .bgc-ch > span {
+    display:inline-block!important; font:500 11px/18px Geist,sans-serif!important;
+    padding:2px 6px!important; margin:0!important;color:#d5d2dc!important;background:#25232f!important;border-radius:4px!important;
+  }
+  @media(max-width:900px) {
+    html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .bdlr-service-strip__item .bdlr-service-strip__tag {display:none!important}
+  }
+  @media(max-width:767px) {
+    html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) .nov-model .bdlr-pickup-image {
+      margin:8px 0 8px 8px!important;width:112px!important;height:112px!important;max-width:100%!important;
+    }
+  }
+}
