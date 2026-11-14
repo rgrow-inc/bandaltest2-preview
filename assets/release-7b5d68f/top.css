@@ -966,9 +966,11 @@ html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-ga
 
 /* The storefront renders the reassurance heading separately from the slim service strip. */
 @layer bandalReferenceCorrections {
-  @media (max-width: 767px) {
-    html body.bdlr-top-page #bdl-main-content.bdlr-main > .bdlr-service-head {
+  @media (max-width: 900px) {
+    :is(#rt,html) :is(#rt,body).bdlr-top-page #bdl-main-content.bdlr-main > .bdlr-service-head {
       box-sizing:border-box!important;
+      width:100%!important;
+      margin-inline:0!important;
       padding-inline:16px!important;
     }
   }

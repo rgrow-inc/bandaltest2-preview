@@ -578,7 +578,7 @@ html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-none{font-fam
 /* Match the accessory specification heading to the mobile designer template. */
 @layer bandalReferenceCorrections {
   @media (max-width: 767px) {
-    html body.is-parts-product #bdl-main-content #bdlr-specification.bdlr-specification-section .bdlr-section-heading h2 {
+    :is(#rt,html) :is(#rt,body).is-parts-product #bdl-main-content #bdlr-specification.bdlr-specification-section .bdlr-section-heading h2 {
       font-size:20px!important;
       line-height:28px!important;
     }
