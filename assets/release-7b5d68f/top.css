@@ -906,10 +906,14 @@
   html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-monthly-pickup {order:6!important}
   html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-price-matrix {order:7!important}
   html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-feature-banners {order:8!important}
-  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-service-head {order:9!important}
-  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-service-strip {order:10!important}
-  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .home-cta {order:11!important}
-  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-live-products {order:12!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-movie {order:9!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > :is(.bdlr-why,.bdlr-service-head) {order:10!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-service-strip {order:11!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .home-cta {order:12!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-live-products {order:13!important}
+  @media(min-width:901px){
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main:has(> .bdlr-movie) > .bdlr-service-head {margin-top:160px!important}
+  }
   html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-feature-banners {align-self:center!important;width:min(100%,1232px)!important;max-width:100%!important}
   @media(min-width:901px){
     html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d) .bdlr-service-strip__item:not(:has(.bdlr-service-strip__tag))::before{
