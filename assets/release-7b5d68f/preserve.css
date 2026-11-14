@@ -7,3 +7,130 @@ html body .bdlr-mobile-drawer nav[data-release-menu-source],html body .bdl-dr-na
 @layer bandalReferenceCorrections{
 html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.bdlr-catalog-card) :is(.bdlr-pickup-soldout,.bdlr-soldout-overlay):not([hidden]){position:absolute!important;inset:22px -34px auto auto!important;display:block!important;transform:rotate(45deg)!important;width:132px!important;max-width:none!important;height:22px!important;line-height:20px!important;text-align:center!important;background:linear-gradient(90deg,#472381,#241747,#3d286e)!important;color:white!important;border:1px solid #a78bfa!important;border-radius:0!important;padding:0!important;font-size:11px!important;letter-spacing:.08em!important;pointer-events:none}
 }
+/* BANDAL type rhythm 2026-11-14 (mao: 字間を少し広く・窮屈さをなくす). Loaded last on every page. */
+@layer bandalReferenceCorrections{
+/* 字間: 和文の基本 +0.04em(旧 0.01em)。本文・UI・キャプションはこれを継承 */
+:is(#rt,html) :is(#rt,body){letter-spacing:.04em!important}
+/* 見出し(20px以上)は +0.02em */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(h1,h2,h3){letter-spacing:.02em!important}
+/* 行間: 複数行の文章 */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(p,dd,blockquote,figcaption){line-height:1.75!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(h1,h2){line-height:1.4!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) h3{line-height:1.5!important}
+}
+/* Head -> content spacing 2026-11-14 (mao: 見出しとコンテンツの間が広い、全体的に): PC 40 / SP 24 */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .nov-section-head{margin-bottom:40px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .dx-blk>.bgc-grid{margin-top:40px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-price-matrix>.audit-quotes{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-detail-section>.bdlr-section-heading{margin-bottom:40px!important}
+@media (min-width:768px){:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-detail-flow>.bdlr-detail-section:not(.bdlr-performance-section){padding-top:48px!important;padding-bottom:48px!important}}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .nov-section-head{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .dx-blk>.bgc-grid{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-detail-section>.bdlr-section-heading{margin-bottom:24px!important}
+}
+}
+
+/* Icons 2026-11-14 (mao): check and star as Phosphor icons, not text glyphs */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*) svg.ic-star{width:1em!important;height:1em!important;display:inline-block!important;vertical-align:-0.125em!important;margin-right:1px!important;flex:none!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) svg.ic-star--empty{opacity:.5!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bandal-success-icon svg.ic-check{width:48px!important;height:48px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(.nov-hero-trust span,.bdlr-detail-trust li:not(.bdlr-trust-line),.bdlr-choice-benefits li)::before{content:""!important;display:inline-block!important;width:16px!important;height:16px!important;background:currentColor!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/contain no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/contain no-repeat!important;vertical-align:-3px!important;margin-right:6px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-trust li:not(.bdlr-trust-line)::before{color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-choice-benefits li::before{color:#A78BFA!important}
+}
+/* LINE logo: floating dock uses the same full LINE icon as other LINE buttons (mao 11/14) */
+@layer bandalReferenceCorrections{:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-floating-support a.is-line svg.bdlr-line-logo{width:28px!important;height:28px!important;flex:none!important}}
+/* WHY BANDAL LINE button: hug content instead of 280px (mao 11/14) */
+@layer bandalReferenceCorrections{:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-service-strip__contact .bdlr-service-strip__line{width:fit-content!important;min-width:0!important;max-width:100%!important;display:inline-flex!important;gap:8px!important;padding:0 16px 0 20px!important;justify-content:flex-start!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) .bdlr-service-strip__contact .bdlr-service-strip__line .bdlr-service-strip__arrow{margin-left:8px!important}}
+/* LINE logo letters must stay LINE green on every LINE button (mao 11/14) */
+@layer bandalReferenceCorrections{:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) svg:is(.bdlr-line-logo,.bdlr-service-strip__line-icon) :is(path,rect)[fill="#06c755"]:not(:first-child){fill:#06C755!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) svg:is(.bdlr-line-logo,.bdlr-service-strip__line-icon) path[fill="#fff"]{fill:#fff!important}}
+/* LINE logo size: cropped to the bubble, 24px everywhere (mao: アイコン小さい) */
+@layer bandalReferenceCorrections{:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(#rt,*) svg.bdlr-service-strip__line-icon{width:28px!important;height:28px!important;flex:none!important}}
+@layer bandalReferenceCorrections{html body:not(#a):not(#b):not(#c):not(#d):not(#e) .bdlr-floating-support a.is-line svg.bdlr-line-logo{width:28px!important;height:28px!important;flex:0 0 28px!important}}
+/* Storefront layout corrections for the dynamic MakeShop catalog. */
+:root { --bandal-layout-version: "9646216"; }
+@layer bandalReferenceCorrections {
+  html body.bdlr-page .bdlr-premium-card .bdlr-card-leadtime.bdlr-premium-delivery:not([hidden]) {
+    position:static!important; height:auto!important; min-height:0!important;
+    flex-shrink:0!important; white-space:normal!important; line-height:1.6!important;
+  }
+  html body.bdlr-page .bdlr-premium-card .bdlr-card-leadtime.bdlr-premium-delivery + small {
+    position:static!important; margin-block-start:8px!important; flex-shrink:0!important;
+    line-height:1.55!important; white-space:normal!important;
+  }
+  html body.bdlr-page .audit-product-list > li {min-width:0!important}
+  html body.bdlr-page .audit-product-list .audit-registered {
+    order:11!important; margin:6px var(--card-inset,18px) 0!important;
+    overflow-wrap:anywhere; line-height:1.55!important;
+  }
+  html body.bdlr-page .audit-product-list .bdlr-card-leadtime {
+    margin:12px var(--card-inset,18px) 0!important;
+  }
+  /* The design branch trims the status from its sample cards. Keep the shop status visible. */
+  :is(html,#rt) :is(body,#rt).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-catalog-card .bdlr-card-leadtime.bdlr-premium-delivery:not([hidden]) {
+    display:block!important; grid-row:6!important; grid-column:1/-1!important; margin:8px 0 0!important;
+    min-height:0!important; height:auto!important; line-height:1.6!important; align-self:start!important;
+  }
+  @media(max-width:767px) {
+    html body.bdlr-catalog-page .audit-results ul.audit-product-list {
+      display:grid!important; grid-template-columns:minmax(0,1fr)!important; grid-auto-flow:row!important;
+    }
+    html body.bdlr-catalog-page .audit-product-list > li {grid-column:1!important;width:100%!important}
+  }
+  @media(max-width:900px) {
+    html body.bdlr-page .bdlr-header > .bdlr-brand {order:0!important;margin-inline:0!important}
+    html body.bdlr-page .bdlr-header > .bdlr-header-actions {order:1!important;margin-inline-start:auto!important}
+    html body.bdlr-page .bdlr-header > .bdlr-drawer-button {order:2!important;flex:none!important;margin-inline:0!important}
+  }
+}
+
+/* Stock notices and the tax note must each own a full line, even at narrow widths. */
+:root { --bandal-card-layout: stock-spacing-v1; }
+@layer bandalReferenceCorrections {
+  html body:not(#release):not(#release2):not(#release3):not(#release4) .bdlr-premium-card .bdlr-card-leadtime.bdlr-premium-delivery:not([hidden]) {
+    display: flex !important;
+    position: static !important;
+    height: auto !important;
+    min-height: 0 !important;
+    flex-shrink: 0 !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+  html body:not(#release):not(#release2):not(#release3):not(#release4) .bdlr-pickup-card > .bdlr-card-leadtime + small {
+    position: static !important;
+    margin-top: 8px !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    line-height: 1.5 !important;
+  }
+  html body.bdlr-catalog-page .audit-product-list .bdlr-pickup-card > .bdlr-card-leadtime {
+    margin-inline: clamp(12px, 2vw, 22px) !important;
+  }
+  @media (max-width: 767px) {
+    html body.bdlr-catalog-page .audit-results .audit-product-list {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) !important;
+      grid-auto-flow: row !important;
+    }
+  }
+  @media (max-width: 900px) {
+    html body .bdlr-header[data-bdlr-header] {
+      column-gap: 8px !important;
+    }
+    html body .bdlr-header[data-bdlr-header] > .bdlr-header-actions {
+      margin-inline-start: auto !important;
+    }
+    html body .bdlr-header[data-bdlr-header] > .bdlr-drawer-button {
+      order: 1 !important;
+      flex: 0 0 44px !important;
+      width: 44px !important;
+      height: 44px !important;
+    }
+  }
+}
