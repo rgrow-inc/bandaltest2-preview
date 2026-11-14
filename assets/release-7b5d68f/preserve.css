@@ -191,3 +191,23 @@ html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.
     line-height:var(--bdlr-result-title-line)!important;
   }
 }
+
+/* The top page is a column flexbox. Its recent-history section must not size to
+   the intrinsic width of the status text when MakeShop inserts viewed items. */
+@layer bandalReferenceCorrections {
+  :is(html,#rt) :is(body,#rt).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) #bdl-main-content > .bdlr-live-products:has(#recent-pcs) {
+    --bdlr-history-layout:full-width;
+    box-sizing:border-box!important;
+    align-self:stretch!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+  :is(html,#rt) :is(body,#rt).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) #bdl-main-content > .bdlr-live-products #recent-pcs,
+  :is(html,#rt) :is(body,#rt).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) #bdl-main-content > .bdlr-live-products #recent-pcs :is(.product-wrap,.item-list) {
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+}
