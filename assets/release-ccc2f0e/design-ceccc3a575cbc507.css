@@ -1,0 +1,1610 @@
+/* BANDAL / designer ccc2f0e: stage and exported site */
+/* FINAL chrome (2026-11-14): SP header order = logo (left, 16px gutter) ... search, cart, hamburger (right end); 40x40 buttons, gap 8; drawer close button sits exactly where the hamburger was tapped; drawer link rows >= 44 */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header{padding-left:16px!important;padding-right:16px!important;gap:8px!important;column-gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header>.bdlr-brand{order:1!important;margin:0 auto 0 0!important;justify-content:flex-start!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header>.bdlr-header-actions{order:2!important;margin:0!important;gap:8px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header>.bdlr-drawer-button{order:3!important;margin:0!important;flex:0 0 40px!important;width:40px!important;height:40px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header>.bdlr-header-search{order:4!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-mobile-drawer>.bdlr-mobile-drawer-head{height:57px!important;min-height:57px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-mobile-drawer .bdl-dr-links>a{min-height:44px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-mobile-drawer .bdlr-mobile-member>a{height:44px!important;min-height:44px!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): breadcrumbs = one pattern on every page type (12px/20px, links white 50%, current 70%, "/" with 8px each side, Geist for Latin; PC 32 below the header, SP 16 below + 44 tap height, first label on the content edge) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) :is(.bdlr-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb) :is(a,span){font-family:"Geist","Noto Sans JP",sans-serif!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb{display:flex!important;align-items:center!important;gap:8px!important;margin:32px 0 24px!important;padding:0!important;min-height:20px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item{display:flex!important;align-items:center!important;gap:8px!important;margin:0!important;padding:0!important;font-size:12px!important;line-height:20px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item+.breadcrumb-item::before{content:"/"!important;margin:0!important;color:rgba(255,255,255,.5)!important;font:400 12px/20px "Geist","Noto Sans JP",sans-serif!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item>a{display:inline-flex!important;align-items:center!important;min-width:0!important;min-height:20px!important;padding:0!important;margin:0!important;font-size:12px!important;line-height:20px!important;white-space:nowrap!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item>a:is(:hover,:focus-visible){color:#fff!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb{margin:16px 16px 24px!important;min-height:44px!important;flex-wrap:nowrap!important;overflow:hidden!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item>a{min-height:44px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) :is(.bdlr-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb)>a{min-width:0!important;width:auto!important;justify-content:flex-start!important;text-align:left!important;padding-left:0!important;padding-right:0!important;margin:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) :is(.bdlr-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb)>a:first-child,
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb>.breadcrumb-item:first-child>a{padding-right:16px!important;margin-right:-16px!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): footer paddings on the scale (PC top 64, SP top 48, bottom bar 24/24); mega panel 32/32 and link columns on the 12-col grid (4 x 192 + 16 gutters, card on columns 10-12) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-footer .bdlr-footer-bottom{padding-top:24px!important;padding-bottom:24px!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-footer .bdlr-footer-top{padding-top:64px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-footer .bdlr-footer-top{padding-top:48px!important}
+}
+@media (min-width:981px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header .bdlr-mega-panel.bdlr-mm{padding-bottom:32px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-header .bdlr-mm .bdlr-mm__cols{grid-template-columns:repeat(4,192px)!important;column-gap:16px!important;justify-content:start!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): fixed bottom bars vs page end. SP: body bottom padding = exact bar height (tab bar 63, item buy bar 65) so the LINE/support dock ends 24 above the bar on every page; PC item page: floating dock lifts above the sticky buy bar instead of hiding behind it, and the blank strip under the footer equals the bar height */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html):not(#_):not(#__) :is(#rt,body).bdlr-page:not(#_):not(#__){padding-bottom:calc(63px + env(safe-area-inset-bottom,0px))!important}
+:is(#rt,html):not(#_):not(#__) :is(#rt,body).bdlr-page.bdl-renewal-item:not(#_):not(#__){padding-bottom:calc(65px + env(safe-area-inset-bottom,0px))!important}
+}
+@media (min-width:768px){
+:is(#rt,html):not(#_):not(#__) :is(#rt,body).bdlr-page.bdl-renewal-item:not(#_):not(#__){padding-bottom:65px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:has(.bandal-floating-summary.is-visible) :is(#rt,*):not(#_):not(#__) .bdlr-floating-support.bdlr-support-widget{bottom:89px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__) .bdlr-floating-support.bdlr-support-widget{transition:bottom .2s ease!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): SP item breadcrumb stays inside the 16px gutters (was a fixed 366 width) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item :is(#rt,*):not(#_):not(#__):not(#___) .bdl-wire-item-content>.breadcrumb{width:auto!important;max-width:none!important;box-sizing:border-box!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): SP search panel = one field + close button on the 16px gutters (no box inside a box), both 40 high, close button in the same column as the hamburger; drawer PC診断 card copy breaks by phrase; drawer group chevron centred under the close icon */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header>.bdlr-header-search{padding:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header>.bdlr-header-search>.bdlr-search-form{padding:0!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;gap:8px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header>.bdlr-header-search>.bdlr-search-form>input.search-keyword{height:40px!important;min-height:40px!important;box-sizing:border-box!important;padding:0 48px 0 16px!important;background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header>.bdlr-header-search>.bdlr-search-form>a.search-url{right:49px!important;top:50%!important;height:38px!important;width:40px!important;transform:translateY(-50%)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-mobile-drawer .bdl-dr-nav>a.bdl-dr-feature>span{display:block!important;line-height:1.7!important;word-break:auto-phrase!important;text-wrap:pretty!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-mobile-drawer .bdl-dr-group>summary::after{right:14px!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): drawer PC診断 copy: phrase-based break only (no "pretty" re-balancing that left 合う alone at the line end) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) .bdlr-mobile-drawer .bdl-dr-nav>a.bdl-dr-feature>span{text-wrap:wrap!important}
+}
+}
+
+/* FINAL chrome (2026-11-14): header icon buttons share one colour on every page (cart was white 100% on TOP only, 70% elsewhere): rest white 70%, hover/focus 100% */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header .bdlr-header-actions>a.bdlr-cart-button{color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-header .bdlr-header-actions>a.bdlr-cart-button:is(:hover,:focus-visible){color:#fff!important}
+}
+
+/* FINAL chrome-verify (2026-11-14): tablet / phone-landscape header (768-980, both pc/ and sp/ templates) follows the same order as SP: logo left ... search, account, cart, hamburger at the right end, gap 8; the search panel is closed until the search button is pressed (it was permanently open, box inside a box, covering the breadcrumb); no blank strip under the page at 768 where there is no tab bar */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body) .bdlr-header:not(#a):not(#b):not(#c):not(#d):not(#e){gap:8px!important;column-gap:8px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-brand:not(#a):not(#b):not(#c):not(#d):not(#e){order:1!important;margin:0 auto 0 0!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-actions:not(#a):not(#b):not(#c):not(#d):not(#e){order:2!important;margin:0!important;gap:8px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-drawer-button:not(#a):not(#b):not(#c):not(#d):not(#e){order:3!important;margin:0!important;flex:0 0 40px!important;width:40px!important;height:40px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search:not(#a):not(#b):not(#c):not(#d):not(#e){order:4!important;padding:16px 24px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search[hidden]:not(#a):not(#b):not(#c):not(#d):not(#e){display:none!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search>.bdlr-search-form:not(#a):not(#b):not(#c):not(#d):not(#e){padding:0!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;gap:8px!important;align-items:center!important;width:auto!important;max-width:none!important;margin:0!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search>.bdlr-search-form>input.search-keyword:not(#a):not(#b):not(#c):not(#d):not(#e){height:40px!important;min-height:40px!important;box-sizing:border-box!important;padding:0 48px 0 16px!important;background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search>.bdlr-search-form>a.search-url:not(#a):not(#b):not(#c):not(#d):not(#e){right:49px!important;top:50%!important;height:38px!important;width:40px!important;transform:translateY(-50%)!important}
+:is(#rt,html) :is(#rt,body).bdlr-page:not(.bdl-renewal-item):not(#a):not(#b):not(#c):not(#d):not(#e){padding-bottom:0!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): SP drawer. Opens as a full-width sheet (<=767) so the logo and the close button sit exactly where the header logo and hamburger were (no second "B" of the page logo peeking beside it, close button 0.5px jump removed); 768-980 keeps the 420 panel and dims the page behind it. Chevron no longer drops 6px when a group opens; tiles in one group share one row height; long labels get a full row instead of overflowing the tile; dead login / register buttons look disabled; 48 of air under the last tile instead of 89 */
+@layer bandalReferenceCorrections{
+@media (max-width:980px){
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer>.bdlr-mobile-drawer-head:not(#a):not(#b):not(#c):not(#d):not(#e){height:58px!important;min-height:58px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdl-dr-group[open]>summary:not(#a):not(#b):not(#c):not(#d):not(#e)::after{transform:translateY(-50%) rotate(180deg)!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdl-dr-group:not([open])>summary:not(#a):not(#b):not(#c):not(#d):not(#e)::after{transform:translateY(-50%)!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdl-dr-links:not(#a):not(#b):not(#c):not(#d):not(#e){grid-auto-rows:1fr!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdl-dr-links:is(:has(>a[href*="kenki-collaboration"]),:has(>a[href*="review-campaign"])):not(#a):not(#b):not(#c):not(#d):not(#e){grid-template-columns:minmax(0,1fr)!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdl-dr-links>a:not(#a):not(#b):not(#c):not(#d):not(#e){min-width:0!important;overflow-wrap:anywhere!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer .bdlr-mobile-member>a[aria-disabled="true"]:not(#a):not(#b):not(#c):not(#d):not(#e){color:rgba(255,255,255,.35)!important;background-color:transparent!important;border-color:rgba(255,255,255,.08)!important;cursor:not-allowed!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer:not(#a):not(#b):not(#c):not(#d):not(#e){padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer>.bdl-dr-nav:not(#a):not(#b):not(#c):not(#d):not(#e){padding-bottom:16px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer:not(#a):not(#b):not(#c):not(#d):not(#e){width:100%!important;max-width:none!important;left:0!important;right:0!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer>.bdlr-mobile-drawer-head>.bdlr-brand:not(#a):not(#b):not(#c):not(#d):not(#e){width:124px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer>.bdlr-mobile-drawer-head>.bdlr-brand>img:not(#a):not(#b):not(#c):not(#d):not(#e){width:124px!important;height:auto!important}
+}
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-drawer.is-open:not(#a):not(#b):not(#c):not(#d):not(#e){box-shadow:0 0 0 100vmax rgba(7,7,11,.72)!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): 768-980: the search panel (the script opens it on load at these widths) sits in the header flow as a search row instead of floating over the breadcrumb / page title; closing it returns the header to one 60px row */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body) .bdlr-header:not(#a):not(#b):not(#c):not(#d):not(#e){flex-wrap:wrap!important;height:auto!important;min-height:60px!important;align-content:flex-start!important;row-gap:0!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>:is(.bdlr-brand,.bdlr-header-actions,.bdlr-drawer-button):not(#a):not(#b):not(#c):not(#d):not(#e){margin-top:9.5px!important;margin-bottom:9.5px!important;align-self:center!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search:not(#a):not(#b):not(#c):not(#d):not(#e){position:static!important;flex:0 0 calc(100% + 48px)!important;width:calc(100% + 48px)!important;max-width:none!important;margin:0 -24px!important;box-sizing:border-box!important;border-top:1px solid rgba(255,255,255,.05)!important;inset:auto!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): PC header details. Search field text and magnifier were 1px below the centre line of the pill / login / cart (input was 40 high inside a 38 inner box): now 38, one centre line. PC診断 pill gets a hover / focus state (it had none). Account dropdown padding 20 -> 16 (scale) */
+@layer bandalReferenceCorrections{
+@media (min-width:981px){
+:is(#rt,html) :is(#rt,body) .bdlr-header>.bdlr-header-search>.bdlr-search-form>input.search-keyword:not(#a):not(#b):not(#c):not(#d):not(#e){height:38px!important;min-height:38px!important;line-height:38px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-header-actions>a.bdlr-diagnosis:is(:hover,:focus-visible):not(#a):not(#b):not(#c):not(#d):not(#e){box-shadow:0 0 0 1px rgba(167,139,250,.6),0 0 20px rgba(124,58,237,.45)!important}
+}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account>.bdlr-account__menu:not(#a):not(#b):not(#c):not(#d):not(#e){padding:16px!important}
+}
+
+/* FINAL chrome-verify (2026-11-14): links without a destination (aria-disabled: ログイン / 新規会員登録 in the account dropdown, HONE / LINEで無料相談 / 注文履歴 in the mega menus, 新規会員登録 / 注文履歴 / 購入前相談(LINE) / 採用情報 in the footer) no longer look like live links: white 35%, no hover change, not-allowed cursor. Applies only while the attribute is present */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(.bdlr-header .bdlr-mega-panel,.bdlr-footer) a[aria-disabled="true"]:not(.bdlr-mm__btn):not(#a):not(#b):not(#c):not(#d):not(#e),
+:is(#rt,html) :is(#rt,body) :is(.bdlr-header .bdlr-mega-panel,.bdlr-footer) a[aria-disabled="true"]:not(.bdlr-mm__btn):is(:hover,:focus-visible):not(#a):not(#b):not(#c):not(#d):not(#e){color:rgba(255,255,255,.35)!important;cursor:not-allowed!important;text-decoration:none!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account__menu a[aria-disabled="true"]:not(#a):not(#b):not(#c):not(#d):not(#e),
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account__menu a[aria-disabled="true"]:is(:hover,:focus-visible):not(#a):not(#b):not(#c):not(#d):not(#e),
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account__menu a[aria-disabled="true"]>i:not(#a):not(#b):not(#c):not(#d):not(#e){color:rgba(255,255,255,.35)!important;cursor:not-allowed!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account__menu a.bdlr-account__login[aria-disabled="true"]:not(#a):not(#b):not(#c):not(#d):not(#e),
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-account__menu a.bdlr-account__login[aria-disabled="true"]:is(:hover,:focus-visible):not(#a):not(#b):not(#c):not(#d):not(#e){background-color:transparent!important;border-color:rgba(255,255,255,.08)!important}
+}
+
+/* FINAL chrome-verify (2026-11-14): mega menu between 981 and 1279 wide. The fixed 4 x 192 columns pushed the photo card 120px out of a 1024 viewport and the panel had no side gutter (first column on x=0): columns are now "up to 192" and the panel keeps the header's 24px gutters below 1280. 1280 and 1440 are unchanged (192 columns on the 12-col grid) */
+@layer bandalReferenceCorrections{
+@media (min-width:981px){
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-mega-panel.bdlr-mm:not(#a):not(#b):not(#c):not(#d):not(#e){box-sizing:border-box!important;padding-left:max(0px,calc(24px - max(0px,(100% - 1232px) / 2)))!important;padding-right:max(0px,calc(24px - max(0px,(100% - 1232px) / 2)))!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-mm .bdlr-mm__inner:not(#a):not(#b):not(#c):not(#d):not(#e){grid-template-columns:minmax(0,1fr) 296px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-mm .bdlr-mm__cols:not(#a):not(#b):not(#c):not(#d):not(#e){grid-template-columns:repeat(4,minmax(0,192px))!important;min-width:0!important}
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-mm .bdlr-mm__col:not(#a):not(#b):not(#c):not(#d):not(#e){min-width:0!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): breadcrumb leftovers. review-list / coupon breadcrumbs use the same Geist-first family as every other page (text sat 2px higher); recycle page SP breadcrumb starts 16 below the header like the rest (was 24); 768-980 "TOP /" spacing equal on both sides of the slash */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(nav,ol,ul,div)[class*="breadcrumb"] :is(a,span,li):not(#a):not(#b):not(#c):not(#d):not(#e),
+:is(#rt,html) :is(#rt,body) :is(nav,ol,ul,div)[class*="breadcrumb"]:not(#a):not(#b):not(#c):not(#d):not(#e){font-family:"Geist","Noto Sans JP",sans-serif!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) .bdlr-recycle-shell>.bdlr-recycle-breadcrumb:not(#a):not(#b):not(#c):not(#d):not(#e){margin-top:-8px!important}
+}
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body) :is(.bdlr-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb)>a:first-child:not(#a):not(#b):not(#c):not(#d):not(#e){min-width:0!important;width:auto!important;padding-left:0!important;padding-right:0!important;margin:0!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): footer. PC: columns on the page's 12-column grid (brand 4 cols, each link group 2 cols, gutter 16: x = 104 / 520 / 728 / 936 / 1144 at 1440) instead of 301 + 4 x 200.7 with 32 gaps that matched nothing above it. Latin text (GPU, CPU, LINE, PC) in Geist like the header. SP: 32 under the brand block (was 28), column gutter 12, long labels break by phrase (no single 例 on its own line) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) .bdlr-footer :is(h2,a,p,span):not(#a):not(#b):not(#c):not(#d):not(#e){font-family:"Geist","Noto Sans JP",sans-serif!important}
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top a:not(#a):not(#b):not(#c):not(#d):not(#e){word-break:auto-phrase!important}
+@media (min-width:981px){
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top:not(#a):not(#b):not(#c):not(#d):not(#e){grid-template-columns:repeat(12,minmax(0,1fr))!important;column-gap:16px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top>.bdlr-footer-brand:not(#a):not(#b):not(#c):not(#d):not(#e){grid-column:span 4!important}
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top>section:not(#a):not(#b):not(#c):not(#d):not(#e){grid-column:span 2!important;min-width:0!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top:not(#a):not(#b):not(#c):not(#d):not(#e){column-gap:12px!important}
+:is(#rt,html) :is(#rt,body) .bdlr-footer .bdlr-footer-top>.bdlr-footer-brand:not(#a):not(#b):not(#c):not(#d):not(#e){padding-bottom:32px!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): fixed bars and the support dock. SP tab bar and the item buy bar get the header's chrome (same surface colour, 1px white 8% top line) so scrolling content has an edge to disappear under (tab bar was page-black with a transparent border); list pages no longer show a lighter grey band behind the LINE / サポート dock at the page end (wrapper background leaked there); dock labels in Geist-first like the header */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) .bdlr-wrapper:not(#a):not(#b):not(#c):not(#d):not(#e){background-color:#07070b!important}
+:is(#rt,html) :is(#rt,body) .bdlr-floating-support :is(a,span):not(#a):not(#b):not(#c):not(#d):not(#e){font-family:"Geist","Noto Sans JP",sans-serif!important}
+:is(#rt,html) :is(#rt,body) .bdlr-mobile-bottom:not(#a):not(#b):not(#c):not(#d):not(#e){background-color:rgb(17,17,21)!important;border-top:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item .bandal-floating-summary:not(#a):not(#b):not(#c):not(#d):not(#e){border-top:1px solid rgba(255,255,255,.08)!important}
+}
+
+/* FINAL chrome-verify (2026-11-14): mega menu links break by phrase when a column is narrow (981-1279: "すべての / ゲーミングPC", not "すべてのゲーミン / グPC") */
+@layer bandalReferenceCorrections{
+@media (min-width:981px){
+:is(#rt,html) :is(#rt,body) .bdlr-header .bdlr-mm .bdlr-mm__col a:not(#a):not(#b):not(#c):not(#d):not(#e){word-break:auto-phrase!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): recycle page SP breadcrumb: the page's own top padding is now 16 (fixed in the static stylesheet), so the -8 offset above is cancelled; breadcrumb sits at 16 below the header like every other page */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) .bdlr-recycle-shell>.bdlr-recycle-breadcrumb:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f){margin-top:0!important}
+}
+}
+
+/* FINAL chrome-verify (2026-11-14): ready for the breadcrumb that guide / company / contract still lack (HTML change reported): when <nav class="bdlr-static-breadcrumb"> is added as the first child of main.bdl-info-main it lands on the common pattern (PC x104 / 32 below header / 40 to the kicker; SP x16 / 16 below / 24 to the kicker). No effect until the markup exists */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) .bdl-info-main>.bdlr-static-breadcrumb+.bdl-info-hero:not(#a):not(#b):not(#c):not(#d):not(#e){padding-top:0!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) .bdl-info-main>.bdlr-static-breadcrumb:not(#a):not(#b):not(#c):not(#d):not(#e){margin:16px 16px 24px!important;width:auto!important;max-width:none!important}
+}
+}
+
+@layer bandalReferenceCorrections{
+/* FINAL tablet (2026-11-14): footer and the in-flow LINE/support bar 768-1280 sit on the same 24px gutter as the header and the page content (footer was 16 at 768-980 and 32 at 981-1280, so its left edge never met the content's) */
+@media (min-width:768px) and (max-width:1280px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______) .bdlr-footer .bdlr-footer-top,:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______) .bdlr-footer .bdlr-footer-bottom{margin-left:24px!important;margin-right:24px!important}
+}
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______) .wrapper>.bdlr-floating-support{margin-left:24px!important;margin-right:24px!important}
+}
+}
+
+/* FINAL add (2026-11-14): SP drawer login / register buttons = readable action buttons with icons */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) nav.bdlr-mobile-member>a,:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) nav.bdlr-mobile-member>a[aria-disabled]{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;height:40px!important;color:#fff!important;opacity:1!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:8px!important;font-size:14px!important;font-weight:500!important;line-height:1!important;cursor:pointer!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) nav.bdlr-mobile-member>a>svg.ic{display:block!important;flex:0 0 18px!important;width:18px!important;height:18px!important;color:rgba(255,255,255,.7)!important;fill:currentColor!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) nav.bdlr-mobile-member>a>span{color:#fff!important;opacity:1!important}
+}
+
+/* FINAL add 2 (2026-11-14): SP drawer login / register buttons win over the "no destination" grey */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) nav.bdlr-mobile-member>a[aria-disabled],:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) nav.bdlr-mobile-member>a{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;color:#fff!important;opacity:1!important;background-color:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:8px!important;font-size:14px!important;font-weight:500!important;line-height:1!important;cursor:pointer!important}
+}
+
+/* FINAL add 3 (2026-11-14): SP, the LINE相談 / サポート bar under the footer is removed (the bottom tab bar already has 相談) (mao) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) nav.bdlr-floating-support{display:none!important}
+}
+}
+
+/* FINAL static (2026-11-14): one hero pattern on every lower page: kicker 11px, 8 to h1, 8 to lead, hero to content PC 40 / SP 24, h1 PC 40 / SP 28 */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>p:first-child{margin:0 0 8px!important;font-size:11px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>h1{margin:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>h1+:is(p,span){margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>h1+p+p{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero>time{margin-top:8px!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header){margin-bottom:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header)+*{margin-top:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero:has(+.mig-lead){margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero+.mig-lead{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-lead+*{margin-top:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero{margin-bottom:96px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero+*{margin-top:96px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero>.bdlr-content-highlights{margin-top:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-article>header>h1{font-size:40px!important;line-height:1.4!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-hero{padding-top:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-renewal-cart__title-wrap{padding-top:48px!important;padding-bottom:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-hero+.audit-examples{margin-top:40px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header){margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header)+*{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero:has(+.mig-lead){margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero+.mig-lead{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-main{padding-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-breadcrumb{margin:16px 0 24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-breadcrumb>a{min-width:0!important;padding:0 16px 0 0!important;margin:0 -16px 0 0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-hero{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-lead+*{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero{margin-bottom:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero+*{margin-top:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-hero>.bdlr-content-highlights{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero:not(:has(>time))>h1{font-size:28px!important;line-height:1.4!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>h1+:is(p,span){font-size:14px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero,.bdlr-news-article>header,.bdl-renewal-cart__title-wrap)>h1+p+p{font-size:14px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero+.mig-lead{font-size:14px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-static-shell{max-width:none!important;width:auto!important;margin-left:16px!important;margin-right:16px!important}
+}
+}
+/* FINAL static (2026-11-14): page bottom padding PC 96 / SP 64 (was 88 to 112 / 72 to 88) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(main.bdl-info-main,main.bdlr-news-main,main.bdlr-static-main,main.bdlr-migrated,main.bdlr-review-archive){padding-bottom:96px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(main.bdl-info-main,main.bdlr-news-main,main.bdlr-static-main,main.bdlr-migrated,main.bdlr-review-archive,main.bdlr-content-main){padding-bottom:64px!important}
+}
+}
+/* FINAL static (2026-11-14): diagnosis hero: same top rhythm as the other lower pages (back link where the breadcrumb sits), stack 8, text to button 24 / SP 16, SP back link 44 tall */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-hero-content>h1+p{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-kicker{gap:8px!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis a.bd-shop-back{display:flex!important;width:fit-content!important;height:20px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-hero-content>.bd-btn-main{margin-top:24px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-wrap{padding-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis a.bd-shop-back{display:flex!important;width:fit-content!important;min-height:44px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-hero{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-hero-content>.bd-btn-main{margin-top:16px!important}
+}
+}
+/* FINAL static (2026-11-14): off-scale spacing to the 4/8/12/16/24/32/48/64/96 scale (measured values 20/28/34/36/42/52/56/80) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-main dl>div{padding-top:16px!important;padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-card>a{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-archive>p{padding-top:48px!important;padding-bottom:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-list a{padding-top:16px!important;padding-bottom:16px!important;gap:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-step>b{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-note{padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-cta{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-shell :is(.mig-card,.mig-quote,.mig-section)>p{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-shell :is(.mig-card,.mig-quote,.mig-section)>p:last-child{margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-shell p.mig-note{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-kenki .mig-actions:not(.mig-center):not(.mig-return){margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-card>.mig-tags{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-kenki :is(th,td){padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-faq>summary{padding-top:16px!important;padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-faq>p{padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-specs .mig-table-wrap{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-table-wrap.mig-specs{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-article>p{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-article>ul{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-article>h3{margin-top:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-note{padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-main>a.audit-more{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-campaign>h2{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-campaign>ol>li{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-legal-copy>h2{margin-top:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-system-policy>h2{margin-top:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-legal-copy>h2:first-child{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-system-policy>h2:first-child{margin-top:0!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-guide-links>a{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-group{padding-top:96px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-contact{margin-top:96px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-section{margin-top:96px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-hero+.bdlr-recycle-section{margin-top:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-section>h2{margin-bottom:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-section>h2{margin-bottom:40px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-wire-cart-steps li>span{font-size:14px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-group{padding-top:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-contact{margin-top:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-section{margin-top:64px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-hero+.bdlr-recycle-section{margin-top:48px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-section>h2{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-content-section>h2{margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-wire-cart-steps li{gap:4px!important}
+}
+@media (max-width:374px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-wire-cart-steps li::after{width:4px!important;margin:0 4px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-wire-cart-steps li>b{width:20px!important;height:20px!important;min-width:20px!important}
+}
+}
+/* FINAL static (2026-11-14): SP card padding 16 on every card (was 20 or 24 at the sides, 24 top and bottom) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-main :is(.bdl-info-company-intro,.bdl-info-card){padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-main :is(.bdl-info-company-intro,.bdl-info-card):not(.bdl-info-profile):not(.bdl-info-contract){padding-top:16px!important;padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-content{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-archive>header{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-list a{padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-card{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-contact-card{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdlr-content-highlight,.bdlr-content-step,.bdlr-content-card,.bdlr-content-rule,.bdlr-content-cta){padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-faq-group{padding:16px 16px 8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-faq-support{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-faq-answer{padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-quote{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdlr-recycle-card,.bdlr-recycle-step,.bdlr-recycle-data>article,.bdlr-recycle-cta){padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-list{padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-campaign{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-body{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-contact{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-renewal-cart__empty{padding-left:16px!important;padding-right:16px!important}
+}
+}
+/* FINAL static (2026-11-14): card title to description 8 (was 4 or 12); review group heading to summary 8 */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-contact-card>h2+p{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-faq-support h2+p{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-cta h2+p{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-contact h2+p{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-review-group h2+.bdlr-legacy-review-summary{margin-top:8px!important}
+}
+/* FINAL static (2026-11-14): no box inside a box: inner panels are borderless 5% surfaces (survey gift panel, review campaign reward cells) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-card .bandal-survey-campaign{border:0!important;box-shadow:none!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-rewards>div{border:0!important;background:rgba(255,255,255,.05)!important;padding:16px!important}
+}
+/* FINAL static (2026-11-14): survey form: one left edge for number / title / help / options, 8 between label and title, questions 64 apart (SP 48), SP badge row above the title, SP line breaks removed inside the gift panel */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-header{row-gap:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-question-title{margin-left:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-required{margin-left:0!important;margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-optional{margin-left:0!important;margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-question-number{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question>.bandal-question-help{margin-left:0!important;padding-left:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-option>.bandal-option-text{margin-left:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-error:empty{margin:0!important;min-height:0!important;height:0!important;padding:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-error:not(:empty){margin:0 0 16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-submit-button{margin-top:0!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question{padding-top:32px!important;padding-bottom:32px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question.bandal-question-first{padding-top:0!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question{padding-top:24px!important;padding-bottom:24px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question.bandal-question-first{padding-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-campaign{padding:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-survey-campaign br{display:none!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading{flex-wrap:wrap!important;gap:8px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-question-number{order:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>:is(.bandal-required,.bandal-optional){order:1!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-question-title{order:2!important;flex:0 0 100%!important}
+}
+}
+/* FINAL static (2026-11-14): action buttons: one side padding (16) on every outlined 40px button of the lower pages (was 16 or 20) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(a.bdlr-content-button,a.audit-grade-link,.bdl-info-actions a.is-primary,button.bd-btn-main){padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-actions:not(.mig-return) a.mig-button-secondary{padding-left:16px!important;padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-article a:is([href="news-list.html"],[href="/view/news/list"]){padding-left:16px!important;padding-right:16px!important}
+}
+/* FINAL static (2026-11-14): SP tap targets: text links and inline buttons get a 40px hit area without moving the layout */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-info-card>a{padding-top:9px!important;padding-bottom:9px!important;margin-top:7px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-return a.mig-button-secondary{padding-top:9px!important;padding-bottom:9px!important;margin-top:-9px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-main>a.audit-more{padding-top:9px!important;padding-bottom:9px!important;margin-top:7px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-campaign>a{padding-top:9px!important;padding-bottom:9px!important;margin-top:7px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-review-digest{gap:0!important;margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-review-digest a{min-height:40px!important;display:flex!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) button.audit-read-full{padding-top:11px!important;padding-bottom:11px!important;margin-top:-11px!important;margin-bottom:-11px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) a.bdlr-legacy-review-source{padding-top:16px!important;padding-bottom:6px!important;margin-bottom:-6px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-guide-links>a{padding-top:9px!important;padding-bottom:9px!important;margin-top:7px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image p{font-size:14px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdl-renewal-cart__empty>a:not(.bdlr-cart-empty-link){padding-top:9px!important;padding-bottom:9px!important;margin-top:-9px!important;margin-bottom:-9px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-cart-options>a{min-height:40px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero>h1{overflow-wrap:anywhere!important;min-width:0!important;max-width:100%!important}
+}
+}
+/* FINAL static (2026-11-14): SP breadcrumb: one TOP link box on every lower page (review / recycle / coupon had a different width, so the slash sat at 68 instead of 49) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) nav[aria-label="パンくず"]>a{min-width:0!important;padding:0 16px 0 0!important;margin:0 -16px 0 0!important}
+}
+}
+/* FINAL static (2026-11-14): kenki grade cards: kicker 8 title 8 price, description 16 chips, chips 24 button (SP 16); was 24 / 12 / 64 / 48 */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-kicker{margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-price{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-tags{margin-top:auto!important;padding-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-actions{padding-top:0!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-actions{margin-top:24px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-grade>.mig-actions{margin-top:16px!important}
+}
+}
+/* FINAL static (2026-11-14): diagnosis question panel: 14px text (was 15), SP panel padding 16, result rows padding 16 */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) #bd-three-question .ux-answers button{font-size:14px!important;line-height:1.5!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) #bd-three-question .ux-result p{font-size:14px!important;line-height:1.75!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) #bd-three-question .ux-result a{font-size:14px!important;padding:16px!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) #bd-three-question{padding:16px!important}
+}
+}
+/* FINAL static (2026-11-14): survey: 12 between question number and title, 12 between radio and label (stray 10 / 11 margins added to the flex gap) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-question-heading>.bandal-question-number{margin-right:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bandal-option>.bandal-radio{margin-right:0!important}
+}
+/* FINAL static (2026-11-14): patch 2: recycle SP breadcrumb at the shared y (74), diagnosis kicker 8 to title, contact card title 8 / text to button 24 (SP 16), kenki paragraphs 16, news list SP header label above title and date 8 to title, no one-character widows in hero leads */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bd-diagnosis .bd-hero-content>.bd-kicker{margin-bottom:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-contact-card>h2{margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image>div>p{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image>div>p:last-of-type{margin-bottom:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-kenki .mig-grid-two>div>p{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-static-hero,.mig-hero,.bdlr-content-hero,.bdlr-recycle-hero,.bdlr-review-hero)>h1~:is(p,span){text-wrap:pretty!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero+.mig-lead{text-wrap:pretty!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-content{text-wrap:pretty!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-contact-card>p{margin-bottom:24px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-recycle-breadcrumb{margin-top:0!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-contact-card>p{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-archive>header{flex-direction:column-reverse!important;align-items:flex-start!important;justify-content:flex-start!important;gap:4px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-list a{row-gap:8px!important}
+}
+}
+/* FINAL static (2026-11-14): patch 3: kenki intro panel heading stack (kicker 8 title 16 text) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image>div>p.mig-kicker{margin-bottom:8px!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-hero-image>div>h2{margin-bottom:16px!important}
+}
+/* FINAL static (2026-11-14): patch 4: news list card header hugs its title (24 above and below; a 100px min-height left 24 above / 48 below) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .bdlr-news-archive>header{min-height:0!important}
+}
+/* FINAL static (2026-11-14): patch 5: kenki grade card kicker 8 to title (the paragraph rule above re-added 16) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .mig-shell .mig-card.mig-grade>p.mig-kicker{margin-bottom:0!important}
+}
+/* FINAL static (2026-11-14): patch 6: kenki grade card chips to button 16 on SP */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-kenki .mig-card.mig-grade>.mig-actions:not(.mig-center):not(.mig-return){margin-top:16px!important}
+}
+}
+/* FINAL static (2026-11-14): patch 7: kenki two-column text block keeps 0 under its last paragraph */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___) .audit-kenki .mig-grid-two>div>p:last-child{margin-bottom:0!important}
+}
+
+/* FINAL static verify (2026-11-14): guide / company / contract at 768 to 1023 wide: breadcrumb and hero get the 24 side gutter of the content below (they sat at x=0) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body) .bdl-info-main>:is(.bdlr-static-breadcrumb,.bdl-info-hero):not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g){margin-left:24px!important;margin-right:24px!important;width:auto!important;max-width:none!important;padding-left:0!important;padding-right:0!important}
+}
+}
+/* FINAL static verify (2026-11-14): recycle hero to first section PC 40 / SP 24 like every other lower page (was 64 / 48) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .bdlr-recycle-hero+.bdlr-recycle-section{margin-top:40px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .bdlr-recycle-hero+.bdlr-recycle-section{margin-top:24px!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP review card: "全文を読む" keeps its 8 gap under the excerpt (the 40px hit-area rule had pulled it to 0) and its hit area no longer runs under the source line / source link below it (14 above + 8 below; source link 8 above + 14 below) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) button.audit-read-full{padding-top:14px!important;padding-bottom:8px!important;margin-top:-6px!important;margin-bottom:-8px!important;position:relative!important;z-index:1!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) a.bdlr-legacy-review-source{padding-top:8px!important;margin-top:8px!important;padding-bottom:14px!important;margin-bottom:-14px!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP widows: contact lead, "not published" news notice, survey lead and survey campaign message no longer leave 2 or 3 characters alone on the last line */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) :is(.mig-hero+.mig-lead,.bdlr-news-article>.bdlr-news-content,.bdlr-news-article>.bdlr-news-content>p,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker),.bandal-survey-campaign-message){text-wrap:pretty!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP widows, patch: balance instead of pretty (pretty does not move Japanese line ends) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____) :is(.mig-hero+.mig-lead,.bdlr-news-article>.bdlr-news-content,.bdlr-news-article>.bdlr-news-content>p,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker):not(.bdlr-static-lead),.bandal-survey-campaign-message){text-wrap:balance!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP widows, final: phrase-based line breaks (word-break:auto-phrase) with normal wrapping; this replaces the two attempts above (balance split words where auto-phrase is not supported, so it is switched back to wrap) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) :is(.mig-hero+.mig-lead,.bdlr-news-article>.bdlr-news-content,.bdlr-news-article>.bdlr-news-content>p,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker),.bandal-survey-campaign-message){text-wrap:wrap!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) :is(.mig-hero+.mig-lead,.bdlr-news-article>.bdlr-news-content,.bdlr-news-article>.bdlr-news-content>p,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker):not(.bdlr-static-lead),.bandal-survey-campaign-message){word-break:auto-phrase!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP widows, effective rule: text-wrap pretty together with the phrase breaks above (same pair the shared type rules use; keeps the survey lead ending "お聞かせください。" on one line) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______) :is(.mig-hero+.mig-lead,.bdlr-news-article>.bdlr-news-content,.bdlr-news-article>.bdlr-news-content>p,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker),.bandal-survey-campaign-message){text-wrap:pretty!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP kenki intro panel: the kicker stays 11px like every other kicker (the 14px paragraph rule for this panel had enlarged it) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .mig-hero-image p.mig-kicker{font-size:11px!important;line-height:1.75!important}
+}
+}
+
+@layer bandalReferenceCorrections{
+/* FINAL tablet (2026-11-14): guide / company / contract hero 768-1023: kicker, h1 and lead started at x=0 (viewport edge) while the tabs and cards below sit on the 24px gutter */
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdl-info-page .bdl-info-main>.bdl-info-hero{margin-left:24px!important;margin-right:24px!important;padding-left:0!important;padding-right:0!important;width:auto!important;max-width:none!important;box-sizing:border-box!important}
+}
+/* FINAL tablet (2026-11-14): PC診断 768-1023: the page sat on a 14px gutter (768-900) or none at all (901-1023, text touching the viewport edge); now 24 like header and every other page */
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-diagnosis-page .bd-diagnosis>.bd-wrap{margin-left:24px!important;margin-right:24px!important;width:auto!important;max-width:none!important;box-sizing:border-box!important}
+}
+/* FINAL tablet (2026-11-14): review archive story links. 768-1023: one column (three 229-299px cards left ~100px for the title: "相談からアフ/ターケアまで/親切"); 1024-1279: titles break by phrase with balanced lines (was "…まで/親切") */
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-review-archive-page .audit-examples{grid-template-columns:minmax(0,1fr)!important;gap:8px!important}
+}
+@media (min-width:1024px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-review-archive-page .audit-examples a>span{word-break:auto-phrase!important;text-wrap:balance!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP kenki intro text breaks at phrase ends (was 「最 / 適解」 at 390) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .mig-hero-image h2+p{word-break:auto-phrase!important;text-wrap:pretty!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): Latin letters and numerals in Geist on the lower-page texts that still fell back to Noto Sans JP (company / contract tables, survey, coupon, kenki tables and headings, terms lead, news list titles), same stack as the neighbouring text */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) :is(.bdl-info-hero>span,.bdl-info-company-intro p,.bdl-info-card :is(dd,dt,a,li,p),.bdlr-news-list strong,.bdlr-survey-main .bdlr-static-hero>p:not(.bdlr-static-kicker),.bandal-survey-gift :is(p,strong),.bandal-survey-time,.bandal-survey-note,.bandal-survey-complete,.bandal-survey-campaign-message,.bandal-question-title,.bandal-question-help,.bandal-option-text,.bdlr-content-lead,.bdlr-content-step p,.bdlr-content-card p,.bdlr-content-rule li,.audit-collab-intro,.audit-grade-link,.audit-difference :is(th,td),.audit-grades :is(th,td),.audit-kenki .u-nowrap,.audit-grade-intro h3,.audit-kenki .mig-quote h3,.audit-kenki .mig-card h3,.bdlr-static-lead){font-family:"Geist","Noto Sans JP",sans-serif!important}
+}
+
+/* FINAL static verify (2026-11-14): company news titles break at phrase ends on SP (was "優秀 / 賞を受賞しました") */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .bdl-info-news li>a{word-break:auto-phrase!important;text-wrap:pretty!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP kenki comparison table: value columns 152 wide (was 140) so "Ryzen 7 7700" stays on one line in Geist; the table still scrolls sideways as before */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) table.audit-grades :is(td,th:not(:first-child)){width:152px!important;min-width:152px!important}
+}
+}
+
+@layer bandalReferenceCorrections{
+/* FINAL tablet (2026-11-14): contact / review archive / review campaign / kenki collaboration / news article pages 1024-1280: main padding 24 + shell margin 24 put breadcrumb, h1 and cards on a 48px inset while header and footer sit on 24; one 24px gutter */
+@media (min-width:1024px) and (max-width:1280px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-page main:has(>.mig-shell),:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-page main:has(>.bdlr-review-shell){padding-left:0!important;padding-right:0!important}
+}
+/* FINAL tablet (2026-11-14): coupon page 768-1279 sat on a 16px gutter; 24 like every other page */
+@media (min-width:768px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-page .bdlr-content-main>.bdlr-content-shell{margin-left:24px!important;margin-right:24px!important;width:auto!important;box-sizing:border-box!important}
+}
+}
+
+/* FINAL static verify (2026-11-14): SP survey gift line breaks at phrase ends (360 wide: was "ギ / フト券") */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____) .bandal-survey-gift :is(p,strong){word-break:auto-phrase!important}
+}
+}
+
+/* LIST sidebar search = same as header search (2026-11-14) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>label{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)!important;margin:0!important;padding:0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div{height:40px!important;border-radius:8px!important;border:1px solid rgba(255,255,255,.14)!important;background:rgba(255,255,255,.05)!important;position:relative!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div>input{height:38px!important;padding:0 40px 0 16px!important;font-size:14px!important;width:100%!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div>input::placeholder{color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div>a.search-url{position:absolute!important;inset:0 0 0 auto!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;width:40px!important;height:38px!important;padding:0!important;border:0!important;border-radius:0 7px 7px 0!important;transform:none!important;margin:0!important;min-width:0!important;background:transparent!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div>a.search-url::before{content:""!important;display:block!important;width:16px!important;height:16px!important;background:rgba(255,255,255,.5)!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'/%3E%3C/svg%3E") center/contain no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'/%3E%3C/svg%3E") center/contain no-repeat!important;font-size:0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-search>div>a.search-url:hover::before{background:#fff!important}
+}
+
+/* LIST sidebar v2 (2026-11-14): Caseking-style. Groups divided by lines, no row arrows, current row = bold + purple bar */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-category-switch-help{display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-search{padding:16px 20px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details{border-top:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel summary{height:48px!important;min-height:48px!important;padding:0 48px 0 20px!important;font-size:14px!important;font-weight:700!important;color:#fff!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav{padding:0 20px 16px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a{height:36px!important;min-height:36px!important;padding:0 0 0 14px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:inset 2px 0 0 rgba(255,255,255,.08)!important;font-size:14px!important;font-weight:400!important;color:rgba(255,255,255,.7)!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a::after{content:none!important;display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a.is-child{padding-left:28px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a:hover{background:transparent!important;color:#fff!important;box-shadow:inset 2px 0 0 rgba(255,255,255,.35)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a[aria-current="page"]{background:transparent!important;border:0!important;color:#fff!important;font-weight:700!important;box-shadow:inset 2px 0 0 #A78BFA!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo{display:block!important;margin:0!important;padding:0!important;border-top:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo a{display:flex!important;align-items:center!important;height:48px!important;padding:0 20px!important;font-size:14px!important;font-weight:700!important;color:#fff!important;text-decoration:none!important;letter-spacing:.04em!important;background:transparent!important;border:0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo a::after{content:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo a:hover{background:rgba(255,255,255,.02)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo a[aria-current="page"]{color:#A78BFA!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-search{padding:16px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel summary{padding:0 44px 0 16px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav{padding:0 16px 12px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a{height:44px!important;min-height:44px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-solo a{padding:0 16px!important}
+}
+}
+
+/* LIST sidebar: selection line = what is shown now (label + chip) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-selection[data-sel="1"]{display:flex!important;align-items:center!important;gap:10px!important;margin:0!important;padding:14px 20px!important;border-bottom:1px solid rgba(255,255,255,.08)!important;background:transparent!important;white-space:normal!important;overflow:visible!important;font-size:12px!important;line-height:1.4!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-selection[data-sel="0"]{display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-label{flex:none!important;font-size:12px!important;font-weight:400!important;letter-spacing:.04em!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-chip{display:inline-flex!important;align-items:center!important;min-height:28px!important;padding:3px 10px!important;border-radius:4px!important;background:rgba(167,139,250,.12)!important;border:1px solid rgba(167,139,250,.4)!important;font-size:13px!important;line-height:1.4!important;font-weight:500!important;letter-spacing:.04em!important;color:#fff!important;min-width:0!important}
+@media (max-width:767px){:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-selection[data-sel="1"]{padding:0 16px 14px!important;border-bottom:0!important}}
+}
+
+/* LIST sidebar v3 (2026-11-14): no guide line on rows (only the current row has the purple bar); selection chip = pill with a remove link */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a{box-shadow:none!important;outline-offset:-2px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a:hover,:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a:active{box-shadow:none!important;background:transparent!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a[aria-current="page"],:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a[aria-current="page"]:hover,:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a[aria-current="page"]:active{box-shadow:inset 2px 0 0 #A78BFA!important;background:transparent!important;border:0!important;color:#fff!important;font-weight:700!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a::before,:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel details nav a::after{content:none!important;display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-filter-selection[data-sel="1"]{flex-wrap:wrap!important;gap:8px 10px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-chip{gap:2px!important;min-height:32px!important;padding:0 4px 0 14px!important;border-radius:999px!important;background:transparent!important;border:1px solid rgba(167,139,250,.6)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-x{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:none!important;width:24px!important;height:24px!important;margin:0!important;padding:0!important;border:0!important;border-radius:999px!important;background:transparent!important;font-size:0!important;text-decoration:none!important;min-height:0!important;min-width:0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-x::before{content:""!important;display:block!important;width:12px!important;height:12px!important;background:rgba(255,255,255,.7)!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z'/%3E%3C/svg%3E") center/contain no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z'/%3E%3C/svg%3E") center/contain no-repeat!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-x:hover{background:rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-filter-panel .bdlr-sel-x:hover::before{background:#fff!important}
+}
+
+/* LIST top line (2026-11-14): count/sort row spans the full width, side menu and product grid start on the same line */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-catalog-layout>.bdlr-catalog-content>.bdlr-catalog-toolbar{width:calc(100% + 312px)!important;max-width:none!important;margin-left:-312px!important;margin-right:0!important;box-sizing:border-box!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-catalog-layout>.bdlr-filter-panel{margin-top:58px!important}
+}
+@media (max-width:1100px) and (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___) .bdlr-catalog-layout>.bdlr-catalog-content>.bdlr-catalog-toolbar{width:calc(100% + 264px)!important;margin-left:-264px!important}
+}
+}
+
+/* FINAL list (2026-11-14): side menu top = top of first right-column block on pages without count/sort toolbar (game/purpose/price nav cards, diagnosis) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-layout:not(:has(>.bdlr-catalog-content:not([data-bdlr-rel-index])>.bdlr-catalog-toolbar:not([hidden])))>.bdlr-filter-panel{margin-top:0!important}
+}
+}
+
+/* FINAL list (2026-11-14): game nav cards, every title gets its own colour glow (same mechanism as the first four: --a + ::before line + ::after glow) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_genshin.html"],[href="/view/category/game_genshin"]){--a:#E6C36A!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_minecraft.html"],[href="/view/category/game_minecraft"]){--a:#7CC242!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_gta5.html"],[href="/view/category/game_gta5"]){--a:#F27FA5!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_sf6.html"],[href="/view/category/game_sf6"]){--a:#7B6CFF!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_tarkov.html"],[href="/view/category/game_tarkov"]){--a:#A9A45A!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is([href="category-game_wuthering.html"],[href="/view/category/game_wuthering"]){--a:#2CC7E0!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is(:is([href="category-game_genshin.html"],[href="/view/category/game_genshin"]),:is([href="category-game_minecraft.html"],[href="/view/category/game_minecraft"]),:is([href="category-game_gta5.html"],[href="/view/category/game_gta5"]),:is([href="category-game_sf6.html"],[href="/view/category/game_sf6"]),:is([href="category-game_tarkov.html"],[href="/view/category/game_tarkov"]),:is([href="category-game_wuthering.html"],[href="/view/category/game_wuthering"]))::before{background:linear-gradient(90deg,transparent,var(--a),transparent)!important;opacity:.9!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles:not(.is-compact) .bdlr-rel-tile:is(:is([href="category-game_genshin.html"],[href="/view/category/game_genshin"]),:is([href="category-game_minecraft.html"],[href="/view/category/game_minecraft"]),:is([href="category-game_gta5.html"],[href="/view/category/game_gta5"]),:is([href="category-game_sf6.html"],[href="/view/category/game_sf6"]),:is([href="category-game_tarkov.html"],[href="/view/category/game_tarkov"]),:is([href="category-game_wuthering.html"],[href="/view/category/game_wuthering"]))::after{content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;background:radial-gradient(90% 46% at 50% 118%,color-mix(in srgb,var(--a) 62%,transparent),transparent 72%)!important;pointer-events:none!important}
+}
+
+/* FINAL list (2026-11-14): dead/duplicate controls: lone page number, sort on empty result, clear link with no condition, duplicate primary tab; empty-state heading size unified; collab lead link spacing */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-pagination:not(:has(li+li)){display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-content:has(>.bdlr-catalog-empty,>.bdlr-rel-empty)>.bdlr-catalog-toolbar>label{display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-filter-panel>header:has(+.bdlr-filter-selection[data-sel="0"])>a{display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-primary>a[data-bdlr-primary-category]:is([href="category-pcparts.html"],[href="/view/category/pcparts"])~a:is([href="category-pcparts.html"],[href="/view/category/pcparts"]){display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-empty>p.empty{font-size:16px!important;line-height:22.4px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-intro>h1+a{display:inline-flex!important;align-items:center!important;gap:4px!important;margin:8px 0 0!important;font-size:14px!important;line-height:24px!important;letter-spacing:.04em!important;color:rgba(255,255,255,.7)!important;text-decoration:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-intro>h1+a::after{content:"→"!important;font-family:"Geist",sans-serif!important;font-weight:400!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-intro>h1+a:hover{color:#fff!important}
+/* tap area 40 for the small x of the 表示中 chip and for 比較に追加 (visual size unchanged) */
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-filter-panel .bdlr-sel-x{position:relative!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-filter-panel .bdlr-sel-x::after{content:""!important;position:absolute!important;inset:-8px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-card .bdlr-compare-check{position:relative!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-card .bdlr-compare-check::after{content:""!important;position:absolute!important;inset:-8px 0!important}
+}
+
+/* FINAL list SP (2026-11-14): tab scroller starts on the 16 margin, tap targets 40, price row fits the card, no cut-off microcopy, note link wraps as a unit, open filter spacing */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) :is(.bdlr-catalog-primary,.bdlr-child-categories,.audit-search-shortcuts){scroll-padding-left:16px!important;scroll-padding-right:16px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-child-categories>li>a{min-height:40px!important;height:40px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-child-categories{height:auto!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .audit-search-shortcuts{height:auto!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .audit-search-shortcuts>a{min-height:40px!important;height:40px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .audit-search>label::after{display:none!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .audit-search>label>input{padding-right:12px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-intro>h1+a{margin:0!important;min-height:40px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) [data-bdlr-catalog-density="compact"] .bdlr-catalog-grid>.bdlr-catalog-card .bdlr-product-price strong{font-size:18px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-grid>.bdlr-catalog-card .bdlr-product-use.bdlr-catalog-configuration-guide{visibility:hidden!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles-note a{display:flex!important;align-items:center!important;width:fit-content!important;gap:4px!important;min-height:40px!important;margin:0!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-rel-tiles-note a::after{content:"→"!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-filter-panel:has(.bdlr-filter-toggle[aria-expanded="true"]) .bdlr-filter-selection[data-sel="1"]{padding-top:12px!important;padding-bottom:12px!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+}
+@media (max-width:374px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) [data-bdlr-catalog-density="compact"] .bdlr-catalog-grid>.bdlr-catalog-card .bdlr-product-price strong{font-size:16px!important}
+}
+}
+
+/* FINAL list SP narrow (2026-11-14): card button label stays on one line at 360 */
+@layer bandalReferenceCorrections{
+@media (max-width:374px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) [data-bdlr-catalog-density="compact"] .bdlr-catalog-grid>.bdlr-catalog-card .bdlr-card-cta{font-size:13px!important;letter-spacing:0!important;padding-left:0!important;padding-right:0!important;white-space:nowrap!important}
+}
+}
+
+/* FINAL list verify (2026-11-14): SP filter chip row keeps one position closed/open (no 12px jump, x hit area clear of the toggle); SP peripheral card note shown as one fitting line instead of an empty slot; bottom gaps on the scale (PC note 48, SP tiles/shortcuts); collab lead link box */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-catalog-content>.bdlr-rel-tiles:last-child{margin-bottom:0!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-catalog-photo-note{margin-top:48px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-catalog-intro>h1+a{display:flex!important;width:fit-content!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-filter-panel>header:has(+.bdlr-filter-selection[data-sel="1"]){border-bottom:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-filter-panel .bdlr-filter-selection[data-sel="1"]{padding-top:12px!important;padding-bottom:12px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .audit-search-shortcuts{margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) [data-bdlr-catalog-density="compact"] .bdlr-catalog-grid>.bdlr-catalog-card[data-bdlr-peripheral-card="true"] .bdlr-product-use.bdlr-catalog-configuration-guide{visibility:visible!important;font-size:0!important;letter-spacing:0!important;white-space:nowrap!important;overflow:hidden!important}
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) [data-bdlr-catalog-density="compact"] .bdlr-catalog-grid>.bdlr-catalog-card[data-bdlr-peripheral-card="true"] .bdlr-product-use.bdlr-catalog-configuration-guide::before{content:"PC本体は含まれません"!important;display:block!important;position:static!important;width:auto!important;height:auto!important;background:none!important;font-size:11px!important;line-height:22px!important;letter-spacing:.04em!important;color:rgba(255,255,255,.7)!important}
+}
+}
+
+/* FINAL list verify (2026-11-14): nav-card pages without a note line: last tile to footer = page bottom padding only (SP 72 -> 48), hidden siblings ignored */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):not(:has(~.bdlr-rel-tiles-note,~.bdlr-catalog-grid)){margin-bottom:0!important}
+}
+
+@layer bandalReferenceCorrections{
+/* FINAL tablet (2026-11-14): list pages 768-1279: the photo note under the grid started at x=0 (viewport edge) while every other block sits on the 24px gutter */
+@media (min-width:768px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-main>.bdlr-catalog-photo-note{margin-left:24px!important;margin-right:24px!important;width:auto!important;max-width:none!important;box-sizing:border-box!important}
+}
+/* FINAL tablet (2026-11-14): nav tiles 768-1100 (3-column range): a tile set whose count leaves one tile alone in the last row (ゲームから選ぶ = 10 tiles, 3+3+3+1) uses 2 columns (5 full rows); names such as モンスターハンターワイルズ no longer break mid-word */
+@media (min-width:768px) and (max-width:1100px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):has(>.bdlr-rel-tile:nth-child(3n+1):last-child){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+/* FINAL tablet (2026-11-14): nav tiles 768-980: 6-tile sets (価格から選ぶ) use 2 columns so 20px headings fit (was "10万円以/下", "10万円台モ/デル" in 141-173px tiles); 3-tile sets (用途から選ぶ) keep 3 columns with a 16px heading so the break falls after "・" (was "競技FPS/・高FPS") */
+@media (min-width:768px) and (max-width:980px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):has(>.bdlr-rel-tile:nth-child(6):last-child){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):has(>.bdlr-rel-tile:nth-child(3):last-child)>.bdlr-rel-tile>strong{font-size:16px!important;line-height:24px!important}
+}
+/* FINAL tablet (2026-11-14): ゲームから選ぶ tiles 1101-1279 (5 columns of 135-171px): 2 columns up to 1229 (names broke mid-word in 3 lines: "モンスターハ/ンターワイル/ズ"); 1230-1279 keeps 5 columns with a 16px side padding so the name reads モンスターハンター/ワイルズ as it does at 1280+ */
+@media (min-width:1101px) and (max-width:1229px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):has(>.bdlr-rel-tile:nth-child(3n+1):last-child){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media (min-width:1230px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdlr-catalog-page .bdlr-catalog-content>.bdlr-rel-tiles:not(.is-compact):has(>.bdlr-rel-tile:nth-child(3n+1):last-child)>.bdlr-rel-tile{padding-left:16px!important;padding-right:16px!important}
+}
+}
+
+/* MOVIE section on TOP (2026-11-14, layout A: text 5 / video 7) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie{display:grid!important;grid-template-columns:minmax(0,5fr) minmax(0,7fr)!important;column-gap:64px!important;align-items:center!important;width:100%!important;max-width:1232px!important;margin:160px auto 0!important;padding:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__eyebrow{margin:0 0 8px!important;font-family:"Geist Mono","Geist",monospace!important;font-size:11px!important;line-height:16px!important;font-weight:500!important;letter-spacing:.08em!important;color:#A78BFA!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2{margin:0!important;font-size:28px!important;line-height:1.4!important;font-weight:700!important;letter-spacing:.02em!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__lead{margin:8px 0 0!important;font-size:14px!important;line-height:1.75!important;color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__link{display:inline-flex!important;align-items:center!important;justify-content:center!important;height:40px!important;padding:0 20px!important;margin-top:24px!important;border-radius:8px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.08)!important;font-size:14px!important;line-height:20px!important;font-weight:500!important;color:#fff!important;text-decoration:none!important;width:fit-content!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__link:hover{background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.16)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__player{position:relative!important;aspect-ratio:16/9!important;border-radius:12px!important;overflow:hidden!important;background:rgba(255,255,255,.05)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__player iframe{background:#07070B!important;color-scheme:dark!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;border:0!important;display:block!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie{grid-template-columns:minmax(0,1fr)!important;row-gap:24px!important;margin-top:96px!important;padding:0 16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2{font-size:20px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2 br{display:none!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__link{margin-top:16px!important}
+}
+}
+
+/* MOVIE v2 (2026-11-14): large Latin display type */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie{align-items:end!important;column-gap:48px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__display{margin:0 0 32px!important;font-family:"Geist",sans-serif!important;font-size:96px!important;line-height:.9!important;font-weight:700!important;letter-spacing:-.03em!important;color:#fff!important;text-transform:uppercase!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__display span{display:block!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__display span+span{color:transparent!important;-webkit-text-stroke:1px rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2{font-size:20px!important;line-height:1.5!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2 br{display:none!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__meta{display:flex!important;align-items:center!important;gap:12px!important;margin:0 0 16px!important;font-family:"Geist Mono","Geist",monospace!important;font-size:11px!important;line-height:16px!important;font-weight:500!important;letter-spacing:.08em!important;color:#A78BFA!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__meta::after{content:""!important;flex:1!important;height:1px!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie__display{font-size:56px!important;margin-bottom:20px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-movie h2{font-size:18px!important}
+}
+}
+
+/* TOP movie heading v2 (2026-11-14): no outlined text, smaller display, meta row removed */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-movie__meta{display:none!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-movie__display{font-size:64px!important;line-height:1!important;margin-bottom:24px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-movie__display span+span{color:#fff!important;-webkit-text-stroke:0!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-movie__display{font-size:40px!important;margin-bottom:16px!important}
+}
+}
+
+/* FINAL top (2026-11-14): SP "もっと見る" (ゲーム / 用途) moves to the bottom of the block, left-aligned, 16px under the content, as the same outlined 40px button as the matrix "すべての商品を見る". PC: arrow link shares the lead's baseline */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-hd>.dx-more{height:24px!important;min-height:0!important;line-height:24px!important;align-self:flex-end!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk{display:flex!important;flex-direction:column!important;align-items:stretch!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.dx-hd{display:contents!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.dx-hd>div{display:block!important;order:1!important;min-width:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.dx-hd>div>p{margin:8px 0 0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.bgc-grid{order:2!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.bgc-note{order:3!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.dx-hd>.dx-more{order:4!important;align-self:flex-start!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;height:40px!important;min-height:40px!important;margin:16px 0 0!important;padding:0 20px!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;background:rgba(255,255,255,.08)!important;color:#fff!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:14px!important;font-weight:500!important;line-height:1!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .dx-c .dx-blk>.dx-hd>.dx-more>span{color:#fff!important}
+}
+}
+
+/* FINAL top (2026-11-14): CPU×GPU matrix. Heading stack 8 (was 20), heading -> toggle 40 / toggle -> table 16 on PC. SP: heading, lead and "すべての商品を見る" left-aligned on the 16px gutter, link 16px under the list */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.bdlr-section-heading{gap:0!important;margin-bottom:40px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.bdlr-section-heading>p{margin:8px 0 0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.audit-quotes{padding:0!important;margin:0 0 16px!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.bdlr-section-heading{align-items:flex-start!important;text-align:left!important;margin:0 0 24px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.bdlr-section-heading>h2,
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix>.bdlr-section-heading>p{text-align:left!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-price-matrix.ux-has-mobile-table>a:is([href="category-all_items.html"],[href="/view/category/all_items"]){align-self:flex-start!important;margin:16px 0 0!important}
+}
+}
+
+/* FINAL top (2026-11-14): SP gutter. FACTORY TOUR and WHY BANDAL sat on a 32px inset (section padding 16 on top of the page gutter 16); every other TOP heading starts at 16 */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-movie,
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-why{padding-left:0!important;padding-right:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-why .bdlr-service-strip__hours{text-align:left!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-why .bdlr-service-strip__contact{align-items:flex-start!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .nov-home-picks>.nov-section-head>p{margin:8px 0 0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .nov-home-picks>.nov-section-head{gap:0!important}
+}
+}
+
+/* FINAL top (2026-11-14): heading stacks = 8 (WHY h2 -> lead, CTA h2 -> copy were 12; SP CTA eyebrow -> h2 was 4; collab title -> lead was 12) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-why .bdlr-service-head__lead{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .home-cta .home-cta-card__copy{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .home-cta .home-cta-card>h2{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-feature-banners>a.is-collab>.fb-lead{margin-top:8px!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-feature-banners>a.is-collab>strong{margin-top:8px!important}
+}
+}
+
+/* FINAL top (2026-11-14): SP collab banner. Lead text ran over the bright part of the key visual; the scrim now covers the text area so the copy stays readable */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-feature-banners>a.is-collab::after{background:linear-gradient(90deg,rgba(7,7,11,.9) 0%,rgba(7,7,11,.72) 60%,rgba(7,7,11,.3) 100%)!important}
+}
+}
+
+/* FINAL top (2026-11-14): SP FV dots. 24px buttons get a 40px-tall hit area without changing the row height */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-fv__dots>button{position:relative!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bdlr-fv__dots>button::after{content:""!important;position:absolute!important;inset:-8px -2px!important;background:none!important;border:0!important}
+}
+}
+
+/* FINAL top (2026-11-14): 迷ったらこの3台 at <=374px wide. The SSD chip was clipped away (3 chips need 214px, text column is 188px); tighter text inset and chips keep CPU / memory / SSD in one row */
+@layer bandalReferenceCorrections{
+@media (max-width:374px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .nov-home-picks .bdc .bdc-bo{padding-left:8px!important;padding-right:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .nov-home-picks .bdc .bdc-ch>span{font-size:10px!important;padding-inline:3px!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): PC CPU×GPU 価格一覧. Heading, lead, 構成 toggle, caption and section-end button were centred while every other TOP heading starts on the 104 edge; all now share the left edge */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix>.bdlr-section-heading{align-items:flex-start!important;text-align:left!important;width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix>.bdlr-section-heading>h2,
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix>.bdlr-section-heading>p{text-align:left!important;margin-left:0!important;margin-right:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix>.audit-quotes{justify-content:flex-start!important;align-self:flex-start!important;margin-left:0!important;margin-right:auto!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix table>caption{text-align:left!important;padding-left:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-price-matrix>a:is([href="category-all_items.html"],[href="/view/category/all_items"]){align-self:flex-start!important;margin-left:0!important;margin-right:auto!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): 予算から選ぶ has 5 cards. SP 2 columns left one orphan and 768-1100 (3 columns) left a hole; the last row now ends flush (SP: 5th card spans both columns; tablet: 3 + 2 on a 6-track grid) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bgc-grid.bgc-grid--5>:nth-child(5):last-child{grid-column:1 / -1!important}
+}
+@media (min-width:768px) and (max-width:1100px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bgc-grid.bgc-grid--5{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bgc-grid.bgc-grid--5>*{grid-column:span 2!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_) .bgc-grid.bgc-grid--5>:nth-child(n+4){grid-column:span 3!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): PC collab banner padding 40 (off scale) -> 32, same inset as the CTA cards below; link keeps the price baseline */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-feature-banners>a.is-collab{padding:32px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-feature-banners>a.is-collab>span{right:32px!important;bottom:40px!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): FACTORY TOUR player. The iframe painted the page black over the surface, so a blocked or slow embed was an invisible hole. Player keeps a visible surface, 1px line and a play mark until the video paints over it */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-movie__player{position:relative!important;overflow:hidden!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;background:rgba(255,255,255,.05) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='rgba(255,255,255,.5)'%3E%3Cpath d='M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm47.33-95L111.33,81A6,6,0,0,0,102,86v84a6,6,0,0,0,9.29,5l64-42a6,6,0,0,0,0-10ZM114,158.89V97.11L161.07,128Z'/%3E%3C/svg%3E") center/48px 48px no-repeat!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-movie__player>iframe{background:transparent!important;color-scheme:normal!important}
+}
+
+/* FINAL top-verify (2026-11-14): PC CTA cards. min-height 256 pushed the button to 27px under the copy; text -> button is 24 */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .home-cta .home-cta-card{min-height:0!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): FACTORY TOUR at 768-899 wide. "FACTORY" (285px at 64px) broke into "FACTOR / Y" in the 280px text column; display steps down to 48 so the word stays whole */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:899px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-movie__display{font-size:48px!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): 予算から選ぶ at <=374px wide. Two GPU chips wrapped to a second row and touched "モデルを見る" (gap 0) inside the fixed 156px card; the card now grows and keeps 12px between the chip group and the link */
+@layer bandalReferenceCorrections{
+@media (max-width:374px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bgc-grid.bgc-grid--5>.bgc{height:auto!important;min-height:156px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bgc-grid.bgc-grid--5>.bgc>.bgc-go{margin-top:auto!important;padding-top:12px!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): collab banner at 768-1100 wide. Title and lead ran over the bright key visual; same left scrim as SP keeps the copy readable */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1100px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-feature-banners>a.is-collab::after{background:linear-gradient(90deg,rgba(7,7,11,.9) 0%,rgba(7,7,11,.72) 55%,rgba(7,7,11,.2) 100%)!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): tablet widths 768-1023. Game / 用途 cards in 4 columns were 168px wide (fps numerals clipped, "モデルを見る" pushed out, titles broke mid-word) -> 2 columns. WHY BANDAL sat on a 40px inset while every other block starts at 24 */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .dx-c .bgc-grid:not(.bgc-grid--5){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .bdlr-why{padding-left:0!important;padding-right:0!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .nov-home-picks>.nov-section-head>h2{white-space:nowrap!important;flex:none!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .nov-home-picks .bdc .bdc-ch{flex-wrap:wrap!important;height:auto!important;max-height:none!important;overflow:visible!important;row-gap:4px!important}
+}
+}
+
+/* FINAL top-verify (2026-11-14): 迷ったらこの3台 at 768-1100 wide. The SSD chip of the widest card was clipped away (3 chips need 275px, text column was 267px at 1024); text inset 24 -> 16 keeps CPU / memory / SSD visible */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1100px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__) .nov-home-picks .bdc .bdc-bo{padding-left:16px!important;padding-right:16px!important}
+}
+}
+
+/* FINAL add (2026-11-14): SP 予算から選ぶ, the 5th card (30万円〜) is the same size as the others (mao) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*):not(#_):not(#__):not(#___) .bgc-grid.bgc-grid--5>:nth-child(5):last-child{grid-column:auto!important}
+}
+}
+
+/* ITEM rule fixes (2026-11-14): tax label after the price, LINE button filled green, stock text neutral, bottom links tightened */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-hero-tax-note{display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;column-gap:0!important;flex:1 1 0!important;min-width:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-hero-tax-note>span:first-child{font-size:13px!important;color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-hero-ship-note{display:block!important;flex:0 0 100%!important;margin:4px 0 0!important;font-size:12px!important;line-height:1.6!important;color:rgba(255,255,255,.5)!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-summary-actions .bdlr-button--secondary[data-bdlr-line-configuration]{background:#06C755!important;background-color:#06C755!important;border:1px solid #06C755!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-summary-actions .bdlr-button--secondary[data-bdlr-line-configuration]:hover{background:#05B34C!important;background-color:#05B34C!important;border-color:#05B34C!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-order-summary__stock,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-order-summary__stock.is-unavailable{color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-detail-terms-bottom{margin:-32px auto 0!important;padding:0!important;border-top:0!important;text-align:left!important}
+@media (max-width:767px){:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-detail-terms-bottom{padding:0 16px!important}}
+}
+
+/* ITEM tidy (2026-11-14): no repeated shipping/status lines, fps numbers as the hero, explanatory microcopy removed, SP dock = price + button */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>p{margin:4px 0 0!important;font-size:12px!important;line-height:1.6!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0!important;margin:20px 0 16px!important;padding:0!important;border:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl>div{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;gap:6px!important;margin:0!important;padding:0 12px 0 16px!important;border:0!important;border-left:1px solid rgba(255,255,255,.08)!important;min-width:0!important;min-height:0!important;height:auto!important;background:transparent!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl>div:first-child{padding-left:0!important;border-left:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl dt{margin:0!important;padding:0!important;font-size:12px!important;line-height:1.4!important;font-weight:400!important;letter-spacing:.02em!important;color:rgba(255,255,255,.7)!important;min-height:34px!important;white-space:normal!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl dd{margin:0!important;padding:0!important;font-family:"Geist",sans-serif!important;font-size:12px!important;line-height:1!important;font-weight:400!important;color:rgba(255,255,255,.5)!important;letter-spacing:.02em!important;white-space:nowrap!important;text-align:left!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl dd>b{margin-right:4px!important;font-size:32px!important;line-height:1!important;font-weight:700!important;letter-spacing:-.01em!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>small{display:inline!important;margin:0!important;font-size:11px!important;line-height:1.6!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>small+small::before{content:" "!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl{grid-template-columns:repeat(2,minmax(0,1fr))!important;row-gap:20px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl>div:nth-child(odd){padding-left:0!important;border-left:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section.ux-item-fact[data-ux-fps]>dl dt{min-height:0!important}
+}
+}
+
+/* ITEM customize v2 (2026-11-14): option rows = ruled list (no boxes); opened content tidied (no tag, no dot axes, no media label) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-section-title{margin:32px 0 0!important;padding:0 0 10px!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.16)!important;font-size:12px!important;line-height:1.6!important;font-weight:400!important;color:rgba(255,255,255,.5)!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group{margin:0!important;padding:0!important;background:transparent!important;background-color:transparent!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.08)!important;border-radius:0!important;box-shadow:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary{position:relative!important;display:flex!important;align-items:center!important;justify-content:space-between!important;column-gap:16px!important;min-height:52px!important;height:auto!important;margin:0!important;padding:8px 28px 8px 0!important;background:transparent!important;border:0!important;border-radius:0!important;cursor:pointer!important;list-style:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary>span:first-child{font-size:14px!important;line-height:1.5!important;font-weight:500!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary>span:last-child{font-size:13px!important;line-height:1.5!important;font-weight:400!important;color:rgba(255,255,255,.7)!important;text-align:right!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary::after{content:""!important;position:absolute!important;top:50%!important;right:4px!important;width:7px!important;height:7px!important;margin:-6px 0 0!important;border:0!important;border-right:1.5px solid rgba(255,255,255,.5)!important;border-bottom:1.5px solid rgba(255,255,255,.5)!important;background:none!important;transform:rotate(45deg)!important;-webkit-mask:none!important;mask:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary::after{margin-top:-2px!important;transform:rotate(-135deg)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary:hover>span:first-child{color:#C4B5FD!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]{padding-bottom:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-choice-tips{margin:4px 0 16px!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;display:block!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-choice-tips>strong{display:inline!important;margin:0!important;font-size:13px!important;line-height:1.7!important;font-weight:500!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-choice-tips>p{display:inline!important;margin:0 0 0 4px!important;font-size:13px!important;line-height:1.7!important;color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-option-card-grid{margin-left:0!important;margin-right:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-card-grid--two .bdlr-option-card__media>img{width:100%!important;height:100%!important;object-fit:contain!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-choice-benefits{margin:16px 0 0!important;padding:16px 0 0!important;background:transparent!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important;border-radius:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-option-next{margin-right:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-option-card-grid{padding:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-card-grid--two .bdlr-option-card__media{display:block!important;overflow:hidden!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-card-grid--two .bdlr-option-card__media>img{max-height:100%!important;min-height:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-card-grid>.bdlr-choice-benefits{margin:0!important;padding:4px 0 8px!important;background:transparent!important;border:0!important;border-radius:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>.bdlr-option-next{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-pending-option{display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:52px!important;margin:0!important;padding:8px 28px 8px 0!important;background:transparent!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.08)!important;border-radius:0!important;font-size:13px!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-pending-option>strong{font-size:14px!important;font-weight:500!important;color:rgba(255,255,255,.5)!important}
+}
+
+/* ITEM customize v3 (2026-11-14): option rows in aligned columns (name / current choice / price), changed rows marked, customization total in the order summary. Needs assets/bandal-rel-item.js */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary{display:grid!important;grid-template-columns:240px minmax(0,1fr)!important;align-items:center!important;column-gap:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary>span:last-child{display:grid!important;grid-template-columns:minmax(0,1fr) auto 128px!important;align-items:center!important;column-gap:12px!important;text-align:left!important;width:100%!important;max-width:none!important;justify-self:stretch!important;min-width:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-val{min-width:0!important;font-size:14px!important;line-height:1.5!important;color:rgba(255,255,255,.7)!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-price{grid-column:3!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:13px!important;line-height:1.5!important;font-variant-numeric:tabular-nums!important;letter-spacing:.02em!important;color:rgba(255,255,255,.5)!important;text-align:right!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-price.is-added{color:#fff!important;font-weight:500!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-state{grid-column:2!important;display:inline-flex!important;align-items:center!important;height:22px!important;padding:0 8px!important;border-radius:4px!important;background:rgba(167,139,250,.12)!important;font-size:11px!important;line-height:1!important;font-weight:500!important;color:#C4B5FD!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[data-bdlr-changed]>summary>span:first-child{color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[data-bdlr-changed] .bdlr-os-val{color:#fff!important;font-weight:500!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair details.bdlr-option-group>summary{grid-template-columns:auto minmax(0,1fr)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair details.bdlr-option-group>summary>span:last-child{grid-template-columns:minmax(0,1fr) auto auto!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair .bdlr-os-val{text-align:right!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]{border-bottom-color:rgba(167,139,250,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary{box-shadow:inset 0 2px 0 #A78BFA!important;background:linear-gradient(180deg,rgba(167,139,250,.08),rgba(167,139,250,0))!important;padding-left:16px!important;padding-right:40px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary>span:first-child{color:#fff!important;font-weight:700!important;font-size:15px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary::after{right:16px!important;border-color:#A78BFA!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>:not(summary){margin-left:16px!important;margin-right:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-custom-delta{margin:8px 0 0!important;padding:8px 0 0!important;border-top:1px solid rgba(255,255,255,.08)!important;font-size:12px!important;line-height:1.6!important;color:rgba(255,255,255,.5)!important;font-variant-numeric:tabular-nums!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-custom-delta[data-on]{color:#C4B5FD!important;font-weight:500!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary{grid-template-columns:minmax(0,1fr)!important;row-gap:2px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group>summary>span:last-child{grid-template-columns:minmax(0,1fr) auto auto!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-val{font-size:13px!important}
+}
+}
+
+/* ITEM customize v4 (2026-11-14): the open drawer gets its own surface (header + content), no purple accent */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]{background:#131317!important;background-color:#131317!important;border-bottom-color:rgba(255,255,255,.08)!important;box-shadow:none!important;border-radius:8px!important;border-bottom-color:transparent!important;margin:8px 0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary{background:transparent!important;box-shadow:none!important;min-height:56px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>summary::after{border-color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open] .bdlr-option-card{background-color:#1B1B20!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]>.bdlr-choice-benefits{border-top-color:rgba(255,255,255,.08)!important}
+}
+
+/* ITEM customize v5 (2026-11-14): no "changed" label; the current choice and the added amount carry the state */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-state{display:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-os-price.is-added{font-size:14px!important;font-weight:700!important;color:#fff!important}
+}
+
+/* ITEM anchor nav removed (2026-11-14) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-detail-anchor{display:none!important}
+}
+
+/* ITEM customize v6 (2026-11-14): closed and open rows share one geometry, so text does not move on click */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_),
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]:not(#_){margin:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_)>summary{padding:8px 40px 8px 16px!important;min-height:56px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_)>summary>span:first-child{font-size:14px!important;font-weight:500!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_)>summary::after{right:16px!important}
+}
+
+/* ITEM customize v7 (2026-11-14): keyboard / mouse rows stacked in one column, same columns as the other rows */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair:not(#_){display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair:not(#_) .bdlr-os-val{text-align:left!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair:not(#_) details.bdlr-option-group>summary{grid-template-columns:240px minmax(0,1fr)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair:not(#_) details.bdlr-option-group>summary>span:last-child{grid-template-columns:minmax(0,1fr) auto 128px!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .nov-device-pair:not(#_) details.bdlr-option-group>summary{grid-template-columns:minmax(0,1fr)!important;row-gap:2px!important}
+}
+}
+
+/* ITEM customize v8 (2026-11-14): choice cards read as pressable; every card has a radio mark, the chosen one is filled */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card{position:relative!important;cursor:pointer!important;background-color:#1E1E24!important;border:1px solid rgba(255,255,255,.16)!important;box-shadow:none!important;transition:border-color .15s,background-color .15s!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card:not(.is-selected):hover{background-color:#26262D!important;border-color:rgba(255,255,255,.4)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card.is-selected{background-color:#221C33!important;border-color:#8B5CF6!important;box-shadow:inset 0 0 0 1px #8B5CF6!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card:not(.bdlr-color-swatch)::after{content:""!important;display:block!important;position:absolute!important;top:10px!important;right:10px!important;left:auto!important;bottom:auto!important;width:20px!important;height:20px!important;box-sizing:border-box!important;border-radius:50%!important;border:1.5px solid rgba(255,255,255,.4)!important;background:rgba(7,7,11,.6)!important;-webkit-mask:none!important;mask:none!important;transform:none!important;opacity:1!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card.is-selected:not(.bdlr-color-swatch)::after{border-color:#8B5CF6!important;background:#8B5CF6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.3l3 3 6-6.3' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px 20px no-repeat!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card:not(.bdlr-color-swatch) .bdlr-option-card__copy>strong{padding-right:28px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card:focus-visible{outline:2px solid #fff!important;outline-offset:2px!important}
+}
+
+/* ITEM support v2 (2026-11-14): summary strip removed, detail cards always shown */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-warranty-section .nov-support-more>.bdlr-warranty-grid{margin-top:0!important}
+}
+
+/* ITEM colour swatch fix (2026-11-14): the swatch pill never shows its product image */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_) .bdlr-option-card.bdlr-color-swatch .bdlr-option-card__media{display:none!important}
+}
+
+/* ITEM customize v9 (2026-11-14): the open drawer is a clear grey surface; cards step up from it */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]:not(#_):not(#__){background:#1F1F25!important;background-color:#1F1F25!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]:not(#_):not(#__) .bdlr-option-card{background-color:#2A2A31!important;border-color:rgba(255,255,255,.2)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]:not(#_):not(#__) .bdlr-option-card:not(.is-selected):hover{background-color:#33333B!important;border-color:rgba(255,255,255,.45)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group[open]:not(#_):not(#__) .bdlr-option-card.is-selected{background-color:#3A3A43!important;border-color:#8B5CF6!important}
+}
+
+
+/* ITEM customize v10 (2026-11-14): group headings larger and white */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-section-title:not(#_){margin:40px 0 0!important;padding:0 0 12px!important;font-size:16px!important;line-height:1.5!important;font-weight:700!important;letter-spacing:.02em!important;color:#fff!important}
+}
+
+/* ITEM customize v11 (2026-11-14): script pins the clicked row; browser scroll anchoring off inside the option list */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-showroom,
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdlr-option-showroom *{overflow-anchor:none!important}
+}
+
+/* ITEM customize v12 (2026-11-14): small choice cards = thumb + name on top, meter bottom-left, price bottom-right */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch){display:grid!important;grid-template-columns:40px minmax(0,1fr) auto!important;grid-template-rows:40px auto!important;grid-template-areas:"media name name" "meter meter price"!important;column-gap:12px!important;row-gap:12px!important;align-items:center!important;align-content:space-between!important;padding:16px!important;text-align:left!important;min-height:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__media{grid-area:media!important;width:40px!important;height:40px!important;margin:0!important;border-radius:8px!important;align-self:center!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__media>img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__copy{display:contents!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__copy>strong{grid-area:name!important;align-self:center!important;margin:0!important;padding:0 32px 0 0!important;font-size:15px!important;line-height:1.4!important;font-weight:700!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__copy>.bdlr-option-card__price{grid-area:price!important;justify-self:end!important;align-self:end!important;margin:0!important;padding:0!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:15px!important;line-height:20px!important;font-weight:700!important;font-variant-numeric:tabular-nums!important;color:#fff!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch):not(:has(.bdlr-option-card__price))::before{content:"標準"!important;display:block!important;position:static!important;grid-area:price!important;justify-self:end!important;align-self:end!important;width:auto!important;height:auto!important;background:none!important;border:0!important;font-size:15px!important;line-height:20px!important;font-weight:700!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-compare-meters{grid-area:meter!important;align-self:end!important;width:100%!important;max-width:240px!important;margin:0!important;padding:0!important;gap:4px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch) .bdlr-compare-meter{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;column-gap:10px!important;align-items:center!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch) .bdlr-meter-label{font-size:11px!important;line-height:20px!important;color:rgba(255,255,255,.5)!important;white-space:nowrap!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card-grid{grid-template-columns:minmax(0,1fr)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]):not([data-bdlr-guide="Windows初期設定代行"]):not(#_) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-compare-meters{max-width:200px!important}
+}
+}
+
+/* ITEM fps box v2 (2026-11-14): notes as tight block lines under a hairline; numbers on one baseline */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_){line-height:1.5!important;padding:0 20px 16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>h2{padding-top:20px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>dl{margin:16px 0 0!important;align-items:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>dl>div{display:flex!important;flex-direction:column!important;justify-content:space-between!important;gap:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>dl dt{line-height:1.4!important;color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>small{display:block!important;margin:0!important;padding:0!important;font-size:11px!important;line-height:1.7!important;letter-spacing:.02em!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>dl+small{margin-top:16px!important;padding-top:12px!important;border-top:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) section[data-ux-fps]:not(#_)>small+small{margin-top:2px!important}
+}
+
+/* ITEM customize v13 (2026-11-14): "next item" button sits at the right edge */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) details.bdlr-option-group:not(#_)>.bdlr-option-next{display:flex!important;width:fit-content!important;margin-left:auto!important;margin-right:16px!important}
+}
+
+/* FINAL item (2026-11-14): hero parts list is always open; its summary reads as a plain heading (no chevron, no pointer, no hover) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>summary{cursor:default!important;pointer-events:none!important;user-select:text!important;-webkit-user-select:text!important;outline:0!important;background:transparent!important;color:#fff!important;min-height:0!important;padding:16px 0 12px!important;font-weight:500!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>summary::after,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>summary::before{content:none!important;display:none!important}
+}
+
+/* FINAL item (2026-11-14): numerals breathe. Text-size digits +0.04em, mid-size +0.02em, large display numerals from -0.01em to +0.01em; tabular-nums kept */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) .bdlr-hero-price-amount,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) .bdlr-hero-price-amount>span,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) section.ux-item-fact[data-ux-fps]>dl dd>b,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) .bdlr-review-average>strong{letter-spacing:.01em!important;font-variant-numeric:tabular-nums!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) .bdlr-order-summary__total>strong{letter-spacing:.01em!important}
+}
+
+
+/* FINAL item (2026-11-14): customize drawers strict pass. hidden last "next" button, reason line full width, prices pinned to card bottom, none glyph centred, zoom button on the image, Hone lead above cards, setup cards price bottom-right, SP benefits after all cards, name column not capped at 40%, priority row on the row columns, memory card internals, parts/fps gap */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group>.bdlr-option-next[hidden]{display:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[open]{padding-bottom:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__copy>small{grid-column:1/-1!important;grid-row:3!important;margin:0!important;font-size:12px!important;line-height:1.7!important;text-align:left!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card>.bdlr-option-card__copy>small:empty{display:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group.nov-options .bdlr-option-card>.bdlr-option-card__copy{flex:1 1 auto!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group.nov-options .bdlr-option-card>.bdlr-option-card__copy>.bdlr-option-card__price{margin-top:auto!important;padding-top:4px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group.nov-options .nov-choice-wrap{display:flex!important;align-items:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card__media:has(>.nov-none){display:grid!important;place-items:center!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card__media>.nov-none{line-height:1!important;font-size:48px!important;color:rgba(255,255,255,.35)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .nov-choice-wrap>.nov-zoom{inset:12px 12px auto 12px!important;width:calc(100% - 24px)!important;height:auto!important;aspect-ratio:1/1!important;padding:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group:is([data-bdlr-guide="マウス"],[data-bdlr-guide="PC最適化ソフト Hone"]) .nov-choice-wrap>.nov-zoom{aspect-ratio:16/10!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card-grid>.nov-hone-info{order:-1!important;grid-column:1/-1!important;margin:4px 0!important;font-size:13px!important;line-height:1.7!important;letter-spacing:.04em!important;color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card{align-items:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card>.bdlr-option-card__media{align-self:start!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card>.bdlr-option-card__copy{height:100%!important;align-items:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card>.bdlr-option-card__copy>.bdlr-option-card__price{margin:auto 0 0!important;padding:8px 0 0!important;align-self:flex-end!important;font-size:15px!important;line-height:20px!important;font-weight:700!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card:not(:has(.bdlr-option-card__price))>.bdlr-option-card__copy::after{content:"標準"!important;display:block!important;margin:auto 0 0!important;padding:8px 0 0!important;align-self:flex-end!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:15px!important;line-height:20px!important;font-weight:700!important;letter-spacing:.04em!important;color:#fff!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group>summary>span:first-child{max-width:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-memory-card{display:flex!important;flex-direction:column!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-memory-card>.bdlr-compare-meters{margin-top:auto!important;padding-top:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-memory-light>button{white-space:nowrap!important;font-size:12px!important;padding-left:4px!important;padding-right:4px!important;letter-spacing:.02em!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card[data-bdlr-price-dup] .bdlr-option-card__price{visibility:hidden!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-option-showroom>p.bdlr-pending-option{display:grid!important;grid-template-columns:240px minmax(0,1fr)!important;column-gap:16px!important;align-items:center!important;padding:8px 40px 8px 16px!important;text-align:left!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary__total>strong{letter-spacing:.02em!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel>section.ux-item-fact[data-ux-fps]{margin-top:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>dl dd{text-wrap:balance!important;word-break:keep-all!important;overflow-wrap:anywhere!important;min-width:0!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card-grid>.bdlr-choice-benefits{order:99!important;grid-column:1/-1!important;margin:8px 0 0!important;padding:16px 0 0!important;border-top:1px solid rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-option-showroom>p.bdlr-pending-option{grid-template-columns:minmax(0,1fr)!important;row-gap:2px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel>section.ux-item-fact[data-ux-fps]{margin-top:12px!important}
+}
+}
+
+/* FINAL item (2026-11-14): setup cards, copy column fills the card so the price sits at the bottom */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card>.bdlr-option-card__copy{height:auto!important;align-self:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card{grid-template-rows:minmax(0,1fr)!important;align-content:stretch!important}
+}
+
+/* FINAL item (2026-11-14): reason line uses the full card width on SP, last drawer bottom padding, setup check marks purple (was green) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card:not(.bdlr-color-swatch)>.bdlr-option-card__copy>small{width:auto!important;max-width:none!important;justify-self:stretch!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group[open]:has(>.bdlr-option-next[hidden]){padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card .ri-setup-list>span::before{background:#A78BFA!important}
+}
+
+/* FINAL item (2026-11-14): order summary padding 24 (SP 16) with no empty feedback line, review heading to content 40 (SP 24), support link arrow gap, SP sticky bar on the 16 gutter */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary{padding:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary .bdlr-configuration-feedback:empty{display:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary .bdlr-configuration-actions{margin:0!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary .bdlr-purchase-mount>.bdlr-button{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-config-reviews>.bdlr-review-histogram{margin-top:40px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-warranty-grid article a{gap:4px!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-order-summary{padding:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-config-reviews>.bdlr-review-histogram{margin-top:24px!important}
+}
+}
+
+/* FINAL item (2026-11-14): SP sticky bar, price and button vertically centred (hidden rows no longer reserve grid tracks) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+}
+}
+
+/* FINAL item (2026-11-14): card padding on the scale. parts box / fps box / review cards / support cards 24 (SP 16) so stacked boxes share one inner edge; SP order summary 24 below the option list */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel section.ux-item-fact[data-ux-fps]{padding:0 24px 24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel section.ux-item-fact[data-ux-fps]>h2{padding-top:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]{padding:0 24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>summary{padding:24px 0 12px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>dl{padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-config-reviews__list>article{padding:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-warranty-grid>article{padding:24px!important}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel section.ux-item-fact[data-ux-fps]{padding:0 16px 16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel section.ux-item-fact[data-ux-fps]>h2{padding-top:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]{padding:0 16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>summary{padding:16px 0 12px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel details.ux-item-fact[data-ux-parts]>dl{padding-bottom:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-config-reviews__list>article{padding:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-warranty-grid>article{padding:16px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-customize-layout>.bdlr-order-summary{margin-top:24px!important}
+}
+}
+
+/* FINAL item (2026-11-14): SP parts box 24 below the trust line, SP support card gap 12 */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel>details.ux-item-fact[data-ux-parts]{margin-top:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-warranty-grid{gap:12px!important}
+}
+}
+
+/* FINAL item (2026-11-14): no repeated 標準 on a card already named 標準 (generated label case); peripheral quantity field 40 high like its buttons */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) details.bdlr-option-group .bdlr-option-card[data-bdlr-price-dup]:not(:has(.bdlr-option-card__price))::before{visibility:hidden!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel .productnum-wrap input.productnum{height:40px!important;min-height:40px!important;align-self:center!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdl-renewal-item__purchase-panel .productnum-wrap{align-items:center!important}
+}
+
+/* FINAL item (2026-11-14): peripheral info, the warranty row uses the same 240 label column as the table below it (PC) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-specification-section .bdlr-specification-grid>div{grid-template-columns:240px minmax(0,1fr)!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): the option list does not take part in browser scroll anchoring. The rows are visually re-ordered, so the browser picked an anchor below the clicked row and pushed the row 300 to 800px up when its drawer opened (lower half of the list). The script alone keeps the clicked row in place. */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____) .bdlr-detail-flow{overflow-anchor:none!important}
+}
+
+/* FINAL item-verify (2026-11-14): memory cards use the same states as every other option card (card #2A2A31, selected #3A3A43 + purple border + filled round check top-right, unselected = empty ring). They were the only cards left on the old translucent style with no select mark. */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-memory-card{position:relative!important;background:#2A2A31!important;border:1px solid rgba(255,255,255,.2)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-memory-card.is-selected{background:#3A3A43!important;border-color:#8B5CF6!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-memory-card::after{content:""!important;display:block!important;position:absolute!important;top:10px!important;right:10px!important;width:20px!important;height:20px!important;box-sizing:border-box!important;border-radius:50%!important;border:1px solid rgba(255,255,255,.4)!important;background:rgba(7,7,11,.6)!important;pointer-events:none!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-memory-card.is-selected::after{border-color:#8B5CF6!important;background:#8B5CF6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.3l3 3 6-6.3' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px 20px no-repeat!important}
+}
+
+/* FINAL item-verify (2026-11-14): drawer rhythm. Drawers without an intro line start their cards 4px below the header like the others; the SSD note sits 8px under the cards (was touching them); the long Hone label fits on one line (label column 240 to 256, all rows, PC) so every row is 56 high; fullwidth brackets in the warranty prices are set proportionally so "(5%)" does not push the price 8px off the right edge; setup check list breaks at phrase boundaries. */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group>summary+.bdlr-option-card-grid{margin-top:4px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group>.bdlr-storage-guide{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group[data-bdlr-guide="延長保証"] .bdlr-option-card__price{font-feature-settings:"palt" 1,"tnum" 1!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-option-card .ri-setup-list>span{word-break:auto-phrase!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group>summary{grid-template-columns:256px minmax(0,1fr)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-option-showroom>p.bdlr-pending-option{grid-template-columns:256px minmax(0,1fr)!important}
+}
+@media (max-width:767px){
+/* SP: the price in the case card no longer sits under the round select mark; a long "next" label stays inside the drawer padding on one line; meters keep one width whatever the price length */
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group:not(.bdlr-option-group--compact):not(.nov-options):not(.bdlr-option-group--color) .bdlr-option-card>.bdlr-option-card__copy{padding-right:24px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group>.bdlr-option-next:not([hidden]){display:block!important;max-width:calc(100% - 32px)!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;line-height:38px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card>.bdlr-option-card__copy>.bdlr-compare-meters{max-width:156px!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): order summary box, equal left/right padding. A reserved scrollbar gutter made the right inset 35 (Windows 40) against 25 on the left. The box also stops above the sticky bottom bar on short screens instead of sliding under it. */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary{scrollbar-gutter:auto!important;scrollbar-width:thin!important;max-height:calc(100vh - 254px)!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-order-summary__media,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-order-summary__total,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-order-delivery,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-purchase-mount,:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-summary-tools{width:100%!important;max-width:none!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): on short desktop screens (under 840 high) the order summary image is lower so the whole box, both buttons included, fits between header and sticky bar without an inner scroll */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-height:839px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-order-summary__media{aspect-ratio:auto!important;height:136px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-order-summary>.bdlr-order-summary__media>img{width:100%!important;height:100%!important;object-fit:contain!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): sticky bottom bar (PC), the small label sat 2px below the baseline shared by price / monthly / status; the button text gets the body letter-spacing */
+@layer bandalReferenceCorrections{
+@media (min-width:768px){
+}
+}
+
+/* FINAL item-verify (2026-11-14): hero to "構成をカスタマイズ" is 96 like every other section gap on the page (was 112 on PC, 80 on SP) */
+@layer bandalReferenceCorrections{
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail{padding-bottom:48px!important}
+}
+
+/* FINAL item-verify (2026-11-14): hero between 768 and 1279 wide. The gallery kept a fixed 608 column, leaving the purchase column 64px at 768 (title one letter per line) and 320px at 1024. 1024 to 1279: two fluid columns. 768 to 1023: one column, gallery first. */
+@layer bandalReferenceCorrections{
+@media (min-width:1024px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:32px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail>.bdl-renewal-item__gallery{width:auto!important;max-width:100%!important;min-width:0!important}
+}
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail{grid-template-columns:minmax(0,1fr)!important;row-gap:32px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail>.bdl-renewal-item__gallery{position:static!important;width:auto!important;max-width:608px!important;min-width:0!important;justify-self:center!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__detail>.bdl-renewal-item__purchase-panel{grid-column:1!important;min-width:0!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): 768 to 1023, gallery thumbnails (72 high) no longer overflow their 44px row onto the caption; they start at the left edge like on PC and SP */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdl-renewal-item__gallery ul.item-image-small{height:auto!important;min-height:72px!important;justify-content:flex-start!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): 768 to 1023, sticky bottom bar in one centred row (price, monthly, status, button right; the status text was pushed out of the bar), and the order summary sits 24 below the option list (was touching it) */
+@layer bandalReferenceCorrections{
+@media (min-width:768px) and (max-width:1023px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) .bdlr-customize-layout>.bdlr-order-summary{margin-top:24px!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): a card with two meters whose labels differ in length (見た目 / 光) started its tick rows at different x. The meters of one card now share one label column (subgrid). SP: every card of a drawer keeps the same meter width whatever its price length (the earlier rule missed: the meters are direct children of the card). */
+@layer bandalReferenceCorrections{
+@supports (grid-template-columns:subgrid){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card .bdlr-compare-meters{grid-template-columns:auto minmax(0,1fr)!important;column-gap:10px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card .bdlr-compare-meters>.bdlr-compare-meter{grid-column:1/-1!important;grid-template-columns:subgrid!important}
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group.bdlr-option-group--compact:not(.nov-options):not([data-media-size="160"]):not([data-media-size="220"]) .bdlr-option-card .bdlr-compare-meters{max-width:156px!important}
+}
+}
+
+/* FINAL item-verify (2026-11-14): SP case card, the price sits under the name (left aligned) so it can never run under the round select mark or out of the card (at 360 "+¥6,000" did both). SSD cards at 360: the "人気ゲーム 約 N 本" chip fits inside the card. */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group:not(.bdlr-option-group--compact):not(.nov-options):not(.bdlr-option-group--color) .bdlr-option-card>.bdlr-option-card__copy{grid-template-columns:minmax(0,1fr)!important;row-gap:4px!important;align-content:start!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group:not(.bdlr-option-group--compact):not(.nov-options):not(.bdlr-option-group--color) .bdlr-option-card>.bdlr-option-card__copy>.bdlr-option-card__price{grid-column:1!important;grid-row:2!important;justify-self:start!important;text-align:left!important}
+}
+@media (max-width:379px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-option-card .nov-storage{padding-left:6px!important;padding-right:6px!important;font-size:10px!important;letter-spacing:0!important;max-width:100%!important;box-sizing:border-box!important;gap:2px!important;white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______) details.bdlr-option-group .bdlr-option-card .nov-storage>b{font-size:16px!important;margin:0 2px!important}
+}
+}
+
+@layer bandalReferenceCorrections{
+/* FINAL tablet (2026-11-14): item page 768-900: sections below the hero (customize / reviews / warranty) sat on a 16px inset while breadcrumb, title and price sit on 24: one 24px left edge for the whole page */
+@media (min-width:768px) and (max-width:900px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdl-renewal-item .bdlr-detail-flow>.bdlr-detail-section{padding-left:24px!important;padding-right:24px!important}
+}
+/* FINAL tablet (2026-11-14): item page 768-1279: the closing terms link (ご購入規約・返品等の条件を確認) started at x=0; now on the 24px gutter like the sections above it */
+@media (min-width:768px) and (max-width:1279px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdl-renewal-item .bdl-renewal-item__main>.bdlr-detail-terms-bottom{margin-left:24px!important;margin-right:24px!important;padding-left:0!important;padding-right:0!important;width:auto!important;max-width:none!important;box-sizing:border-box!important}
+}
+/* FINAL tablet (2026-11-14): item hero 1024-1160: the four spec chips need 535px but the purchase column is 472-530, so SSD dropped alone to a second row (3+1). Two tidy rows of two instead (CPU GPU / メモリ SSD) */
+@media (min-width:1024px) and (max-width:1160px){
+:is(#rt,html) :is(#rt,body):not(#_):not(#__):not(#___):not(#____):not(#_____):not(#______):not(#_______).bdl-renewal-item .bdl-renewal-item__purchase-panel>.bdl-wire-item-specs{display:grid!important;grid-template-columns:repeat(2,max-content)!important;justify-content:start!important;justify-items:start!important;gap:8px!important}
+}
+}
+
+/* FINAL add (2026-11-14): SP customize rows, the price on the right is vertically centred in the row (same closed and open) */
+@layer bandalReferenceCorrections{
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) details.bdlr-option-group:not(#_)>summary{position:relative!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) details.bdlr-option-group:not(#_)>summary .bdlr-os-price{position:absolute!important;right:40px!important;top:50%!important;transform:translateY(-50%)!important;margin:0!important;line-height:20px!important}
+:is(#rt,html) :is(#rt,body).bdl-renewal-item:not(#_):not(#__):not(#___):not(#____) details.bdlr-option-group:not(#_)>summary .bdlr-os-val{max-width:calc(100% - 72px)!important}
+}
+}
+
+@layer bandalReferenceCorrections {
+  html body.bdl-renewal-item details.bdlr-option-group summary > [data-bdlr-option-summary][data-design-raw] {
+    display: none !important;
+  }
+  html body.bdl-renewal-item details.bdlr-option-group > summary > .bdlr-option-summary-view {
+    min-width: 0;
+  }
+}
+/* A review link receives an accessible rating and stars only after the shop has a result. */
+@layer bandalReferenceCorrections {
+  :is(html,#rt) :is(body,#rt).bdlr-page :is(.bdlr-catalog-card, .bdlr-pickup-card, .bdlr-product-card) .bdlr-review-score[data-bdlr-review-score]:not([aria-label]):not(:has(> span[aria-hidden])) {
+    display: none !important;
+  }
+
+  /* An empty/loading evidence group must take no space. A visible FPS child still sizes it. */
+  :is(html,#rt) :is(body,#rt).bdlr-page .bdlr-pickup-card > .bdlr-pickup-evidence:not(:has(.bdlr-review-score[aria-label], .bdlr-review-score > span[aria-hidden])) {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-block: 0 !important;
+    padding-block: 0 !important;
+    align-self: start !important;
+  }
+
+  :is(html,#rt) :is(body,#rt).bdlr-page:not(#_):not(#__):not(#___):not(#____) .bdlr-pickup-card:not(:has(.bdlr-review-score[aria-label], .bdlr-review-score > span[aria-hidden])) > :is(.bdlr-premium-price,.nov-cpus) {
+    margin-block-start: 8px !important;
+  }
+
+  /* The outer subgrid aligns product names, specifications and prices across a row.
+     Give the controls below each price their own flow so a neighbour's review cannot add space. */
+  .bdlr-catalog-card-body > .bandal-card-actions {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    flex-direction: column;
+    align-self: start;
+    align-items: stretch;
+    min-width: 0;
+  }
+
+  .bdlr-catalog-card-body > .bandal-card-actions > .bdlr-review-score {
+    order: 0 !important;
+    align-self: start !important;
+  }
+  .bdlr-catalog-card-body > .bandal-card-actions > .bdlr-card-leadtime {
+    order: 1 !important;
+  }
+  .bdlr-catalog-card-body > .bandal-card-actions > :is(.bdlr-compare-check,.audit-compare-check) {
+    order: 2 !important;
+    align-self: start !important;
+  }
+  .bdlr-catalog-card-body > .bandal-card-actions > .bdlr-card-cta {
+    order: 3 !important;
+    align-self: stretch !important;
+  }
+}
+/* Match the SOLD OUT ribbon on the TOP recommendation photo across storefront renderers. */
+@layer bandalReferenceCorrections {
+  :is(html,#rt) :is(body,#rt).bdlr-page:not(#_):not(#__):not(#___):not(#____) {
+    /* Keep the existing stock checks. The detail gallery generates its own
+       ::after content only for sold-out items; no rule here generates a badge. */
+    & :is(.bdlr-pickup-soldout, .bdlr-soldout-overlay, .bdc-so):not([hidden]),
+    &:where(.bdl-renewal-item) [data-bdl-renewal-gallery] .item-image-large::after {
+      position: absolute !important;
+      inset: 22px -34px auto auto !important;
+      z-index: 5 !important;
+      display: block !important;
+      box-sizing: border-box !important;
+      width: 132px !important;
+      height: 22px !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
+      max-width: none !important;
+      max-height: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      transform: rotate(45deg) !important;
+      transform-origin: center !important;
+      background: linear-gradient(90deg, #472381, #241747, #3d286e) !important;
+      border: 1px solid #a78bfa !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      clip-path: none !important;
+      color: #fff !important;
+      font: 500 11px/20px var(--r-mono, "Geist Mono", ui-monospace, monospace) !important;
+      letter-spacing: .08em !important;
+      text-align: center !important;
+      text-indent: 0 !important;
+      text-shadow: none !important;
+      white-space: nowrap !important;
+      pointer-events: none !important;
+    }
+    & :is(.bdlr-pickup-soldout, .bdlr-soldout-overlay, .bdc-so)[hidden] {
+      display: none !important;
+    }
+    & :is(.bdlr-pickup-image, .bdlr-product-image, .bdlr-catalog-image figure, .product-image-wrap, .bdc-im):has(> :is(.bdlr-pickup-soldout, .bdlr-soldout-overlay, .bdc-so):not([hidden])),
+    &:where(.bdl-renewal-item) [data-bdl-renewal-gallery] .item-image-large {
+      position: relative !important;
+      overflow: hidden !important;
+    }
+  }
+}

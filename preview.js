@@ -199,3 +199,36 @@
 
 /* Category navigation and compact registered options (9646216). */
 (function(){if(!document.body.classList.contains('bdlr-catalog-page'))return;var s=document.createElement('script');s.src=new URL('assets/release-7b5d68f/category-index-244a9040e96c.js',document.currentScript.src).href;s.integrity='sha384-bTqhN43DFY9H5jcFKtteRGz7vfgFJJwyxKH5VoFQbr8WXEbbTApgw6pE64csnu2G';s.crossOrigin='anonymous';document.head.appendChild(s);}());
+
+;/* BANDAL release ccc2f0e */
+(function () {
+  const base = new URL('assets/release-ccc2f0e/', document.currentScript.src).href;
+  function install() {
+    if (document.getElementById('bandal-design-ccc2f0e')) return;
+    const styles = document.createElement('link');
+    styles.id = 'bandal-design-ccc2f0e';
+    styles.rel = 'stylesheet';
+    styles.href = base + 'design-ceccc3a575cbc507.css';
+    styles.integrity = 'sha384-2BNnikYIr+wUVgy0gEh/M7OtZcsi44fUsif4sfz5ik4ELxeTYPybJ7c7JS6byLEL';
+    styles.crossOrigin = 'anonymous';
+    const script = document.createElement('script');
+    script.id = 'bandal-interactions-ccc2f0e';
+    script.src = base + 'design-d5ac96e829b072d1.js';
+    script.integrity = 'sha384-ojO18tqnFX+JpFg0GQLNyXsiMEbslet9V+1BNb/fM0lgo4w27oOZJVF83lyZjh6k';
+    script.crossOrigin = 'anonymous';
+    document.head.append(styles, script);
+    // The existing theme adds its route styles asynchronously.
+    const legacySheets = 'link[rel="stylesheet"][href*="/release-7b5d68f/"]';
+    new MutationObserver(function (changes) {
+      const insertedAfter = changes.some(function (change) {
+        return Array.from(change.addedNodes).some(function (node) {
+          return node.nodeType === 1 && node.matches(legacySheets) &&
+            (styles.compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING);
+        });
+      });
+      if (insertedAfter) document.head.appendChild(styles);
+    }).observe(document.head, {childList: true});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once: true});
+  else install();
+})();
