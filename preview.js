@@ -265,3 +265,29 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',install,{ once:true });
   else install();
 })();
+
+;/* BANDAL November 14 storefront links and catalog toolbar. */
+(function () {
+  const root = new URL('assets/links-20261114/', document.currentScript.src);
+  function install() {
+    if (!document.getElementById('bandal-store-links-style')) {
+      const link = document.createElement('link');
+      link.id = 'bandal-store-links-style';
+      link.rel = 'stylesheet';
+      link.href = new URL('store-0808f1f995aed759.css', root).href;
+      link.integrity = 'sha384-YuQLwrt00hL+rkbdFwchjLc+D1L3IIs1dX0vGFmz/4K3y43gjOd5iZPCDeA1c3mh';
+      link.crossOrigin = 'anonymous';
+      document.head.append(link);
+    }
+    if (!document.getElementById('bandal-store-links-script')) {
+      const script = document.createElement('script');
+      script.id = 'bandal-store-links-script';
+      script.src = new URL('store-02b8d40be15fde57.js', root).href;
+      script.integrity = 'sha384-T+NsgfY1t7Ir7WRARG8uTa2xKRQt6SQr6X3ifr5gASxHHkBf6CqZsvqYBVgAbOM/';
+      script.crossOrigin = 'anonymous';
+      document.head.append(script);
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, { once: true });
+  else install();
+})();

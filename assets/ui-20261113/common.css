@@ -622,7 +622,7 @@ html.bandal-audited .bdlr-faq-nav a{background:#151519;border-color:rgba(255,255
 html.bandal-audited body.bdlr-page :is(.bdlr-premium-price,.bdlr-product-price,.bdlr-pickup-price,.audit-grades,.audit-compare-row,.audit-card-quote){font-family:"Geist","Noto Sans JP",sans-serif!important}
 .audit-search-shortcuts a,.audit-neighbors a,.audit-guide-links a{border:1px solid rgba(255,255,255,0.14);border-radius:8px;color:#a78bfa;background:#111115}
 .audit-white-note{color:rgba(255,255,255,0.7)}
-html.bandal-audited .home-cta-card:has(a[href*="line-scratch"]) .home-cta-card__link{background:#111115!important;border-color:rgba(255,255,255,0.08)!important;color:#fff!important}
+html.bandal-audited .home-cta-card:has(a[href="https://lin.ee/2PonVjE"]) .home-cta-card__link{background:#111115!important;border-color:rgba(255,255,255,0.08)!important;color:#fff!important}
 .audit-grades .audit-difference th{color:#a78bfa;border-inline-color:transparent}
 @media(max-width:767px){html.bandal-audited .bdlr-faq-layout>.bdlr-faq-nav{background:#111115}}
 html.bandal-audited{--bf-text:#fff;--bf-muted:rgba(255,255,255,0.7);--bf-accent:#a78bfa}
