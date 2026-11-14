@@ -161,3 +161,11 @@
 
 /* November card layout */
 (function(){var s=document.createElement("script");s.src=new URL("assets/release-7b5d68f/card-layout-80595201cdc6.js",document.currentScript.src).href;document.head.appendChild(s);}());
+
+/* Preserve the registered copy and its section headings in shared HTML. */
+(function () {
+  if (!/\/(?:page-terms_of_use|policy|page-news-(?:funding-20250313|interview-20250428|award-20250919))\.html$/.test(location.pathname)) return;
+  const script = document.createElement('script');
+  script.src = new URL('assets/release-7b5d68f/document-layout-6aa5a43387b3.js', document.currentScript.src).href;
+  document.head.append(script);
+})();
