@@ -1,0 +1,497 @@
+/* release polish 2026-11-14: item (product detail pages only) */
+/* Tokens (item scope) */
+body.bdl-renewal-item{
+  --ri-s1:rgba(255,255,255,.025);--ri-s2:rgba(255,255,255,.05);--ri-s3:rgba(255,255,255,.08);
+  --ri-b1:rgba(255,255,255,.08);--ri-b2:rgba(255,255,255,.14);--ri-b3:rgba(255,255,255,.24);
+  --ri-t1:#fff;--ri-t2:rgba(255,255,255,.7);--ri-t3:rgba(255,255,255,.5);--ri-t4:rgba(255,255,255,.36);
+  --ri-font:"Geist","Noto Sans JP",sans-serif;--ri-mono:"Geist Mono","Noto Sans JP",monospace;
+}
+
+@keyframes ri-dock-in{from{transform:translateY(100%);visibility:hidden}to{transform:translateY(0);visibility:visible}}
+/* NOTE: bandal-ui-v01.css puts !important fixes inside @layer bandalReferenceCorrections. Layered !important beats
+   unlayered !important, so the item rules below join the same layer (later + more specific = wins). All declarations
+   here must stay !important. */
+@layer bandalReferenceCorrections{
+/* ================= 1. First view ================= */
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__inner{max-width:1232px!important;width:calc(100% - 48px)!important;margin-inline:auto!important;padding-inline:0!important;box-sizing:border-box!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-shell,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-content{width:100%!important;max-width:none!important;margin:0!important;padding-inline:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-content>.breadcrumb{margin:24px 0!important;align-items:center!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-content>.breadcrumb .breadcrumb-item,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-content>.breadcrumb .breadcrumb-item a{font-size:12px!important;line-height:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .detail.bdl-renewal-item__detail{display:grid!important;grid-template-columns:minmax(0,608px) minmax(0,1fr)!important;gap:0 48px!important;align-items:start!important;padding:0 0 64px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel{width:auto!important;max-width:none!important;min-width:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery{position:sticky!important;top:120px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel{display:flex!important;flex-direction:column!important;gap:0!important;padding:0!important}
+}
+
+/* info column: order + rhythm (PC) */
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>*{margin:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>h1.product-name{order:1!important;font:700 32px/40px var(--ri-font)!important;letter-spacing:0!important;color:#fff!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-evidence{order:2!important;margin-top:8px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-wire-item-specs{order:3!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.product-price-block{order:4!important;margin-top:24px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment{order:5!important;margin-top:4px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-shipping{order:6!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions{order:7!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.ri-diagnosis-link{order:8!important;margin-top:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.nov-hero-trust{order:9!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>details.ux-item-fact{order:10!important;margin-top:24px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>section.ux-item-fact{order:11!important;margin-top:12px!important}
+}
+
+/* rating line */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-hero-evidence .bdlr-review-score{min-height:24px!important;gap:8px!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important;text-decoration:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-hero-evidence .bdlr-review-score>span{font-size:14px!important;line-height:20px!important;letter-spacing:1px!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-hero-evidence .bdlr-review-score::after{font:400 13px/20px var(--ri-font)!important;color:#A78BFA!important;text-decoration:none!important;margin-left:8px!important;content:"レビューを見る →"!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-hero-evidence .bdlr-review-score:hover::after{text-decoration:underline!important}
+
+/* spec chips = badges */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-specs>div{display:flex!important;align-items:center!important;gap:8px!important;min-height:28px!important;height:28px!important;padding:0 8px!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b1)!important;border-radius:4px!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-specs>div>span{font:400 11px/16px var(--ri-mono)!important;letter-spacing:.02em!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-specs>div>:is(strong,b){font:500 13px/16px var(--ri-font)!important;color:#fff!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-wire-item-specs{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+}
+
+/* price */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block{font-family:var(--ri-font)!important;font-variant-numeric:tabular-nums!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount,
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount span{font-family:var(--ri-font)!important;font-weight:700!important;font-variant-numeric:tabular-nums!important;letter-spacing:-.01em!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note,
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note span{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.product-price-block{display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:4px 12px!important;line-height:44px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount span{font-size:36px!important;line-height:44px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note{display:inline-flex!important;margin:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note span{display:inline!important}
+  /* installment line: plain text, no strip */
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment{display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:0 8px!important;background:none!important;border:0!important;padding:0!important;border-radius:0!important;min-height:24px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong{font:400 13px/24px var(--ri-font)!important;color:var(--ri-t2)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong b{font:700 16px/24px var(--ri-font)!important;font-variant-numeric:tabular-nums!important;color:#fff!important;margin-left:4px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong span{font:400 13px/24px var(--ri-font)!important;color:var(--ri-t2)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>small{font:400 12px/24px var(--ri-font)!important;color:var(--ri-t3)!important}
+}
+
+/* shipping / status text */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-shipping{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding:12px 0 0!important;border:0!important;border-top:1px solid var(--ri-b1)!important;border-radius:0!important;background:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-shipping>strong{font:500 14px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-shipping>small{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+
+/* action row: BUY (purple) / sold-out (neutral) + LINE (green) */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions{gap:8px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button{height:40px!important;min-height:40px!important;border-radius:8px!important;font:500 14px/20px var(--ri-font)!important;padding:0 16px!important;box-shadow:none!important;text-decoration:none!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button--primary{background:#7C3AED!important;border:1px solid #7C3AED!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button--primary:hover{background:#8B52F5!important;border-color:#8B52F5!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button--primary:is([aria-disabled="true"],[disabled]){background:var(--ri-s2)!important;border-color:var(--ri-b1)!important;color:var(--ri-t4)!important;cursor:not-allowed!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button--secondary:not([data-bdlr-line-configuration]){background:var(--ri-s2)!important;border:1px solid var(--ri-b2)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions .bdlr-button--secondary:not([data-bdlr-line-configuration]):hover{border-color:var(--ri-b3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-summary-actions [data-bdlr-line-configuration]{background:#06C755!important;border:1px solid #06C755!important;color:#fff!important}
+
+/* PC診断 entry link */
+html body.bdl-renewal-item:not(#_):not(#__) .ri-diagnosis-link{display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;gap:0 8px!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .ri-diagnosis-link a{color:#A78BFA!important;text-decoration:none!important;font-weight:500!important}
+html body.bdl-renewal-item:not(#_):not(#__) .ri-diagnosis-link a:hover{text-decoration:underline!important}
+
+/* trust line */
+html body.bdl-renewal-item:not(#_):not(#__) .nov-hero-trust{gap:4px 16px!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;flex-wrap:wrap!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-hero-trust span{font:inherit!important;color:inherit!important}
+
+/* fact boxes: parts details + fps */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact{background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;padding:0 16px!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>summary{display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:48px!important;padding:0!important;font:500 14px/20px var(--ri-font)!important;color:#fff!important;cursor:pointer!important;list-style:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>summary::-webkit-details-marker{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>summary::after{content:""!important;display:block!important;flex:none!important;width:16px!important;height:16px!important;background:var(--ri-t3)!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/contain no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/contain no-repeat!important;transition:transform .15s!important;position:static!important;border:0!important;transform:none!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact[open]>summary::after{transform:rotate(180deg)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>summary::before{content:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>h2{margin:0!important;padding:16px 0 0!important;font:500 14px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>h2+p{margin:4px 0 0!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>dl{display:grid!important;margin:0!important;padding:0!important;gap:0 24px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>dl{grid-template-columns:minmax(0,1fr)!important;padding-bottom:8px!important;border-top:1px solid var(--ri-b1)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel section.ux-item-fact>dl{margin-top:8px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>dl>div{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;min-height:36px!important;padding:8px 0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--ri-b1)!important;box-sizing:border-box!important;background:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel details.ux-item-fact>dl>div:last-child{border-bottom:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>dl dt{margin:0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important;flex:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .ux-item-fact>dl dd{margin:0!important;font:500 13px/20px var(--ri-font)!important;color:#fff!important;text-align:right!important;font-variant-numeric:tabular-nums!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel section.ux-item-fact>small{display:block!important;margin:8px 0 0!important;font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel section.ux-item-fact>small:last-of-type{padding-bottom:16px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel section.ux-item-fact>dl+small{margin-top:12px!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel section.ux-item-fact>dl{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+
+/* ================= 3. Gallery ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-large{border-radius:12px!important;overflow:hidden!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:12px 0 0!important;padding:0!important;background:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list{width:72px!important;min-width:72px!important;height:72px!important;min-height:72px!important;padding:0!important;border:0!important;background:none!important;border-radius:8px!important;display:block!important;flex:0 0 72px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list>button{display:block!important;width:72px!important;height:72px!important;padding:0!important;border:1px solid var(--ri-b1)!important;border-radius:8px!important;background:var(--ri-s1)!important;overflow:hidden!important;box-sizing:border-box!important;cursor:pointer!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list>button:hover{border-color:var(--ri-b3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list.is-current>button{border-color:#7C3AED!important;background:var(--ri-s3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list>button>img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>small{display:block!important;margin:12px 0 0!important;font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>small+small{margin-top:4px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-gallery-scroll-hint{margin:8px 0 0!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t4)!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .item-image-small{margin-top:8px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list,
+  html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list>button{width:56px!important;min-width:56px!important;height:56px!important;min-height:56px!important;flex-basis:56px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>small{margin-top:8px!important;line-height:18px!important}
+}
+
+/* ================= 2. Sticky purchase bar ================= */
+html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__button{height:40px!important;min-height:40px!important;padding:0 16px!important;border-radius:8px!important;font:500 14px/20px var(--ri-font)!important;box-shadow:none!important;background:#7C3AED!important;border:1px solid #7C3AED!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__button:hover{background:#8B52F5!important;border-color:#8B52F5!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__button:is([disabled],[aria-disabled="true"]){background:var(--ri-s2)!important;border-color:var(--ri-b1)!important;color:var(--ri-t4)!important;cursor:not-allowed!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary :is(strong,b,span,small,p){font-family:var(--ri-font)!important;font-variant-numeric:tabular-nums!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary{background:#111115!important;border:0!important;border-top:1px solid var(--ri-b1)!important;box-shadow:none!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__content{max-width:1232px!important;width:calc(100% - 48px)!important;margin:0 auto!important;padding:0!important;height:64px!important;min-height:0!important;display:grid!important;grid-template-columns:auto auto minmax(0,1fr) 200px!important;gap:0 32px!important;align-items:center!important;box-sizing:border-box!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__price{display:flex!important;align-items:baseline!important;gap:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__label{margin:0!important;font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__price-row{line-height:28px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary #bandal-fixed-total{font:700 22px/28px var(--ri-font)!important;letter-spacing:-.01em!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__monthly{display:flex!important;align-items:baseline!important;gap:4px!important;flex-wrap:nowrap!important;white-space:nowrap!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__monthly>span{font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary #bandal-fixed-monthly{font:500 14px/20px var(--ri-font)!important;color:#fff!important;width:auto!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__monthly small{font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bdlr-dock-delivery{display:flex!important;align-items:baseline!important;gap:8px!important;justify-content:flex-end!important;margin:0!important;white-space:nowrap!important;overflow:hidden!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bdlr-dock-delivery strong{font:500 13px/20px var(--ri-font)!important;color:#fff!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bdlr-dock-delivery small{font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__cta{height:40px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__button{width:200px!important}
+  /* Purchase summary stays visible, including first view. */
+}
+
+/* peripheral first view (PC) */
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-wire-item-specs{display:none!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-renewal-item__description{order:7!important;margin-top:16px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.productnum-wrap{order:8!important;margin-top:24px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.cart-add-btn{order:9!important;margin-top:12px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions{order:10!important;margin-top:8px!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.item-share{order:12!important}
+}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-renewal-item__description{background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;padding:12px 16px!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-renewal-item__description p{font:inherit!important;color:inherit!important;margin:0!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .cart-add-btn .favorite-wrap{margin:0!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .item-image-large{background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list>img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border:1px solid var(--ri-b1)!important;border-radius:8px!important;box-sizing:border-box!important;background:var(--ri-s1)!important;cursor:pointer!important}
+html body.bdl-renewal-item:not(#_):not(#__) .item-image-small>li.item-image-list.is-current>img{border-color:#7C3AED!important}
+
+/* ================= 4. In-page anchor nav ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor{background:#0C0C10!important;border:0!important;border-top:1px solid var(--ri-b1)!important;border-bottom:1px solid var(--ri-b1)!important;box-shadow:none!important;height:48px!important;min-height:48px!important;box-sizing:border-box!important;gap:32px!important;align-items:stretch!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a{display:flex!important;align-items:center!important;height:auto!important;min-height:0!important;padding:0!important;font:500 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important;text-decoration:none!important;border:0!important;border-bottom:2px solid transparent!important;margin-bottom:-1px!important;white-space:nowrap!important;flex:none!important;background:none!important;border-radius:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a[hidden]{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a:hover{color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a:is(.is-active,.is-current,[aria-current]){color:#fff!important;border-bottom-color:#7C3AED!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a::after,html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a::before{content:none!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor{top:104px!important;justify-content:center!important}
+}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor{gap:24px!important;padding:0 16px!important;overflow-x:auto!important;justify-content:flex-start!important;scrollbar-width:none!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor::-webkit-scrollbar{display:none!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor>a:last-child{margin-right:0!important;padding-right:16px!important}
+}
+
+/* section headings in the detail flow */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow .bdlr-section-heading h2,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__heading{font:700 24px/32px var(--ri-font)!important;letter-spacing:0!important;margin:0!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow .bdlr-section-heading{margin:0 0 24px!important;align-items:flex-end!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow .bdlr-section-heading>p{font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important;margin:0!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow>.bdlr-detail-section{padding-block:48px!important}
+}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow .bdlr-section-heading h2,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__heading{font-size:20px!important;line-height:28px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-flow .bdlr-section-heading{margin-bottom:16px!important}
+}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-builder .bdlr-configuration-notice{font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-section-title{font:500 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;letter-spacing:.02em!important}
+
+/* ================= 5. Expanded option cards ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group[open]{border-radius:12px!important;border:1px solid var(--ri-b1)!important;background:var(--ri-s1)!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group[open]>summary{border-radius:11px 11px 0 0!important;border-bottom:1px solid var(--ri-b1)!important}
+/* tip box */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips{margin:16px 16px 0!important;padding:12px 16px!important;background:var(--ri-s1)!important;background-image:none!important;border:1px solid var(--ri-b1)!important;border-radius:8px!important;color:var(--ri-t2)!important;font:400 13px/20px var(--ri-font)!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips .bdlr-choice-tag{display:inline-block!important;vertical-align:top!important;margin:0 8px 0 0!important;padding:2px 6px!important;background:var(--ri-s3)!important;border:0!important;border-radius:4px!important;font:500 11px/16px var(--ri-font)!important;color:var(--ri-t2)!important;letter-spacing:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips>strong{font:500 14px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips>p{margin:8px 0 0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips .bdlr-choice-axes{margin:8px 0 0!important;gap:4px 16px!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;flex-wrap:wrap!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips .bdlr-choice-axes>span{font:inherit!important;color:inherit!important;display:inline-flex!important;align-items:center!important;gap:6px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips .bdlr-choice-axes>span::before{width:6px!important;height:6px!important;border-radius:50%!important;background:var(--ri-t4)!important;margin:0!important;flex:none!important}
+/* grid */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid{padding:16px!important;gap:12px!important;background:none!important;align-items:stretch!important}
+/* card */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid :is(.bdlr-option-card,.bdlr-memory-card){background:var(--ri-s1)!important;background-image:none!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;box-shadow:none!important;outline-offset:2px!important;transform:none!important;font-family:var(--ri-font)!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card{padding:12px!important;height:100%!important;cursor:pointer!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid--two:not(.bdlr-option-group--compact *) .bdlr-option-card{padding:16px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card:not(:disabled):not([aria-disabled="true"]):hover,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-memory-card:not(.is-selected):hover{border-color:var(--ri-b3)!important;background:var(--ri-s1)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid :is(.bdlr-option-card,.bdlr-memory-card).is-selected,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card[aria-pressed="true"]{background:var(--ri-s3)!important;border:1px solid #7C3AED!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card:is(:disabled,[aria-disabled="true"]){cursor:not-allowed!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card:is(:disabled,[aria-disabled="true"])>*{opacity:.5!important}
+/* selected mark: outline check, no fill */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card::after{content:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card.is-selected::after{content:""!important;display:block!important;position:absolute!important;top:8px!important;right:8px!important;left:auto!important;bottom:auto!important;width:16px!important;height:16px!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#A78BFA!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z'/%3E%3C/svg%3E") center/contain no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z'/%3E%3C/svg%3E") center/contain no-repeat!important;transform:none!important;opacity:1!important;z-index:2!important}
+/* media */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__media{background:#07070B!important;background-image:none!important;border:1px solid var(--ri-b1)!important;border-radius:8px!important;overflow:hidden!important;box-shadow:none!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__media-label{border-radius:4px!important;padding:2px 6px!important;font:500 10px/14px var(--ri-mono)!important;letter-spacing:.02em!important;color:var(--ri-t2)!important;background:rgba(7,7,11,.8)!important;border:1px solid var(--ri-b1)!important}
+/* copy */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__copy{font-family:var(--ri-font)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__copy>strong{font:500 14px/20px var(--ri-font)!important;color:#fff!important;letter-spacing:0!important;text-align:left!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid--two:not(.bdlr-option-group--compact *) .bdlr-option-card__copy>strong{font-size:16px!important;line-height:24px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__copy>small{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;text-align:left!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .bdlr-option-card__price,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-price{font:500 14px/20px var(--ri-font)!important;font-variant-numeric:tabular-nums!important;color:#fff!important;letter-spacing:0!important;white-space:nowrap!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-spec-pill,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-storage{border-radius:4px!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b1)!important;color:var(--ri-t2)!important;font-family:var(--ri-font)!important;font-weight:500!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-storage b{color:#fff!important;font-weight:700!important;font-variant-numeric:tabular-nums!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-device-caption{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+/* meters: neutral */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meters{border-color:var(--ri-b1)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meter,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meter .bdlr-meter-label{font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important;text-align:left!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meter .bdlr-meter-ticks{align-self:center!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meter .bdlr-meter-ticks>i{height:4px!important;border-radius:2px!important;background:var(--ri-b2)!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-compare-meter .bdlr-meter-ticks>i.is-on{background:rgba(255,255,255,.7)!important}
+/* memory card */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card{padding:12px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-choice{background:none!important;border:0!important;box-shadow:none!important;font-family:var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-choice strong{font:700 16px/24px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-choice small{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-light{gap:8px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-light>button{height:40px!important;min-height:40px!important;border-radius:8px!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b2)!important;color:var(--ri-t2)!important;font:500 13px/20px var(--ri-font)!important;box-shadow:none!important;padding:0 8px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-light>button.is-selected{background:var(--ri-s3)!important;border-color:#7C3AED!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-light>button:disabled{color:var(--ri-t4)!important;border-color:var(--ri-b1)!important;cursor:not-allowed!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-memory-card .bdlr-memory-reason{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+/* notes inside a group */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group :is(.bdlr-storage-guide,.nov-hone-info){font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+/* benefits box */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits{margin:0 16px 16px!important;padding:16px!important;gap:16px 24px!important;background:var(--ri-s1)!important;background-image:none!important;border:1px solid var(--ri-b1)!important;border-radius:8px!important;box-shadow:none!important;color:var(--ri-t2)!important;font:400 13px/20px var(--ri-font)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits strong{display:block!important;font:500 13px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits ul{margin:8px 0 0!important;padding:0!important;display:grid!important;gap:4px!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits li{font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits li::before,html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits li::marker{color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits .bdlr-choice-audience{padding-left:24px!important;border-left:1px solid var(--ri-b1)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits .bdlr-choice-audience p{margin:8px 0 0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits .bdlr-choice-audience small{display:block!important;margin:4px 0 0!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-tips{margin:12px 12px 0!important;padding:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid{padding:12px!important;gap:8px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits{margin:0 12px 12px!important;padding:12px!important;grid-template-columns:minmax(0,1fr)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-choice-benefits .bdlr-choice-audience{padding:12px 0 0!important;border-left:0!important;border-top:1px solid var(--ri-b1)!important}
+}
+/* next-option button: non-buy action */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group .bdlr-option-next:not([hidden]){display:flex!important;align-items:center!important;justify-content:center!important;height:40px!important;min-height:40px!important;margin:0 16px 16px auto!important;padding:0 16px!important;width:auto!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b2)!important;border-radius:8px!important;color:#fff!important;font:500 13px/20px var(--ri-font)!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group .bdlr-option-next:hover{border-color:var(--ri-b3)!important}
+
+/* colour swatch = small choice chip (dot + label) */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group--color .bdlr-option-card-grid{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch{display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:8px!important;width:auto!important;min-width:0!important;height:40px!important;min-height:40px!important;padding:0 16px 0 12px!important;border-radius:8px!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b2)!important;outline:0!important;box-shadow:none!important;grid-template-columns:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch.is-selected{background:var(--ri-s3)!important;border-color:#7C3AED!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch::after{content:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch::before{content:""!important;display:block!important;position:static!important;flex:none!important;width:16px!important;height:16px!important;border-radius:50%!important;background:#16161A!important;border:1px solid var(--ri-b3)!important;box-sizing:border-box!important;opacity:1!important;transform:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch[data-color="white"]::before{background:#F4F4F5!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch .bdlr-option-card__media{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch .bdlr-option-card__copy{display:block!important;position:static!important;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;padding:0!important;margin:0!important;opacity:1!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch .bdlr-option-card__copy>strong{display:block!important;padding:0!important;font:500 13px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch .bdlr-option-card__copy>small{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch:is(:disabled,[aria-disabled="true"]){border-color:var(--ri-b1)!important}
+
+/* ================= 6. Specs tab ================= */
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel:not([hidden]){display:block!important;margin-top:16px!important;padding:0 16px!important;background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel .bdlr-selected-specs{display:block!important;margin:0!important;padding:0!important;border:0!important;background:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel .bdlr-selected-specs>div{display:grid!important;grid-template-columns:minmax(0,240px) minmax(0,1fr)!important;gap:16px!important;align-items:baseline!important;margin:0!important;padding:12px 0!important;border:0!important;border-bottom:1px solid var(--ri-b1)!important;background:none!important;border-radius:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel .bdlr-selected-specs dt{margin:0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel .bdlr-selected-specs dd{margin:0!important;font:500 13px/20px var(--ri-font)!important;color:#fff!important;text-align:left!important}
+html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel>p{margin:0!important;padding:12px 0 16px!important;font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) #bdlr-specs-panel .bdlr-selected-specs>div{grid-template-columns:minmax(0,120px) minmax(0,1fr)!important;gap:12px!important}
+}
+
+/* ================= 6. Reviews ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__intro{margin:8px 0 0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-histogram{display:flex!important;align-items:center!important;gap:16px 40px!important;flex-wrap:wrap!important;margin:24px 0!important;padding:0!important;border:0!important;background:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-average{display:flex!important;align-items:baseline!important;gap:8px!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-average>strong{font:700 40px/48px var(--ri-font)!important;letter-spacing:-.01em!important;font-variant-numeric:tabular-nums!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-average>span{font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution{display:grid!important;gap:4px!important;width:280px!important;max-width:100%!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row{display:grid!important;grid-template-columns:48px minmax(0,1fr) 32px!important;align-items:center!important;gap:12px!important;margin:0!important;height:16px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>span{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;white-space:nowrap!important;font-variant-numeric:tabular-nums!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>span:last-child{text-align:right!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter{-webkit-appearance:none!important;appearance:none!important;display:block!important;width:100%!important;height:4px!important;border:0!important;border-radius:2px!important;background:var(--ri-b2)!important;overflow:hidden!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter::-webkit-meter-bar{height:4px!important;border:0!important;border-radius:2px!important;background:transparent!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter::-webkit-meter-optimum-value,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter::-webkit-meter-suboptimum-value,
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter::-webkit-meter-even-less-good-value{background:rgba(255,255,255,.7)!important;border-radius:2px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution__row>meter::-moz-meter-bar{background:rgba(255,255,255,.7)!important;border-radius:2px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list{gap:16px!important;align-items:stretch!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article:not([hidden]){display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;margin:0!important;padding:20px!important;background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article>.bdlr-legacy-review-rating{order:1!important;margin:0!important;line-height:16px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article>.bdlr-legacy-review-rating>span{font-size:14px!important;line-height:16px!important;letter-spacing:2px!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article>blockquote{order:2!important;flex:1 1 auto!important;margin:12px 0 0!important;padding:0!important;border:0!important;font:400 14px/24px var(--ri-font)!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article>.bdlr-config-review-date{order:3!important;margin:16px 0 0!important;padding:12px 0 0!important;border-top:1px solid var(--ri-b1)!important;font:400 11px/16px var(--ri-mono)!important;color:var(--ri-t4)!important;position:static!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article>.bdlr-config-review-date time{font:inherit!important;color:var(--ri-t3)!important;letter-spacing:.02em!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-reviews-expand{display:flex!important;align-items:center!important;justify-content:center!important;height:40px!important;min-height:40px!important;margin:24px auto 0!important;padding:0 24px!important;width:auto!important;min-width:240px!important;background:var(--ri-s2)!important;border:1px solid var(--ri-b2)!important;border-radius:8px!important;color:#fff!important;font:500 13px/20px var(--ri-font)!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-reviews-expand[hidden]{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-reviews-expand:hover{border-color:var(--ri-b3)!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-histogram{margin:16px 0!important;gap:12px 24px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-review-distribution{width:auto!important;flex:1 1 160px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list{gap:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews__list>article:not([hidden]){padding:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-reviews-expand{width:100%!important}
+}
+
+/* ================= 6. Support strip ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support{background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;overflow:hidden!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support .nov-support-cell{display:flex!important;align-items:center!important;gap:12px!important;padding:16px!important;min-height:72px!important;box-sizing:border-box!important;background:none!important;text-decoration:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support .nov-support-cell>svg{flex:none!important;width:24px!important;height:24px!important;color:var(--ri-t2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support .nov-support-cell>span{display:grid!important;gap:4px!important;min-width:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support .nov-support-cell b{font:500 14px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support .nov-support-cell small{font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support a.nov-support-cell:hover{background:var(--ri-s2)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more{margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more>summary{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:4px!important;width:auto!important;min-height:40px!important;margin:8px 0 0!important;padding:0!important;font:500 13px/20px var(--ri-font)!important;color:#A78BFA!important;cursor:pointer!important;list-style:none!important;background:none!important;border:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more>summary::-webkit-details-marker{display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more>summary:hover{text-decoration:underline!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more[open]>.bdlr-warranty-grid{margin-top:8px!important;gap:16px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article{background:var(--ri-s1)!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;padding:20px!important;box-shadow:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>span{font:400 11px/16px var(--ri-mono)!important;letter-spacing:.04em!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>h3{font:500 14px/20px var(--ri-font)!important;color:#fff!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>strong{font:700 20px/28px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>p{font:400 13px/20px var(--ri-font)!important;color:var(--ri-t2)!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>a{font:500 13px/20px var(--ri-font)!important;color:#A78BFA!important;text-decoration:none!important;background:none!important;border:0!important;padding:0!important;min-height:0!important;height:auto!important;justify-content:flex-start!important}
+html body.bdl-renewal-item:not(#_):not(#__) .nov-support-more .bdlr-warranty-grid>article>a::after{content:" →"!important}
+
+/* ================= 6. Terms link ================= */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-terms-bottom{margin:0!important;padding:32px 16px!important;text-align:center!important;border-top:1px solid var(--ri-b1)!important;max-width:1232px!important;margin-inline:auto!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-terms-bottom .bdlr-terms-link{display:inline-flex!important;align-items:center!important;min-height:40px!important;padding:0!important;font:500 13px/20px var(--ri-font)!important;color:#A78BFA!important;text-decoration:none!important;background:none!important;border:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-terms-bottom .bdlr-terms-link:hover{text-decoration:underline!important}
+
+/* --- option card fixes --- */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-color-swatch{max-width:none!important;min-width:max-content!important;aspect-ratio:auto!important;flex:none!important;overflow:visible!important;inline-size:auto!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .bdlr-option-card.bdlr-color-swatch.is-selected::after{content:none!important;display:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .nov-choice-wrap{display:flex!important;min-width:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid .nov-choice-wrap>.bdlr-option-card{width:100%!important;min-width:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group--compact .bdlr-option-card .bdlr-option-card__copy{padding:0!important;gap:4px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group--compact .bdlr-option-card .bdlr-option-card__price{padding:0!important;margin:4px 0 0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group--compact .bdlr-option-card .bdlr-option-card__copy>strong{padding-right:24px!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group .bdlr-storage-guide{margin:0 16px 16px!important;padding:0!important}
+/* Windows setup: what-is-done check list inside the card */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-desc{display:block!important;font:400 12px/18px var(--ri-font)!important;color:var(--ri-t2)!important;text-align:left!important;margin:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-list{display:grid!important;gap:4px!important;margin:8px 0 0!important;padding:8px 0 0!important;border-top:1px solid var(--ri-b1)!important;text-align:left!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-list{align-self:stretch!important;width:100%!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card :is(.ri-setup-desc,.ri-setup-list){letter-spacing:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-list>span{display:block!important;position:relative!important;padding:0 0 0 24px!important;font:400 12px/18px var(--ri-font)!important;color:var(--ri-t2)!important;letter-spacing:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-list>span::before{content:""!important;position:absolute!important;left:0!important;top:0!important;width:16px!important;height:18px!important;background:#5FD9A0!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/14px no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E") center/14px no-repeat!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .ri-setup-list>span>i{font-style:normal!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card{align-items:start!important;align-content:start!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card .bdlr-option-card__copy>.ri-setup-desc{display:block!important}
+/* dock: secondary text */
+html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__monthly :is(small,em,span:not(:first-child)){font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important}
+
+/* ================= 8. SP first view ================= */
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .detail.bdl-renewal-item__detail{gap:24px!important;padding:0 16px 32px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel{display:flex!important;flex-direction:column!important;gap:0!important;padding:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>*{margin:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>h1.product-name{order:1!important;font:700 24px/32px var(--ri-font)!important;color:#fff!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-evidence{order:2!important;margin-top:4px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-wire-item-specs{order:3!important;margin-top:12px!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.product-price-block{order:4!important;margin-top:20px!important;display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:0 8px!important;width:auto!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount,
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount span{font-size:28px!important;line-height:36px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note{display:inline-flex!important;flex-wrap:wrap!important;margin:0!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .bdlr-hero-tax-note span{display:inline!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment{order:5!important;margin-top:4px!important;display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:0 8px!important;background:none!important;border:0!important;padding:0!important;border-radius:0!important;text-align:left!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong{order:1!important;font:400 13px/24px var(--ri-font)!important;color:var(--ri-t2)!important;text-align:left!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong b{font:700 16px/24px var(--ri-font)!important;font-variant-numeric:tabular-nums!important;color:#fff!important;margin-left:4px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>strong span{font:400 13px/24px var(--ri-font)!important;color:var(--ri-t2)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>small{order:2!important;font:400 12px/24px var(--ri-font)!important;color:var(--ri-t3)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>span{order:3!important;flex-basis:100%!important;font:400 12px/16px var(--ri-font)!important;color:var(--ri-t3)!important;text-align:left!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-shipping{order:6!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions{order:7!important;margin-top:16px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.ri-diagnosis-link{order:8!important;margin-top:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.nov-hero-trust{order:9!important;margin-top:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>details.ux-item-fact{order:10!important;margin-top:20px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>section.ux-item-fact{order:11!important;margin-top:12px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-renewal-item__description{order:7!important;margin-top:16px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.productnum-wrap{order:8!important;margin-top:20px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.cart-add-btn{order:9!important;margin-top:12px!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions{order:10!important;margin-top:8px!important}
+}
+
+/* --- SP fixes + peripheral --- */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel .product-price-block .bdlr-hero-price-amount{margin:0!important;padding:0!important;text-indent:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>*{margin:0!important;padding:0!important;width:auto!important;flex:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment>small{text-indent:-.5em!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-wire-item-specs{width:100%!important;box-sizing:border-box!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdl-wire-item-specs{display:none!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .cart-add-btn .favorite-wrap{display:flex!important;gap:8px!important;width:100%!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .cart-add-btn .favorite-wrap>:first-child{flex:1 1 auto!important;min-width:0!important;width:auto!important}
+html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .cart-add-btn .favorite-wrap>:first-child>*{width:100%!important;box-sizing:border-box!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions{display:grid!important;grid-template-columns:minmax(0,1fr)!important}
+  html body.bdl-renewal-item.is-parts-product:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-summary-actions>.bdlr-button{width:100%!important}
+}
+/* peripheral: product info table */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-specification-grid{border:1px solid var(--ri-b1)!important;border-radius:12px!important;background:var(--ri-s1)!important;overflow:hidden!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-specification-grid>div{background:none!important;padding:16px!important;gap:16px!important;align-items:baseline!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-specification-grid>div>span{font:400 12px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-specification-grid>div>strong{font:500 14px/20px var(--ri-font)!important;color:#fff!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-rich-description{margin:16px 0 0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs{margin:0!important;padding:0 16px!important;border:1px solid var(--ri-b1)!important;border-radius:12px!important;background:var(--ri-s1)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs>div{display:grid!important;grid-template-columns:minmax(0,240px) minmax(0,1fr)!important;gap:16px!important;padding:12px 0!important;border:0!important;border-bottom:1px solid var(--ri-b1)!important;align-items:baseline!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs>div:last-child{border-bottom:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs dt{margin:0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs dd{margin:0!important;font:500 13px/20px var(--ri-font)!important;color:#fff!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-peripheral-specs>div{grid-template-columns:minmax(0,104px) minmax(0,1fr)!important;gap:12px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-specification-section .bdlr-specification-grid>div{grid-template-columns:minmax(0,104px) minmax(0,1fr)!important;gap:12px!important}
+}
+
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel{align-items:stretch!important;justify-items:stretch!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>:is(h1,.bdlr-hero-evidence,.bdl-wire-item-specs,.product-price-block,.bdlr-hero-installment,.bdlr-hero-shipping,.bdlr-summary-actions,.ri-diagnosis-link,.nov-hero-trust,.ux-item-fact,.bdl-renewal-item__description,.productnum-wrap,.cart-add-btn){align-self:stretch!important;width:auto!important;max-width:none!important;margin-left:0!important;margin-right:0!important;box-sizing:border-box!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.bdlr-hero-installment{flex-direction:row!important;justify-content:flex-start!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__purchase-panel>.product-price-block{justify-content:flex-start!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-detail-anchor{top:58px!important}
+}
+
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-storage{white-space:nowrap!important;letter-spacing:0!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card :is(small,strong,b){letter-spacing:0!important}
+@media (max-width:767px){
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-group[data-bdlr-guide="Windows初期設定代行"] .bdlr-option-card-grid{grid-template-columns:minmax(0,1fr)!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-storage{font-size:11px!important;padding:2px 6px!important}
+  html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-storage b{font-size:14px!important}
+}
+
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card-grid>.bdlr-choice-benefits{margin:0!important;grid-column:1/-1!important}
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary :is(.bandal-floating-summary__monthly,#bandal-fixed-monthly,.bandal-floating-summary__installment-body)::after{font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important;margin-left:4px!important}
+}
+
+/* gallery: thumbnails always directly under the main image, captions last (two DOM variants exist) */
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery{display:flex!important;flex-direction:column!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>:is(.item-image-thumbnail,.item-image-large){order:1!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>.item-image-small{order:2!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdl-renewal-item__gallery>small{order:3!important}
+
+/* empty-review state: archive link = page navigation text link */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-review-archive-link:not([hidden]){display:inline-flex!important;align-items:center!important;gap:4px!important;width:auto!important;min-height:40px!important;height:auto!important;margin:8px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;font:500 13px/20px var(--ri-font)!important;color:#A78BFA!important;text-decoration:none!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-review-archive-link:not([hidden])::after{content:"→"!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews .bdlr-review-archive-link:hover{text-decoration:underline!important}
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews>p:not([class]):not([hidden]){margin:8px 0 0!important;font:400 13px/20px var(--ri-font)!important;color:var(--ri-t3)!important}
+
+@media (min-width:768px){
+  html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary{padding:0!important;min-height:0!important;height:auto!important}
+}
+}

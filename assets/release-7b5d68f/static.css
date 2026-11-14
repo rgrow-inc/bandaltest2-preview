@@ -1,0 +1,476 @@
+/* release polish 2026-11-14: static */
+/* Scope: FAQ, guide, contact, recycle, terms, policy, reviews, review campaign, cart, diagnosis, news articles.
+   Prefix html:not(#_) is only there to win over the older !important override stack. */
+
+/* ============ FAQ ============ */
+html:not(#_) body.bdlr-faq-page .bdlr-faq-layout{display:grid!important;grid-template-columns:200px minmax(0,1fr)!important;gap:48px!important;align-items:start!important;margin-top:48px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav{position:sticky!important;top:128px!important;display:flex!important;flex-direction:column!important;gap:4px!important;padding:0!important;margin:0!important;background:transparent!important;border:0!important;border-radius:0!important;overflow:visible!important;box-shadow:none!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a{position:relative!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;text-align:left!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;padding:0 16px!important;background:transparent!important;border:0!important;border-radius:8px!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important;white-space:nowrap!important;transition:background .15s,color .15s}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a:hover{background:rgba(255,255,255,.05)!important;color:#fff!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a[aria-current]{background:rgba(255,255,255,.08)!important;color:#fff!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a[aria-current]::before{content:""!important;position:absolute!important;left:0!important;top:10px!important;bottom:10px!important;width:2px!important;border-radius:1px!important;background:#7C3AED!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-content{display:grid!important;gap:16px!important;min-width:0!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-group{padding:40px 40px 24px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important;scroll-margin-top:128px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-group h2{margin:0 0 16px!important;padding:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important;letter-spacing:0!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item{margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important;border-radius:0!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item:last-child{border-bottom:0!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary{position:relative!important;display:flex!important;align-items:center!important;min-height:64px!important;box-sizing:border-box!important;padding:16px 48px 16px 0!important;background:transparent!important;color:#fff!important;font-size:16px!important;font-weight:500!important;line-height:1.6!important;cursor:pointer!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary:hover{color:#fff!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary::before,
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary::after{right:4px!important;width:14px!important;height:1.5px!important;background:rgba(255,255,255,.5)!important;border-radius:1px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary:hover::before,
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary:hover::after{background:#fff!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer{padding:0 48px 24px 0!important;max-width:800px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;font-weight:400!important;line-height:1.9!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer p{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer p+p{margin-top:12px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer ul{margin:12px 0 0!important;padding:0!important;list-style:none!important;display:grid!important;gap:4px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer li{position:relative!important;margin:0!important;padding:0 0 0 16px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important;list-style:none!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer li::before{content:""!important;position:absolute!important;left:2px!important;top:.95em!important;width:4px!important;height:4px!important;margin-top:-2px!important;border-radius:50%!important;background:rgba(255,255,255,.36)!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer a{display:inline-flex!important;align-items:center!important;gap:4px!important;margin:12px 24px 0 0!important;padding:0!important;min-height:0!important;height:auto!important;background:transparent!important;border:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer a::after{content:"→"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer a:hover{color:#fff!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer video{margin-top:16px!important;border-radius:8px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;padding:32px 40px!important;margin:0!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support h2{margin:0 0 4px!important;color:#fff!important;font-size:20px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support p{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support .bdlr-static-action{flex:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:auto!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support .bdlr-static-action:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:767px){
+html:not(#_) body.bdlr-faq-page .bdlr-faq-layout{grid-template-columns:minmax(0,1fr)!important;gap:16px!important;margin-top:24px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav{top:58px!important;z-index:4!important;flex-direction:row!important;flex-wrap:nowrap!important;gap:8px!important;margin:0 -16px!important;padding:8px 16px!important;background:#07070B!important;border-bottom:1px solid rgba(255,255,255,.08)!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important;-webkit-overflow-scrolling:touch}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav::-webkit-scrollbar{display:none}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a{flex:none!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;font-size:13px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a[aria-current]{background:rgba(255,255,255,.08)!important;border-color:#7C3AED!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-nav a[aria-current]::before{display:none!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-content{gap:12px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-group{padding:24px 20px 8px!important;scroll-margin-top:128px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-group h2{font-size:20px!important;margin-bottom:12px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-item summary{min-height:56px!important;padding:16px 40px 16px 0!important;font-size:15px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer{padding:0 0 20px!important;font-size:14px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-answer p,html:not(#_) body.bdlr-faq-page .bdlr-faq-answer li{font-size:14px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support{flex-direction:column!important;align-items:stretch!important;gap:16px!important;padding:24px 20px!important}
+html:not(#_) body.bdlr-faq-page .bdlr-faq-support .bdlr-static-action{width:100%!important}
+}
+
+/* ============ Guide (guide.html only: scoped by the #order card) ============ */
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:0 auto!important;padding:0 0 32px!important;background:transparent!important;border:0!important;position:static!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav a{display:inline-flex!important;align-items:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important;white-space:nowrap!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav a:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;align-items:stretch!important;margin:0 auto!important;padding:0!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;box-sizing:border-box!important;margin:0!important;padding:40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;scroll-margin-top:128px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card#return{grid-column:1 / -1!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > .bdl-info-number{width:auto!important;height:auto!important;margin:0 0 12px!important;padding:0!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:12px!important;font-weight:500!important;line-height:1!important;letter-spacing:.08em!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > h2{margin:0 0 16px!important;padding:0!important;border:0!important;color:#fff!important;font-size:20px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p:not(.bdl-info-number){width:100%!important;max-width:800px!important;box-sizing:border-box!important;margin:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;font-weight:400!important;line-height:1.9!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p:not(.bdl-info-number) + p{margin-top:16px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p.bdl-info-note{padding:16px!important;background:rgba(255,255,255,.05)!important;border:0!important;border-radius:8px!important;color:rgba(255,255,255,.7)!important;font-size:13px!important;line-height:1.8!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p.bdl-info-note + p.bdl-info-note{margin-top:8px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > a,
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links a{display:inline-flex!important;align-items:center!important;gap:4px!important;width:auto!important;height:auto!important;min-height:0!important;margin:20px 0 0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important;writing-mode:horizontal-tb!important;grid-column:auto!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > a::after,
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links a::after{content:"→"!important;display:inline!important;position:static!important;width:auto!important;height:auto!important;background:none!important;border:0!important;transform:none!important;font-family:"Geist",sans-serif!important;color:inherit!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links a svg,
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links a::before{display:none!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > a:hover,
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links a:hover{color:#fff!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card .audit-guide-links{display:block!important;margin:0!important;padding:0!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-actions{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:24px 0 0!important;padding:0!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-actions a{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-actions a:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:767px){
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav{flex-wrap:nowrap!important;padding:0 0 24px!important;overflow-x:auto!important;scrollbar-width:none!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav::-webkit-scrollbar{display:none}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-nav a{flex:none!important;font-size:13px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-grid{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card{padding:24px 20px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > h2{font-size:18px!important;margin-bottom:12px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p:not(.bdl-info-number){font-size:14px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-card > p.bdl-info-note{font-size:13px!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-actions{flex-direction:column!important;align-self:stretch!important}
+html:not(#_) body.bdl-info-page:has(.bdl-info-grid > #order) .bdl-info-actions a{width:100%!important;flex:none!important}
+}
+
+/* ============ Shared bits for my .mig-shell pages (contact / review campaign / news articles) ============ */
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card, .audit-campaign, > .mig-article) .mig-return{display:block!important;margin:64px 0 0!important;padding:24px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important;text-align:left!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card, .audit-campaign, > .mig-article) .mig-return a{display:inline-flex!important;align-items:center!important;gap:4px!important;width:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card, .audit-campaign, > .mig-article) .mig-return a::before{content:"←"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card, .audit-campaign, > .mig-article) .mig-return a:hover{color:#fff!important}
+
+/* ============ Contact ============ */
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card) > .mig-lead{margin:16px 0 0!important;max-width:720px!important;color:rgba(255,255,255,.7)!important;font-size:16px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card) > .mig-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;margin:48px 0 0!important;padding:0!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card{display:flex!important;flex-direction:column!important;align-items:flex-start!important;box-sizing:border-box!important;margin:0!important;padding:40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card h2{margin:0 0 12px!important;padding:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card p{flex:1 1 auto!important;margin:0 0 24px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card .mig-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card .mig-button:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:767px){
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card) > .mig-lead{font-size:14px!important;margin-top:12px!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card) > .mig-grid{grid-template-columns:minmax(0,1fr)!important;gap:12px!important;margin-top:32px!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card{padding:24px 20px!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card h2{font-size:20px!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card p{font-size:14px!important;margin-bottom:20px!important}
+html:not(#_) body.bdlr-content-page .mig-contact-card .mig-button{width:100%!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card, .audit-campaign, > .mig-article) .mig-return{margin-top:48px!important}
+}
+
+/* ============ News articles (page-news-*.html) ============ */
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-hero h1{max-width:960px!important;font-size:32px!important;line-height:1.4!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-breadcrumb > span:last-child{overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;min-width:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-rel-date{display:block!important;margin:16px 0 0!important;color:rgba(255,255,255,.5)!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:13px!important;font-weight:400!important;line-height:1!important;letter-spacing:.04em!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article{max-width:800px!important;width:auto!important;margin:48px 0 0!important;padding:0!important;background:transparent!important;border:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important;text-align:left!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article p{margin:0 0 20px!important;padding:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;font-weight:400!important;line-height:1.9!important;text-align:left!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article :is(b,strong){color:#fff!important;font-weight:700!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article h3{margin:56px 0 16px!important;padding:0!important;border:0!important;color:#fff!important;font-size:22px!important;font-weight:700!important;line-height:1.5!important;text-align:left!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article h4{margin:32px 0 12px!important;padding:0!important;border:0!important;color:#fff!important;font-size:16px!important;font-weight:700!important;line-height:1.6!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article > br{display:none!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article hr{display:none!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;margin:32px 0!important;border-radius:8px!important;border:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article > p:first-child > a:only-child > img,
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article > img:first-child{margin-top:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article ul{margin:0 0 20px!important;padding:0!important;list-style:none!important;display:grid!important;gap:8px!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article li{position:relative!important;margin:0!important;padding:0 0 0 16px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important;list-style:none!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article li::before{content:""!important;position:absolute!important;left:2px!important;top:.95em!important;width:4px!important;height:4px!important;margin-top:-2px!important;border-radius:50%!important;background:rgba(255,255,255,.36)!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article a{color:#A78BFA!important;text-decoration:underline!important;text-underline-offset:3px!important;text-decoration-color:rgba(167,139,250,.4)!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article a:hover{color:#fff!important}
+@media (max-width:767px){
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-hero h1{font-size:24px!important;line-height:1.45!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article{margin-top:32px!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article h3{margin-top:40px!important;font-size:20px!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article img{margin:24px 0!important}
+}
+
+/* ============ Recycle ============ */
+html:not(#_) body.bdlr-content-page .bdlr-recycle-main{padding:32px 24px 96px!important;background:#07070B!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-shell{width:auto!important;max-width:1232px!important;margin:0 auto!important;padding:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-breadcrumb{display:flex!important;align-items:center!important;gap:10px!important;margin:0!important;padding:0!important;color:rgba(255,255,255,.5)!important;font-size:12px!important;line-height:20px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-breadcrumb a{color:rgba(255,255,255,.5)!important;text-decoration:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-breadcrumb span:last-child{color:rgba(255,255,255,.7)!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-hero{margin:40px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-hero::before,html:not(#_) body.bdlr-content-page .bdlr-recycle-hero::after{display:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-kicker{margin:0 0 12px!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:11px!important;font-weight:500!important;line-height:13px!important;letter-spacing:.08em!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-hero h1{max-width:none!important;margin:0!important;color:#fff!important;font-size:40px!important;font-weight:700!important;line-height:1.3!important;letter-spacing:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-lead{max-width:720px!important;margin:16px 0 0!important;color:rgba(255,255,255,.7)!important;font-size:16px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-section{margin:64px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-section > h2{margin:0 0 20px!important;padding:0!important;border:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-targets,.bdlr-recycle-data){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;margin:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-steps{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;margin:0!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-card,.bdlr-recycle-step,.bdlr-recycle-data article){box-sizing:border-box!important;margin:0!important;padding:32px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-card strong,.bdlr-recycle-step h3,.bdlr-recycle-data article h3){display:block!important;margin:0 0 8px!important;padding:0!important;color:#fff!important;font-size:18px!important;font-weight:700!important;line-height:1.5!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-card,.bdlr-recycle-step,.bdlr-recycle-data article) p{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-step b{display:block!important;width:auto!important;height:auto!important;margin:0 0 16px!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:12px!important;font-weight:500!important;line-height:1!important;letter-spacing:.08em!important;text-align:left!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-step b::before{content:"STEP 0"!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-note{margin:16px 0 0!important;padding:16px 20px!important;background:rgba(255,255,255,.05)!important;border:0!important;border-radius:8px!important;color:rgba(255,255,255,.7)!important;font-size:13px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list{margin:0!important;padding:8px 32px!important;list-style:none!important;display:block!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li{position:relative!important;margin:0!important;padding:16px 0 16px 16px!important;background:none!important;border:0!important;border-radius:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.8!important;list-style:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li + li{border-top:1px solid rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li::before{content:""!important;position:absolute!important;left:2px!important;top:29px!important;width:4px!important;height:4px!important;margin:-2px 0 0!important;border-radius:50%!important;background:rgba(255,255,255,.36)!important;transform:none!important;border:0!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li::after{display:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-cta{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;margin:64px 0 0!important;padding:32px 40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-cta h2{margin:0 0 4px!important;color:#fff!important;font-size:20px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-cta p{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-button{flex:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-button:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-main > .audit-more{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:4px!important;box-sizing:border-box!important;width:auto!important;max-width:1232px!important;height:auto!important;min-height:0!important;margin:20px auto 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-main > .audit-more::after{content:"→"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-main > .audit-more:hover{color:#fff!important}
+@media (max-width:1023px){
+html:not(#_) body.bdlr-content-page .bdlr-recycle-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media (max-width:767px){
+html:not(#_) body.bdlr-content-page .bdlr-recycle-main{padding:24px 16px 64px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-hero{margin-top:24px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-hero h1{font-size:28px!important;line-height:1.35!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-lead{font-size:14px!important;margin-top:12px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-section{margin-top:48px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-section > h2{font-size:20px!important;margin-bottom:16px!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-targets,.bdlr-recycle-data,.bdlr-recycle-steps){grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-card,.bdlr-recycle-step,.bdlr-recycle-data article){padding:24px 20px!important}
+html:not(#_) body.bdlr-content-page :is(.bdlr-recycle-card strong,.bdlr-recycle-step h3,.bdlr-recycle-data article h3){font-size:16px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-step b{margin-bottom:12px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list{padding:4px 20px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li{font-size:14px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-list li::before{top:28px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-cta{flex-direction:column!important;align-items:stretch!important;gap:16px!important;margin-top:48px!important;padding:24px 20px!important}
+html:not(#_) body.bdlr-content-page .bdlr-recycle-button{width:100%!important}
+}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.mig-contact-card) > .mig-hero{margin-bottom:0!important;padding-bottom:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) > .mig-hero{display:flex!important;flex-direction:column!important;align-items:flex-start!important;margin-bottom:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) > .mig-hero > .bdlr-rel-date{order:3!important}
+html:not(#_) body.bdlr-content-page .mig-shell > .mig-article img + img{margin-top:-16px!important}
+
+/* ============ Terms / Privacy policy (long-form) ============ */
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:48px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;position:static!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav a{display:inline-flex!important;align-items:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important;white-space:nowrap!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav a:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-card{max-width:800px!important;margin:48px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-policy-copy{margin:0!important;padding:0!important;max-width:none!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich{display:block!important;width:auto!important;max-width:none!important;margin:0!important;padding:0!important;background:none!important;border:0!important;color:rgba(255,255,255,.7)!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:15px!important;font-weight:400!important;line-height:1.9!important;white-space:normal!important;text-align:left!important;overflow:visible!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich p{margin:0 0 16px!important;padding:0!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich h2{margin:56px 0 16px!important;padding:0!important;border:0!important;color:#fff!important;font-size:20px!important;font-weight:700!important;line-height:1.5!important;scroll-margin-top:128px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich > :first-child{margin-top:0!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich :is(ul,ol){margin:0 0 16px!important;padding:0!important;list-style:none!important;display:grid!important;gap:8px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich li{position:relative!important;margin:0!important;padding:0 0 0 16px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.9!important;list-style:none!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich ul > li::before{content:""!important;position:absolute!important;left:2px!important;top:.95em!important;width:4px!important;height:4px!important;margin-top:-2px!important;border-radius:50%!important;background:rgba(255,255,255,.36)!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich ol{padding-left:16px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich ol > li{padding-left:48px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich ol > li > span{position:absolute!important;left:0!important;top:0!important;color:rgba(255,255,255,.5)!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich li > ul{margin:8px 0 0!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich li > ul > li::before{width:6px!important;height:1px!important;border-radius:0!important;left:0!important;margin-top:0!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich .bdlr-legal-updated{text-align:left!important;margin:48px 0 0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;line-height:1.6!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-actions{display:block!important;margin:24px 0 0!important;padding:24px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-actions .bdlr-static-action{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:auto!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-actions .bdlr-static-action:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:767px){
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav{flex-wrap:nowrap!important;margin-top:24px!important;overflow-x:auto!important;scrollbar-width:none!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav::-webkit-scrollbar{display:none}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-nav a{flex:none!important;font-size:13px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-card{margin-top:32px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich,
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich :is(p,li){font-size:14px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich h2{margin-top:40px!important;font-size:18px!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-legal-rich ol{padding-left:0!important}
+html:not(#_) body:is(.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-actions .bdlr-static-action{width:100%!important}
+}
+
+/* ============ Review list ============ */
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest{display:flex!important;flex-wrap:wrap!important;gap:8px 24px!important;margin:16px 0 0!important;padding:0!important}
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest a{display:inline-flex!important;align-items:center!important;gap:4px!important;min-height:0!important;height:auto!important;margin:0!important;padding:0!important;background:none!important;border:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest a::after{content:"↓"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest a:hover{color:#fff!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin:48px 0 0!important;padding:0!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples a{display:flex!important;align-items:center!important;gap:16px!important;box-sizing:border-box!important;min-height:0!important;height:auto!important;margin:0!important;padding:12px 16px 12px 12px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1.5!important;text-decoration:none!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples a:hover{border-color:rgba(255,255,255,.24)!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples img{flex:none!important;width:56px!important;height:56px!important;object-fit:cover!important;border-radius:8px!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples span{flex:1 1 auto!important;min-width:0!important;color:#fff!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples a::after{content:"→"!important;flex:none!important;color:rgba(255,255,255,.5)!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:16px 0 0!important;padding:0!important;background:none!important;border:0!important;position:static!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav a{display:inline-flex!important;align-items:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important;white-space:nowrap!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav a:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group{margin:0!important;padding:80px 0 0!important;scroll-margin-top:64px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group-head{display:flex!important;align-items:baseline!important;justify-content:space-between!important;gap:16px!important;margin:0 0 24px!important;padding:0!important;border:0!important;min-height:0!important;height:auto!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-reviews .bdlr-review-group-head{margin-bottom:12px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group-head h2{margin:0!important;padding:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important;letter-spacing:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-count{margin:0!important;color:rgba(255,255,255,.5)!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:11px!important;font-weight:500!important;letter-spacing:.08em!important;line-height:1!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-summary{margin:0!important;color:#fff!important;font-size:16px!important;font-weight:500!important;line-height:1.6!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-intro{max-width:800px!important;margin:8px 0 0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-review-archive-page :is(.bdlr-legacy-review-grid,.bdlr-review-grid){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;align-items:stretch!important;margin:24px 0 0!important;padding:0!important;border:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group-head + .bdlr-review-grid{margin-top:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-grid.is-company{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card:not(.bdlr-legacy-review-card){display:flex!important;flex-direction:column!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card{box-sizing:border-box!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important;overflow:hidden!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card figure{position:relative!important;flex:none!important;margin:0!important;padding:0!important;aspect-ratio:4 / 3!important;overflow:hidden!important;background:#0D0D11!important;border-radius:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-grid.is-company .bdlr-review-card figure{aspect-ratio:16 / 9!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card figure img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card figure span{position:absolute!important;top:12px!important;left:12px!important;display:inline-flex!important;align-items:center!important;height:24px!important;padding:0 8px!important;background:rgba(7,7,11,.8)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;color:#fff!important;font-family:"Geist Mono","Noto Sans JP",monospace!important;font-size:11px!important;font-weight:500!important;line-height:1!important;letter-spacing:.04em!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card .bdlr-review-body{display:flex!important;flex-direction:column!important;flex:1 1 auto!important;box-sizing:border-box!important;gap:0!important;margin:0!important;padding:24px!important;min-height:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-date{margin:0 0 8px!important;color:rgba(255,255,255,.5)!important;font-family:"Geist Mono","Noto Sans JP",monospace!important;font-size:12px!important;font-weight:400!important;line-height:1.5!important;letter-spacing:.02em!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card h3{margin:0!important;padding:0!important;color:#fff!important;font-size:16px!important;font-weight:700!important;line-height:1.5!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-reviewer{margin:4px 0 0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;font-weight:400!important;line-height:1.5!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-reviewer + .bdlr-legacy-reviewer{display:none!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-rating{display:flex!important;align-items:center!important;gap:8px!important;margin:12px 0 0!important;color:rgba(255,255,255,.7)!important;font-size:13px!important;line-height:1.5!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card blockquote{margin:12px 0 0!important;padding:0!important;border:0!important;background:none!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;font-weight:400!important;line-height:1.8!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card .audit-read-full:not([hidden]){align-self:flex-start!important;margin:8px 0 0!important;padding:0!important;height:auto!important;min-height:0!important;background:none!important;border:0!important;color:#A78BFA!important;font-size:13px!important;font-weight:500!important;cursor:pointer!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-price{display:flex!important;align-items:baseline!important;justify-content:space-between!important;margin:auto 0 0!important;padding:16px 0 0!important;border:0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;line-height:1.5!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card blockquote + .bdlr-review-price{margin-top:auto!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-price strong{color:#fff!important;font-family:"Geist",sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.2!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-specs{display:grid!important;gap:0!important;margin:16px 0 0!important;padding:8px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-specs > div{display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;gap:12px!important;margin:0!important;padding:4px 0!important;border:0!important;min-height:0!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-specs dt{margin:0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;font-weight:400!important;line-height:1.6!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-specs dd{margin:0!important;color:#fff!important;font-size:13px!important;font-weight:400!important;line-height:1.6!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-card blockquote + .bdlr-review-specs,
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-card .audit-read-full + .bdlr-review-specs{margin-top:auto!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-card .bdlr-review-specs{position:relative!important;top:16px!important;margin-bottom:16px!important}
+html:not(#_) body.bdlr-review-archive-page :is(.audit-archive-source,.bdlr-legacy-review-source){display:block!important;min-height:0!important;height:auto!important;margin:12px 0 0!important;padding:0!important;color:rgba(255,255,255,.36)!important;font-size:12px!important;font-weight:400!important;line-height:1.5!important;text-decoration:none!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-card :is(blockquote,.audit-read-full) + :is(.audit-archive-source,.bdlr-legacy-review-source){margin-top:auto!important;padding-top:16px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group > .audit-more{display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:auto!important;height:40px!important;min-height:40px!important;margin:24px auto 0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;cursor:pointer!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group > .audit-more:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-contact{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;margin:80px 0 0!important;padding:32px 40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-contact h2{margin:0 0 4px!important;color:#fff!important;font-size:20px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-contact p{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-button{flex:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-button:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+@media (max-width:1023px){
+html:not(#_) body.bdlr-review-archive-page :is(.bdlr-legacy-review-grid,.bdlr-review-grid){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media (max-width:767px){
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest{flex-direction:column!important;gap:8px!important;margin-top:12px!important}
+html:not(#_) body.bdlr-review-archive-page .audit-review-digest a{font-size:13px!important}
+html:not(#_) body.bdlr-review-archive-page .audit-examples{grid-template-columns:minmax(0,1fr)!important;gap:8px!important;margin-top:32px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav{flex-wrap:nowrap!important;overflow-x:auto!important;scrollbar-width:none!important;margin:16px -16px 0!important;padding:0 16px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav::-webkit-scrollbar{display:none}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-nav a{flex:none!important;font-size:13px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group{padding-top:56px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group-head{margin-bottom:16px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group-head h2{font-size:20px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-summary{font-size:14px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-intro{font-size:13px!important}
+html:not(#_) body.bdlr-review-archive-page :is(.bdlr-legacy-review-grid,.bdlr-review-grid),
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-grid.is-company{grid-template-columns:minmax(0,1fr)!important;gap:12px!important;margin-top:16px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card .bdlr-review-body{padding:20px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-contact{flex-direction:column!important;align-items:stretch!important;gap:16px!important;margin-top:56px!important;padding:24px 20px!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-button{width:100%!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-group > .audit-more{width:100%!important}
+}
+html:not(#_) body.bdlr-review-archive-page .bdlr-legacy-review-card .bdlr-review-body{height:100%!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-archive{background:#07070B!important}
+html:not(#_) body.bdlr-review-archive-page .bdlr-review-card .audit-read-full:not([hidden]){text-decoration:none!important}
+
+/* ============ Review campaign ============ */
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) > .mig-hero{margin-bottom:0!important}
+html:not(#_) body.bdlr-content-page .audit-campaign{box-sizing:border-box!important;margin:48px 0 0!important;padding:40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .audit-campaign h2{margin:0 0 20px!important;padding:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important}
+html:not(#_) body.bdlr-content-page .audit-campaign ol{counter-reset:bdlrstep!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin:0!important;padding:0!important;list-style:none!important}
+html:not(#_) body.bdlr-content-page .audit-campaign ol li{counter-increment:bdlrstep!important;margin:0!important;padding:20px!important;background:rgba(255,255,255,.05)!important;border:0!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:400!important;line-height:1.8!important;list-style:none!important}
+html:not(#_) body.bdlr-content-page .audit-campaign ol li::before{content:"STEP 0" counter(bdlrstep)!important;display:block!important;margin:0 0 8px!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:12px!important;font-weight:500!important;line-height:1!important;letter-spacing:.08em!important}
+html:not(#_) body.bdlr-content-page .audit-campaign h3{margin:40px 0 16px!important;padding:0!important;border:0!important;color:#fff!important;font-size:18px!important;font-weight:700!important;line-height:1.5!important}
+html:not(#_) body.bdlr-content-page .audit-rewards{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin:0!important;padding:0!important}
+html:not(#_) body.bdlr-content-page .audit-rewards > div{display:flex!important;align-items:baseline!important;justify-content:space-between!important;gap:12px!important;margin:0!important;padding:16px 20px!important;background:transparent!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:8px!important}
+html:not(#_) body.bdlr-content-page .audit-rewards dt{margin:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;font-weight:400!important;line-height:1.6!important}
+html:not(#_) body.bdlr-content-page .audit-rewards dd{margin:0!important;color:#fff!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:20px!important;font-weight:700!important;line-height:1.3!important}
+html:not(#_) body.bdlr-content-page .audit-campaign > p{margin:16px 0 0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-content-page .audit-campaign > a{display:inline-flex!important;align-items:center!important;gap:4px!important;min-height:0!important;height:auto!important;margin:16px 0 0!important;padding:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-content-page .audit-campaign > a::after{content:"→"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-content-page .audit-campaign > a:hover{color:#fff!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) .mig-campaign-image{display:block!important;width:100%!important;max-width:720px!important;height:auto!important;margin:48px auto 0!important;border-radius:8px!important;border:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) .mig-center{display:flex!important;justify-content:center!important;margin:32px 0 0!important;padding:0!important;border:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) .mig-center .mig-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 24px!important;background:#06C755!important;border:1px solid #06C755!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:700!important;line-height:1!important;text-decoration:none!important;box-shadow:none!important}
+@media (max-width:767px){
+html:not(#_) body.bdlr-content-page .audit-campaign{margin-top:32px!important;padding:24px 20px!important}
+html:not(#_) body.bdlr-content-page .audit-campaign h2{font-size:20px!important;margin-bottom:16px!important}
+html:not(#_) body.bdlr-content-page .audit-campaign ol,html:not(#_) body.bdlr-content-page .audit-rewards{grid-template-columns:minmax(0,1fr)!important;gap:8px!important}
+html:not(#_) body.bdlr-content-page .audit-campaign ol li{padding:16px!important}
+html:not(#_) body.bdlr-content-page .audit-campaign h3{margin-top:32px!important;font-size:16px!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) .mig-campaign-image{margin-top:32px!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(.audit-campaign) .mig-center .mig-button{width:100%!important}
+}
+
+/* ============ Cart ============ */
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__wrapper,
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__main,
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__contents{background:#07070B!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__title-wrap{box-sizing:border-box!important;width:auto!important;max-width:1232px!important;margin:0 auto!important;padding:56px 0 48px!important;background:none!important;border:0!important;text-align:left!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-eyebrow{margin:0 0 12px!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:11px!important;font-weight:500!important;line-height:13px!important;letter-spacing:.08em!important;text-align:left!important}
+html:not(#_) body.bdl-renewal-cart .cart-title{margin:0!important;padding:0!important;color:#fff!important;font-size:40px!important;font-weight:700!important;line-height:1.3!important;letter-spacing:0!important;text-align:left!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:0!important;width:auto!important;max-width:none!important;height:auto!important;margin:32px 0 0!important;padding:0!important;list-style:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li{position:static!important;display:flex!important;flex:none!important;flex-direction:row!important;align-items:center!important;gap:8px!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;color:rgba(255,255,255,.36)!important;font-size:13px!important;font-weight:500!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li::before{display:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li::after{content:""!important;position:static!important;display:block!important;flex:none!important;width:40px!important;height:1px!important;margin:0 16px!important;background:rgba(255,255,255,.14)!important;transform:none!important;border:0!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li:last-child::after{display:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps b{position:static!important;display:flex!important;flex:none!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:24px!important;height:24px!important;margin:0!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:50%!important;color:rgba(255,255,255,.5)!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:11px!important;font-weight:500!important;line-height:1!important;box-shadow:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps span{position:static!important;margin:0!important;color:rgba(255,255,255,.36)!important;font-size:13px!important;font-weight:500!important;line-height:1.5!important;white-space:nowrap!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li.is-current b{background:rgba(255,255,255,.08)!important;border-color:#7C3AED!important;color:#fff!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li.is-current span{color:#fff!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty{box-sizing:border-box!important;display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:center!important;gap:16px 24px!important;margin:0!important;padding:64px 40px 40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;text-align:center!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > p{flex:0 0 100%!important;margin:0 0 8px!important;color:rgba(255,255,255,.7)!important;font-size:16px!important;line-height:1.8!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a.bdlr-cart-empty-link{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;text-decoration:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a.bdlr-cart-empty-link:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a:not(.bdlr-cart-empty-link){display:inline-flex!important;align-items:center!important;gap:4px!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a:not(.bdlr-cart-empty-link)::after{content:"→"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a:not(.bdlr-cart-empty-link):hover{color:#fff!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options{flex:0 0 100%!important;display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:8px 24px!important;box-sizing:border-box!important;margin:32px 0 0!important;padding:32px 0 0!important;border:0!important;border-top:1px solid rgba(255,255,255,.08)!important;text-align:center!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options h2{flex:0 0 100%!important;margin:0 0 4px!important;color:#fff!important;font-size:16px!important;font-weight:700!important;line-height:1.5!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options a{display:inline!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;color:rgba(255,255,255,.7)!important;font-size:14px!important;font-weight:400!important;line-height:1.8!important;text-decoration:none!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options a:hover{color:#fff!important}
+@media (max-width:1279px){
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__title-wrap{margin:0 24px!important}
+}
+@media (max-width:767px){
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__title-wrap{margin:0 16px!important;padding:32px 0 24px!important}
+html:not(#_) body.bdl-renewal-cart .cart-title{font-size:28px!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps{margin-top:24px!important;justify-content:space-between!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li{gap:6px!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li::after{width:auto!important;flex:1 1 8px!important;min-width:8px!important;margin:0 6px!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps li:not(:last-child){flex:1 1 auto!important}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps span{font-size:11px!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty{flex-direction:column!important;gap:16px!important;padding:40px 20px 24px!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > p{flex:none!important;font-size:14px!important;margin:0!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__empty > a.bdlr-cart-empty-link{width:100%!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options{flex:none!important;flex-direction:column!important;align-self:stretch!important;gap:8px!important;margin-top:16px!important;padding-top:24px!important}
+html:not(#_) body.bdl-renewal-cart .audit-cart-options h2{flex:none!important}
+}
+
+/* ============ PC diagnosis ============ */
+html:not(#_) body.bdlr-diagnosis-page,
+html:not(#_) body.bdlr-diagnosis-page .bd-diagnosis{background:#07070B!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-wrap{padding:32px 0 96px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-shop-back{display:inline-flex!important;margin:0!important;padding:0!important;color:rgba(255,255,255,.5)!important;font-size:12px!important;font-weight:400!important;line-height:20px!important;text-decoration:none!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-shop-back:hover{color:#fff!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero{display:grid!important;grid-template-columns:minmax(0,1fr) 400px!important;gap:64px!important;align-items:center!important;margin:40px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;min-height:0!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero::before,html:not(#_) body.bdlr-diagnosis-page .bd-hero::after,html:not(#_) body.bdlr-diagnosis-page .bd-hero-bg-text{display:none!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-content{margin:0!important;padding:0!important;max-width:none!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-kicker{display:block!important;margin:0 0 12px!important;padding:0!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-kicker span{display:none!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-kicker em{color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:11px!important;font-style:normal!important;font-weight:500!important;line-height:13px!important;letter-spacing:.08em!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero h1{margin:0!important;padding:0!important;color:#fff!important;font-size:40px!important;font-weight:700!important;line-height:1.3!important;letter-spacing:0!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero h1 strong{color:#fff!important;background:none!important;-webkit-text-fill-color:currentColor!important;font-weight:700!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-content > p:not(.audit-result-preview){margin:16px 0 0!important;color:rgba(255,255,255,.7)!important;font-size:16px!important;font-weight:400!important;line-height:1.8!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;max-width:560px!important;margin:32px 0 0!important;padding:0!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points > div{display:block!important;margin:0!important;padding:16px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:8px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points strong{display:block!important;margin:0 0 8px!important;color:#A78BFA!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:12px!important;font-weight:500!important;line-height:1!important;letter-spacing:.08em!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points span{display:block!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1.5!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-btn-main{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;box-sizing:border-box!important;width:auto!important;height:40px!important;min-height:40px!important;margin:32px 0 0!important;padding:0 20px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;box-shadow:none!important;color:#fff!important;font-size:14px!important;font-weight:500!important;line-height:1!important;cursor:pointer!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-btn-main::before,html:not(#_) body.bdlr-diagnosis-page .bd-btn-main::after{display:none!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-btn-main:hover{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.08)!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-btn-main em{font-style:normal!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-diagnosis-page .audit-result-preview{max-width:560px!important;margin:16px 0 0!important;color:rgba(255,255,255,.5)!important;font-size:13px!important;font-weight:400!important;line-height:1.8!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-note{margin:8px 0 0!important;color:rgba(255,255,255,.36)!important;font-size:12px!important;font-weight:400!important;line-height:1.6!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual{box-sizing:border-box!important;width:auto!important;margin:0!important;padding:0!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important;overflow:hidden!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual__head,
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual__foot{display:flex!important;align-items:center!important;justify-content:space-between!important;padding:16px!important;color:rgba(255,255,255,.5)!important;font-family:"Geist Mono",ui-monospace,monospace!important;font-size:10px!important;font-weight:500!important;line-height:1!important;letter-spacing:.08em!important;border:0!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual__head b{color:rgba(255,255,255,.7)!important;font-weight:500!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual__foot strong{color:rgba(255,255,255,.36)!important;font-weight:400!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-reference-hero-visual__image{margin:0 16px!important;border-radius:8px!important;overflow:hidden!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question:not([hidden]){display:block!important;box-sizing:border-box!important;width:auto!important;max-width:1232px!important;margin:0 auto 96px!important;padding:40px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;box-shadow:none!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-progress{position:static!important;margin:0 0 12px!important;padding:0!important;background:none!important;color:#A78BFA!important;font-family:"Geist Mono","Noto Sans JP",monospace!important;font-size:12px!important;font-weight:500!important;line-height:1.5!important;letter-spacing:.04em!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question > h2{margin:0 0 24px!important;padding:0!important;color:#fff!important;font-size:24px!important;font-weight:700!important;line-height:1.4!important;outline:0!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin:0!important;padding:0!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers button{display:flex!important;align-items:center!important;box-sizing:border-box!important;width:100%!important;min-height:48px!important;margin:0!important;padding:8px 16px!important;background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.14)!important;border-radius:8px!important;color:#fff!important;font-size:15px!important;font-weight:500!important;line-height:1.5!important;text-align:left!important;cursor:pointer!important;box-shadow:none!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers button:hover{border-color:rgba(255,255,255,.24)!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers button[aria-pressed="true"]{background:rgba(255,255,255,.08)!important;border-color:#7C3AED!important;color:#fff!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers .audit-diag-next{grid-column:1 / -1!important;justify-content:center!important;justify-self:start!important;width:auto!important;min-height:40px!important;height:40px!important;margin-top:16px!important;padding:0 20px!important;font-size:14px!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result:empty{display:none!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result{margin:0!important;padding:0!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result p{margin:0 0 16px!important;color:rgba(255,255,255,.7)!important;font-size:15px!important;line-height:1.8!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result a{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;box-sizing:border-box!important;margin:8px 0 0!important;padding:16px 20px!important;background:rgba(255,255,255,.025)!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:12px!important;color:#fff!important;font-size:15px!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result a::after{content:"→"!important;flex:none!important;color:rgba(255,255,255,.5)!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result a:hover{border-color:rgba(255,255,255,.24)!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-back{display:inline-flex!important;align-items:center!important;gap:4px!important;width:auto!important;height:auto!important;min-height:0!important;margin:24px 0 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;color:#A78BFA!important;font-size:14px!important;font-weight:500!important;line-height:1.6!important;cursor:pointer!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-back::before{content:"←"!important;font-family:"Geist",sans-serif!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-back:hover{color:#fff!important}
+@media (max-width:1023px){
+html:not(#_) body.bdlr-diagnosis-page .bd-hero{grid-template-columns:minmax(0,1fr)!important;gap:32px!important}
+}
+@media (max-width:767px){
+html:not(#_) body.bdlr-diagnosis-page .bd-wrap{padding:24px 16px 64px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero{margin-top:24px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero h1{font-size:28px!important;line-height:1.35!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-content > p:not(.audit-result-preview){font-size:14px!important;margin-top:12px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points{margin-top:24px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points > div{padding:12px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-hero-points span{font-size:12px!important}
+html:not(#_) body.bdlr-diagnosis-page .bd-btn-main{width:100%!important;margin-top:24px!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question:not([hidden]){margin:0 16px 64px!important;padding:24px 20px!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question > h2{font-size:20px!important;margin-bottom:16px!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers{grid-template-columns:minmax(0,1fr)!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-answers .audit-diag-next{width:100%!important}
+}
+html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps::before,html:not(#_) body.bdl-renewal-cart .bdl-wire-cart-steps::after{display:none!important}
+@media (max-width:767px){
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__contents{width:auto!important;max-width:none!important;margin:0!important;padding:0!important}
+html:not(#_) body.bdl-renewal-cart .bdl-renewal-cart__layout{width:auto!important;max-width:none!important;margin:0 16px!important;padding:0!important}
+}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question:not([hidden]){margin-top:48px!important}
+html:not(#_) body.bdlr-diagnosis-page #bd-three-question .ux-result:not(:empty){margin-top:24px!important}
+@media (max-width:767px){html:not(#_) body.bdlr-diagnosis-page #bd-three-question:not([hidden]){margin-top:24px!important}}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-breadcrumb{flex-wrap:nowrap!important;min-width:0!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-breadcrumb > *{flex:none!important}
+html:not(#_) body.bdlr-content-page .mig-shell:has(> .mig-article) .mig-breadcrumb > span:last-child{flex:0 1 auto!important}
+@media (max-width:767px){
+html:not(#_) body:is(.bdlr-faq-page,.bdlr-terms-page,.bdlr-policy-page) .bdlr-static-shell{width:auto!important;max-width:none!important;margin-left:16px!important;margin-right:16px!important;padding-left:0!important;padding-right:0!important}
+}
+
+/* ============ News list / detail: SP side padding 16 ============ */
+@media (max-width:767px){
+html:not(#_) body.bdlr-news-page .bdlr-news-main{width:auto!important;max-width:none!important;margin-left:16px!important;margin-right:16px!important;padding-left:0!important;padding-right:0!important}
+}

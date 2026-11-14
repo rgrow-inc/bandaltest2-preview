@@ -1,0 +1,525 @@
+
+/* ===== Release fixes A1-A3 (2026-11-13) ===== */
+/* A1 guide: card links sat in the 40px number column -> place under body text as horizontal surface+line button */
+html body.bdl-info-page .bdl-info-card:has(.bdl-info-number)>nav.audit-guide-links{grid-column:2!important;display:flex!important;flex-wrap:wrap;gap:8px;width:auto!important;margin-top:16px}
+html body.bdl-info-page .bdl-info-card nav.audit-guide-links a{display:inline-flex!important;align-items:center;gap:8px;height:40px;min-height:40px!important;padding:0 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:#fff;font:500 14px/1 "Geist","Noto Sans JP",sans-serif;white-space:nowrap;text-decoration:none;writing-mode:horizontal-tb}
+html body.bdl-info-page .bdl-info-card nav.audit-guide-links a::after{content:"→";color:rgba(255,255,255,0.5)}
+html body.bdl-info-page .bdl-info-card nav.audit-guide-links a:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.24)}
+/* A2 SP item in-page nav: keep one line, scroll sideways, hint with right fade */
+@media (max-width:767px){
+html body .bdlr-detail-anchor{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 24px),transparent)}
+html body .bdlr-detail-anchor::-webkit-scrollbar{display:none}
+html body .bdlr-detail-anchor>a{flex:0 0 auto;white-space:nowrap}
+html body .bdlr-detail-anchor>a:last-child{margin-right:16px}
+}
+/* A3 floating LINE/support widget: keep footer copyright clear of it */
+html body footer{padding-bottom:calc(var(--bdl-fab-clear,144px))!important}
+@media (max-width:767px){html body footer{--bdl-fab-clear:96px}}
+/* B4 notes: grey text on surface (purple only for text links) */
+html body .bdl-info-note{color:rgba(255,255,255,0.7)!important;background:rgba(255,255,255,0.05)!important;border-color:rgba(255,255,255,0.08)!important}
+/* A4 peripheral item: sold-out = grey disabled (same as PC item), not purple */
+html body .cart-add-btn .favorite-wrap{display:flex!important;align-items:center;gap:8px;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
+html body .cart-add-btn .outstock-btn{flex:1 1 auto;margin:0!important;padding:0!important;background:none!important;border:0!important}
+html body .cart-add-btn .outstock{display:flex!important;align-items:center;justify-content:center;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px!important;border-radius:8px!important;background:rgba(255,255,255,0.05)!important;border:1px solid rgba(255,255,255,0.08)!important;color:rgba(255,255,255,0.36)!important;font:500 14px/1 "Geist","Noto Sans JP",sans-serif!important;cursor:not-allowed;box-shadow:none!important}
+/* A6 favorite = 40px icon button */
+html body .cart-add-btn .favorite{flex:0 0 40px;width:40px!important;height:40px!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
+html body .cart-add-btn .favorite a{display:flex!important;align-items:center;justify-content:center;width:40px!important;height:40px!important;padding:0!important;border-radius:8px!important;background:rgba(255,255,255,0.05)!important;border:1px solid rgba(255,255,255,0.14)!important;color:rgba(255,255,255,0.7)!important}
+html body .cart-add-btn .favorite a svg{width:20px!important;height:20px!important}
+/* A6 quantity stepper: [−][ 1 ][+] */
+html body .productnum-wrap[data-bdl-renewal-quantity]{display:flex!important;align-items:center;gap:12px;margin:16px 0!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .purchase-num{margin:0!important;color:rgba(255,255,255,0.7);font:500 14px/1 "Noto Sans JP",sans-serif}
+html body .productnum-wrap[data-bdl-renewal-quantity] .button{display:contents!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .spinner-down{order:1}
+html body .productnum-wrap[data-bdl-renewal-quantity] .productnum{order:2}
+html body .productnum-wrap[data-bdl-renewal-quantity] .spinner-up{order:3}
+html body .productnum-wrap[data-bdl-renewal-quantity] .productnum{width:56px!important;height:40px!important;margin:0 -12px!important;padding:0!important;text-align:center;border-radius:0!important;border:1px solid rgba(255,255,255,0.14)!important;border-left:0!important;border-right:0!important;background:rgba(255,255,255,0.025)!important;color:#fff!important;font:500 15px/1 "Geist",sans-serif!important;font-variant-numeric:tabular-nums;-moz-appearance:textfield;appearance:textfield}
+html body .productnum-wrap[data-bdl-renewal-quantity] .productnum::-webkit-inner-spin-button,html body .productnum-wrap[data-bdl-renewal-quantity] .productnum::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+html body .productnum-wrap[data-bdl-renewal-quantity] :is(.spinner-up,.spinner-down){position:static!important;display:block!important;width:40px!important;height:40px!important;margin:0!important;padding:0!important;border:1px solid rgba(255,255,255,0.14)!important;background:rgba(255,255,255,0.05)!important;color:#fff!important;font:500 18px/1 "Geist",sans-serif!important;cursor:pointer;opacity:1!important;text-indent:0!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .spinner-down{border-radius:8px 0 0 8px!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .spinner-up{border-radius:0 8px 8px 0!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .purchase-num{order:0;margin-right:4px!important}
+/* A13 LINE consult buttons = LINE green */
+html body a[data-bdlr-line-configuration],html body .bdlr-button[data-bdlr-line-configuration]{background:#06C755!important;border-color:#06C755!important;color:#fff!important}
+html body .productnum-wrap[data-bdl-renewal-quantity]{flex-wrap:nowrap!important;width:auto!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] .purchase-num{width:auto!important;flex:0 0 auto}
+html body .productnum-wrap[data-bdl-renewal-quantity] .productnum{min-height:40px!important;max-height:40px}
+html body .cart-add-btn .favorite a{min-height:40px!important;max-height:40px}
+html body .bdlr-summary-actions .bdlr-button--secondary:not([data-bdlr-line-configuration]){background:rgba(255,255,255,0.05)!important;border:1px solid rgba(255,255,255,0.14)!important;color:#fff!important}
+html body .productnum-wrap[data-bdl-renewal-quantity] :is(.spinner-up,.spinner-down,.productnum){box-sizing:border-box!important;height:40px!important;min-height:40px!important;line-height:38px!important}
+/* B4 (stronger) */
+html body.bdl-info-page .bdl-info-card p.bdl-info-note,html body .bdl-info-note{color:rgba(255,255,255,0.7)!important}
+/* A7 cart / A8 guide / A12 kenki: non-buy actions = surface + line */
+html body :is(a.bdlr-cart-empty-link,.bdl-info-actions a.is-primary,a.mig-button.mig-button-secondary){display:inline-flex!important;align-items:center;justify-content:center;gap:8px;height:40px!important;min-height:40px!important;padding:0 20px!important;border-radius:8px!important;background:rgba(255,255,255,0.05)!important;border:1px solid rgba(255,255,255,0.14)!important;color:#fff!important;box-shadow:none!important;font-weight:500!important;background-image:none!important}
+html body :is(a.bdlr-cart-empty-link,.bdl-info-actions a.is-primary,a.mig-button.mig-button-secondary):hover{background:rgba(255,255,255,0.08)!important;border-color:rgba(255,255,255,0.24)!important}
+/* A11 kenki table row labels = grey */
+html body .mig-section table th[scope="row"],html body table tr.audit-difference th{color:rgba(255,255,255,0.7)!important}
+/* A9 search: no search button (Enter), chips grey text */
+html body .audit-search{position:relative}
+html body .audit-search>button{display:none!important}
+html body .audit-search label{display:block;position:relative}
+html body .audit-search input{height:40px!important;min-height:40px!important;padding-right:64px!important;box-sizing:border-box}
+html body .audit-search label::after{content:"Enter";position:absolute;right:10px;bottom:10px;height:20px;display:inline-flex;align-items:center;padding:0 6px;border-radius:4px;border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.5);font:500 11px/1 "Geist Mono",monospace;pointer-events:none}
+html body .audit-search-shortcuts a{color:rgba(255,255,255,0.7)!important;border-radius:999px!important;height:32px;min-height:32px!important;padding:0 14px!important;display:inline-flex!important;align-items:center;background:rgba(255,255,255,0.025)!important;border:1px solid rgba(255,255,255,0.14)!important}
+html body .audit-search-shortcuts a:hover{color:#fff!important;border-color:rgba(255,255,255,0.24)!important}
+/* A10 SP density toggle + pagination: selected = surface + purple 1px line */
+html body .bdlr-catalog-density button[aria-pressed="true"],html body :is(.pagination,.pager,nav) a.active[aria-current="page"]{background:rgba(255,255,255,0.08)!important;border:1px solid #7C3AED!important;color:#fff!important;box-shadow:none!important;background-image:none!important}
+html body a.active[aria-current="page"]:not(.bdlr-nav-trigger){background:rgba(255,255,255,0.08)!important;border:1px solid #7C3AED!important;color:#fff!important;background-image:none!important}
+/* A15 hide empty verification-video box until the video exists */
+html body .bdlr-video-coming-soon{display:none!important}
+html body .bdlr-pagination a.active{background:rgba(255,255,255,0.08)!important;border:1px solid #7C3AED!important;color:#fff!important;background-image:none!important}
+/* non-buy actions on static pages = surface + line */
+html body :is(.bdlr-catalog-empty>a,a.bdlr-content-button,a.bdlr-recycle-button,a.bdlr-static-action){display:inline-flex!important;align-items:center;justify-content:center;gap:8px;height:40px!important;min-height:40px!important;padding:0 20px!important;border-radius:8px!important;background:rgba(255,255,255,0.05)!important;background-image:none!important;border:1px solid rgba(255,255,255,0.14)!important;color:#fff!important;box-shadow:none!important;font-weight:500!important}
+html body :is(.bdlr-catalog-empty>a,a.bdlr-content-button,a.bdlr-recycle-button,a.bdlr-static-action):hover{background:rgba(255,255,255,0.08)!important;border-color:rgba(255,255,255,0.24)!important}
+/* B3 / labels: definition-list labels and review dates = grey, not purple */
+html body.bdl-info-page dl dt,html body :is(.bdl-info-company,.bdl-info-card) dt{color:rgba(255,255,255,0.5)!important}
+html body .bdlr-review-date,html body .bdlr-review-group time,html body article time{color:rgba(255,255,255,0.5)!important}
+html body a.bdlr-review-button{background:rgba(255,255,255,0.05)!important;background-image:none!important;border:1px solid rgba(255,255,255,0.14)!important;color:#fff!important;height:40px!important;min-height:40px!important;display:inline-flex!important;align-items:center;justify-content:center;border-radius:8px!important;box-shadow:none!important}
+/* step numbers: surface + purple 1px line (selected style), not purple fill */
+html body :is(.bdlr-content-step,.bdlr-recycle-step)>b,html body .bdl-wire-cart-steps li.is-current b{background:rgba(255,255,255,0.08)!important;border:1px solid #7C3AED!important;color:#fff!important;box-shadow:none!important}
+/* B2 lower pages: content width = header grid 1232px */
+@media (min-width:1024px){
+html body :is(.bdlr-static-shell,.bdlr-review-shell,.mig-shell,.bdlr-catalog-intro,.bdlr-catalog-shell,.bd-diagnosis .bd-wrap,.bdlr-detail-flow>.bdlr-detail-section,.contents-section>.cart){box-sizing:border-box!important;width:calc(100% - 48px)!important;max-width:1232px!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}
+html body.bdl-info-page .bdl-info-main>:not(.bdl-info-hero),html body.bdl-info-page .bdl-info-hero>*{box-sizing:border-box!important;width:calc(100% - 48px)!important;max-width:1232px!important;margin-left:auto!important;margin-right:auto!important}
+html body.bdl-info-page .bdl-info-main>:not(.bdl-info-hero){padding-left:0!important;padding-right:0!important}
+html body.bdl-info-page .bdl-info-main>:not(.bdl-info-hero)>:is(.bdl-info-company-intro,.bdl-info-card,.bdl-info-grid,.bdl-info-nav){margin-left:0!important;margin-right:0!important;width:100%!important;max-width:none!important;box-sizing:border-box!important}
+}
+@media (min-width:1024px){html body.bdl-info-page .bdl-info-hero{padding-left:0!important;padding-right:0!important}html body .contents-section:has(>.cart){max-width:none!important;width:100%!important;padding-left:0!important;padding-right:0!important}}
+@media (min-width:1024px){html body :is(.bdlr-news-hero,.bdlr-news-archive,.bdlr-news-archive~.bdlr-pagination){box-sizing:border-box!important;width:calc(100% - 48px)!important;max-width:1232px!important;margin-left:auto!important;margin-right:auto!important}}
+@media (min-width:1024px){html body :is(.bdlr-news-hero,.bdlr-news-archive){padding-left:0!important;padding-right:0!important}}
+@media (min-width:1024px){html body main.bdlr-news-main{max-width:1232px!important;width:calc(100% - 48px)!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}html body main.bdlr-news-main>:is(.bdlr-news-hero,.bdlr-news-archive,.bdlr-pagination){width:100%!important}}
+/* =====================================================================
+   BANDAL release polish 2026-11-14
+   Loaded last on every page. Page-level "全体UI修正" from mao's Figma
+   comments. Rules: 1232 grid, Geist / Noto Sans JP, 400/500/700,
+   buttons 40px, purple = buy / selected line / text link only.
+   ===================================================================== */
+:root{
+  --r-bg:#07070B;--r-s1:rgba(255,255,255,0.025);--r-s2:rgba(255,255,255,0.05);--r-s3:rgba(255,255,255,0.08);
+  --r-line:rgba(255,255,255,0.08);--r-line2:rgba(255,255,255,0.14);--r-line3:rgba(255,255,255,0.24);
+  --r-t1:#fff;--r-t2:rgba(255,255,255,0.7);--r-t3:rgba(255,255,255,0.5);--r-t4:rgba(255,255,255,0.36);
+  --r-p:#7C3AED;--r-p2:#8B52F5;--r-pt:#A78BFA;
+  --r-jp:"Noto Sans JP",sans-serif;--r-lat:"Geist","Noto Sans JP",sans-serif;--r-mono:"Geist Mono",ui-monospace,monospace;
+}
+
+/* ---------- 1. Lower-page hero: one pattern (breadcrumb > kicker > H1 > lead, no band) ---------- */
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-news-article>header,.bdlr-content-hero,.bdlr-static-hero,.mig-hero,.bdlr-review-hero){
+  display:block!important;background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;
+  text-align:left!important;min-height:0!important}
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-news-article>header,.bdlr-content-hero,.bdlr-static-hero,.bdlr-review-hero)::before,
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-news-article>header,.bdlr-content-hero,.bdlr-static-hero,.bdlr-review-hero)::after{display:none!important}
+/* kicker */
+html body :is(.bdl-info-hero>p:first-child,.bdlr-news-hero>p:first-child,.bdlr-news-article>header>p:first-child,.bdlr-content-kicker,.bdlr-static-kicker,.mig-kicker,.bdlr-review-kicker){
+  display:block!important;margin:0 0 12px!important;padding:0!important;background:none!important;border:0!important;
+  color:var(--r-pt)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em!important;text-transform:uppercase}
+/* H1 */
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-news-article>header,.bdlr-content-hero,.bdlr-static-hero,.mig-hero,.bdlr-review-hero,.bdlr-catalog-intro) h1{
+  margin:0!important;padding:0!important;max-width:none!important;width:auto!important;
+  color:#fff!important;font:700 40px/1.3 var(--r-lat)!important;letter-spacing:0!important}
+html body .bdlr-static-hero h1 br{display:none}
+/* lead */
+html body :is(.bdl-info-hero>span,.bdlr-news-hero>span,.bdlr-content-lead,.bdlr-static-hero>p:not(.bdlr-static-kicker),.bdlr-review-hero>p:not(.bdlr-review-kicker),.audit-collab-intro){
+  display:block!important;position:static!important;margin:16px 0 0!important;padding:0!important;max-width:720px!important;width:auto!important;
+  color:var(--r-t2)!important;font:400 16px/1.8 var(--r-jp)!important;text-align:left!important}
+html body .bdlr-static-hero>p.bdlr-static-lead{margin-top:4px!important}
+/* hero spacing */
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-content-hero,.bdlr-static-hero,.bdlr-review-hero){padding:0!important;margin:0 0 48px!important}
+html body .bdl-info-hero{padding:56px 0 0!important}
+html body .bdlr-news-article>header{padding:0!important;margin:0 0 32px!important}
+/* breadcrumb spacing */
+html body :is(.bdlr-breadcrumb,.bdlr-content-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb,.bdlr-review-breadcrumb){
+  margin:32px 0 40px!important;padding:0!important;color:var(--r-t3)!important;font:400 12px/20px var(--r-jp)!important}
+html body main:is(.bdlr-content-main,.bdlr-static-main,.bdlr-review-archive,.bdlr-news-main,.bdlr-migrated){padding-top:0!important}
+html body :is(.bdlr-content-shell,.bdlr-static-shell,.bdlr-review-shell,.mig-shell){padding-top:0!important}
+
+/* ---------- 2. Cards on lower pages: inner padding back (B2 width fix removed it) ---------- */
+@media (min-width:1024px){
+html body.bdl-info-page .bdl-info-main>:is(.bdl-info-company-intro,.bdl-info-card){padding:40px!important}
+html body.bdl-info-page .bdl-info-main>.bdl-info-card:has(>dl){padding:8px 40px!important}
+}
+html body.bdl-info-page .bdl-info-main>:is(.bdl-info-company-intro,.bdl-info-card){
+  background:var(--r-s1)!important;background-image:none!important;border:1px solid var(--r-line)!important;border-radius:12px!important;margin-bottom:16px!important;box-shadow:none!important}
+html body.bdl-info-page .bdl-info-company-intro h2{font:700 28px/1.4 var(--r-lat)!important;margin:0 0 16px!important}
+html body.bdl-info-page .bdl-info-company-intro p:not(.bdl-info-number){color:var(--r-t2)!important;font:400 15px/1.9 var(--r-jp)!important;max-width:880px}
+html body.bdl-info-page :is(.bdl-info-number){margin:0 0 12px!important;color:var(--r-pt)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em}
+/* definition lists (会社概要 / 特商法) */
+html body.bdl-info-page .bdl-info-card dl{margin:0!important;padding:0!important;border:0!important}
+html body.bdl-info-page .bdl-info-card dl>div{display:grid!important;grid-template-columns:200px 1fr!important;gap:24px!important;padding:20px 0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--r-line)!important;background:none!important}
+html body.bdl-info-page .bdl-info-card dl>div:last-child{border-bottom:0!important}
+html body.bdl-info-page .bdl-info-card dt{margin:0!important;padding:0!important;width:auto!important;color:var(--r-t3)!important;font:500 14px/1.8 var(--r-jp)!important}
+html body.bdl-info-page .bdl-info-card dd{margin:0!important;padding:0!important;width:auto!important;color:var(--r-t1)!important;font:400 15px/1.8 var(--r-jp)!important}
+html body.bdl-info-page .bdl-info-card dd a{color:var(--r-pt)!important;text-decoration:underline;text-underline-offset:3px}
+html body.bdl-info-page .bdl-info-card dd small{display:block;margin-top:4px;color:var(--r-t3);font:400 13px/1.7 var(--r-jp)}
+html body.bdl-info-page .bdl-info-card>h2{margin:0 0 8px!important;padding:24px 0 0!important;font:700 20px/1.4 var(--r-lat)!important}
+/* company news block */
+html body.bdl-info-page .bdl-info-news{padding:32px 40px!important}
+html body.bdl-info-page .bdl-info-news :is(h2,header){display:flex;align-items:baseline;gap:12px;margin:0 0 8px!important;padding:0!important}
+/* fix: info hero is a centered 1232 block, children flush-left inside it */
+@media (min-width:1024px){
+html body.bdl-info-page .bdl-info-hero{box-sizing:border-box!important;width:calc(100% - 48px)!important;max-width:1232px!important;margin:0 auto 48px!important;padding:56px 0 0!important}
+html body.bdl-info-page .bdl-info-hero>*{width:auto!important;max-width:720px!important;margin-left:0!important;margin-right:0!important}
+}
+html body.bdl-info-page .bdl-info-news ul{margin:0!important;padding:0!important;list-style:none}
+html body.bdl-info-page .bdl-info-news li{display:grid!important;grid-template-columns:120px 1fr;gap:24px;align-items:baseline;padding:16px 0!important;margin:0!important;border-bottom:1px solid var(--r-line)}
+html body.bdl-info-page .bdl-info-news li:last-child{border-bottom:0}
+html body.bdl-info-page .bdl-info-news li time{margin:0!important;padding:0!important;color:var(--r-t3)!important;font:500 13px/1.6 var(--r-mono)!important}
+html body.bdl-info-page .bdl-info-news li a{color:var(--r-t1)!important;font:400 15px/1.7 var(--r-jp)!important;text-decoration:none}
+html body.bdl-info-page .bdl-info-news li a:hover{color:var(--r-pt)!important}
+html body.bdl-info-page .bdl-info-news>.bdl-info-number{display:none!important}
+html body.bdl-info-page .bdl-info-news>h2{padding:0!important;margin:0 0 8px!important}
+
+/* ---------- 3. News list / detail ---------- */
+html body .bdlr-news-archive{background:var(--r-s1)!important;background-image:none!important;border:1px solid var(--r-line)!important;border-radius:12px!important;box-shadow:none!important;overflow:hidden;padding:0!important}
+html body .bdlr-news-archive+.bdlr-news-archive{margin-top:16px!important}
+html body .bdlr-news-archive>header{display:flex!important;align-items:baseline;justify-content:space-between;gap:16px;padding:24px 32px!important;margin:0!important;border-bottom:1px solid var(--r-line)!important;background:none!important}
+html body .bdlr-news-archive>header h2{margin:0!important;font:700 20px/1.4 var(--r-lat)!important;color:#fff!important}
+html body .bdlr-news-archive>header p{margin:0!important;color:var(--r-t3)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em}
+html body .bdlr-news-archive>p{margin:0!important;padding:56px 32px!important;text-align:center;color:var(--r-t3)!important;font:400 14px/1.8 var(--r-jp)!important}
+html body .bdlr-news-archive:has(>p) .bdlr-pagination{display:none!important}
+html body .bdlr-news-list{margin:0!important;padding:0!important;list-style:none}
+html body .bdlr-news-list li{margin:0!important;border:0!important;border-bottom:1px solid var(--r-line)!important}
+html body .bdlr-news-list li:last-child{border-bottom:0!important}
+html body .bdlr-news-list li a{display:grid!important;grid-template-columns:120px 1fr 20px;gap:24px;align-items:center;padding:20px 32px!important;min-height:0!important;color:#fff!important;text-decoration:none;background:none!important}
+html body .bdlr-news-list li a:hover{background:var(--r-s1)!important}
+html body .bdlr-news-list li a:hover strong{color:var(--r-pt)!important}
+html body .bdlr-news-list time{color:var(--r-t3)!important;font:500 13px/1.6 var(--r-mono)!important;margin:0!important}
+html body .bdlr-news-list strong{font:500 15px/1.7 var(--r-jp)!important;color:#fff!important;margin:0!important}
+html body .bdlr-news-list li a>span{color:var(--r-t3)!important;text-align:right;font-family:var(--r-lat)}
+html body .bdlr-news-archive .bdlr-pagination{border-top:1px solid var(--r-line);padding:16px!important}
+/* detail */
+html body .bdlr-news-article{max-width:840px!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
+html body .bdlr-news-article>header{border:0!important}
+html body .bdlr-news-article>header h1{font-size:32px!important}
+html body .bdlr-news-content{padding:32px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:12px!important;color:var(--r-t2)!important;font:400 15px/1.9 var(--r-jp)!important}
+html body .bdlr-news-article>footer{margin:24px 0 0!important;padding:0!important;border:0!important}
+html body .bdlr-news-article>footer a{display:inline-flex!important;align-items:center;gap:8px;height:40px;padding:0 20px!important;border-radius:8px!important;background:var(--r-s2)!important;border:1px solid var(--r-line2)!important;color:#fff!important;font:500 14px/1 var(--r-jp)!important;text-decoration:none}
+html body .bdlr-news-article>footer a:hover{background:var(--r-s3)!important;border-color:var(--r-line3)!important}
+
+/* ---------- 4. Content pages (coupon etc.): 1232 grid, page bg, sections flush ---------- */
+html body main.bdlr-content-main{background:var(--r-bg)!important;padding-left:0!important;padding-right:0!important}
+html body .bdlr-content-shell{box-sizing:border-box!important;width:calc(100% - 32px)!important;max-width:1232px!important;margin:0 auto!important;padding:0!important}
+html body .bdlr-content-section{padding:0!important;margin:0 0 96px!important;background:none!important;border:0!important;box-shadow:none!important}
+html body .bdlr-content-section>h2{margin:0 0 24px!important;font:700 24px/1.4 var(--r-lat)!important;color:#fff!important}
+html body .bdlr-content-highlights{display:grid!important;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px!important;max-width:none!important}
+html body .bdlr-content-highlight{padding:24px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:12px!important;box-shadow:none!important}
+html body .bdlr-content-highlight strong{display:block;margin-bottom:8px;font:700 20px/1.4 var(--r-lat)!important;color:#fff!important}
+html body .bdlr-content-highlight span{color:var(--r-t3)!important;font:400 13px/1.7 var(--r-jp)!important}
+html body :is(.bdlr-content-steps,.bdlr-content-cards,.bdlr-content-rules){gap:16px!important}
+html body :is(.bdlr-content-step,.bdlr-content-card,.bdlr-content-rule){padding:24px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:12px!important;box-shadow:none!important}
+html body :is(.bdlr-content-step,.bdlr-content-card,.bdlr-content-rule) h3{font:700 17px/1.5 var(--r-jp)!important;color:#fff!important;margin:16px 0 8px!important}
+html body :is(.bdlr-content-card,.bdlr-content-rule) h3{margin-top:0!important}
+html body :is(.bdlr-content-step,.bdlr-content-card,.bdlr-content-rule) :is(p,li){color:var(--r-t2)!important;font:400 14px/1.8 var(--r-jp)!important}
+html body .bdlr-content-card strong{color:#fff!important;font-family:var(--r-lat)!important}
+html body .bdlr-content-rule li::before{background:var(--r-t4)!important}
+html body .bdlr-content-note{margin-top:16px!important;max-width:none!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;color:var(--r-t3)!important}
+html body .bdlr-content-cta{display:flex!important;align-items:center;justify-content:space-between;gap:24px;padding:32px 40px!important;background:var(--r-s1)!important;background-image:radial-gradient(600px 200px at 0% 0%,rgba(124,58,237,0.16),transparent 70%)!important;border:1px solid var(--r-line)!important;border-radius:12px!important}
+
+/* ---------- 5. Floating LINE / support: two compact 40px pills, no container box ---------- */
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget{display:flex!important;flex-direction:column;align-items:flex-end;gap:8px;width:auto!important;height:auto!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;right:24px!important;bottom:24px!important;overflow:visible!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a{display:inline-flex!important;align-items:center;gap:8px;width:auto!important;height:40px!important;min-height:40px!important;padding:0 16px 0 12px!important;border-radius:999px!important;border:1px solid var(--r-line2)!important;background:#16161b!important;color:#fff!important;font:500 13px/1 var(--r-jp)!important;box-shadow:0 8px 24px rgba(0,0,0,0.45)!important;text-decoration:none;cursor:pointer}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a.is-line{background:#06C755!important;border-color:#06C755!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a.is-line:hover{background:#05b34c!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a.is-help:hover{background:#1f1f25!important;border-color:var(--r-line3)!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a svg{width:20px!important;height:20px!important;flex:0 0 20px;margin:0!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a.is-line svg>rect:first-child{fill:transparent}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget>a span{margin:0!important;font:inherit!important;color:inherit!important}
+
+/* ---------- SP for sections 1-4 ---------- */
+@media (max-width:767px){
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-news-article>header,.bdlr-content-hero,.bdlr-static-hero,.mig-hero,.bdlr-review-hero,.bdlr-catalog-intro) h1{font-size:28px!important;line-height:1.35!important}
+html body :is(.bdl-info-hero>span,.bdlr-news-hero>span,.bdlr-content-lead,.bdlr-static-hero>p:not(.bdlr-static-kicker),.bdlr-review-hero>p:not(.bdlr-review-kicker),.audit-collab-intro){font-size:14px!important;line-height:1.8!important}
+html body :is(.bdl-info-hero,.bdlr-news-hero,.bdlr-content-hero,.bdlr-static-hero,.bdlr-review-hero){margin-bottom:32px!important}
+html body .bdl-info-hero{padding:32px 16px 0!important}
+html body :is(.bdlr-breadcrumb,.bdlr-content-breadcrumb,.bdlr-static-breadcrumb,.mig-breadcrumb,.bdlr-review-breadcrumb){margin:16px 0 24px!important}
+html body.bdl-info-page .bdl-info-main>:is(.bdl-info-company-intro,.bdl-info-card){padding:24px 20px!important;margin-left:16px!important;margin-right:16px!important}
+html body.bdl-info-page .bdl-info-main>.bdl-info-card:has(>dl){padding:4px 20px!important}
+html body.bdl-info-page .bdl-info-card dl>div{grid-template-columns:1fr!important;gap:4px!important;padding:16px 0!important}
+html body.bdl-info-page .bdl-info-company-intro h2{font-size:22px!important}
+html body.bdl-info-page .bdl-info-news li{grid-template-columns:1fr;gap:2px}
+html body .bdlr-news-archive>header{padding:20px!important}
+html body .bdlr-news-list li a{grid-template-columns:1fr 16px;gap:4px 12px;padding:16px 20px!important}
+html body .bdlr-news-list li a time{grid-column:1/-1}
+html body .bdlr-news-article>header h1{font-size:24px!important}
+html body .bdlr-news-content{padding:20px!important}
+html body .bdlr-content-highlights{grid-template-columns:1fr}
+html body .bdlr-content-section{margin-bottom:64px!important}
+html body .bdlr-content-section>h2{font-size:20px!important}
+html body .bdlr-content-cta{flex-direction:column;align-items:flex-start;padding:24px 20px!important}
+html body.bdlr-page .bdlr-floating-support.bdlr-support-widget{right:16px!important;bottom:calc(76px + env(safe-area-inset-bottom))!important}
+}
+
+/* ---------- 6. 購入後アンケート ---------- */
+html body #bandal-survey-app{box-sizing:border-box;width:calc(100% - 32px)!important;max-width:1232px!important;margin:0 auto!important;padding:0!important}
+html body .bandal-survey-container{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+html body .bandal-survey-card{box-sizing:border-box;width:100%!important;max-width:none!important;margin:0!important;padding:48px!important;background:var(--r-s1)!important;background-image:none!important;border:1px solid var(--r-line)!important;border-radius:12px!important;box-shadow:none!important}
+html body .bandal-survey-header{display:grid!important;grid-template-columns:1fr 1fr;gap:12px 48px;align-items:start;text-align:left!important;padding:0 0 40px!important;margin:0 0 40px!important;border-bottom:1px solid var(--r-line)!important}
+html body .bandal-survey-header>*{grid-column:1;margin:0!important;text-align:left!important}
+html body .bandal-survey-header>.bandal-survey-campaign{grid-column:2;grid-row:1/span 5}
+html body .bandal-survey-label{color:var(--r-pt)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em}
+html body .bandal-survey-header h2{font:700 28px/1.4 var(--r-lat)!important;color:#fff!important}
+html body .bandal-survey-complete{display:inline-block!important;justify-self:start;padding:0!important;background:none!important;border:0!important;border-radius:0!important;color:var(--r-t2)!important;font:400 14px/1.8 var(--r-jp)!important}
+html body .bandal-survey-complete a{color:var(--r-pt)!important;text-decoration:underline;text-underline-offset:3px}
+html body .bandal-survey-time{display:inline-flex!important;justify-self:start;align-items:center;gap:6px;height:28px;padding:0 10px!important;background:var(--r-s2)!important;border:1px solid var(--r-line)!important;border-radius:999px!important;color:var(--r-t2)!important;font:500 12px/1 var(--r-jp)!important}
+html body .bandal-survey-note{color:var(--r-t3)!important;font:400 12px/1.7 var(--r-jp)!important}
+html body .bandal-survey-campaign{text-align:left!important;margin:0!important;padding:24px!important;background:var(--r-s1)!important;background-image:radial-gradient(420px 160px at 100% 0%,rgba(124,58,237,0.18),transparent 70%)!important;border:1px solid var(--r-line)!important;border-radius:12px!important}
+html body .bandal-survey-campaign-message{margin:0 0 16px!important;color:var(--r-t2)!important;font:400 14px/1.8 var(--r-jp)!important;text-align:left!important}
+html body .bandal-survey-gift{margin:0!important;padding:0!important;background:none!important;border:0!important;text-align:left!important}
+html body .bandal-survey-gift-label{position:static!important;transform:none!important;display:inline-flex!important;align-items:center;height:24px;margin:0 0 8px!important;padding:0 10px!important;background:var(--r-s2)!important;border:1px solid #7C3AED!important;border-radius:999px!important;color:#fff!important;font:500 11px/1 var(--r-jp)!important}
+html body .bandal-survey-gift p{margin:0!important;color:var(--r-t2)!important;font:400 14px/1.8 var(--r-jp)!important;text-align:left!important}
+html body .bandal-survey-gift strong{color:#fff!important;font:700 20px/1.6 var(--r-jp)!important}
+html body .bandal-question{margin:0 0 48px!important;padding:0!important;border:0!important}
+html body .bandal-question-heading{display:flex!important;align-items:center;gap:12px;margin:0 0 8px!important}
+html body .bandal-question-number{display:inline-flex!important;align-items:center;justify-content:center;min-width:32px;height:24px;padding:0 6px!important;background:var(--r-s2)!important;border:1px solid var(--r-line2)!important;border-radius:4px!important;color:#fff!important;font:500 12px/1 var(--r-mono)!important}
+html body .bandal-question-title{color:#fff!important;font:700 18px/1.5 var(--r-jp)!important}
+html body :is(.bandal-required,.bandal-optional){display:inline-flex!important;align-items:center;height:22px;padding:0 8px!important;border-radius:4px!important;background:var(--r-s2)!important;border:1px solid var(--r-line)!important;color:var(--r-t2)!important;font:500 11px/1 var(--r-jp)!important}
+html body .bandal-question-help{margin:0 0 16px 44px!important;color:var(--r-t3)!important;font:400 13px/1.7 var(--r-jp)!important}
+html body .bandal-options{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:8px!important;margin-top:16px!important}
+html body .bandal-option{display:flex!important;align-items:center;gap:12px;min-height:48px!important;height:auto!important;padding:12px 16px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:8px!important;color:var(--r-t2)!important;font:400 14px/1.5 var(--r-jp)!important;cursor:pointer;transition:border-color .12s,background .12s}
+html body .bandal-option:hover{background:var(--r-s2)!important;border-color:var(--r-line2)!important}
+html body .bandal-option:has(input:checked){background:var(--r-s3)!important;border-color:#7C3AED!important;color:#fff!important}
+html body .bandal-submit-button{height:40px!important;min-height:40px!important;max-width:320px;font:500 15px/1 var(--r-jp)!important;border-radius:8px!important}
+html body #bandal-survey-form>:last-child:has(.bandal-submit-button),html body .bandal-submit-button{margin-left:0!important}
+@media (max-width:767px){
+html body .bandal-survey-card{padding:24px 16px!important}
+html body .bandal-survey-header{grid-template-columns:1fr;padding-bottom:24px!important;margin-bottom:24px!important}
+html body .bandal-survey-header>.bandal-survey-campaign{grid-column:1;grid-row:auto}
+html body .bandal-survey-header h2{font-size:22px!important}
+html body .bandal-options{grid-template-columns:1fr!important}
+html body .bandal-question-help{margin-left:0!important}
+html body .bandal-submit-button{max-width:none}
+}
+
+/* ---------- 7. ゲーム別かんたん診断 (category-ct83) ---------- */
+html body .bd-game-pc-diagnosis{display:flex!important;flex-direction:column;gap:16px!important;margin:0!important;padding:0!important}
+html body .bd-game-pc-hero{position:relative;overflow:hidden;text-align:left!important;margin:0!important;padding:40px!important;border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;background-image:radial-gradient(520px 260px at 100% 100%,rgba(124,58,237,0.28),transparent 70%)!important;box-shadow:none!important}
+html body .bd-game-pc-badge{display:block!important;margin:0 0 12px!important;padding:0!important;background:none!important;border:0!important;color:var(--r-pt)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em}
+html body .bd-game-pc-hero h2{margin:0!important;color:#fff!important;font:700 32px/1.4 var(--r-lat)!important;text-align:left!important}
+html body .bd-game-pc-hero h2 br{display:none}
+html body .bd-game-pc-lead{margin:12px 0 0!important;max-width:640px;color:var(--r-t2)!important;font:400 15px/1.8 var(--r-jp)!important;text-align:left!important}
+html body .bd-game-pc-hero-actions{justify-content:flex-start!important;margin:24px 0 0!important}
+html body :is(.bd-game-pc-sub-btn,.bd-game-pc-detail-btn,.bd-game-pc-main-btn:not(.is-buy)){display:inline-flex!important;align-items:center;gap:8px;height:40px!important;min-height:40px!important;padding:0 20px!important;border-radius:8px!important;background:var(--r-s2)!important;background-image:none!important;border:1px solid var(--r-line2)!important;color:#fff!important;font:500 14px/1 var(--r-jp)!important;box-shadow:none!important;text-decoration:none}
+html body :is(.bd-game-pc-sub-btn,.bd-game-pc-detail-btn)::after{content:"→";color:var(--r-t3)}
+html body :is(.bd-game-pc-sub-btn,.bd-game-pc-detail-btn):hover{background:var(--r-s3)!important;border-color:var(--r-line3)!important}
+html body .bd-game-pc-detail-link{display:none!important}
+html body .bd-game-pc-questions{display:flex!important;flex-direction:column;gap:16px;margin:0!important;padding:0!important;background:none!important;border:0!important}
+html body .bd-game-pc-question{margin:0!important;padding:32px!important;border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;box-shadow:none!important}
+html body .bd-game-pc-question h2{margin:0 0 20px!important;color:#fff!important;font:700 18px/1.5 var(--r-jp)!important}
+html body .bd-game-pc-options{display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:8px!important}
+html body .bd-game-pc-options button{height:48px!important;min-height:48px!important;padding:0 16px!important;border-radius:8px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;color:var(--r-t2)!important;font:500 14px/1.3 var(--r-jp)!important;text-align:left!important;justify-content:flex-start!important;box-shadow:none!important;transition:border-color .12s,background .12s}
+html body .bd-game-pc-options button:hover{background:var(--r-s2)!important;border-color:var(--r-line2)!important;color:#fff!important}
+html body .bd-game-pc-options button:is([aria-pressed="true"],.is-active,.active,.selected,.is-selected){background:var(--r-s3)!important;border-color:#7C3AED!important;color:#fff!important}
+html body .bd-game-pc-result{margin:0!important;padding:32px!important;border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;box-shadow:none!important}
+html body .bd-game-pc-result-label{color:var(--r-pt)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.08em;background:none!important;padding:0!important;border:0!important}
+html body .bd-game-pc-result-head h2,html body .bd-game-pc-result-head h3{color:#fff!important;font:700 22px/1.4 var(--r-jp)!important}
+@media (max-width:767px){
+html body .bd-game-pc-hero{padding:24px 20px!important}
+html body .bd-game-pc-hero h2{font-size:24px!important}
+html body .bd-game-pc-question{padding:20px!important}
+html body .bd-game-pc-options{grid-template-columns:1fr 1fr!important}
+html body .bd-game-pc-options button{height:auto!important;min-height:48px!important;padding:10px 12px!important;font-size:13px!important}
+}
+
+/* ---------- 8. けんき × BANDAL コラボPC ---------- */
+html body .mig-shell>.mig-hero{padding:0!important;margin:0 0 40px!important}
+html body .audit-grade-link{display:inline-flex!important;align-items:center;gap:8px;height:40px;margin:24px 0 0!important;padding:0 20px!important;border-radius:8px!important;background:var(--r-s2)!important;border:1px solid var(--r-line2)!important;color:#fff!important;font:500 14px/1 var(--r-jp)!important;text-decoration:none!important}
+html body .audit-grade-link::after{content:"↓";color:var(--r-t3)}
+html body .audit-grade-link:hover{background:var(--r-s3)!important;border-color:var(--r-line3)!important}
+html body .mig-shell>.mig-hero-image{margin:0 0 96px!important;padding:48px!important;border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;background-image:radial-gradient(640px 360px at 85% 50%,rgba(56,189,248,0.14),transparent 70%)!important}
+html body .mig-shell :is(.mig-section,.audit-grades){margin-top:0!important;margin-bottom:96px!important}
+html body .mig-shell .mig-section>h2,html body .mig-shell .mig-section .mig-grid-two h2{margin:0 0 24px!important;font:700 28px/1.4 var(--r-lat)!important;color:#fff!important}
+html body .mig-shell .mig-section h3{font:700 18px/1.5 var(--r-jp)!important;color:#fff!important}
+html body .mig-shell .mig-section p{color:var(--r-t2)!important;font-size:15px!important;line-height:1.9!important}
+/* comparison table */
+html body table.audit-grades{width:100%!important;border-collapse:separate!important;border-spacing:0!important;border:1px solid var(--r-line)!important;border-radius:12px!important;overflow:hidden;background:var(--r-s1)!important}
+html body table.audit-grades caption{caption-side:top;text-align:left;padding:0 0 24px!important;color:#fff!important;font:700 28px/1.4 var(--r-lat)!important}
+html body table.audit-grades :is(th,td){padding:16px 20px!important;border:0!important;border-bottom:1px solid var(--r-line)!important;background:none!important;text-align:left;vertical-align:top;font:400 14px/1.7 var(--r-jp)!important;color:var(--r-t2)!important}
+html body table.audit-grades tbody tr:last-child :is(th,td){border-bottom:0!important}
+html body table.audit-grades th[scope="row"]{width:180px;color:var(--r-t3)!important;font-weight:500!important}
+html body table.audit-grades thead th{background:var(--r-s1)!important;color:#fff!important;font:700 15px/1.4 var(--r-lat)!important;letter-spacing:.02em}
+html body table.audit-grades thead th:first-child{color:var(--r-t3)!important;font:500 13px/1.4 var(--r-jp)!important}
+html body table.audit-grades tr.audit-difference td{color:#fff!important}
+html body table.audit-grades tbody tr:first-child td{font:700 18px/1.4 var(--r-lat)!important;color:#fff!important}
+/* spec tables */
+html body .mig-shell .mig-table-wrap table{width:100%;border-collapse:separate!important;border-spacing:0;border:1px solid var(--r-line)!important;border-radius:12px!important;overflow:hidden;background:var(--r-s1)!important}
+html body .mig-shell .mig-table-wrap :is(th,td){padding:12px 16px!important;border:0!important;border-bottom:1px solid var(--r-line)!important;background:none!important;font-size:13px!important;line-height:1.6!important}
+html body .mig-shell .mig-table-wrap tr:last-child :is(th,td){border-bottom:0!important}
+html body .mig-shell .mig-table-wrap th{color:var(--r-t3)!important;font-weight:500!important;width:30%}
+html body .mig-shell .mig-table-wrap td{color:#fff!important}
+html body .mig-shell .mig-card{border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;padding:24px!important;box-shadow:none!important}
+html body .mig-shell .mig-card img{border-radius:8px!important}
+@media (max-width:767px){
+html body .mig-shell>.mig-hero-image{padding:24px 20px!important;margin-bottom:64px!important}
+html body .mig-shell :is(.mig-section,.audit-grades){margin-bottom:64px!important}
+html body .mig-shell .mig-section>h2,html body table.audit-grades caption{font-size:22px!important}
+html body table.audit-grades{display:block;overflow-x:auto;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 24px),transparent)}
+html body table.audit-grades :is(th,td){padding:12px 14px!important;min-width:140px}
+html body table.audit-grades th[scope="row"]{min-width:96px;width:96px}
+}
+html body nav[aria-label="パンくず"] a{color:var(--r-t3)!important;text-decoration:none!important}
+html body nav[aria-label="パンくず"] a:hover{color:#fff!important}
+html body nav[aria-label="パンくず"]>span:last-child{color:var(--r-t2)!important}
+
+/* ---------- 9. 商品一覧: category tabs + product card ---------- */
+html body .bdlr-catalog-primary{display:flex!important;flex-wrap:wrap;gap:8px!important;margin:24px 0 32px!important;padding:0!important;grid-template-columns:none!important}
+html body .bdlr-catalog-primary a{flex:0 0 auto!important;width:auto!important;display:inline-flex!important;align-items:center;justify-content:center;height:40px!important;min-height:40px!important;padding:0 18px!important;border-radius:999px!important;background:var(--r-s1)!important;border:1px solid var(--r-line2)!important;color:var(--r-t2)!important;font:500 14px/1 var(--r-jp)!important;box-shadow:none!important;text-decoration:none}
+html body .bdlr-catalog-primary a:hover{background:var(--r-s2)!important;color:#fff!important;border-color:var(--r-line3)!important}
+html body .bdlr-catalog-primary a[aria-current="page"]{background:var(--r-s3)!important;border-color:#7C3AED!important;color:#fff!important}
+html body .bdlr-catalog-intro{padding-bottom:0!important}
+/* card */
+html body .bdlr-catalog-card{display:flex!important;flex-direction:column;height:100%;overflow:hidden;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:12px!important;box-shadow:none!important;transition:border-color .15s}
+html body .bdlr-catalog-card:hover{border-color:var(--r-line3)!important}
+html body .bdlr-catalog-card .bdlr-catalog-image figure{position:relative;aspect-ratio:4/3;height:auto!important;margin:0!important;background:#0b0b10!important;overflow:hidden}
+html body .bdlr-catalog-card .bdlr-catalog-image figure img{width:100%!important;height:100%!important;object-fit:cover!important;transition:transform .3s}
+html body .bdlr-catalog-card:hover .bdlr-catalog-image figure img{transform:scale(1.03)}
+html body .bdlr-catalog-card .bdlr-catalog-card-body{flex:1 1 auto;display:flex!important;flex-direction:column;padding:20px!important;gap:0!important}
+html body .bdlr-catalog-card .bdlr-premium-gpu{font:700 22px/1.3 var(--r-lat)!important;letter-spacing:0!important}
+html body .bdlr-catalog-card .bdlr-premium-cpu{margin-top:2px;font:400 14px/1.5 var(--r-lat)!important;color:var(--r-t2)!important}
+html body .bdlr-catalog-card h2.bdlr-premium-title:not(:has(.bdlr-premium-identity)){font:700 17px/1.5 var(--r-jp)!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+html body .bdlr-catalog-card .bdlr-catalog-name{margin:0 0 12px!important}
+html body .bdlr-catalog-card .bdlr-card-specs{margin:0 0 12px!important;padding:12px 0 0!important;border-top:1px solid var(--r-line)!important;gap:6px!important}
+html body .bdlr-catalog-card .bdlr-card-specs dt{width:36px;flex:0 0 36px;color:var(--r-t4)!important;font:500 11px/1.7 var(--r-mono)!important}
+html body .bdlr-catalog-card .bdlr-card-specs dd{color:var(--r-t2)!important;font:400 12px/1.6 var(--r-lat)!important}
+html body .bdlr-catalog-card .bdlr-review-score{margin:0 0 auto!important;padding:0 0 16px!important;color:var(--r-t3)!important;font:400 12px/1.5 var(--r-jp)!important}
+html body .bdlr-catalog-card .bdlr-product-price{padding-top:12px!important;border-top:1px solid var(--r-line)!important}
+html body .bdlr-catalog-card .bdlr-product-price>span{color:var(--r-t3)!important;font:500 11px/1.2 var(--r-jp)!important}
+html body .bdlr-catalog-card .bdlr-product-price strong{color:#fff!important;font:700 24px/1.2 var(--r-lat)!important;font-variant-numeric:tabular-nums;margin-left:4px}
+html body .bdlr-catalog-card .bdlr-premium-monthly{gap:2px!important;margin-top:4px!important}
+html body .bdlr-catalog-card .bdlr-premium-monthly-amount{color:var(--r-t2)!important;font:500 13px/1.5 var(--r-lat)!important}
+html body .bdlr-catalog-card :is(.bdlr-premium-installments,.bdlr-premium-disclosure){color:var(--r-t4)!important;font:400 11px/1.5 var(--r-jp)!important}
+/* stock line: only when sold out, as a status text (no truck icon / checkbox look) */
+html body .bdlr-catalog-card:not(:has([data-bdlr-soldout-overlay])) .bdlr-card-leadtime{display:none!important}
+html body .bdlr-card-leadtime{display:flex!important;align-items:center;gap:8px;margin:12px 0 0!important;padding:0!important;color:#FF6B6B!important;font:500 12px/1.5 var(--r-jp)!important;background:none!important}
+html body .bdlr-card-leadtime::before{content:"";flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FF6B6B}
+html body .bdlr-card-leadtime :is(svg,i,img){display:none!important}
+html body .bdlr-catalog-card .bdlr-card-cta{margin-top:12px!important;height:40px!important;min-height:40px!important}
+html body .bdlr-catalog-card .bdlr-compare-check{height:32px!important;min-height:32px!important;margin-top:4px!important;color:var(--r-t3)!important;font-size:12px!important}
+html body .bdlr-catalog-card .bdlr-catalog-card-notes{display:none!important}
+@media (max-width:767px){
+html body .bdlr-catalog-primary{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:16px -16px 24px!important;padding:0 16px!important;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 32px),transparent)}
+html body .bdlr-catalog-primary::-webkit-scrollbar{display:none}
+html body .bdlr-catalog-primary a{height:36px!important;min-height:36px!important;padding:0 14px!important;font-size:13px!important}
+html body .bdlr-catalog-card .bdlr-catalog-card-body{padding:14px!important}
+html body .bdlr-catalog-card .bdlr-premium-gpu{font-size:18px!important}
+html body .bdlr-catalog-card .bdlr-product-price strong{font-size:20px!important}
+}
+html body .bdlr-catalog-card .bdlr-catalog-card-body>*{margin-left:0!important;margin-right:0!important;width:auto!important;max-width:none!important}
+html body .bdlr-catalog-card .bdlr-catalog-name h2{margin:0!important;padding:0!important}
+html body .bdlr-catalog-card .bdlr-review-score{margin-bottom:0!important}
+html body .bdlr-catalog-card .bdlr-catalog-card-body::after{content:"";order:15;flex:1 1 auto;min-height:8px}
+html body .bdlr-card-leadtime::before{width:6px!important;height:6px!important;flex:0 0 6px!important;-webkit-mask:none!important;mask:none!important;background:#FF6B6B!important;border-radius:50%!important}
+/* sidebar filter: every group = arrow list (no boxed buttons) */
+html body .bdlr-catalog-filter a,html body aside[class*="filter"] a,html body .bdlr-catalog-sidebar a{border-color:transparent!important;box-shadow:none!important}
+html body .bdlr-filter-panel a[aria-current="page"]{border:0!important;box-shadow:none!important;outline:0!important;background:var(--r-s2)!important;color:#fff!important}
+
+/* ---------- 10. 商品詳細 ---------- */
+/* summary card: preview fills the card, share = one button */
+html body .bdlr-order-summary__media{position:relative;aspect-ratio:4/3;height:auto!important;padding:0!important;margin:0 0 16px!important;border-radius:8px!important;overflow:hidden;background:#0b0b10!important;border:1px solid var(--r-line)!important}
+html body .bdlr-order-summary__media img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important}
+html body .bdlr-order-summary__preview-label{position:absolute;left:8px;bottom:8px;top:auto!important;right:auto!important;height:20px;display:inline-flex;align-items:center;padding:0 6px!important;border-radius:4px!important;background:rgba(7,7,11,0.8)!important;color:var(--r-t3)!important;font:500 10px/1 var(--r-jp)!important}
+html body .bdlr-configuration-actions{display:block!important}
+html body .bdlr-configuration-actions>button:not([data-bdlr-copy-configuration]){display:none!important}
+html body .bdlr-configuration-actions>button[data-bdlr-copy-configuration]{display:flex!important;align-items:center;justify-content:center;gap:8px;width:100%!important;height:40px!important;min-height:40px!important;padding:0 12px!important;border-radius:8px!important;background:var(--r-s2)!important;border:1px solid var(--r-line2)!important;color:#fff!important;font:500 14px/1 var(--r-jp)!important;white-space:nowrap}
+html body .bdlr-configuration-actions>button[data-bdlr-copy-configuration]::before{content:"";width:16px;height:16px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M137.54 186.36a8 8 0 0 1 0 11.31l-9.94 10a56 56 0 0 1-79.22-79.27l24.12-24.12a56 56 0 0 1 76.81-2.28 8 8 0 1 1-10.64 12 40 40 0 0 0-54.85 1.63L59.7 139.72a40 40 0 0 0 56.58 56.58l9.94-9.94a8 8 0 0 1 11.32 0Zm70.08-138a56.08 56.08 0 0 0-79.22 0l-9.94 9.95a8 8 0 0 0 11.32 11.31l9.94-9.94a40 40 0 0 1 56.58 56.58l-24.13 24.14a40 40 0 0 1-54.85 1.6 8 8 0 1 0-10.64 12 56 56 0 0 0 76.81-2.26l24.12-24.12a56.08 56.08 0 0 0 .01-79.26Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M137.54 186.36a8 8 0 0 1 0 11.31l-9.94 10a56 56 0 0 1-79.22-79.27l24.12-24.12a56 56 0 0 1 76.81-2.28 8 8 0 1 1-10.64 12 40 40 0 0 0-54.85 1.63L59.7 139.72a40 40 0 0 0 56.58 56.58l9.94-9.94a8 8 0 0 1 11.32 0Zm70.08-138a56.08 56.08 0 0 0-79.22 0l-9.94 9.95a8 8 0 0 0 11.32 11.31l9.94-9.94a40 40 0 0 1 56.58 56.58l-24.13 24.14a40 40 0 0 1-54.85 1.6 8 8 0 1 0-10.64 12 56 56 0 0 0 76.81-2.26l24.12-24.12a56.08 56.08 0 0 0 .01-79.26Z'/%3E%3C/svg%3E") center/contain no-repeat}
+html body .bdlr-configuration-actions>button[data-bdlr-copy-configuration]:hover{background:var(--r-s3)!important;border-color:var(--r-line3)!important}
+html body .bdlr-summary-tools{margin-top:12px!important;padding:0!important;border:0!important;background:none!important}
+html body .bdlr-summary-tools>summary{display:none!important}
+html body .bdlr-summary-tools h4{margin:16px 0 8px!important;color:var(--r-t3)!important;font:500 12px/1.4 var(--r-jp)!important}
+html body .bdlr-summary-tools dl p{margin:0!important;color:var(--r-t2)!important;font:400 13px/1.6 var(--r-jp)!important}
+html body .bdlr-configuration-feedback{color:var(--r-t2)!important;font:400 12px/1.6 var(--r-jp)!important}
+/* config tabs: selected = surface + purple line */
+html body .bdlr-config-tabs{display:grid!important;grid-template-columns:1fr 1fr;gap:4px!important;padding:4px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;border-radius:10px!important}
+html body .bdlr-config-tabs button{height:40px!important;min-height:40px!important;border-radius:8px!important;border:1px solid transparent!important;background:none!important;color:var(--r-t3)!important;font:500 14px/1 var(--r-jp)!important;box-shadow:none!important}
+html body .bdlr-config-tabs button[aria-selected="true"]{background:var(--r-s3)!important;border-color:#7C3AED!important;color:#fff!important}
+/* option rows */
+html body .bdlr-option-group>summary{min-height:48px!important;padding:12px 16px!important;border-radius:8px!important}
+html body .bdlr-option-group>summary>span:first-child{font:500 15px/1.4 var(--r-jp)!important;color:#fff!important}
+html body .bdlr-option-group>summary>span:last-child{color:var(--r-t3)!important;font:400 13px/1.4 var(--r-lat)!important}
+html body .bdlr-option-section-title{margin:32px 0 12px!important;color:var(--r-t3)!important;font:500 12px/1.4 var(--r-jp)!important;letter-spacing:.04em}
+html body .bdlr-pending-option{display:flex!important;align-items:center;justify-content:space-between;min-height:48px;margin:0 0 8px!important;padding:12px 16px!important;border-radius:8px!important;background:var(--r-s1)!important;border:1px solid var(--r-line)!important;color:var(--r-t3)!important;font:400 13px/1.4 var(--r-jp)!important}
+html body .bdlr-pending-option strong{color:var(--r-t2)!important;font:500 15px/1.4 var(--r-jp)!important}
+/* single level for the "5 items" bundle */
+html body .bdlr-options-bundle{margin:0!important;padding:0!important;border:0!important;background:none!important}
+html body .bdlr-options-bundle>summary{display:none!important}
+html body .bdlr-options-bundle>details{margin-bottom:8px!important}
+html body aside.bdlr-order-summary .bdlr-order-summary__media[data-bdlr-summary-media] img[data-bdlr-summary-image]{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;transform:none!important}
+html body .bdlr-options-bundle>details{margin-left:0!important;margin-right:0!important;width:auto!important}
+
+/* ---------- 11. TOP ---------- */
+/* 迷ったらこの3台: make the middle (featured) card clearly the recommendation */
+html body .nov-model.nov-featured{position:relative;border:1px solid #7C3AED!important;background:var(--r-s1)!important;background-image:radial-gradient(420px 220px at 50% 0%,rgba(124,58,237,0.22),transparent 70%)!important;box-shadow:0 0 0 1px rgba(124,58,237,0.35),0 24px 64px -24px rgba(124,58,237,0.45)!important}
+html body .nov-model.nov-featured .nov-tier{background:#7C3AED!important;border-color:#7C3AED!important;color:#fff!important}
+html body .nov-model:not(.nov-featured) .nov-tier{background:rgba(7,7,11,0.8)!important;border:1px solid var(--r-line2)!important;color:var(--r-t2)!important}
+@media (min-width:1024px){html body .nov-model.nov-featured{transform:translateY(-8px)}}
+/* sold-out line only as a status text (pickup cards too) */
+html body .bdlr-pickup-card .bdlr-card-leadtime{margin-top:12px!important}
+/* games: cover-art proportion, title on the image, other games as chips */
+html body .gm:has(+.gm-more){display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:16px!important}
+html body .gm:has(+.gm-more)>a{position:relative;display:flex!important;flex-direction:column;justify-content:flex-end;aspect-ratio:3/4!important;height:auto!important;padding:20px!important;border-radius:12px!important;overflow:hidden;border:1px solid var(--r-line)!important;background:#0b0b10!important;text-decoration:none;isolation:isolate;transition:border-color .15s,transform .2s}
+html body .gm:has(+.gm-more)>a img{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover;z-index:-2;transition:transform .4s}
+html body .gm:has(+.gm-more)>a::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,7,11,0) 35%,rgba(7,7,11,0.6) 62%,rgba(7,7,11,0.95) 100%)}
+html body .gm:has(+.gm-more)>a::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--g,#7C3AED);opacity:.9}
+html body .gm:has(+.gm-more)>a:hover{border-color:var(--r-line3)!important;transform:translateY(-4px)}
+html body .gm:has(+.gm-more)>a:hover img{transform:scale(1.05)}
+html body .gm:has(+.gm-more)>a small{display:block;margin:0 0 6px!important;color:var(--g,#A78BFA)!important;font:500 11px/1.2 var(--r-mono)!important;letter-spacing:.06em}
+html body .gm:has(+.gm-more)>a b{display:block;margin:0 0 12px!important;color:#fff!important;font:700 24px/1.25 var(--r-lat)!important}
+html body .gm:has(+.gm-more)>a span{color:var(--r-t2)!important;font:500 13px/1 var(--r-jp)!important}
+html body .gm:has(+.gm-more)>a:hover span{color:#fff!important}
+html body .gm-more{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px}
+html body .gm-more>span{margin-right:8px;color:var(--r-t3);font:500 13px/1 var(--r-jp)}
+html body .gm-more>a{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;background:var(--r-s1);border:1px solid var(--r-line2);color:var(--r-t2);font:500 13px/1 var(--r-lat);text-decoration:none}
+html body .gm-more>a:hover{background:var(--r-s2);border-color:var(--r-line3);color:#fff}
+@media (max-width:767px){
+html body .gm{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;margin:0 -16px!important;padding:0 16px!important;scrollbar-width:none}
+html body .gm::-webkit-scrollbar{display:none}
+html body .gm>a{flex:0 0 58%;scroll-snap-align:start;padding:16px!important}
+html body .gm>a b{font-size:20px!important}
+html body .gm-more{flex-wrap:nowrap;overflow-x:auto;margin:16px -16px 0;padding:0 16px;scrollbar-width:none}
+html body .gm-more>a{flex:0 0 auto}
+html body .gm-more>span{flex:0 0 auto}
+html body .nov-model.nov-featured{transform:none}
+}
+
+/* ---------- 12. SP: search overlay (虫眼鏡 → ×) ---------- */
+@media (max-width:1023px){
+html body .bdlr-header-search .bdlr-search-form{position:relative;display:flex!important;align-items:center;gap:8px;padding:12px 16px!important}
+html body .bdlr-header-search .search-keyword{flex:1 1 auto;height:40px!important;min-height:40px!important;padding:0 64px 0 14px!important;border-radius:8px!important;border:1px solid var(--r-line2)!important;background:var(--r-s1)!important;outline:none!important;box-shadow:none!important;font:400 16px/1 var(--r-jp)!important}
+html body .bdlr-header-search .search-keyword:focus{border-color:#7C3AED!important}
+html body .bdlr-header-search .search-url{position:absolute!important;right:66px;top:50%;transform:translateY(-50%);height:22px!important;display:inline-flex!important;align-items:center;padding:0 6px!important;border-radius:4px!important;border:1px solid var(--r-line2)!important;background:none!important;color:var(--r-t3)!important;font-size:0!important;text-decoration:none}
+html body .bdlr-header-search [data-bdlr-search-close]{flex:0 0 40px;width:40px!important;height:40px!important;padding:0!important;border-radius:8px!important;border:1px solid var(--r-line2)!important;background:var(--r-s2)!important;color:transparent!important;font-size:0!important;position:relative}
+html body .bdlr-header-search [data-bdlr-search-close]::before,html body .bdlr-drawer [aria-label*="閉じる"]::before{content:"";position:absolute;inset:0;margin:auto;width:18px;height:18px;background:#fff;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128 50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128 50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z'/%3E%3C/svg%3E") center/contain no-repeat}
+}
+
+/* ---------- 13. SP drawer: same 4 groups as PC header ---------- */
+html body .bdl-dr-nav{display:block!important;padding:0 16px 32px!important}
+html body .bdl-dr-feature{display:block!important;margin:8px 0 16px!important;padding:16px!important;border-radius:12px!important;border:1px solid var(--r-line)!important;background:var(--r-s1)!important;background-image:radial-gradient(260px 120px at 100% 0%,rgba(124,58,237,0.25),transparent 70%)!important;text-decoration:none}
+html body .bdl-dr-feature small{display:block;color:var(--r-pt);font:500 11px/1.2 var(--r-mono);letter-spacing:.08em}
+html body .bdl-dr-feature strong{display:block;margin:6px 0 4px;color:#fff;font:700 18px/1.4 var(--r-jp)}
+html body .bdl-dr-feature span{color:var(--r-t2);font:400 12px/1.6 var(--r-jp)}
+html body .bdl-dr-group{border-top:1px solid var(--r-line)}
+html body .bdl-dr-group:last-of-type{border-bottom:1px solid var(--r-line)}
+html body .bdl-dr-group>summary{display:flex;align-items:center;justify-content:space-between;height:56px;list-style:none;cursor:pointer;color:#fff;font:700 16px/1 var(--r-jp)}
+html body .bdl-dr-group>summary::-webkit-details-marker{display:none}
+html body .bdl-dr-group>summary::after{content:"";width:12px;height:12px;background:var(--r-t3);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32Z'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .15s}
+html body .bdl-dr-group[open]>summary::after{transform:rotate(180deg)}
+html body .bdl-dr-sub{padding:0 0 16px}
+html body .bdl-dr-sub>p{margin:0 0 8px;color:var(--r-t3);font:500 12px/1.4 var(--r-jp)}
+html body .bdl-dr-links{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+html body .bdl-dr-links a{display:flex;align-items:center;min-height:40px;padding:8px 12px;border-radius:8px;background:var(--r-s1);border:1px solid var(--r-line);color:var(--r-t1);font:500 13px/1.35 var(--r-jp);text-decoration:none}
+html body .bdl-dr-links a:active,html body .bdl-dr-links a:hover{background:var(--r-s2);border-color:var(--r-line2)}
+html body .bdlr-mobile-search-entry b{display:none!important}
+html body .bdlr-mobile-drawer [data-bdlr-drawer-close]{border:1px solid var(--r-line2)!important;background:var(--r-s2)!important;border-radius:8px!important;box-shadow:none!important;outline:none}
+html body .bdlr-mobile-drawer nav.bdl-dr-nav{padding:0 0 32px!important;margin:0!important}
+html body .bdlr-mobile-drawer .bdl-dr-sub{display:block!important;width:auto!important;margin:0!important;padding:0 0 16px!important;grid-template-columns:none!important}
+html body .bdlr-mobile-drawer .bdl-dr-sub>p{display:block!important;width:auto!important}
+html body .bdlr-mobile-drawer .bdl-dr-links{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px!important;width:100%!important;margin:0!important;padding:0!important}
+html body .bdlr-mobile-drawer .bdl-dr-links a{width:auto!important;min-width:0!important;margin:0!important}
+html body .bdlr-mobile-drawer .bdl-dr-group>summary{padding:0!important;margin:0!important}
+@media (max-width:767px){
+html body .gm:has(+.gm-more){display:flex!important;grid-template-columns:none!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;margin:0 -16px!important;padding:0 16px 4px!important;scrollbar-width:none}
+html body .gm:has(+.gm-more)>a{flex:0 0 46%!important;width:46%!important;min-width:0!important;aspect-ratio:3/4!important;scroll-snap-align:start;padding:14px!important}
+html body .gm:has(+.gm-more)>a b{font-size:17px!important;margin-bottom:8px!important}
+html body .gm:has(+.gm-more)>a span{font-size:11px!important;writing-mode:horizontal-tb!important;white-space:nowrap}
+html body .gm:has(+.gm-more)>a small{font-size:10px!important}
+html body .bdlr-card-leadtime{display:block!important}
+html body .bdlr-card-leadtime::before{display:inline-block!important;margin:0 6px 1px 0;vertical-align:middle}
+}
+@media (max-width:767px){html body .dx-c .gm,html body .gm:has(+.gm-more){margin:0!important;padding:0 0 4px!important}html body .gm-more{margin:16px 0 0!important;padding:0!important}}
