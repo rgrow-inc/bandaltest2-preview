@@ -155,3 +155,39 @@ html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.
     :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page .bdlr-history-card.bdlr-premium-card > .bdlr-premium-delivery:not([hidden]) {margin-inline:16px!important}
   }
 }
+
+/* When the filter renders its own results, respect the native listing's hidden state. */
+@layer bandalReferenceCorrections {
+  :is(html,#rt) :is(body,#rt).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____) .bdlr-catalog-content > :is(.empty,.bdlr-catalog-grid,.bdlr-pagination,.bdlr-catalog-toolbar,.bdlr-catalog-density)[hidden] {
+    display:none!important;
+  }
+
+  .bdlr-catalog-content {
+    --bdlr-result-title-size:20px;
+    --bdlr-result-title-line:28px;
+  }
+  @media (max-width:767px) {
+    .bdlr-catalog-content {
+      --bdlr-result-title-size:16px;
+      --bdlr-result-title-line:24px;
+    }
+    /* The explicitly expanded native catalog view uses the desktop heading scale. */
+    .bdlr-catalog-content[data-bdlr-catalog-density="detail"] .bdlr-catalog-grid,
+    .bdlr-catalog-content [data-bdlr-catalog-density="detail"] .bdlr-catalog-grid,
+    [data-bdlr-catalog-density="detail"] .bdlr-catalog-content .bdlr-catalog-grid,
+    .bdlr-catalog-content .bdlr-catalog-grid[data-bdlr-catalog-density="detail"] {
+      --bdlr-result-title-size:20px;
+      --bdlr-result-title-line:28px;
+    }
+  }
+  /* Stock and filter renderers both draw the named GPU via ::before. Accessories
+     can have a normal heading (or link) instead of GPU / CPU identity spans. */
+  :is(html,#rt) :is(body,#rt).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____)
+    :is(.bdlr-catalog-grid,.audit-product-list)
+    :is(.bdlr-premium-gpu,.bdlr-premium-title:not(:has(.bdlr-premium-identity)),.bdlr-premium-title:not(:has(.bdlr-premium-identity)) > a),
+  :is(html,#rt) :is(body,#rt).bdlr-catalog-page:not(#_):not(#__):not(#___):not(#____)
+    :is(.bdlr-catalog-grid,.audit-product-list) .bdlr-premium-gpu::before {
+    font-size:var(--bdlr-result-title-size)!important;
+    line-height:var(--bdlr-result-title-line)!important;
+  }
+}
