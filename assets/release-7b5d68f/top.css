@@ -932,3 +932,34 @@
 @layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7700／RTX 5060 8GB ￥251,900～"]):has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7800X3D／RTX 5060 Ti 8GB ￥238,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=200000&max=300000"],[href="catalog-pc-200000-300000.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 8GB　RTX 5060 Ti 8GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
 
 @layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 9800X3D／RTX 5060 Ti 8GB ￥330,000～"]):has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7800X3D／RTX 5070 12GB ￥337,900～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=300000"],[href="catalog-pc-300000-up.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 Ti 8GB　RTX 5070 12GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+
+/* Match the 8px picture inset on native MakeShop recommendation cards. */
+@layer bandalReferenceCorrections{
+@media(min-width:768px){
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-pickup-card{padding-top:0!important}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-pickup-image{align-self:center!important;width:calc(100% + 34px)!important;max-width:none!important;margin:7px -17px 0!important;}
+}
+@media(max-width:767px){
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-pickup-card{padding:0 12px 0 0!important;grid-template-columns:120px minmax(0,1fr)!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-pickup-image{margin:7px 0 8px 7px!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-card-leadtime{margin-inline-start:12px!important;}
+}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .nov-model .bdlr-pickup-image img{object-fit:cover!important;}
+}
+/* Match designer discovery grids while leaving real game/category URLs and evidence text intact. */
+@layer bandalReferenceCorrections{
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk > nav.gm{
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-columns:auto!important;gap:16px!important;overflow:visible!important;padding:0!important;
+}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk > nav.gm > a{
+  min-width:0!important;width:auto!important;aspect-ratio:auto!important;box-sizing:border-box!important;min-height:0!important;padding:24px!important;
+}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk:first-of-type > nav.gm > a{height:340px!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk:nth-of-type(2) > nav.gm > a{height:260px!important;}
+@media(max-width:767px){
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk > nav.gm{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk > nav.gm > a{padding:16px!important;border-radius:14px!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk:first-of-type > nav.gm > a{height:228px!important;}
+html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk:nth-of-type(2) > nav.gm > a{height:168px!important;}
+}
+}

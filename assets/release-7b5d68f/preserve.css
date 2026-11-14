@@ -89,3 +89,69 @@ html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.
     html body.bdlr-page .bdlr-header > .bdlr-drawer-button {order:2!important;flex:0 0 44px!important;width:44px!important;height:44px!important;margin-inline:0!important}
   }
 }
+
+:root{--bandal-final-qa:stock-flow-20261114}
+/* Keep the availability line in normal flow in every product-card renderer.
+   Its bullet has a separate column so wrapped text starts at the same inset. */
+@layer bandalReferenceCorrections {
+  :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page :is(.bdlr-catalog-card,.bdlr-pickup-card,.bdlr-history-card,.bdlr-product-card):has(.bdlr-soldout:not([hidden]),.bdlr-pickup-soldout:not([hidden]),.bdlr-soldout-overlay:not([hidden])) .bdlr-card-leadtime.bdlr-premium-delivery:not([hidden]) {
+    display:grid!important;
+    grid-template-columns:6px minmax(0,1fr)!important;
+    align-items:start!important;
+    align-content:start!important;
+    column-gap:7px!important;
+    row-gap:0!important;
+    position:static!important;
+    box-sizing:border-box!important;
+    min-width:0!important;
+    min-height:0!important;
+    height:auto!important;
+    font-size:12px!important;
+    line-height:1.55!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+    text-wrap:pretty;
+    text-align:start!important;
+    text-indent:0!important;
+    color:#ff9494!important;
+  }
+  :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page :is(.bdlr-catalog-card,.bdlr-pickup-card,.bdlr-history-card,.bdlr-product-card):has(.bdlr-soldout:not([hidden]),.bdlr-pickup-soldout:not([hidden]),.bdlr-soldout-overlay:not([hidden])) .bdlr-card-leadtime.bdlr-premium-delivery:not([hidden])::before {
+    content:""!important;
+    position:static!important;
+    display:block!important;
+    grid-column:1!important;
+    grid-row:1!important;
+    width:6px!important;
+    height:6px!important;
+    margin:calc((1.55em - 6px) / 2) 0 0!important;
+    border:0!important;
+    border-radius:50%!important;
+    background:#ff7676!important;
+    mask:none!important;
+    transform:none!important;
+  }
+  :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page :is(.bdlr-pickup-card,.bdlr-history-card,.bdlr-catalog-card) .bdlr-card-leadtime.bdlr-premium-delivery[hidden] {display:none!important}
+  @media(max-width:767px) {
+    /* The CPU switcher previously occupied row 3 and sent the asynchronously loaded review below availability. */
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .nov-release-specs {grid-row:1!important;grid-column:2!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .bdlr-premium-title {grid-row:2!important;grid-column:2!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .bdlr-pickup-evidence {grid-row:3!important;grid-column:2!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .bdlr-premium-media {grid-row:1 / span 3!important;grid-column:1!important;align-self:start!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .nov-cpus {grid-row:4!important;grid-column:1/-1!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .nov-cpu-terms {grid-row:5!important;grid-column:1/-1!important}
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-top-page .nov-home-picks .nov-model .bdlr-pickup-card:has(>.nov-cpus) > .bdlr-premium-delivery {grid-row:6!important;grid-column:1/-1!important}
+  }
+}
+@layer bandalReferenceCorrections {
+  /* Recently viewed cards have an edge-to-edge photo but an inset text column. */
+  :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page .bdlr-history-card.bdlr-premium-card > .bdlr-premium-delivery:not([hidden]) {
+    margin-inline:var(--card-inset,22px)!important;
+    width:auto!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+    align-self:stretch!important;
+  }
+  @media(max-width:700px){
+    :is(html,#rt) :is(body,#rt):not(#_):not(#__):not(#___):not(#____).bdlr-page .bdlr-history-card.bdlr-premium-card > .bdlr-premium-delivery:not([hidden]) {margin-inline:16px!important}
+  }
+}
