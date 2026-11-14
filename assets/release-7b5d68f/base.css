@@ -523,3 +523,235 @@ html body .bdlr-card-leadtime{display:block!important}
 html body .bdlr-card-leadtime::before{display:inline-block!important;margin:0 6px 1px 0;vertical-align:middle}
 }
 @media (max-width:767px){html body .dx-c .gm,html body .gm:has(+.gm-more){margin:0!important;padding:0 0 4px!important}html body .gm-more{margin:16px 0 0!important;padding:0!important}}
+
+/* ===== Nav/photo cards share the game-card slots: label + title top-left, link bottom-left (mao 2026-11-14) ===== */
+html body .bdlr-mm__card{border:0!important;border-radius:16px!important;box-shadow:none!important}
+html body .bdlr-mm__card::before{content:""!important;position:absolute!important;inset:0!important;z-index:2!important;border-radius:inherit!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.10),inset 0 1px 0 rgba(255,255,255,.14)!important;pointer-events:none!important}
+html body .bdlr-mm__card:hover::before{box-shadow:inset 0 0 0 1px rgba(255,255,255,.24),inset 0 1px 0 rgba(255,255,255,.14)!important}
+html body .bdlr-mm__card::after{background:linear-gradient(180deg,rgba(7,7,11,.90) 0%,rgba(7,7,11,.55) 36%,rgba(7,7,11,.10) 58%,rgba(7,7,11,.82) 100%)!important}
+html body .bdlr-mm__card .bdlr-mm__card-copy{flex:1 1 auto!important;gap:0!important;padding:24px!important}
+html body .bdlr-mm__card .bdlr-mm__card-copy small{font:500 12px/18px "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.04em!important;color:rgba(255,255,255,.7)!important}
+html body .bdlr-mm__card .bdlr-mm__card-copy b{margin-top:6px!important;font-size:22px!important;line-height:28px!important;letter-spacing:-.01em!important}
+html body .bdlr-mm__card .bdlr-mm__card-copy>span:not(.bdlr-mm__btn){margin-top:8px!important;font-size:13px!important;line-height:1.6!important;color:rgba(255,255,255,.7)!important}
+html body .bdlr-mm__card .bdlr-mm__btn{margin-top:auto!important}
+html body .bdlr-mm__card .bdlr-mm__btn:not(.is-line){height:auto!important;padding:0!important;border:0!important;border-radius:0!important;background:none!important;font-size:13px!important;font-weight:500!important;color:#fff!important;text-shadow:0 1px 8px rgba(0,0,0,.5)!important}
+html body .bdlr-mm__card .bdlr-mm__btn:not(.is-line)::after{content:" →"!important;white-space:pre!important}
+
+/* =====================================================================
+   14. SITE CHROME BRUSH-UP (mao 2026-11-14) — CSS only, all pc/sp pages
+   14-1 header mega menu separation / 14-2 footer / 14-3 floating dock /
+   14-4 header search (no inner line, magnifier instead of "Enter")
+   Everything sits in bandalReferenceCorrections so it wins over the
+   !important rules of bandal-ui-v01.css and section 5 above.
+   ===================================================================== */
+@layer bandalReferenceCorrections{
+
+/* ---------- 14-1. Mega menu: same surface as the header, closed by a line + shadow, page dimmed behind ---------- */
+@media (min-width:981px){
+html body:not(#_) .bdlr-header .bdlr-mega-shell.is-open{background-color:#111115!important;border-bottom:1px solid rgba(255,255,255,0.12)!important;box-shadow:0 32px 64px -16px rgba(0,0,0,0.72)!important}
+html body:not(#_):has(.bdlr-mega-shell.is-open) .bdlr-scrim{opacity:1!important;visibility:visible!important;background:rgba(0,0,0,0.56)!important;transition:opacity .16s ease!important}
+}
+
+/* ---------- 14-2. Footer: brand + 4 even columns on the 1232 grid ---------- */
+html body:not(#_) .bdlr-footer{padding:0!important;background:#07070b!important;border-top:1px solid rgba(255,255,255,0.08)!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top{display:grid!important;grid-template-columns:minmax(0,1.5fr) repeat(4,minmax(0,1fr))!important;gap:0 32px!important;align-items:start!important;max-width:1232px!important;margin:0 auto!important;padding:56px 0 48px!important;border:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top>*{grid-column:auto!important;grid-row:auto!important;width:auto!important;min-width:0!important;margin:0!important;padding:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-brand{display:grid!important;gap:16px!important;align-content:start!important;justify-items:start!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-brand .bdlr-brand{display:block!important;line-height:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-brand p{margin:0!important;max-width:none!important;color:rgba(255,255,255,0.5)!important;font:400 13px/1.7 "Noto Sans JP",sans-serif!important;letter-spacing:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section h2{margin:0 0 8px!important;padding:0!important;color:#fff!important;font:500 13px/24px "Noto Sans JP",sans-serif!important;letter-spacing:0!important;border:0!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section a{display:block!important;width:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:6px 0!important;color:rgba(255,255,255,0.7)!important;font:400 13px/20px "Noto Sans JP","Geist",sans-serif!important;letter-spacing:0!important;text-decoration:none!important;border:0!important;background:none!important;transition:color .12s ease}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section a[href]:hover{color:#fff!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-bottom{display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:flex-start!important;gap:4px 24px!important;max-width:1232px!important;margin:0 auto!important;padding:20px 0 28px!important;border:0!important;border-top:1px solid rgba(255,255,255,0.08)!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-bottom span{margin:0!important;color:rgba(255,255,255,0.4)!important;font:400 12px/20px "Geist","Noto Sans JP",sans-serif!important;letter-spacing:.02em!important}
+@media (max-width:1296px){
+html body:not(#_) .bdlr-footer .bdlr-footer-top,html body:not(#_) .bdlr-footer .bdlr-footer-bottom{margin-left:32px!important;margin-right:32px!important}
+}
+@media (max-width:980px){
+html body:not(#_) .bdlr-footer .bdlr-footer-top{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:32px 16px!important;margin-left:16px!important;margin-right:16px!important;padding:40px 0 32px!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-brand{grid-column:1/-1!important;gap:12px!important;padding-bottom:28px!important;border-bottom:1px solid rgba(255,255,255,0.08)!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section h2{margin:0 0 4px!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-top section a{display:flex!important;align-items:center!important;align-self:stretch!important;min-height:40px!important;padding:0!important;font-size:14px!important;line-height:20px!important}
+html body:not(#_) .bdlr-footer .bdlr-footer-bottom{flex-direction:column!important;align-items:flex-start!important;gap:2px!important;margin-left:16px!important;margin-right:16px!important;padding:20px 0 24px!important}
+}
+
+/* ---------- 14-3. Floating follow buttons: one dock, two equal 40px items ---------- */
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget{display:grid!important;grid-template-columns:1fr 1fr!important;grid-auto-flow:column!important;align-items:center!important;gap:4px!important;width:auto!important;height:auto!important;padding:4px!important;right:24px!important;bottom:24px!important;left:auto!important;top:auto!important;border-radius:999px!important;border:1px solid rgba(255,255,255,0.12)!important;background:rgba(17,17,21,0.72)!important;-webkit-backdrop-filter:blur(16px) saturate(140%)!important;backdrop-filter:blur(16px) saturate(140%)!important;box-shadow:0 12px 32px rgba(0,0,0,0.5)!important;overflow:visible!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;width:auto!important;min-width:112px!important;height:40px!important;min-height:40px!important;margin:0!important;padding:0 16px 0 12px!important;border-radius:999px!important;border:0!important;background:transparent!important;color:#fff!important;font:500 13px/1 "Noto Sans JP",sans-serif!important;white-space:nowrap!important;box-shadow:none!important;text-decoration:none!important;cursor:pointer;transition:background-color .12s ease}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a.is-line{background:#06C755!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a.is-line:hover{background:#05b34c!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a.is-help{color:rgba(255,255,255,0.86)!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a.is-help:hover{background:rgba(255,255,255,0.08)!important;color:#fff!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a:focus-visible{outline:1px solid #A78BFA!important;outline-offset:2px!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a svg{width:20px!important;height:20px!important;flex:0 0 20px!important;margin:0!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a span{margin:0!important;font:inherit!important;color:inherit!important}
+
+/* SP: the same dock sits in the page flow under the footer (the fixed bottom nav already has 相談), full width on the 16px gutter */
+@media (max-width:980px){
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget{position:static!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;width:auto!important;margin:0 16px 24px!important;background:rgba(255,255,255,0.04)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important}
+html body.bdlr-page:not(#_) .bdlr-floating-support.bdlr-support-widget>a{min-width:0!important}
+}
+
+/* ---------- 14-4. Header search: hover lifts the field line, focus = 1px purple around the field, magnifier instead of "Enter" ---------- */
+html body:not(#_) .bdlr-header .bdlr-search-form .search-url{display:flex!important;align-items:center!important;justify-content:center!important;align-self:center!important;width:40px!important;min-width:40px!important;height:38px!important;margin:0!important;padding:0!important;border:0!important;border-radius:0 7px 7px 0!important;background:transparent!important;box-shadow:none!important;font-size:0!important;line-height:0!important;color:rgba(255,255,255,0.5)!important;transition:color .12s ease}
+html body:not(#_) .bdlr-header .bdlr-search-form .search-url::before{content:""!important;display:block!important;width:16px!important;height:16px!important;margin:0!important;background-color:currentColor!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'/%3E%3C/svg%3E") center/16px 16px no-repeat!important;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'/%3E%3C/svg%3E") center/16px 16px no-repeat!important}
+html body:not(#_) .bdlr-header .bdlr-search-form .search-url:hover{color:#fff!important;background:transparent!important}
+html body:not(#_) .bdlr-header .bdlr-search-form .search-url:focus-visible{outline:1px solid #A78BFA!important;outline-offset:-4px!important}
+@media (min-width:981px){
+html body:not(#_) .bdlr-header .bdlr-search-form{grid-template-columns:minmax(0,1fr) 40px!important;background:#1b1b1f!important;transition:border-color .12s ease!important}
+html body:not(#_) .bdlr-header .bdlr-search-form:hover{border-color:rgba(255,255,255,0.24)!important}
+html body:not(#_) .bdlr-header .bdlr-search-form:focus-within{border-color:#7C3AED!important;box-shadow:none!important;outline:0!important}
+html body:not(#_) .bdlr-header .bdlr-search-form .search-keyword,
+html body:not(#_) .bdlr-header .bdlr-search-form .search-keyword:hover,
+html body:not(#_) .bdlr-header .bdlr-search-form .search-keyword:focus,
+html body:not(#_) .bdlr-header .bdlr-search-form .search-keyword:focus-visible{border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important}
+}
+}
+
+/* ==========================================================================
+   LINE-BREAK PASS (2026-11-13) — readable Japanese wrapping for short text.
+   Scope: short card copy, leads, notes, labels only. Long body copy (terms,
+   policy, news articles) is intentionally NOT targeted.
+   - auto-phrase: break at phrase (bunsetsu) boundaries, not mid-word (Chrome 119+; ignored elsewhere)
+   - balance: 2-3 line titles/labels get even lines (no 1-3 character last line)
+   - pretty: short descriptions avoid an orphan last line
+   - .nb: never break inside (time ranges, model names, prices)
+   - br.br-pc / br.br-sp: forced break only on PC / only on SP
+   ========================================================================== */
+.nb{white-space:nowrap!important}
+@media (max-width:767px){br.br-pc{display:none!important}}
+@media (min-width:768px){br.br-sp{display:none!important}}
+
+/* very short blocks: titles, labels, tiles, drawer links, option names */
+html body .bdlr-mm__card .bdlr-mm__card-copy>b,
+html body .bdl-dr-links a,
+html body .bdlr-option-card__copy strong,
+html body .bdlr-card-leadtime,
+html body .bd-game-pc-options button,
+html body .bandal-option-text,
+html body .bandal-question-title,
+html body .nov-support-cell small,
+html body .bdlr-specification-grid strong,
+html body .bdlr-filter-selection,
+html body .bdlr-rel-empty-note,
+html body .bdlr-catalog-empty p{
+  word-break:auto-phrase!important;text-wrap:balance!important;line-break:strict!important;overflow-wrap:break-word!important}
+
+/* short descriptions, leads and notes (1-4 lines) */
+html body .bdlr-mm__card .bdlr-mm__card-copy>span:not(.bdlr-mm__btn),
+html body .bdlr-category-switch-help,
+html body .bdlr-catalog-photo-note,
+html body .bdlr-option-card__copy small,
+html body .bdlr-configuration-notice,
+html body .bdlr-config-reviews p,
+html body .ux-item-fact small,
+html body .bdlr-static-lead,
+html body .bdlr-static-hero p,
+html body .bdlr-content-lead,
+html body .bdlr-content-step p,
+html body .bdlr-content-card p,
+html body .bdlr-recycle-lead,
+html body .bdlr-recycle-step p,
+html body .bdlr-recycle-card p,
+html body .bdlr-recycle-note,
+html body .bdlr-review-hero p,
+html body .bdlr-legacy-review-intro,
+html body .bdlr-faq-answer p,
+html body .bdl-info-card p,
+html body .bdl-info-company-intro p,
+html body .bd-hero-content p,
+html body .bd-game-pc-lead,
+html body .bandal-survey-note,
+html body .audit-collab-intro,
+html body .audit-campaign p,
+html body .audit-campaign li,
+html body .mig-card p,
+html body .mig-faq p,
+html body .mig-quote p,
+html body .bdl-info-main dd{
+  word-break:auto-phrase!important;text-wrap:pretty!important;line-break:strict!important;overflow-wrap:break-word!important}
+
+/* labels that must stay on one line */
+html body .bdlr-mm__btn{white-space:nowrap!important}
+/* line-break pass, round 2: remaining short blocks found by the detector */
+html body .bdlr-catalog-intro h1,
+html body .bdlr-news-main a strong,
+html body .mig-shell :is(td,th),
+html body .bdlr-detail-section dd{
+  word-break:auto-phrase!important;text-wrap:balance!important;line-break:strict!important;overflow-wrap:break-word!important}
+html body .bdlr-news-hero>span,
+html body .bdlr-choice-benefit-main li,
+html body .bdlr-faq-support p,
+html body .bdlr-recycle-list li,
+html body .bdlr-recycle-data p,
+html body .bdlr-recycle-cta p,
+html body .mig-section>p{
+  word-break:auto-phrase!important;text-wrap:pretty!important;line-break:strict!important;overflow-wrap:break-word!important}
+
+/* RULE-AUDIT 1114 CHROME */
+/* Shared site chrome (header, mega menu, account menu, footer, breadcrumb, dock, SP drawer/bottom nav/search)
+   brought onto the UI System v0.1 tokens: type scale 14/16/20, spacing x4, icons 20, radius 12, palette alphas. */
+@layer bandalReferenceCorrections{
+/* --- type scale: 13 -> 14 (ui), 15 -> 16, 22/18 -> 20; JP tracking .04em where a reset had removed it --- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-global-nav .bdlr-nav-trigger{font-size:14px!important;letter-spacing:.04em!important;padding-left:12px!important;padding-right:12px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-account__trigger{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-account__trigger>span{font-size:14px!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-account__new>a{font-size:14px!important;gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-account__new>a>i{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__col>h2{font-size:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__col li>a{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__quick>a{font-size:14px!important;gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__card-copy>b{font-size:20px!important;letter-spacing:.02em!important;margin-top:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__card-copy>span:not(.bdlr-mm__btn){font-size:14px!important;line-height:1.7!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__card-copy>span:not(.bdlr-mm__btn) .nb{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__card-copy>.bdlr-mm__btn{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-footer .bdlr-footer-top section>h2{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-footer .bdlr-footer-top section>a{font-size:14px!important;line-height:24px!important;letter-spacing:.04em!important;padding-top:4px!important;padding-bottom:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-footer .bdlr-footer-brand>p{font-size:14px!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-floating-support>a>span{font-size:14px!important;letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-feature>strong{font-size:20px!important;margin-top:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-links>a{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdlr-mobile-search-entry>span,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-bottom>:is(a,button)>span{letter-spacing:.04em!important}
+
+/* --- icons: Phosphor 20 in the header / drawer (were 18-19) --- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header :is(.bdlr-icon-button,.bdlr-account__trigger)>svg.ic,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdlr-icon-button>svg.ic{width:20px!important;height:20px!important;flex:0 0 20px!important}
+
+/* --- palette: text 36/70, lines 14, surfaces 2.5/5/8, bg #07070B --- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-footer .bdlr-footer-bottom>span{color:rgba(255,255,255,.36)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-floating-support>a.is-help>span{color:inherit!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-floating-support>a.is-help{color:rgba(255,255,255,.7)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-floating-support>a.is-help:is(:hover,:focus-visible){color:#fff!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-account__menu>a.bdlr-account__login{border-color:rgba(255,255,255,.14)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-mm__inner>.bdlr-mm__card{background-color:#07070B!important;border-radius:12px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-header-actions>a.bdlr-diagnosis{background:linear-gradient(#07070B,#07070B) padding-box,linear-gradient(115deg,#A78BFA,rgba(167,139,250,.35) 45%,#7C3AED) border-box!important;padding-right:16px!important;gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-links>a,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-nav>a.bdl-dr-feature{background-color:rgba(255,255,255,.025)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdlr-mobile-search-entry{background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdlr-mobile-member>a{background-color:rgba(255,255,255,.08)!important;height:40px!important;min-height:40px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-bottom{background-color:#07070B!important}
+
+/* --- spacing x4 --- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-search-form>input.search-keyword{padding-left:16px!important;padding-right:16px!important}
+/* product-name links in the drawer take the full row so 14px text stays within two lines */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-links>a:is([href^="item-"],[href^="/view/item/"]){grid-column:1 / -1!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer>.bdlr-mobile-search{margin-top:16px!important;margin-bottom:16px!important;gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-drawer .bdl-dr-sub>.bdl-dr-links{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-mobile-bottom>:is(a,button){padding:4px!important}
+
+@media (min-width:901px){
+/* header search = 40 like the other header controls; search surface = white 5% */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-search-form{background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-search-form>input.search-keyword{height:40px!important;min-height:40px!important;box-sizing:border-box!important}
+}
+@media (max-width:900px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header>.bdlr-header-search{padding-top:16px!important;padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-header .bdlr-search-form>input.search-keyword{background-color:rgba(255,255,255,.025)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-floating-support.bdlr-support-widget{background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-footer .bdlr-footer-bottom{gap:4px!important}
+/* breadcrumb: keep the 44 tap height but start the first label on the 16px margin */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-breadcrumb>a:first-child{min-width:0!important;width:auto!important;justify-content:flex-start!important;text-align:left!important;padding-right:8px!important}
+}
+}

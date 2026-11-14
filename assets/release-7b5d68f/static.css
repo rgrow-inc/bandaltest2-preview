@@ -474,3 +474,221 @@ html:not(#_) body:is(.bdlr-faq-page,.bdlr-terms-page,.bdlr-policy-page) .bdlr-st
 @media (max-width:767px){
 html:not(#_) body.bdlr-news-page .bdlr-news-main{width:auto!important;max-width:none!important;margin-left:16px!important;margin-right:16px!important;padding-left:0!important;padding-right:0!important}
 }
+
+/* ============ Card unification 2026-11-14 (static area) ============ */
+/* Extra id in the prefix: bandal-rel-top.css (section K) loads after this file with the same weight. */
+/* Kenki grade cards = product card (bdc) shell + type: 16 radius, gradient surface, inset hairline; title 22/28, price 28/36 Geist, chips 26px / r6 */
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-card.mig-grade{border:0!important;border-radius:16px!important;background:linear-gradient(180deg,#111118,#0A0A0F)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07),inset 0 1px 0 rgba(255,255,255,.10)!important;transition:box-shadow .15s}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-card.mig-grade:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.24)!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade>.mig-kicker{margin:0!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:12px!important;line-height:18px!important;font-weight:500!important;letter-spacing:.04em!important;color:rgba(255,255,255,.6)!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade>h3{margin:6px 0 0!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:22px!important;line-height:28px!important;font-weight:700!important;letter-spacing:-.01em!important;color:#fff!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-price{margin:12px 0 16px!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:28px!important;line-height:36px!important;font-weight:700!important;letter-spacing:-.02em!important;font-variant-numeric:tabular-nums!important;color:#fff!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-price small{font-size:12px!important;line-height:18px!important;font-weight:400!important;letter-spacing:0!important;color:rgba(255,255,255,.5)!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-tags{gap:6px!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-tags span{height:26px!important;padding:0 9px!important;border:0!important;border-radius:6px!important;background:rgba(255,255,255,.05)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)!important;font-family:"Geist","Noto Sans JP",sans-serif!important;font-size:12px!important;font-weight:500!important;line-height:1!important;color:rgba(255,255,255,.78)!important;white-space:nowrap!important}
+@media (max-width:767px){
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade>h3{font-size:18px!important;line-height:24px!important;margin-top:2px!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-price{font-size:20px!important;line-height:28px!important;margin:8px 0 12px!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-tags{gap:4px!important}
+:is(#rt,html):not(#_) :is(#rt,body) .audit-kenki .mig-grade .mig-tags span{height:22px!important;padding:0 6px!important;font-size:11px!important}
+}
+/* buttons that are not buy: surface + line, exactly 40 high (were 44 / 48 through an old min-height) */
+:is(#rt,html):not(#_) :is(#rt,body) .audit-grade-link,
+:is(#rt,html):not(#_) :is(#rt,body) .bdlr-news-article>footer a{box-sizing:border-box!important;height:40px!important;min-height:40px!important;max-height:40px!important;padding-top:0!important;padding-bottom:0!important;line-height:1!important}
+
+/* RULE-AUDIT 1114 */
+@layer bandalReferenceCorrections{
+/* generated: off-scale font sizes -> 11/12/14/16/20/28, paddings/gaps -> multiples of 4 */
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card.bdl-info-profile>dl>div>dd,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content dl>div>dd>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card.bdl-info-news>ul>li>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card.bdl-info-contract>dl>div>dd,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ol.bdlr-news-list>li>a>strong,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ol.bdlr-news-list>li>a>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-news-article>div.info-detail-section.bdlr-news-content,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-step>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-card>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-rule>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.audit-grade-intro>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-grid.mig-grid-two>div>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div>p.mig-note,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content blockquote.mig-quote>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-section>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content tbody>tr>td>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content tr>td>p>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-section>p>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>ul>li>b,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>p>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>p>b,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>p>strong,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-shell>article.mig-article{font-size:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card.bdl-info-news>ul>li>time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card>p.bdl-info-note,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-system-policy.bdlr-legal-rich>p.bdlr-legal-updated,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ol.bdlr-news-list>li>a>time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-content-section>p.bdlr-content-note,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-recycle-section>p.bdlr-recycle-note,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-review-body>p.bdlr-legacy-reviewer,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content dl.bdlr-review-specs>div>dt,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-legal-copy.bdlr-legal-rich>p.bdlr-legal-updated,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-question.bandal-question-first>p.bandal-question-help,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-question>p.bandal-question-help,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content header.mig-hero>time.bdlr-rel-date{font-size:12px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdl-info-actions>a.is-primary,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-content-highlight>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.audit-campaign>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content p.bdlr-legacy-review-rating>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content dl.bdlr-review-specs>div>dd,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content p.bdlr-review-price>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-honeypot>label,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div>button.bandal-submit-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content button.bd-btn-main>em,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bd-hero-content>p.audit-result-preview,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-actions>a.mig-button.mig-button-secondary,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content table>tbody>tr>th,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>a{font-size:14px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdl-info-actions>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-static-actions>a.bdlr-static-action,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-news-article>footer>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-faq-support>a.bdlr-static-action,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-shell>nav.mig-breadcrumb,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-rule>ul,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-recycle-shell>nav.bdlr-recycle-breadcrumb,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-recycle-cta>a.bdlr-recycle-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-actions.mig-center>a.mig-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-review-contact>a.bdlr-review-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-header>p.bandal-survey-time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bd-reference-hero-visual>div.bd-reference-hero-visual__head,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-shell.audit-kenki>nav.mig-breadcrumb{row-gap:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdl-info-actions>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-static-actions>a.bdlr-static-action,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-news-article>footer>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-faq-support>a.bdlr-static-action,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-shell>nav.mig-breadcrumb,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-rule>ul,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-recycle-shell>nav.bdlr-recycle-breadcrumb,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-recycle-cta>a.bdlr-recycle-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-actions.mig-center>a.mig-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-review-contact>a.bdlr-review-button,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-header>p.bandal-survey-time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bd-reference-hero-visual>div.bd-reference-hero-visual__head,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-shell.audit-kenki>nav.mig-breadcrumb{column-gap:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-card>p>strong{font-size:28px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-content-rule>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-honeypot>label>input{padding-left:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-content-section>p.bdlr-content-note{padding-top:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-content-section>p.bdlr-content-note{padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-gift>span.bandal-survey-gift-label,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-header>p.bandal-survey-time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-question-heading>span.bandal-question-number,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-tags>span{padding-right:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-gift>span.bandal-survey-gift-label,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-header>p.bandal-survey-time,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-question-heading>span.bandal-question-number,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.mig-tags>span{padding-left:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-honeypot>label>input{padding-top:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-honeypot>label>input{padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-honeypot>label>input{padding-bottom:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-question-heading>span.bandal-question-title,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.audit-grade-intro>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-card>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content blockquote.mig-quote>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-card.mig-grade>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-specs>h3{font-size:20px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bd-reference-hero-visual__head>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bd-reference-hero-visual__head>b,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bd-reference-hero-visual__foot>span,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bd-reference-hero-visual__foot>strong{font-size:11px!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content dl>div>dd>small{font-size:12px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div>dd>small>a{font-size:14px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-system-policy.bdlr-legal-rich>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ul>li>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-faq-answer>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-faq-answer>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-faq-answer>video,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-card.mig-contact-card>p,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ul.bdlr-recycle-list>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-legal-copy.bdlr-legal-rich>ul>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-legal-copy.bdlr-legal-rich>ol>li,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-legal-copy.bdlr-legal-rich>ol>li>span{font-size:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-faq-group>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-card.mig-contact-card>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-content-section>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content aside.bdlr-content-cta>div>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-recycle-section>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.audit-campaign>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content header.bdlr-review-group-head>h2{font-size:28px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-recycle-card>strong,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.bdlr-recycle-step>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-recycle-data>article>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.audit-campaign>h3,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-article>h3{font-size:20px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-card.mig-grade>div.mig-tags{row-gap:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content article.mig-card.mig-grade>div.mig-tags{column-gap:8px!important}
+
+}
+@media (max-width:767px){
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-company-intro>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdl-info-card>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-system-policy.bdlr-legal-rich>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-legal-copy.bdlr-legal-rich>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bandal-survey-header>h2,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content table.audit-grades>caption,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-section>h2{font-size:20px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content nav.bdl-info-nav>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content nav.bdlr-faq-nav>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.audit-review-digest>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content nav.bdlr-review-nav>a,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.bdlr-review-group.bdlr-legacy-reviews>p.bdlr-legacy-review-intro,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div.bdlr-review-body>button.audit-read-full,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content nav.bdlr-legal-nav>a{font-size:14px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ol.bdlr-news-list>li>a{row-gap:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.bdlr-faq-item>summary,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>summary{font-size:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content div>div.bandal-question.bandal-question-first{padding-top:40px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content section.mig-hero-image>div>h2{font-size:28px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content table.audit-grades>thead>tr>th,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content tr.audit-difference>td,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content table.audit-grades>tbody>tr>td,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>summary,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>p{padding-left:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content tr.audit-difference>td,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content table.audit-grades>tbody>tr>td,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>summary,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>p{padding-right:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>summary{padding-top:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content details.mig-faq>summary{padding-bottom:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ol.bdlr-news-list>li>a>strong{line-height:1.8!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content label.bandal-option>span.bandal-option-text{line-height:1.7!important}
+}
+/* manual: palette, lines, radius, cramped text */
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bdlr-review-card>figure{background-color:rgba(255,255,255,.025)!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bandal-survey-card label>input,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bandal-survey-card textarea,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bandal-option>.bandal-radio{background-color:rgba(255,255,255,.05)!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .mig-hero-image>img{background-color:transparent!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki .mig-card.mig-grade{background-image:none!important;background-color:rgba(255,255,255,.025)!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki .mig-grade .mig-tags span{border-radius:4px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .mig-actions.mig-return,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bdlr-static-card>.bdlr-static-actions,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bdlr-legal-rich>.bdlr-legal-updated,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bdlr-review-body>.bdlr-review-specs,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bandal-survey-card>.bandal-survey-header,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .bandal-survey-card .bandal-question,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content ul.bdlr-recycle-list>li{border-top-width:0!important;border-bottom-width:0!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content :is(button,.bd-btn-main>span,.audit-more,.audit-read-full,.bandal-submit-button),
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .mig-price>small{letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki td,
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki th{overflow-wrap:normal!important;word-break:normal!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .u-nowrap{white-space:nowrap!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki .mig-card.mig-grade{border-radius:12px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki .mig-card.mig-grade>h3{margin-top:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .mig-actions>a.mig-button{gap:8px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content :is(.bdl-info-card,.bdl-info-company-intro,.bdlr-legal-rich,.mig-card)>p:not([class]){font-size:16px!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki table :is(th,td){font-size:14px!important;line-height:1.6!important}
+:is(#rt,html) :is(#rt,body):is(.bdl-info-page,.bdlr-news-page,.bdlr-static-page,.bdlr-diagnosis-page,.bdlr-content-page,.bdlr-review-archive-page) main#bdl-main-content .audit-kenki table tr.audit-difference>td{font-size:16px!important}
+}

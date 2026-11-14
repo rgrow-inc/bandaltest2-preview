@@ -163,7 +163,7 @@ html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary :is(strong,
   html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bdlr-dock-delivery small{font:400 11px/16px var(--ri-font)!important;color:var(--ri-t3)!important;overflow:hidden!important;text-overflow:ellipsis!important}
   html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__cta{height:40px!important}
   html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary .bandal-floating-summary__button{width:200px!important}
-  /* Purchase summary stays visible, including first view. */
+  /* Show purchase summary from the first view. */
 }
 
 /* peripheral first view (PC) */
@@ -494,4 +494,83 @@ html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-reviews>p:not([class]):
 @media (min-width:768px){
   html body.bdl-renewal-item:not(#_):not(#__) #bandal-floating-summary{padding:0!important;min-height:0!important;height:auto!important}
 }
+}
+
+/* ===== card audit (item pages): remaining drift from the TOP rules ===== */
+@layer bandalReferenceCorrections{
+/* radius scale 4/8/12/20: tab rail was 10 (inner tab 8 + 4 padding = 12) */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-config-tabs{border-radius:12px!important}
+/* "none" glyph on option cards fell back to the browser sans-serif */
+html body.bdl-renewal-item:not(#_):not(#__) .bdlr-option-card .nov-none{font-family:"Geist","Noto Sans JP",sans-serif!important}
+}
+
+/* RULE-AUDIT 1114 */
+@layer bandalReferenceCorrections{
+/* -- lines: no one-side divider rules outside tables / fixed bars -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-section,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-terms-bottom,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-hero-shipping,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-config-review-date,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card .bdlr-compare-meters,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-choice-audience,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .ri-setup-list,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-group>summary,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdl-renewal-cart__empty>.audit-cart-options{border-top:0!important;border-bottom:0!important;border-left:0!important;border-right:0!important}
+/* -- section rhythm: gap PC 160 / SP 96, head->content 64 / 32 -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-flow>.bdlr-detail-section:not(.bdlr-performance-section){padding-top:48px!important;padding-bottom:48px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-section>.bdlr-section-heading{margin-bottom:32px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-terms-bottom{padding-top:0!important}
+@media (min-width:768px){
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-flow>.bdlr-detail-section:not(.bdlr-performance-section){padding-top:80px!important;padding-bottom:80px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-section>.bdlr-section-heading{margin-bottom:64px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-hero-price-amount,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-hero-price-amount>span{font-size:32px!important}
+}
+/* -- spacing: 4px grid -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-compare-meter{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card>.bdlr-compare-meters{gap:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-group>summary>span{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-group>summary>span:first-child{font-size:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) ul.info-area>li{padding-bottom:12px!important;line-height:1.7!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card-grid>.bdlr-option-card,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card>.bdlr-option-card__copy{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>small{margin-top:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>.nov-storage{padding-left:8px!important;padding-right:8px!important;gap:4px!important;line-height:1.5!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>.nov-storage>b{font-size:20px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>.bdlr-option-card__price{padding-top:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-showroom details.bdlr-option-group{margin-bottom:12px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-showroom>.nov-device-pair{gap:12px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-detail-section>.bdlr-customize-layout{gap:24px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-summary-actions>.bdlr-button,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdl-renewal-cart__empty>.bdlr-cart-empty-link{gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-order-summary__total>small{margin-top:4px!important;margin-bottom:4px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-order-summary__total>strong{font-size:28px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bandal-option-recommendation{margin-top:8px!important;margin-bottom:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bandal-option-recommendation__badge{padding-left:8px!important;padding-right:8px!important;font-size:11px!important;line-height:16px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bandal-option-recommendation__action,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-order-summary__preview-label{font-size:11px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-pending-option>strong{font-size:14px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) #bandal-fixed-total{font-size:20px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .cart.bdl-renewal-cart__layout{row-gap:16px!important}
+/* -- type: JP letter-spacing on form controls (UA resets to normal), cramped multi-line text -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(.bdl-renewal-item__main,.bdl-renewal-cart__main,#bandal-floating-summary) :is(button,select,input,textarea),
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-summary-tools>h4,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-hero-tax-note>span{letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card small,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .item-image>small{line-height:1.6!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>strong{line-height:1.5!important}
+/* -- colour: surfaces on the white 2.5/5/8% scale (opaque equivalents on #07070B) -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) details.bdlr-option-group,
+:is(#rt,html) :is(#rt,body) :is(#rt,*) aside.bdlr-order-summary{background-color:#131317!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) nav.bdlr-detail-anchor{background-color:#0D0D11!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-order-summary__media{background-color:#07070B!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdl-renewal-cart__empty{background-color:rgba(255,255,255,.025)!important}
+/* -- buttons: ACT = white 8% surface + 1px line (12% on hover) -- */
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(.bdlr-option-next,.bdlr-reviews-expand,.bdlr-cart-empty-link,.bdlr-button--secondary):not(:disabled){background-color:rgba(255,255,255,.08)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) :is(.bdlr-option-next,.bdlr-reviews-expand,.bdlr-cart-empty-link,.bdlr-button--secondary):not(:disabled):hover{background-color:rgba(255,255,255,.12)!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>:is(strong,small,.nov-storage,.bdlr-option-card__price),
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy small{letter-spacing:.04em!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy small{line-height:1.6!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) details.bdlr-option-group>summary{column-gap:8px!important}
+:is(#rt,html) :is(#rt,body) :is(#rt,*) .bdlr-option-card__copy>.nov-storage{padding-top:4px!important;padding-bottom:4px!important}
 }
