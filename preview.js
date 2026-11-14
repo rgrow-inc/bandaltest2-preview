@@ -79,13 +79,14 @@
   const nav = document.querySelector('[data-bdlr-mega-nav]');
   const header = document.querySelector('[data-bdlr-header]');
   const desktopMouse = matchMedia('(min-width: 981px) and (hover: hover) and (pointer: fine)');
-  let hoverTimer;
+  let enterTimer, leaveTimer;
   nav?.addEventListener('pointerover', event => {
     if (!desktopMouse.matches || event.pointerType !== 'mouse') return;
     const item = event.target.closest('[data-bdlr-mega-nav] > *');
     if (!item || item.contains(event.relatedTarget)) return;
-    clearTimeout(hoverTimer);
-    hoverTimer = setTimeout(() => {
+    clearTimeout(leaveTimer);
+    clearTimeout(enterTimer);
+    enterTimer = setTimeout(() => {
       const current = nav.querySelector('[aria-expanded="true"]')?.dataset.bdlrMegaTrigger;
       const next = item.dataset.bdlrMegaTrigger;
       if (next === current) return;
@@ -93,12 +94,13 @@
       else if (current) { returnFocus = null; menus(null); }
     }, 80);
   });
-  header?.addEventListener('pointerenter', () => clearTimeout(hoverTimer));
+  header?.addEventListener('pointerenter', () => clearTimeout(leaveTimer));
   header?.addEventListener('pointerleave', event => {
     if (!desktopMouse.matches || event.pointerType !== 'mouse') return;
-    clearTimeout(hoverTimer);
+    clearTimeout(enterTimer);
+    clearTimeout(leaveTimer);
     if (shell?.classList.contains('is-open')) {
-      hoverTimer = setTimeout(() => { returnFocus = null; menus(null); }, 200);
+      leaveTimer = setTimeout(() => { returnFocus = null; menus(null); }, 200);
     }
   });
   document.addEventListener('keydown', evt => {
