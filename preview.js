@@ -213,8 +213,8 @@
     styles.crossOrigin = 'anonymous';
     const script = document.createElement('script');
     script.id = 'bandal-interactions-ccc2f0e';
-    script.src = base + 'design-d5ac96e829b072d1.js';
-    script.integrity = 'sha384-ojO18tqnFX+JpFg0GQLNyXsiMEbslet9V+1BNb/fM0lgo4w27oOZJVF83lyZjh6k';
+    script.src = base + 'design-eaa3b1800be320da.js';
+    script.integrity = 'sha384-jhhKmr8Xor2rwek1LSA4WsIjIcDB4me+wPv023TeYGWaGG630VcZ76bXauwnpV9S';
     script.crossOrigin = 'anonymous';
     document.head.append(styles, script);
     // The existing theme adds its route styles asynchronously.
