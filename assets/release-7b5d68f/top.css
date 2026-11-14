@@ -975,3 +975,16 @@ html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-ga
     }
   }
 }
+/* Preserve the game title's explicit word-break opportunity on the live and shared versions. */
+@layer bandalReferenceCorrections {
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d) #bdlr-games .gm a[href*="game_mhwilds"] > b {
+    min-width: 0 !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+  }
+  @media (max-width:767px) {
+    html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d) #bdlr-games .gm a[href*="game_mhwilds"] > b {
+      font-size:14px !important; line-height:20px !important;
+    }
+  }
+}
