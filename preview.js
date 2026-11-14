@@ -232,3 +232,15 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once: true});
   else install();
 })();
+
+;/* BANDAL ccc2f0e lower pages */
+(function () {
+  const pages = ['page-bandal-survey.html', 'page-contact.html', 'page-coupon.html', 'page-faq.html', 'page-kenki-collaboration.html', 'page-news-award-20250919.html', 'page-news-funding-20250313.html', 'page-news-interview-20250428.html', 'page-recycle.html', 'page-review-campaign.html', 'page-review-list.html', 'page-terms_of_use.html', 'policy.html'];
+  if (!pages.includes(location.pathname.split('/').pop()) || document.getElementById('bandal-lower-ccc2f0e')) return;
+  const script = document.createElement('script');
+  script.id = 'bandal-lower-ccc2f0e';
+  script.src = new URL('assets/release-ccc2f0e/lower-c95cf87f5155bcef.js', document.currentScript.src).href;
+  script.integrity = 'sha384-tFUz0yGhh01g7KHM2XR/Awc3fpidZbUhKMr2HmHII1I5q0MoLpuR/D9t/zU7WIs+';
+  script.crossOrigin = 'anonymous';
+  document.head.appendChild(script);
+})();
