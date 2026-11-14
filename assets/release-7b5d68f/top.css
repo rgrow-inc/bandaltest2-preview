@@ -963,3 +963,13 @@ html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-ga
 html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) #bdlr-games .dx-blk:nth-of-type(2) > nav.gm > a{height:168px!important;}
 }
 }
+
+/* The storefront renders the reassurance heading separately from the slim service strip. */
+@layer bandalReferenceCorrections {
+  @media (max-width: 767px) {
+    html body.bdlr-top-page #bdl-main-content.bdlr-main > .bdlr-service-head {
+      box-sizing:border-box!important;
+      padding-inline:16px!important;
+    }
+  }
+}
