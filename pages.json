@@ -175,6 +175,20 @@
     "sp": "sp/item-000000000026.html"
   },
   {
+    "name": "けんきコラボ Standard（BKM-B3）Ryzen 7 7700／RTX 5060 Ti 8GB | コラボモデル",
+    "path": "/view/item/000000000027",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000027.html",
+    "sp": "sp/item-000000000027.html"
+  },
+  {
+    "name": "けんきコラボ Middle（BKM-B2）Ryzen 7 9800X3D／RTX 5070 Ti 16GB | コラボモデル",
+    "path": "/view/item/000000000028",
+    "type": "商品詳細",
+    "pc": "pc/item-000000000028.html",
+    "sp": "sp/item-000000000028.html"
+  },
+  {
     "name": "CPU別,Core i3-14100F",
     "path": "/view/category/Corei3_14100F",
     "type": "商品カテゴリ",
