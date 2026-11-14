@@ -48,6 +48,12 @@
       grid-area: 2 / 2 !important;
       align-self: start !important;
     }
+    :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model-slot > .bdlr-pickup-card > .bdlr-pickup-price {
+      margin-block-start: 8px !important;
+    }
+    :is(#rt,html) :is(#rt,body).bdlr-catalog-page .bdlr-catalog-grid > .bdlr-catalog-card .bdlr-card-specs > [data-bandal-capacity-tag][data-bdc-chip] {
+      min-height: 22px !important;
+    }
   }
 }
 
