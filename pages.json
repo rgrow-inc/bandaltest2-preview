@@ -7,7 +7,7 @@
     "sp": "sp/top.html"
   },
   {
-    "name": "Ryzen 5 5500／RTX 3050 | BD4",
+    "name": "Ryzen 5 5500／RTX 3050 6GB | BD4",
     "path": "/view/item/000000000001",
     "type": "商品詳細",
     "pc": "pc/item-000000000001.html",
@@ -196,7 +196,7 @@
     "sp": "sp/category-High_price50.html"
   },
   {
-    "name": "GPU別,GeForce RTX 3050",
+    "name": "GPU別,GeForce RTX 3050 6GB",
     "path": "/view/category/RTX3050",
     "type": "商品カテゴリ",
     "pc": "pc/category-RTX3050.html",

@@ -1,0 +1,168 @@
+/* The accessory gallery uses its product photos and the registered accessory description. */
+@layer bandalReferenceCorrections {
+  html body.is-parts-product :is([data-bdlr-bd2-photo-note],[data-bdlr-aircooler-note]),
+  html body .ux-item-fact[data-ux-fps] {
+    display: none !important;
+  }
+  html body #bdlr-options-panel .bdlr-option-card .bdlr-option-card__copy .bdlr-usb-wifi-note {
+    display: block !important;
+    color: #d8d6e4;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: left;
+  }
+}
+
+/* The highlight and its photographic base must use the identical square and crop. */
+@layer bandalReferenceCorrections {
+  #bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] .bdlr-option-card__media:is([data-photo^="bdg3-"],[data-kenki-fan]) {
+    display: block !important;
+    width: min(220px,100%) !important;
+    inline-size: min(220px,100%) !important;
+    height: auto !important;
+    block-size: auto !important;
+    aspect-ratio: 1 !important;
+    padding: 0 !important;
+    isolation: isolate;
+  }
+  #bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] .bdlr-option-card__media:is([data-photo^="bdg3-"],[data-kenki-fan]) > img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    transform: none !important;
+    filter: brightness(.78) !important;
+  }
+  #bdlr-options-panel [data-photo^="bdg3-"] .nov-fan-highlight,
+  #bdlr-options-panel [data-kenki-fan] .nov-fan-highlight {
+    display: none !important;
+  }
+
+  /* Coordinates are registered separately to the black and white 480px originals.
+     Only the upper and lower mounting rails belong to the optional fans. */
+  #bdlr-options-panel [data-photo^="bdg3-black-"] {
+    --fan-top-outline: polygon(16% 12%,82% 12%,80% 17%,76% 21.5%,22% 21.5%,18% 18%);
+    --fan-floor-outline: polygon(19% 76%,78% 76%,81% 80%,82% 86%,17% 86%,17% 81%);
+  }
+  #bdlr-options-panel [data-photo^="bdg3-white-"] {
+    --fan-top-outline: polygon(16% 14%,83% 14%,82% 18%,77% 22.5%,22% 22.5%,17% 19%);
+    --fan-floor-outline: polygon(20% 75%,76% 75%,82% 79%,83% 85.5%,17% 85.5%,17% 80%);
+  }
+  #bdlr-options-panel#bdlr-options-panel [data-fan-position] .bdlr-option-card__media[data-photo^="bdg3-"]::before,
+  #bdlr-options-panel#bdlr-options-panel [data-fan-position] .bdlr-option-card__media[data-photo^="bdg3-"]::after,
+  #bdlr-options-panel#bdlr-options-panel .bdlr-option-card__media[data-kenki-fan="bottom-three"]::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: var(--nov-case-photo) center / contain no-repeat !important;
+    filter: grayscale(1) brightness(.43) !important;
+    pointer-events: none;
+    transform: none !important;
+    z-index: 1;
+  }
+  #bdlr-options-panel [data-fan-position] [data-photo^="bdg3-"]::before {clip-path: var(--fan-top-outline);}
+  #bdlr-options-panel [data-fan-position] [data-photo^="bdg3-"]::after {clip-path: var(--fan-floor-outline);}
+  #bdlr-options-panel#bdlr-options-panel [data-fan-position]:is([data-fan-position="top"],[data-fan-position="both"]) [data-photo^="bdg3-"]::before,
+  #bdlr-options-panel#bdlr-options-panel [data-fan-position]:is([data-fan-position="bottom"],[data-fan-position="both"]) [data-photo^="bdg3-"]::after {
+    filter: brightness(1.22) saturate(1.18) !important;
+  }
+
+  #bdlr-options-panel [data-kenki-fan] :is(.opt-image-caption,.nov-location) {display:none !important;}
+  /* The no-fans state uses the supplied matching empty-floor asset in the same frame. */
+  #bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] [data-kenki-fan="empty"] > img {filter:none !important;}
+  #bdlr-options-panel#bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] [data-kenki-fan="bottom-three"] > img {filter:grayscale(1) brightness(.64) !important;}
+  #bdlr-options-panel#bdlr-options-panel .bdlr-option-card__media[data-kenki-fan="bottom-three"]::before {
+    background: var(--kenki-fan-photo) center / contain no-repeat !important;
+    clip-path: polygon(17% 66%,77% 66%,84% 77.5%,12% 77.5%);
+    filter: brightness(1.12) !important;
+  }
+  #bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] [data-kenki-fan]::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: 66% 16% auto 12% !important;
+    height: 12% !important;
+    width: auto !important;
+    box-sizing: border-box !important;
+    border: 1.5px dashed #90e4f5 !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    pointer-events: none;
+    z-index: 2;
+  }
+  #bdlr-options-panel#bdlr-options-panel [data-nov-kind="fan"] [data-kenki-fan="bottom-three"]::after {
+    border-style: solid !important;
+    box-shadow: 0 0 6px #4ad7f4 !important;
+  }
+}
+
+/* Match the game index's title-specific accents on the expanded home game links. */
+@layer bandalReferenceCorrections {
+  #bdlr-games .dx-extra-games nav a:is([href$="/game_genshin"], [href$="-game_genshin.html"]) { --bdlr-game-tint: #e6c36a; }
+  #bdlr-games .dx-extra-games nav a:is([href$="/game_wuthering"], [href$="-game_wuthering.html"]) { --bdlr-game-tint: #2cc7e0; }
+  #bdlr-games .dx-extra-games nav a:is([href$="/game_sf6"], [href$="-game_sf6.html"]) { --bdlr-game-tint: #7b6cff; }
+
+  #bdlr-games .dx-extra-games nav a:not([href$="/game_select"]):not([href$="-game_select.html"]) {
+    background: radial-gradient(100% 95% at 50% 125%, color-mix(in srgb,var(--bdlr-game-tint,#aa94ee) 36%, transparent), transparent 78%), #111115 !important;
+    border-block-end-color: color-mix(in srgb,var(--bdlr-game-tint,#aa94ee) 78%, #222) !important;
+    color: #fff !important;
+  }
+}
+
+.bdl-renewal-item__gallery > .bdlr-gallery-faq {
+  order: 4 !important;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 12px 0 0;
+  color: #f5f4fa;
+  background: #141419;
+  border: 1px solid #33333b;
+  border-radius: 10px;
+  text-align: left;
+}
+.bdlr-gallery-faq > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px;
+  min-height: 44px;
+  box-sizing: border-box;
+  list-style: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.bdlr-gallery-faq > summary::-webkit-details-marker { display: none; }
+.bdlr-gallery-faq > summary::after {
+  content: "";
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin: -4px 2px 0 0;
+  border: solid #baa6f5;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+.bdlr-gallery-faq[open] > summary::after { transform: rotate(225deg); margin-top: 3px; }
+.bdlr-gallery-faq :is(summary,a):focus-visible { outline: 2px solid #b49aff; outline-offset: 2px; }
+.bdlr-gallery-faq .bdlr-gallery-faq__body { padding: 2px 16px 14px; }
+.bdlr-gallery-faq .bdlr-gallery-faq__answers { margin: 0; padding: 0; }
+.bdlr-gallery-faq .bdlr-gallery-faq__answers > dt { margin: 0; padding: 10px 0 0; border-top: 1px solid #35353e; color: #fff; font-size: 14px; font-weight: 600; line-height: 1.6; }
+.bdlr-gallery-faq .bdlr-gallery-faq__answers > dd { margin: 4px 0 12px; color: #c4c3cc; font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; white-space: pre-line; }
+.bdlr-gallery-faq .bdlr-gallery-faq__more { display: inline-flex; align-items: center; min-height: 40px; color: #c4afff; font-size: 13px; line-height: 1.6; text-decoration: underline; text-underline-offset: 3px; }
+
+.bdlr-gallery-faq__answers dt a { color: #c4afff; text-underline-offset: 3px; }

@@ -927,7 +927,7 @@
   }
 }
 
-@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 5 5500／RTX 3050 ￥99,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=0&max=100001"],[href="catalog-pc-0-100001.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 3050"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 5 5500／RTX 3050 6GB ￥99,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=0&max=100001"],[href="catalog-pc-0-100001.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 3050 6GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
 
 @layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 5700X／RTX 5060 8GB ￥139,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=100001&max=150000"],[href="catalog-pc-100001-150000.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 8GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
 

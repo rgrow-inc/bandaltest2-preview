@@ -244,3 +244,24 @@
   script.crossOrigin = 'anonymous';
   document.head.appendChild(script);
 })();
+
+;/* Client updates 20261114: product galleries, case fans and confirmed shop details. */
+(function () {
+  const base = new URL('assets/client-20261114/', document.currentScript.src);
+  function add(tag, id, file, integrity) {
+    if (document.getElementById(id)) return;
+    const el = document.createElement(tag);
+    el.id = id;
+    if (tag === 'link') { el.rel = 'stylesheet'; el.href = new URL(file, base).href; }
+    else el.src = new URL(file, base).href;
+    el.integrity = integrity;
+    el.crossOrigin = 'anonymous';
+    document.head.appendChild(el);
+  }
+  function install() {
+    add('link','bandal-client-20261114-css','shop-68aa8bb56bb07015.css','sha384-/R++AmpYfODWVCn754XJJmFu/GhuduIklufnY1lXHIyKUlpXcuLHuqKXaI0Ocalj');
+    add('script','bandal-client-20261114-js','shop-e71c3b14689300ad.js','sha384-qrxn4YxcVV7+8d5Q7DX1qZqP+XbLZwyJPQVTA3zVX14vZm0tdMeVHYEOf8pmLbjG');
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',install,{ once:true });
+  else install();
+})();
