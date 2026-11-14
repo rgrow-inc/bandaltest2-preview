@@ -82,7 +82,7 @@ html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.
     }
     html body.bdlr-catalog-page .audit-product-list > li {grid-column:1!important;width:100%!important}
   }
-  @media(max-width:900px) {
+  @media(max-width:980px) {
     html body.bdlr-page .bdlr-header[data-bdlr-header] {column-gap:8px!important}
     html body.bdlr-page .bdlr-header > .bdlr-brand {order:0!important;margin-inline:0!important}
     html body.bdlr-page .bdlr-header > .bdlr-header-actions {order:1!important;margin-inline-start:auto!important}
