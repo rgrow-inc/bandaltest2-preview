@@ -76,6 +76,31 @@
       if (counter) counter.textContent = (options.indexOf(button) + 1) + ' / ' + options.length;
     }
   });
+  const nav = document.querySelector('[data-bdlr-mega-nav]');
+  const header = document.querySelector('[data-bdlr-header]');
+  const desktopMouse = matchMedia('(min-width: 981px) and (hover: hover) and (pointer: fine)');
+  let hoverTimer;
+  nav?.addEventListener('pointerover', event => {
+    if (!desktopMouse.matches || event.pointerType !== 'mouse') return;
+    const item = event.target.closest('[data-bdlr-mega-nav] > *');
+    if (!item || item.contains(event.relatedTarget)) return;
+    clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(() => {
+      const current = nav.querySelector('[aria-expanded="true"]')?.dataset.bdlrMegaTrigger;
+      const next = item.dataset.bdlrMegaTrigger;
+      if (next === current) return;
+      if (next) menus(next, item);
+      else if (current) { returnFocus = null; menus(null); }
+    }, 80);
+  });
+  header?.addEventListener('pointerenter', () => clearTimeout(hoverTimer));
+  header?.addEventListener('pointerleave', event => {
+    if (!desktopMouse.matches || event.pointerType !== 'mouse') return;
+    clearTimeout(hoverTimer);
+    if (shell?.classList.contains('is-open')) {
+      hoverTimer = setTimeout(() => { returnFocus = null; menus(null); }, 200);
+    }
+  });
   document.addEventListener('keydown', evt => {
     if (evt.key === 'Escape' && (drawer?.classList.contains('is-open') || shell?.classList.contains('is-open') || returnFocus)) {
       menus(null);
@@ -169,3 +194,6 @@
   script.src = new URL('assets/release-7b5d68f/document-layout-6aa5a43387b3.js', document.currentScript.src).href;
   document.head.append(script);
 })();
+
+/* Category navigation and compact registered options (9646216). */
+(function(){if(!document.body.classList.contains('bdlr-catalog-page'))return;var s=document.createElement('script');s.src=new URL('assets/release-7b5d68f/category-index-244a9040e96c.js',document.currentScript.src).href;s.integrity='sha384-bTqhN43DFY9H5jcFKtteRGz7vfgFJJwyxKH5VoFQbr8WXEbbTApgw6pE64csnu2G';s.crossOrigin='anonymous';document.head.appendChild(s);}());

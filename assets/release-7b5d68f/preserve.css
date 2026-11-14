@@ -211,3 +211,115 @@ html body.bdlr-page:not(#release):not(#release2):not(#release3) :is(.nov-model,.
     max-width:100%!important;
   }
 }
+
+/* The store inserts its real RAM and SSD values after initial render. Keep their
+   row directly after the model name, as in the designer's recommendation cards. */
+@layer bandalReferenceCorrections {
+  .nov-home-picks .nov-model-slot > .bdlr-pickup-card {
+    --bandal-spec-height: 26px;
+    --bandal-spec-gap: 8px;
+    --bandal-spec-inset: 8px;
+    --bandal-spec-font: 12px;
+  }
+  :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model .bdlr-pickup-card > .nov-release-specs {
+    order: 11 !important;
+    margin: 8px 0 0 !important;
+    gap: var(--bandal-spec-gap) !important;
+    min-width: 0 !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+  :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model .nov-release-specs > span {
+    display: inline-flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    min-height: var(--bandal-spec-height) !important;
+    max-width: 100% !important;
+    padding: 0 var(--bandal-spec-inset) !important;
+    font-size: var(--bandal-spec-font) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0 !important;
+  }
+  @media (min-width: 768px) {
+    :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model .bdlr-pickup-card > .bdlr-premium-title {
+      margin-block-start: 16px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .nov-home-picks .nov-model-slot > .bdlr-pickup-card {
+      --bandal-spec-height: 22px;
+      --bandal-spec-gap: 4px;
+      --bandal-spec-inset: 4px;
+      --bandal-spec-font: 11px;
+    }
+    :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model .nov-model-slot > .bdlr-pickup-card > .bdlr-premium-title {
+      grid-area: 1 / 2 !important;
+      align-self: start !important;
+      margin: 12px 0 0 !important;
+    }
+    :is(#rt,html) :is(#rt,body).bdlr-top-page:not(#_):not(#__):not(#___):not(#____) .nov-home-picks .nov-model .nov-model-slot > .bdlr-pickup-card > .nov-release-specs {
+      grid-area: 2 / 2 !important;
+      align-self: start !important;
+    }
+  }
+}
+
+/* The live WHY heading and service list are adjacent, while Git groups them in .bdlr-why. */
+@layer bandalReferenceCorrections {
+  html body.bdlr-top-page #bdl-main-content.bdlr-main:not(#a):not(#b):not(#c):not(#d):not(#e) > .bdlr-service-head + ul.bdlr-service-strip {
+    --service-number-size:28px;
+    --service-title-size:20px;
+
+    .bdlr-service-strip__label {
+      margin:0!important; color:white!important; font-size:14px!important; line-height:22px!important;
+    }
+    .bdlr-service-strip__value {
+      min-height:0!important; height:32px!important; display:block!important; font-size:var(--service-number-size)!important; line-height:32px!important;
+      font-weight:500!important; letter-spacing:-.02em!important;
+    }
+    .bdlr-service-strip__item:first-child .bdlr-service-strip__value {
+      font-size:var(--service-title-size)!important; font-weight:700!important; letter-spacing:.02em!important;
+    }
+    .bdlr-service-strip__value small {font-size:12px!important;letter-spacing:.04em!important}
+
+    @media (min-width:901px) {
+      grid-template-columns:minmax(0,5fr) minmax(0,7fr)!important;
+      grid-template-rows:repeat(4,minmax(72px,auto))!important;
+      column-gap:64px!important;
+      > li.bdlr-service-strip__item {
+        display:grid!important; grid-template-columns:140px minmax(0,1fr) auto!important;
+        align-items:center!important; height:auto!important; min-height:72px!important;
+        padding:0!important; column-gap:16px!important;
+      }
+      .bdlr-service-strip__tag {grid-column:1; padding:0!important; color:rgba(255,255,255,.5)!important}
+      .bdlr-service-strip__copy {display:contents!important}
+      .bdlr-service-strip__value {grid-column:3;grid-row:1;text-align:right!important}
+      .bdlr-service-strip__label {grid-column:2;grid-row:1;text-align:left!important}
+      > li.bdlr-service-strip__contact {padding:0!important; gap:12px!important}
+    }
+
+    /* Keep the requested two-column service listing on phones. */
+    @media (max-width:900px) {
+      --service-number-size:20px;
+      --service-title-size:16px;
+      .bdlr-service-strip__copy {gap:4px!important;align-items:flex-start!important}
+    }
+  }
+
+  html body.bdlr-top-page #bdl-main-content.bdlr-main:not(#a):not(#b):not(#c):not(#d):not(#e) #bdlr-games nav.bd > a .bgc-ch {
+    width:100%!important; margin:16px 0 0!important; gap:8px!important;
+    font:400 16px/28px Geist,"Noto Sans JP",sans-serif!important;
+    > span {
+      display:inline-flex!important; align-items:center!important; flex:none!important;
+      height:24px!important; padding:0 8px!important; margin:0!important;
+      border-radius:4px!important; background:rgba(255,255,255,.05)!important;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)!important;color:rgba(255,255,255,.7)!important;
+      font:500 11px/1 Geist,"Noto Sans JP",sans-serif!important; letter-spacing:.02em!important;
+    }
+    @media (max-width:767px) {
+      gap:4px!important; margin-top:12px!important;
+      > span {height:22px!important; padding-inline:4px!important}
+    }
+  }
+}
