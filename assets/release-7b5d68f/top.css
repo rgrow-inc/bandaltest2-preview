@@ -886,3 +886,49 @@
     }
   }
 }
+
+/* The MakeShop template and the offline HTML share these visual rules. */
+:root{--bandal-layout-delivery:parity-9646216}
+@font-face{font-family:BandalRating;src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMqr8bEoAAAEoAAAAYGNtYXAADCZZAAABkAAAADRnbHlm+FbNVgAAAcwAAAFyaGVhZDFQC0cAAACsAAAANmhoZWEHiAO8AAAA5AAAACRobXR4BEAAgAAAAYgAAAAIbG9jYQBDALkAAAHEAAAACG1heHAABgBOAAABCAAAACBuYW1lkk5dvgAAA0AAAAEdcG9zdEy2p+IAAARgAAAANwABAAAAAQAAJg2q+V8PPPUAAQQAAAAAAOcdY5gAAAAA5x1jmAA9/98DwwNAAAAAAwACAAAAAAAAAAEAAAOA/4AAAAQAAEAAOgPGAAEAAAAAAAAAAAAAAAAAAAABAAEAAAADAEwAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAwQAAZAABQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAPz8/PwAAJgUmBgOA/4AAAAOAAIAAAAAAAAAAAAAAAAAAAAAgAAAEAABAAEAAQAAAAAIAAAADAAAAFAADAAEAAAAUAAQAIAAAAAQABAABAAAmBv//AAAmBf//2fwAAQAAAAAAAAAAAEMAuQABAD3/3wPDA0AAKAAAATE2NicmJi8CJiYjIgYPAgYGBwYWFxcHBhYXFhY3NxcWNjc2NicnA6kPCwYHHxTsWwchFBQhCFvsEx8HBgsPtDcFDhAQKBHKyhEoEBAOBTcBtQ0mExMYAhPcExYWE9wTAhgTEyYNnOgTJgsMAgt8fAsCDAsmE+gAAAIAP//nA8EDOAAiAEsAAAExFgcHFxYHBgYnJwcGJicmNzcnJjc2Nj8CNjMyHwIWFgcxNicmIyUmJycmIyIHBwYHByIHBhcXFgcHBhcWNzc2FxcWNzYnJyY3A7UMHbg4CR8OIw/Ozg8jDh8JOLgdDAUcEfFdDicnDl3xERwrBQMCBv8ADgZiAwYHAmIGD/8HAgIFwwsDPAIGBQbaDQ3aBgUFATwDCwH5JRmf7SUXCgIKf38JAQoXJe2fGSQRFgEU4CQk4RMBFioEBwYVAQ7uBgbuDgEVBgcEqAkP+wYEBASGCAiGBAQEBvsPCQAAAAAAAAoAfgABAAAAAAABAA0AAAABAAAAAAACAAcADQABAAAAAAADABUAFAABAAAAAAAEAA0AAAABAAAAAAAGAAwAKQADAAEECQABABoANQADAAEECQACAA4ATwADAAEECQADACoAXQADAAEECQAEABoANQADAAEECQAGABgAh0JhbmRhbCBSYXRpbmdSZWd1bGFyQmFuZGFsIFJhdGluZyA5NjQ2MjE2QmFuZGFsUmF0aW5nAEIAYQBuAGQAYQBsACAAUgBhAHQAaQBuAGcAUgBlAGcAdQBsAGEAcgBCAGEAbgBkAGEAbAAgAFIAYQB0AGkAbgBnACAAOQA2ADQANgAyADEANgBCAGEAbgBkAGEAbABSAGEAdABpAG4AZwAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAECAQMGZmlsbGVkB291dGxpbmUA) format("truetype");unicode-range:U+2605-2606;font-display:swap}
+@layer bandalReferenceCorrections {
+  html body.bdlr-page:not(#a):not(#b):not(#c):not(#d):not(#e) :is(.bdlr-legacy-review-rating,.bdlr-review-score,.bdlr-review-distribution__row)>span:first-child{
+    font-family:BandalRating,"Geist","Noto Sans JP",sans-serif!important;
+  }
+  /* Keep every native card and link. The customer-facing section order matches the reference at both widths. */
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d) main.bdlr-main {
+    display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  }
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-hero {order:1!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .nov-home-picks {order:2!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > #bdlr-games {order:3!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .nov-collab {order:4!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .nov-limited {order:5!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-monthly-pickup {order:6!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-price-matrix {order:7!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-feature-banners {order:8!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-service-head {order:9!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-service-strip {order:10!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .home-cta {order:11!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-live-products {order:12!important}
+  html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main.bdlr-main > .bdlr-feature-banners {align-self:center!important;width:min(100%,1232px)!important;max-width:100%!important}
+  @media(min-width:901px){
+    html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d) .bdlr-service-strip__item:not(:has(.bdlr-service-strip__tag))::before{
+      position:static!important;display:block!important; flex:none!important; width:auto!important;height:auto!important;
+      font:500 12px/18px Geist,sans-serif!important;color:#b0acbf!important;background:none!important;
+    }
+    html body.bdlr-top-page .bdlr-service-strip__item:nth-child(1):not(:has(.bdlr-service-strip__tag))::before{content:"ASSEMBLY"!important}
+    html body.bdlr-top-page .bdlr-service-strip__item:nth-child(2):not(:has(.bdlr-service-strip__tag))::before{content:"WARRANTY"!important}
+    html body.bdlr-top-page .bdlr-service-strip__item:nth-child(3):not(:has(.bdlr-service-strip__tag))::before{content:"SHIPPING"!important}
+    html body.bdlr-top-page .bdlr-service-strip__item:nth-child(4):not(:has(.bdlr-service-strip__tag))::before{content:"PAYMENT"!important}
+  }
+}
+
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 5 5500／RTX 3050 ￥99,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=0&max=100001"],[href="catalog-pc-0-100001.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 3050"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 5700X／RTX 5060 8GB ￥139,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=100001&max=150000"],[href="catalog-pc-100001-150000.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 8GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 5 5500／RTX 5050 8GB ￥152,400～"]):has(.bdlr-price-matrix td a[aria-label="Ryzen 7 5700X／RX 7600 8GB ￥155,100～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=150000&max=200000"],[href="catalog-pc-150000-200000.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5050 8GB　RX 7600 8GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7700／RTX 5060 8GB ￥251,900～"]):has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7800X3D／RTX 5060 Ti 8GB ￥238,800～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=200000&max=300000"],[href="catalog-pc-200000-300000.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 8GB　RTX 5060 Ti 8GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
+
+@layer bandalReferenceCorrections{html body.bdlr-top-page:not(#a):not(#b):not(#c):not(#d):not(#e) main:has(.bdlr-price-matrix td a[aria-label="Ryzen 7 9800X3D／RTX 5060 Ti 8GB ￥330,000～"]):has(.bdlr-price-matrix td a[aria-label="Ryzen 7 7800X3D／RTX 5070 12GB ￥337,900～"]) #bdlr-games nav.bd > a:is([href="/view/category/all_items?pc=1&min=300000"],[href="catalog-pc-300000-up.html"]):not(:has(.bgc-ch))::before{content:"BUDGET\a RTX 5060 Ti 8GB　RTX 5070 12GB"!important;position:static!important;white-space:pre-line!important; color:#d0cadf!important;font:500 12px/18px Geist,sans-serif!important;letter-spacing:.02em!important;}}
